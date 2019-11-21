@@ -1,0 +1,82 @@
+@import '~@santiment-network/ui/main.scss';
+@import '~@santiment-network/ui/mixins.scss';
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+html{
+  overflow-y: scroll;
+
+  @include responsive('desktop', 'laptop') {
+    height: 100%;
+  }
+}
+
+body {
+  color: var(--mirage);
+
+  @include text('body-3');
+
+  @include responsive('desktop', 'laptop') {
+    height: 100%;
+  }
+}
+
+a {
+  color: var(--jungle-green);
+
+  &:hover {
+    color: var(--jungle-green-hover);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  list-style: none;
+  color: inherit;
+}
+
+main {
+  min-height: calc(100% - 140px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+
+  background: url('./../images/bg.svg') no-repeat;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    width: 100%;
+
+    background: url('./../images/bg-mobile.svg')  no-repeat ;
+    background-repeat: repeat-x;
+  }
+}
+
+section {
+  max-width: 1140px;
+  width: 100%;
+  margin: 60px;
+  display: flex;
+  align-items: center;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+:global(#___gatsby) {
+  overflow-x: hidden;
+  height: 100%;
+
+  > div {
+    height: 100%;
+  }
+}
+
+:global(.intercom-namespace .intercom-1tsyd6q) {
+  z-index: 50 !important;
+}

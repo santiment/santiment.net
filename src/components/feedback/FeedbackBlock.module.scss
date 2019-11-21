@@ -1,0 +1,71 @@
+@import '~@santiment-network/ui/main.scss';
+@import '~@santiment-network/ui/mixins.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px 20px 20px;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    padding: 80px 17px;
+  }
+}
+
+.questions {
+  @include text('h3');
+
+  max-width: 419px;
+  color: var(--white);
+  text-align: center;
+  margin-top: 62px;
+  font-weight: 600;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    margin-top: 0px;
+  }
+}
+
+.form {
+  margin-top: 30px;
+  max-width: 356px;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    margin-top: 35px;
+  }
+}
+
+.explanation {
+  @include text('body-2');
+
+  color: var(--athens);
+  text-align: center;
+  margin-top: 24px;
+  max-width: 290px;
+
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    margin-top: 22px;
+  }
+}
+
+.info {
+  @include text('caption');
+
+  color: var(--waterloo);
+  margin-top: 16px;
+  max-width: 330px;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    margin-top: 16px;
+    max-width: 100%;
+    width: 100%;
+    @include text('body-3');
+  }
+}
+
+.privacy {
+  color: var(--jungle-green);
+}
