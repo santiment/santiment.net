@@ -1,46 +1,50 @@
-import React from "react";
-import PropTypes from "prop-types";
-import cx from "classnames";
-import GoogleAnalytics from "react-ga";
-import Helmet from "react-helmet";
-import Header from "./header/Header";
-import Footer from "./footer/footer";
-import styles from "./layout.module.scss";
+/**
+ * Layout component that queries for data
+ * with Gatsby's StaticQuery component
+ *
+ * See: https://www.gatsbyjs.org/docs/static-query/
+ */
 
+import React from 'react'
+import PropTypes from 'prop-types'
+import cx from 'classnames'
+import GoogleAnalytics from 'react-ga'
+import Intercom from './Intercom'
+import Header from './Header/Header'
+import Footer from './Footer/Footer'
+import Notifications from './Notifications/Notifications'
+import CookiePopup from './CookiePopup/CookiePopup'
+import styles from './layout.module.scss'
+import Helmet from 'react-helmet'
 
-if (typeof window !== "undefined") {
-    require("smooth-scroll")('a[href*="#"]',{
-        speed: 800,
-        speedAsDuration: true,
-        easing: 'easeInOutCubic'
-    })
-}
-
-if (process.env.NODE_ENV === "production") {
-  GoogleAnalytics.initialize("UA-100571693-13");
+if (process.env.NODE_ENV === 'production') {
+  GoogleAnalytics.initialize('UA-100571693-8')
 } else {
-  GoogleAnalytics.initialize("UA-100571693-13", { testMode: true });
+  GoogleAnalytics.initialize('UA-100571693-8', { testMode: true })
 }
 
-const envScript = process.env.NODE_ENV === "production" && (
+const envScript = process.env.NODE_ENV === 'production' && (
   <Helmet>
-    <script src="/env.js" />
+    <script src='/env.js' />
   </Helmet>
-);
+)
 
-const Layout = ({ children, classes = {} }) => (
-  <>
-    <Header />
-    <>
-      {envScript}
-      <main className={cx(styles.main, classes.main)}>{children}</main>
-    </>
-    <Footer />
-  </>
-);
+const Layout = ({ children, isAccountPage, classes = {} }) => (
+    <Intercom>
+      <Notifications>
+        <div className={styles.container}>
+          {envScript}
+          <Header isAccountPage={isAccountPage} />
+          <main className={cx(styles.main, classes.main)}>{children}</main>
+          <Footer />
+        </div>
+      </Notifications>
+      <CookiePopup />
+    </Intercom>
+)
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
-};
+  children: PropTypes.node.isRequired,
+}
 
-export default Layout;
+export default Layout

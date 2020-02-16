@@ -1,26 +1,39 @@
 module.exports = {
   siteMetadata: {
-    title: `Santiment JP Magazine`,
-    description: `Raw data access to on-chain, social media, development activity and pricing information for 1000+ crypto assets. Unlimited historical and real time data. Backtest strategies, build custom signals, DIY dashboards and much more with the most all-inclusive crypto API on the market.`,
-    author: `Santiment Team`,
-    siteUrl: 'https://jp-magazine.santiment.net'
+    title: `Santiment - See what other crypto traders are missing`,
+    description: `We provide tools to help you analyze crypto markets and find data-driven opportunities to optimize your investing. Santiment is a behavior analytics platform for cryptocurrencies, sourcing on-chain, social and development information on 900+ coins.`,
+    author: `Santiment`,
+    siteUrl: 'https://santiment.net',
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-env-variables`,
+      resolve: `gatsby-plugin-intl`,
       options: {
-        whitelist: ["BACKEND_URL"],
+        // language JSON resource path
+        path: `${__dirname}/src/intl`,
+        // supported language
+        languages: [`en`, `ja`],
+        // language file path
+        defaultLanguage: `en`,
+        // option to redirect to `/ko` when connecting `/`
+        // redirect: true,
       },
     },
     {
-      resolve: "gatsby-source-graphql",
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        whitelist: ['BACKEND_URL'],
+      },
+    },
+    {
+      resolve: 'gatsby-source-graphql',
       options: {
         // This type will contain remote schema Query type
-        typeName: "SAN",
+        typeName: 'SAN',
         // This is the field under which it's accessible
-        fieldName: "san",
+        fieldName: 'san',
         // URL to query from
-        url: "https://api.santiment.net/graphql",
+        url: 'https://api.santiment.net/graphql',
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -37,13 +50,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `jp-magazine starter`,
-        short_name: `santiment gp-magazine`,
+        name: `Santiment`,
+        short_name: `Santiment`,
         start_url: `/`,
         background_color: `#5275FF`,
         theme_color: `#5275FF`,
         display: `minimal-ui`,
-        icon: 'src/images/logo-SAN.svg'// This path is relative to the root of the site.
+        icon: `src/images/logo-SAN.svg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

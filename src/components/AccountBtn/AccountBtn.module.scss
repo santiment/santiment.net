@@ -1,0 +1,32 @@
+@import '~@santiment-network/ui/mixins';
+
+.login {
+  padding: 6px 35px;
+}
+
+.account {
+  display: inline-block;
+  vertical-align: middle;
+  &:hover {
+    fill: var(--dodger-blue);
+  }
+}
+
+.profileBtn {
+  background: var(--white) !important;
+
+  @include responsive('phone', 'phone-xs') {
+    margin-top: 10px;
+  }
+}
+
+.profileIcon {
+  fill: var(--waterloo);
+  width: 15px;
+  height: 17px;
+  margin-top: 2px;
+
+  &:hover {
+    fill: var(--dodger-blue);
+  }
+}
