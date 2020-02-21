@@ -1,9 +1,8 @@
 import React, { useRef } from 'react'
-import cx from 'classnames'
 import Icon from '@santiment-network/ui/Icon'
 import { injectIntl, Link } from 'gatsby-plugin-intl'
 import AccountBtn from '../AccountBtn/AccountBtn'
-import { tr, trStr } from '../../utils/translate'
+import { tr } from '../../utils/translate'
 import mainLogo from './../../images/logos/main-logo.svg'
 import styles from './Header.module.scss'
 

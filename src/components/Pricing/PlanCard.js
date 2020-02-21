@@ -1,11 +1,11 @@
 import React from 'react'
 import { injectIntl } from 'gatsby-plugin-intl'
 import cx from 'classnames'
-import RestrictBtn from './PlanRestrictBtn'
+import Button from '@santiment-network/ui/Button'
 import Features from './Features'
 import PLANS from './prices'
-import { formatPrice, getAlternativeBillingPlan } from '../../utils/plans'
-import { tr, trStr } from '../../utils/translate'
+import { formatPrice } from '../../utils/plans'
+import { tr } from '../../utils/translate'
 import styles from './PlanCard.module.scss'
 
 const toggleCardDetails = ({ currentTarget }) =>
@@ -13,61 +13,21 @@ const toggleCardDetails = ({ currentTarget }) =>
 
 const PlanCard = ({
   intl,
-  id,
   name,
-  amount,
-  userPlan,
-  billing,
-  product,
-  isSubscriptionCanceled,
-  isLoggedIn,
-  subscription,
+  price,
   className,
-  onDialogClose,
   classes = {},
-  btnProps,
+  btnProps
 }) => {
   const card = PLANS[name]
-  const sameAsUserPlan = id === userPlan
-  let [price, priceType] = formatPrice(amount, name, billing)
 
-  const { amount: altAmount, interval: altInterval } =
-    getAlternativeBillingPlan(product.plans, name, billing) || {}
-
-  const [altPrice] = formatPrice(altAmount, null, altInterval)
-  const isCustom = price === 'Custom'
-
-  if (priceType) {
-    priceType = tr('billing.month.short')
-  }
-
-  const intlId = `plan.${name.toLowerCase()}`
-  const title = trStr(intl, intlId + '.title')
   return (
     <div
       onClick={toggleCardDetails}
-      className={cx(
-        styles.card,
-        className,
-        classes.wrapper,
-        card.isPopular && styles.card_popular,
-        sameAsUserPlan && styles.card_active,
-        sameAsUserPlan && classes.wrapper_active,
-      )}
+      className={cx(styles.card, className, classes.wrapper)}
     >
-      <div
-        className={cx(
-          styles.card__top,
-
-          classes.top,
-        )}
-      >
-        <h3 className={styles.card__title}>
-          {title}
-          {card.isPopular && (
-            <span className={cx(styles.popular, classes.popular)}>Popular</span>
-          )}
-        </h3>
+      <div className={cx(styles.card__top, classes.top)}>
+        <h3 className={styles.card__title}>{name}</h3>
         <svg
           width='15'
           height='8'
@@ -82,42 +42,14 @@ const PlanCard = ({
           />
         </svg>
       </div>
+      <div className={styles.price}>
+        <span>from {price}</span>
+        <span className={styles.period}>/ {tr('billing.month.short', 'mo')}</span>
+      </div>
       <div className={styles.desc}>{card.desc}</div>
-      <div className={cx(styles.details, isCustom && styles.details_custom)}>
-        {!isCustom && (
-          <div className={cx(styles.price, classes.price)}>
-            {price}
-            <span className={styles.price__type}>{priceType}</span>
-          </div>
-        )}
-        <div className={styles.discount}>
-          {card.discount ? (
-            tr(card.discount)
-          ) : (
-            <>
-              {tr('price.bill_discount.left')}
-              {altPrice}
-              {tr(`price.bill_discount.${altInterval}`)}
-            </>
-          )}
-        </div>
-        {!isLoggedIn || sameAsUserPlan || isSubscriptionCanceled ? (
-          <RestrictBtn
-            sameAsUserPlan={sameAsUserPlan}
-            isSubscriptionCanceled={isSubscriptionCanceled}
-          />
-        ) : (
-          <card.Component
-            title={title}
-            label={card.link}
-            price={amount}
-            billing={billing}
-            planId={+id}
-            subscription={subscription}
-            onDialogClose={onDialogClose}
-            btnProps={btnProps}
-          />
-        )}
+      <div className={styles.details}>
+        <card.Component />
+        <Button as="a" rel="noopener noreferrer" target="_blank" href={card.more} border className={styles.more}>Learn more</Button>
         <Features data={card.features} classes={{ ...styles, ...classes }} />
       </div>
     </div>

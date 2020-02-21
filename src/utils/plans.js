@@ -7,24 +7,18 @@ export const formatPrice = (price, name, billing) => {
 
   const devider = 100 * (billing === 'year' ? 12 : 1)
 
-  return [`$${parseInt(price / devider, 10)}`, '/mo']
+  return `$${parseInt(price / devider, 10)}`
 }
 
-export const apiProductId = '1'
-export const findNeuroPlan = ({ id }) => id === apiProductId
+export const SanbaseId = '2'
+export const SandataId = '4'
+export const SanAPIId = '1'
 
-export const getCurrentNeuroSubscription = user => {
-  if (!user) return
-  const { subscriptions: subs } = user
+export const findSanbasePlan = ({ id }) => id === SanbaseId
+export const findSandataPlan = ({ id }) => id === SandataId
+export const findSanAPIPlan
+ = ({ id }) => id === SanAPIId
 
-  return subs.find(
-    ({
-      plan: {
-        product: { id },
-      },
-    }) => id === apiProductId,
-  )
-}
 
 export const getBilling = () =>
   client.query({ query: USER_PAYMENTS, fetchPolicy: 'network-only' })

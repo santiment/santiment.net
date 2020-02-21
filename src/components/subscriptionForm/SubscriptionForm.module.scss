@@ -116,7 +116,7 @@
   border-radius: $border-radius;
   outline: none;
   background-color: var(--white);
-  color: var(--mirage);
+  color: var(--rhino);
 
   &::placeholder {
     color: var(--casper);
@@ -138,7 +138,7 @@
     color: var(--casper);
 
     &:focus {
-      color: var(--mirage);
+      color: var(--rhino);
     }
   }
 

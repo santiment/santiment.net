@@ -4,15 +4,15 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
-  color: var(--sheets);
-  padding: 7px;
+  color: var(--jungle-green);
+  padding: 7px 0;
   margin-bottom: 30px;
 }
 
 .tooltip {
   max-width: 550px;
   a {
-    color: var(--sheets);
+    color: var(--jungle-green);
   }
 }
 
@@ -25,8 +25,8 @@
 
 .icon {
   margin: 0 0 -3px 6px;
-  color: var(--sheets);
-  fill: var(--sheets);
+  color: var(--jungle-green);
+  fill: var(--jungle-green);
 }
 
 .text {

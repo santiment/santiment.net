@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
 
 body {
-  color: var(--mirage);
+  color: var(--rhino);
   font-size: 16px;
   line-height: 24px;
 }
@@ -37,10 +37,10 @@ section {
 }
 
 .main {
-  margin-top: 120px;
+  margin-top: 80px;
 
   @include responsive('phone', 'phone-xs') {
-    margin-top: 60px;
+    margin-top: 23px;
   }
 }
 

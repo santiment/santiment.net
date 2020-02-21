@@ -12,7 +12,6 @@ import Layout from '../components/layout'
 import SettingsAPIKeys from '../components/Settings/SettingsAPIKeys'
 import SettingsLogout from '../components/Settings/SettingsLogout'
 import GDPR from '../components/GDPR/GDPR'
-import { getCurrentNeuroSubscription } from '../utils/plans'
 import styles from './account.module.scss'
 
 const updateCache = (

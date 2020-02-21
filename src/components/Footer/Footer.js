@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { injectIntl } from 'gatsby-plugin-intl'
 import cx from 'classnames'
-import { trStr } from '../../utils/translate'
+import { trStr, tr } from '../../utils/translate'
 import planetSvg from '../../images/planet.svg'
 import styles from './Footer.module.scss'
 
@@ -22,29 +22,47 @@ const categories = [
     links: [
       {
         children: 'trends',
+        name: 'Social trends',
         href: 'https://app.santiment.net/labs/trends',
       },
       {
         children: 'eth',
+        name: 'Eth spent',
         href: 'https://app.santiment.net/projects/ethereum',
       },
       {
         children: 'balance',
+        name: 'Historical balance',
         href: 'https://app.santiment.net/labs/balance',
       },
-      { children: 'charts', href: 'https://data.santiment.net' },
-      { children: 'sheets', href: 'https://santiment.net/sansheets/' },
+      { children: 'charts',
+        name: 'Studio',
+       href: 'https://app.santiment.net'
+        },
+      { children: 'Sansheets',
+        name: 'Sheets',
+       href: 'https://santiment.net/sansheets/'
+     },
     ],
   },
   {
     title: 'company',
     links: [
-      { children: 'about', href: 'https://santiment.net/about-santiment/' },
-      { children: 'customers', href: 'https://santiment.net/customers/' },
-      { children: 'team', href: 'https://santiment.net/about-santiment/team/' },
-      { children: 'jobs', href: 'https://santiment.net/about-santiment/jobs/' },
+      { children: 'pricing',
+        name: 'Pricing',
+      href: 'https://santiment.net/pricing/'
+       },
+      { children: 'team',
+        name: 'Team',
+      href: 'https://santiment.net/team/'
+    },
+      { children: 'jobs',
+        name: 'Jobs',
+      href: 'https://santiment.net/jobs/'
+    },
       {
         children: 'contact',
+        name: 'Contact us',
         href: 'https://santiment.net/about-santiment/contact/',
       },
     ],
@@ -52,63 +70,46 @@ const categories = [
   {
     title: 'resources',
     links: [
-      {
-        children: 'start',
-        href: 'https://academy.santiment.net/getting-started/',
-      },
-      {
-        children: 'docs',
-        href: 'https://academy.santiment.net/',
-      },
-      { children: 'api', href: 'https://api.santiment.net/graphiql' },
-      { children: 'blog', href: 'https://santiment.net/blog/' },
-      { children: 'source', href: 'https://github.com/santiment/' },
+      { children: 'api',
+        name: 'SanAPI',
+      href: 'https://api.santiment.net/graphiql'
+    },
+      { children: 'data',
+        name: 'Sandata',
+      href: 'https://data.santiment.net/'
+    },
+      { children: 'blog',
+        name: 'Insights',
+      href: 'https://insights.santiment.net/'
+    },
+      { children: 'source',
+        name: 'Source code',
+      href: 'https://github.com/santiment/' },
       {
         children: 'buy',
+        name: 'Buy SAN',
         href:
           'https://academy.santiment.net/san-tokens/buy-san-tokens-using-bancor/',
       },
     ],
-  },
-  {
-    title: 'social',
-    links: [
-      { children: 'discord', href: 'https://santiment.net/discord' },
-      { children: 'telegram', href: 'https://t.me/santiment_network' },
-      { children: 'twitter', href: 'https://twitter.com/santimentfeed' },
-      {
-        children: 'youtube',
-        href: 'https://www.youtube.com/channel/UCSzP_Z3MrygWlbLMyrNmMkg',
-      },
-      {
-        children: 'linkedin',
-        href: 'https://www.linkedin.com/company/santiment',
-      },
-      { children: 'medium', href: 'https://medium.com/santiment' },
-      { children: 'reddit', href: 'https://reddit.com/r/santiment' },
-    ],
-  },
+  }
 ]
 
 const Footer = ({ intl }) => {
   const { link, label } = langProps[+isJapanese()]
+  const year = new Date()
   return (
     <footer className={styles.footer}>
       <div className={styles.top}>
         <ul className={styles.categories}>
           {categories.map(({ title, links }) => (
             <li key={title} className={styles.category}>
-              <h4 className={styles.category__title}>
-                {intl.formatMessage({ id: `footer.${title}` })}
-              </h4>
-              {links.map(({ children, href }, i) => (
+              {links.map(({ children, href, name = '' }, i) => (
                 <a
                   key={i}
                   target='_blank'
                   rel='noopener noreferrer'
-                  children={intl.formatMessage({
-                    id: `footer.${title}.${children}`,
-                  })}
+                  children={tr(`footer.${title}.${children}`, name)}
                   href={title === 'company' ? trStr(intl, `footer.${title}.${children}.link`) : href}
                   className={cx(styles.text, styles.category__item)}
                 />
@@ -129,7 +130,7 @@ const Footer = ({ intl }) => {
             href='https://santiment.net/terms-conditions/'
             className={cx(styles.text, styles.link)}
           >
-            {intl.formatMessage({ id: 'footer.terms' })}
+            {tr('footer.terms', 'Terms')}
           </a>
           <a
             rel='noopener noreferrer'
@@ -137,11 +138,11 @@ const Footer = ({ intl }) => {
             href='https://app.santiment.net/privacy-policy'
             className={cx(styles.text, styles.link)}
           >
-            {intl.formatMessage({ id: 'footer.privacy' })}
+            {tr('footer.privacy', 'Privacy')}
           </a>
         </div>
         <div className={cx(styles.text, styles.rights)}>
-          {intl.formatMessage({ id: 'footer.rights' })}
+          © {year.getFullYear()} {tr('footer.rights', 'Santiment Inc. All rights reserved')}
         </div>
       </div>
     </footer>
