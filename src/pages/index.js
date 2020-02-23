@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import WelcomeBlock from '../components/WelcomeBlock/WelcomeBlock'
 import Cases from '../components/Cases/Cases'
 import TestImonials from '../components/TestImonials/TestImonials'
+import GetStarted from '../components/GetStarted/GetStarted'
 import SEO from '../components/seo'
 import styles from './index.module.scss'
 
@@ -13,6 +14,7 @@ const IndexPage = ({ intl }) => (
     <WelcomeBlock />
     <Cases />
     <TestImonials />
+    <GetStarted />
   </Layout>
 )
 
