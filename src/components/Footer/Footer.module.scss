@@ -7,7 +7,7 @@
   margin: 0;
 
   @include responsive('tablet', 'phone', 'phone-xs') {
-    padding: 56px 24px;
+    padding: 56px 24px 46px;
   }
 }
 
@@ -36,6 +36,10 @@
 
 .logo {
   width: 98px;
+
+  @include responsive('phone-xs') {
+    width: 144px;
+  }
 }
 
 .column__last {
@@ -43,6 +47,10 @@
 
   @include responsive('phone-xs') {
     min-width: auto;
+  }
+
+  @include responsive('phone') {
+    margin-bottom: 20px;
   }
 
   @include responsive('tablet') {
@@ -71,9 +79,14 @@
   max-width: 124px;
   margin: 14px 60px 40px 0;
 
+  @include responsive('laptop') {
+    margin-right: 24px;
+  }
+
   @include responsive('phone', 'phone-xs') {
     margin-right: 0;
     max-width: 190px;
+    @include text('body-3');
   }
 }
 
@@ -270,19 +283,25 @@
 .input {
   height: 46px;
   background: transparent !important;
-  border: 1px solid var(--jungle-green) !important;
-  color: var(--white);
+  border: 1px solid var(--porcelain) !important;
+  color: var(--casper);
   outline: none;
   height: 40px;
   padding-right: 138px;
+
+  &:hover, &:focus {
+    border: 1px solid var(--jungle-green) !important;
+  }
 }
 
 .btn {
-  height: 40px !important;
-  padding: 6px 25px !important;
+  height: 32px !important;
+  padding: 6px 16px !important;
   margin: 0;
   width: auto;
   position: absolute !important;
-  right: 0;
-  top: 0;
+  right: 4px;
+  top: 4px;
+  line-height: 20px !important;
+  font-size: 14px !important;
 }
