@@ -1,9 +1,14 @@
 import React from 'react'
 import cx from 'classnames'
+import { Mutation } from 'react-apollo'
+import Button from '@santiment-network/ui/Button'
+import Input from '@santiment-network/ui/Input'
 import { injectIntl } from 'gatsby-plugin-intl'
 import { trStr, tr } from '../../utils/translate'
 import logo from './images/santiment.svg'
 import android from './images/google_play.svg'
+import { EMAIL_LOGIN_MUTATION } from '../../gql/user'
+import { NotificationsContext } from '../Notifications/Notifications'
 import { categories } from './links'
 import styles from './Footer.module.scss'
 
@@ -59,6 +64,46 @@ const Footer = ({ intl }) => {
               <h4 className={cx(styles.heading, styles.heading__subscribe)}>
                 Subscribe to the weekly digest!
               </h4>
+              <NotificationsContext.Consumer>
+                {({ add: addNot }) => (
+                  <Mutation mutation={EMAIL_LOGIN_MUTATION}>
+                    {(sendConfirmationEmail, { loading }) => (
+                      <form
+                        className={styles.form}
+                        onSubmit={e => {
+                          e.preventDefault()
+                          sendConfirmationEmail({
+                            variables: {
+                              email: e.currentTarget.email.value,
+                            },
+                          }).then(() => {
+                            addNot({
+                              type: 'success',
+                              title: 'Verification email was sent to the provided email!',
+                            })
+                          })
+                        }}
+                      >
+                        <Input
+                          className={styles.input}
+                          type='email'
+                          required
+                          placeholder={'Enter your email'}
+                          name='email'
+                        />
+                        <Button
+                          className={styles.btn}
+                          variant='fill'
+                          accent='positive'
+                          isLoading={loading}
+                        >
+                          {tr('subscribe.btn', "Subscribe")}
+                        </Button>
+                      </form>
+                    )}
+                  </Mutation>
+                )}
+              </NotificationsContext.Consumer>
             </div>
             <div className={styles.app}>
               <h4 className={cx(styles.heading, styles.heading__app)}>

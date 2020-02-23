@@ -85,8 +85,8 @@ export const VERIFY_EMAIL_MUTATION = gql`
 `
 
 export const EMAIL_LOGIN_MUTATION = gql`
-  mutation($email: String!, $consent: String!) {
-    emailLogin(email: $email, consent: $consent) {
+  mutation($email: String!) {
+    emailLogin(email: $email) {
       success
     }
   }
