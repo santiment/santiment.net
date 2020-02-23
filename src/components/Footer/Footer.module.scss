@@ -2,7 +2,7 @@
 
 .footer {
   width: 100%;
-  padding: 64px 24px 54px;
+  padding: 64px 24px 50px;
   background-color: var(--athens);
   margin: 0;
 
@@ -20,24 +20,105 @@
   }
 }
 
+.top {
+  display: flex;
+  justify-content: space-between;
+
+  @include responsive('tablet') {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  @include responsive('phone', 'phone-xs') {
+    flex-direction: column;
+  }
+}
+
+.logo {
+  width: 98px;
+}
+
+.column__last {
+  min-width: 370px;
+
+  @include responsive('phone-xs') {
+    min-width: auto;
+  }
+
+  @include responsive('tablet') {
+    min-width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+  }
+}
+
+.subscribe {
+  min-width: 370px;
+
+  @include responsive('phone-xs') {
+    min-width: auto;
+  }
+
+  @include responsive('tablet') {
+    margin-right: 118px;
+  }
+}
+
+.desc {
+  @include text('caption');
+  color: var(--waterloo);
+  max-width: 124px;
+  margin: 14px 60px 40px 0;
+
+  @include responsive('phone', 'phone-xs') {
+    margin-right: 0;
+    max-width: 190px;
+  }
+}
+
 .categories {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
   flex-wrap: wrap;
+
+  @include responsive('phone-xs') {
+    display: none;
+  }
+}
+
+.categories__mobile {
+  display: none;
+
+  @include responsive('phone-xs') {
+    display: flex;
+    flex-direction: column;
+    max-height: 250px;
+  }
 }
 
 .category {
   display: flex;
   flex-direction: column;
+  margin-right: 70px;
 
-  @include responsive('phone-xs') {
-    width: 50%;
-    text-align: center;
+  @include responsive('laptop') {
+    margin-right: 50px;
+  }
+
+  &:last-child {
+    margin-right: 10px;
   }
 
   &__item {
     margin-bottom: 14px;
+    color: var(--waterloo) !important;
+
+    @include responsive('phone-xs') {
+    width: 50%;
+    display: block;
+    text-align: left;
+  }
   }
 }
 

@@ -6,7 +6,7 @@ const PayWithCrypto = () => (
 	<section className={styles.wrapper}>
 		<h3 className={styles.title}>Pay with crypto</h3>
 		<h3 className={styles.desc}>You can burn SAN tokens or pay by DAI/ETH</h3>
-		<a href="https://academy.santiment.net/products-and-plans/how-to-pay-with-crypto/" className={styles.link} target="_blank">
+		<a href="https://academy.santiment.net/products-and-plans/how-to-pay-with-crypto/" className={styles.link} target="_blank" rel="noopener noreferrer">
 			Learn more
 			<Icon type="pointer-right" className={styles.icon} />
 		</a>

@@ -4,7 +4,6 @@ import cx from 'classnames'
 import Button from '@santiment-network/ui/Button'
 import Features from './Features'
 import PLANS from './prices'
-import { formatPrice } from '../../utils/plans'
 import { tr } from '../../utils/translate'
 import styles from './PlanCard.module.scss'
 
