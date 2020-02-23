@@ -5,9 +5,10 @@ import WelcomeBlock from '../components/WelcomeBlock/WelcomeBlock'
 import Cases from '../components/Cases/Cases'
 import TestImonials from '../components/TestImonials/TestImonials'
 import SEO from '../components/seo'
+import styles from './index.module.scss'
 
 const IndexPage = ({ intl }) => (
-  <Layout>
+  <Layout classes={styles}>
     <SEO title="Santiment - See what other crypto traders are missing" />
     <WelcomeBlock />
     <Cases />
