@@ -20,9 +20,9 @@ const Header = ({ isAccountPage, intl }) => {
 
           <div className={styles.product}>
             <div className={styles.products}>
-              <a className={styles.logo} href='https://santiment.net'>
+              <Link className={styles.logo} to="/">
                 <img src={mainLogo} alt='logo' />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@ const Header = ({ isAccountPage, intl }) => {
           <label htmlFor='hamburger' className={styles.close}>
             <Icon type='close' />
           </label>
-          <Link className={styles.link} to='/#pricing' onClick={closeNav}>
+          <Link className={styles.link} to='/pricing' onClick={closeNav}>
             {tr('header.pricing', "Pricing")}
           </Link>
           <div className={styles.dividerRight}/>

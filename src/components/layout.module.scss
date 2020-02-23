@@ -38,6 +38,7 @@ section {
 
 .main {
   margin-top: 80px;
+  min-height: 30vh;
 
   @include responsive('phone', 'phone-xs') {
     margin-top: 23px;
@@ -46,10 +47,6 @@ section {
 
 :global(#___gatsby) {
   overflow-x: hidden;
-
-  @include responsive('laptop') {
-    padding: 0 15px;
-  }
 }
 
 :global(.intercom-namespace .intercom-1tsyd6q) {

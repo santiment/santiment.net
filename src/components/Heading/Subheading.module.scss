@@ -1,0 +1,13 @@
+@import '~@santiment-network/ui/mixins.scss';
+
+.text {
+	text-align: center;
+	@include text('h3', 'm');
+	color: var(--rhino);
+	margin-bottom: 48px;
+
+	@include responsive('phone-xs', 'phone') {
+		margin-bottom: 32px;
+		@include text('h4', 'm');
+	}
+}

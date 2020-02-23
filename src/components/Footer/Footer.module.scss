@@ -1,16 +1,22 @@
 @import '~@santiment-network/ui/mixins.scss';
 
 .footer {
-  max-width: 1140px;
-  margin: 150px auto 0;
+  width: 100%;
+  padding: 64px 24px 54px;
+  background-color: var(--athens);
+  margin: 0;
 
-  @include responsive('tablet') {
-    max-width: 768px;
+  @include responsive('tablet', 'phone', 'phone-xs') {
+    padding: 56px 24px;
   }
+}
 
-  @include responsive('phone', 'phone-xs') {
+.content {
+  max-width: 1140px;
+  margin: 0 auto;
+
+  @include responsive('phone-xs') {
     width: 100%;
-    padding: 0 15px;
   }
 }
 
@@ -25,7 +31,7 @@
   display: flex;
   flex-direction: column;
 
-  @include responsive('phone', 'phone-xs') {
+  @include responsive('phone-xs') {
     width: 50%;
     text-align: center;
   }
@@ -36,26 +42,45 @@
 }
 
 .text {
-  font-size: 14px;
-  color: var(--waterloo);
+  @include text('body-3');
+  color: var(--casper);
 }
 
 .bottom {
-  padding: 28px 0;
+  padding: 28px 0 0;
   border-top: 1px solid var(--porcelain);
   display: flex;
+  align-items: center;
   justify-content: space-between;
 
-  @include responsive('phone', 'phone-xs') {
+  @include responsive('phone-xs') {
     text-align: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    border: none;
+  }
+
+  @include responsive('tablet', 'phone') {
+    flex-direction: row-reverse;
   }
 }
 
 .rights {
   color: var(--casper);
-  @include responsive('phone', 'phone-xs') {
-    margin-top: 20px;
+  @include responsive('phone-xs') {
+    margin-top: 16px;
+  }
+
+  @include responsive('tablet', 'phone') {
+    display: none;
+  }
+
+  &__additional {
+    display: none;
+    @include responsive('tablet', 'phone') {
+      display: block;
+      text-align: right;
+      margin-top: 4px;
+    }
   }
 }
 
@@ -67,6 +92,84 @@
   }
 }
 
-.planet {
-  margin: 0 6px -3px 0;
+
+.heading {
+  @include text('body-3', 'm');
+  color: var(--waterloo);
+  margin-bottom: 12px;
+
+  @include responsive('phone-xs') {
+    margin-bottom: 16px;
+    @include text('body-2', 'm');
+    text-align: left;
+    margin-right: auto;
+  }
+}
+
+
+.social {
+  display: flex;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+
+  @include responsive('phone-xs') {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--porcelain);
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    fill: var(--rhino);
+  }
+
+  &__heading {
+    display: none;
+
+    @include responsive('phone-xs') {
+      display: block;
+    }
+  }
+
+  &__link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+    @include responsive('phone-xs') {
+      border: 1px solid var(--porcelain);
+      border-radius: 4px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      .twitter {
+        fill: #1da1f2;
+      }
+
+      .telegram {
+        fill: #0088cc;
+      }
+
+      .discord {
+        fill: #7289da;
+      }
+
+      .youtube {
+        fill: #ff0000;
+      }
+
+      .github {
+        fill: #171515;
+      }
+    }
+  }
 }

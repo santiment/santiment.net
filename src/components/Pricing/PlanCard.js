@@ -44,7 +44,7 @@ const PlanCard = ({
       </div>
       <div className={styles.price}>
         <span>from {price}</span>
-        <span className={styles.period}>/ {tr('billing.month.short', 'mo')}</span>
+        <span className={styles.period}> /{tr('billing.month.short', 'mo')}</span>
       </div>
       <div className={styles.desc}>{card.desc}</div>
       <div className={styles.details}>

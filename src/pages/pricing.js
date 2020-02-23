@@ -4,10 +4,11 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Pricing from '../components/Pricing'
 
-const IndexPage = ({ intl }) => (
+const PricingPage = ({ intl }) => (
   <Layout>
-    <SEO title="Santiment - See what other crypto traders are missing" />
+    <SEO title="Santiment Pricing" />
+    <Pricing />
   </Layout>
 )
 
-export default injectIntl(IndexPage)
+export default injectIntl(PricingPage)
