@@ -1,9 +1,10 @@
 import React, { useRef } from 'react'
+import cx from 'classnames'
 import Icon from '@santiment-network/ui/Icon'
 import { injectIntl, Link } from 'gatsby-plugin-intl'
-import AccountBtn from '../AccountBtn/AccountBtn'
 import { tr } from '../../utils/translate'
 import mainLogo from './../../images/logos/santiment.svg'
+import SantimentProductsTooltip from '../SantimentProductsTooltip/SantimentProductsTooltip'
 import styles from './Header.module.scss'
 
 const Header = ({ isAccountPage, intl }) => {
@@ -15,13 +16,12 @@ const Header = ({ isAccountPage, intl }) => {
 
   return (
     <header className={styles.header}>
-      <div  className={styles.container}>
+      <div className={styles.container}>
         <div className={styles.left}>
-
           <div className={styles.product}>
             <div className={styles.products}>
-              <Link className={styles.logo} to="/">
-                <img src={mainLogo} alt='logo' width="105px" />
+              <Link className={styles.logo} to='/'>
+                <img src={mainLogo} alt='logo' width='105px' />
               </Link>
             </div>
           </div>
@@ -34,9 +34,18 @@ const Header = ({ isAccountPage, intl }) => {
           <label htmlFor='hamburger' className={styles.close}>
             <Icon type='close' />
           </label>
+          <div className={styles.link}>
+            <SantimentProductsTooltip intl={intl}>
+              <div>Products</div>
+            </SantimentProductsTooltip>
+          </div>
           <Link className={styles.link} to='/pricing' onClick={closeNav}>
-            {tr('header.pricing', "Pricing")}
+            {tr('header.pricing', 'Pricing')}
           </Link>
+          <a href="https://academy.santiment.net/" target="_blank" rel="noopener noreferrer" className={styles.link}>
+            Academy
+            <Icon type="external-link" className={styles.external} />
+          </a>
         </nav>
       </div>
     </header>

@@ -82,12 +82,20 @@
 
 .link {
   color: var(--waterloo);
-  margin-right: 32px;
+  margin-left: 32px;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    & .external {
+      fill: var(--jungle-green);
+    }
+  }
 
   @include text('body-2');
 
   @include responsive('phone', 'phone-xs') {
-    margin-right: 0;
+    margin-left: 0;
     margin-bottom: 20px;
     color: var(--athens);
   }
@@ -137,4 +145,9 @@
   &:hover {
     fill: var(--dodger-blue);
   }
+}
+
+.external {
+  margin-left: 5px;
+  fill: var(--waterloo);
 }
