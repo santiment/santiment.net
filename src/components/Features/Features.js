@@ -2,9 +2,10 @@ import React from 'react'
 import cx from 'classnames'
 import Icon from '@santiment-network/ui/Icon'
 import Heading from '../Heading/Heading'
+import Tabs from './Tabs'
 import TryButton from './Button'
-import trends from './trends.png'
-import insights from './insights.png'
+import trends from './images/trends.png'
+import insights from './images/insights.png'
 import styles from './Features.module.scss'
 
 const Features = () => (
@@ -72,6 +73,7 @@ const Features = () => (
         <TryButton />
       </div>
     </div>
+    <Tabs />
   </div>
 )
 

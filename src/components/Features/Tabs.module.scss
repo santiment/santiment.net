@@ -1,0 +1,93 @@
+@import '~@santiment-network/ui/mixins.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  width: 100%;
+}
+
+.desc {
+  @include text('body-1');
+  color: var(--waterloo);
+  margin-bottom: 22px;
+
+  @include responsive('laptop') {
+    // margin-bottom: 18px;
+    @include text('body-2');
+  }
+}
+
+.title {
+  @include text('h3', 'm');
+  color: var(--rhino);
+  margin-bottom: 16px;
+
+  @include responsive('laptop') {
+    // margin-bottom: 10px;
+    @include text('h4', 'm');
+  }
+}
+
+.tabs {
+  background-color: var(--athens);
+  padding: 16px 0 16px 10px;
+  border-radius: 8px;
+  margin-right: 72px;
+}
+
+.item {
+  @include text('body-2');
+  color: var(--waterloo);
+  padding: 12px 22px 12px 48px;
+  margin-bottom: 8px;
+
+  @include responsive('laptop') {
+    margin-bottom: 4px;
+  @include text('body-3');
+  }
+
+  &:hover {
+    color: var(--rhino);
+    cursor: pointer;
+  }
+
+  &__active {
+    color: var(--rhino);
+    border-radius: 100px 0px 0px 100px;
+    background-color: var(--white);
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    &:before {
+      background-color: var(--jungle-green-light);
+      width: 28px;
+      height: 28px;
+      left: 10px;
+      top: 10px;
+    }
+
+    &:after {
+      background-color: var(--jungle-green);
+      width: 8px;
+      height: 8px;
+      left: 20px;
+      top: 20px;
+    }
+  }
+}
