@@ -1,0 +1,144 @@
+@import '~@santiment-network/ui/mixins';
+@import '~@santiment-network/ui/variables';
+
+.card {
+  position: relative;
+  background: var(--white);
+  display: inline-block;
+  border: 1px solid var(--porcelain);
+  padding: 32px 24px 28px;
+  transition: transform 200ms;
+  flex: 1;
+
+  &:hover {
+    z-index: 2;
+    border-radius: 4px;
+    box-shadow: 0 14px 20px rgba(24, 27, 43, 0.06);
+    transform: scale(1.03);
+  }
+
+  @include responsive('tablet', 'phone', 'phone-xs') {
+    margin-bottom: 20px;
+    border-radius: 4px;
+
+    &:hover {
+      transform: none;
+      box-shadow: none;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &_active {
+    z-index: 3;
+    border-radius: 4px !important;
+    box-shadow: 0 14px 20px rgba(24, 27, 43, 0.06) !important;
+    transform: scale(1.03) !important;
+    border-color: var(--jungle-green);
+  }
+
+  &__title {
+    @include text('h4', 'm');
+
+    display: flex;
+    align-items: center;
+
+    @include responsive('tablet', 'phone', 'phone-xs') {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__arrow {
+    min-width: 15px;
+
+    @include responsive('desktop', 'laptop') {
+      display: none;
+    }
+  }
+
+  &_opened {
+    .details {
+      display: block;
+
+      &_custom {
+        margin-top: 36px;
+      }
+    }
+
+    .card__arrow {
+      transform: rotate(180deg);
+      fill: var(--jungle-green);
+    }
+  }
+}
+
+.desc {
+  margin-top: 3px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--waterloo);
+  @include responsive('desktop', 'laptop') {
+    min-height: 40px;
+  }
+}
+
+.details {
+  @include responsive('tablet', 'phone', 'phone-xs') {
+    display: none;
+  }
+
+  margin-top: 20px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 44px;
+
+  &__type {
+    color: var(--waterloo);
+    font-size: 16px;
+    font-weight: 100;
+  }
+}
+
+.feature {
+  padding-left: 18px;
+  margin-bottom: 16px;
+  font-size: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.more {
+  height: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  justify-content: center;
+
+  &:hover {
+    color: var(--accent, var(--rhino));
+  }
+}
+
+.price {
+  @include text('h4', 'm');
+  color: var(--rhino);
+  margin: 8px 0 5px;
+}
+
+.period {
+  @include text('body-1');
+  color: var(--casper);
+}

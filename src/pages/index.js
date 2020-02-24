@@ -1,19 +1,25 @@
-import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import styles from "./index.module.scss";
-import Body from "../components/body/body";
-import LangWrapper from "../components/LangWrapper";
+import React from 'react'
+import { injectIntl } from 'gatsby-plugin-intl'
+import Layout from '../components/layout'
+import WelcomeBlock from '../components/WelcomeBlock/WelcomeBlock'
+import Feed from '../components/Feed/Feed'
+import Cases from '../components/Cases/Cases'
+import TestImonials from '../components/TestImonials/TestImonials'
+import Features from '../components/Features/Features'
+import GetStarted from '../components/GetStarted/GetStarted'
+import SEO from '../components/seo'
+import styles from './index.module.scss'
 
-const IndexPage = () => (
-    <LangWrapper>
-        <Layout>
-            <SEO title="Santiment's JP Magazine - Crypto’s Most Comprehensive API" />
-            <section className={styles.wrapper}>
-                <Body />
-            </section>
-        </Layout>
-    </LangWrapper>
-);
+const IndexPage = ({ intl }) => (
+  <Layout classes={styles}>
+    <SEO title="Santiment - See what other crypto traders are missing" />
+    <WelcomeBlock />
+    <Feed />
+    <Cases />
+    <Features />
+    {/* <TestImonials /> */}
+    <GetStarted />
+  </Layout>
+)
 
-export default IndexPage;
+export default injectIntl(IndexPage)

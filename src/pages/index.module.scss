@@ -1,6 +1,9 @@
-@import '../../node_modules/@santiment-network/ui/mixins';
-@import '../../node_modules/@santiment-network/ui/variables';
+@import '~@santiment-network/ui/mixins';
 
-.wrapper {
-  display: flex;
+.main {
+	background: url('../images/bg.svg') repeat-x center -150px;
+
+	@include responsive('phone-xs', 'phone') {
+		background: none;
+	}
 }

@@ -5,7 +5,6 @@ import Icon from '@santiment-network/ui/Icon'
 import sanbaseLogoImg from './../../images/logos/logo-sanbase.svg'
 import sheetsLogoImg from './../../images/logos/logo-sheets.svg'
 import neuroLogoImg from './../../images/logos/logo-neuro.svg'
-import tr from "../../translations/translate";
 import styles from './SantimentProductsTooltip.module.scss'
 
 const PRODUCTS = [
@@ -13,42 +12,52 @@ const PRODUCTS = [
     img: sanbaseLogoImg,
     title: 'Sanbase',
     description: 'header.product.sanbase',
-    to: 'https://app.santiment.net'
+    to: 'https://app.santiment.net',
+    showLink: true,
   },
   {
     img: sheetsLogoImg,
-    title: 'Sheets',
+    title: 'Sansheets',
     description: 'header.product.sheets',
-    to: 'https://sheets.santiment.net'
+    to: 'https://sheets.santiment.net',
+    showLink: true,
   },
   {
     img: neuroLogoImg,
-    title: 'API',
+    title: 'SanAPI',
     description: 'header.product.neuro',
-    to: 'https://neuro.santiment.net'
+    to: 'https://neuro.santiment.net',
+    showLink: true,
   }
 ]
 
-const ProductItem = ({ product: { to, img, title, description } }) => {
+const ProductItem = ({
+                       intl,
+                       product: { to, img, title, description, showLink = true },
+                       className
+                     }) => {
   return (
-    <a className={styles.wrapper} href={to}>
+    <a className={cx(styles.wrapper, className)} href={to}>
       <div className={cx(styles.product, styles.wrapper__product)}>
-        <img className={styles.product__img} src={img} alt={title} />
+        {img && <img className={styles.product__img} src={img} alt={title} />}
         <div className={styles.product__info}>
           <div className={styles.product__title}>{title}</div>
-          <div className={styles.product__description}>{tr(description)}</div>
+          <div className={styles.product__description}>{intl.formatMessage({ id: description })}</div>
 
-          <MakeLink
-            className={cx(styles.wrapper__link)}
-            to={to}
-            as={'div'}
-            title={'Go to ' + title}
-          />
+          {showLink && (
+            <MakeLink
+              className={cx(styles.wrapper__link)}
+              to={to}
+              as={'div'}
+              title={'Go to ' + title}
+            />
+          )}
         </div>
       </div>
     </a>
   )
 }
+
 
 const MakeLink = ({ to, title, className, as: El = 'a' }) => (
   <El href={to} className={cx(styles.link, className)}>
@@ -56,10 +65,10 @@ const MakeLink = ({ to, title, className, as: El = 'a' }) => (
   </El>
 )
 
-const OpenTrigger = () => <Icon type='arrow-down' />
-const CloseTrigger = () => <Icon type='arrow-up' />
+const OpenTrigger = () => <Icon type='arrow-down' className={styles.arrowIcon} />
+const CloseTrigger = () => <Icon type='arrow-up' className={styles.arrowIcon}/>
 
-const SantimentProductsTooltip = ({ className, children }) => {
+const SantimentProductsTooltip = ({ className, intl, children }) => {
   const [isOpen, setOpen] = useState(false)
 
   return (
@@ -68,7 +77,7 @@ const SantimentProductsTooltip = ({ className, children }) => {
       closeTimeout={150}
       position='bottom'
       align='start'
-      offsetY={20}
+      offsetY={7}
       className={styles.tooltip}
       trigger={
         <div className={cx(className, styles.trigger)}>
@@ -87,12 +96,12 @@ const SantimentProductsTooltip = ({ className, children }) => {
     >
       <div className={styles.container}>
         <div className={styles.header}>
-          <div className={styles.title}>{tr('header.products')}</div>
-          <MakeLink to='https://santiment.net' title={tr('header.santiment.goto')}/>
+          <div className={styles.title}>{intl.formatMessage({ id: 'header.products' })}</div>
+          <MakeLink to='https://santiment.net' title={intl.formatMessage({ id: 'header.santiment.goto' })}/>
         </div>
         <div className={styles.products}>
           {PRODUCTS.map((item, index) => (
-            <ProductItem key={index} product={item} />
+            <ProductItem key={index} product={item} intl={intl} />
           ))}
         </div>
       </div>
