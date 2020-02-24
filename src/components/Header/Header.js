@@ -3,7 +3,7 @@ import Icon from '@santiment-network/ui/Icon'
 import { injectIntl, Link } from 'gatsby-plugin-intl'
 import AccountBtn from '../AccountBtn/AccountBtn'
 import { tr } from '../../utils/translate'
-import mainLogo from './../../images/logos/main-logo.svg'
+import mainLogo from './../../images/logos/santiment.svg'
 import styles from './Header.module.scss'
 
 const Header = ({ isAccountPage, intl }) => {
@@ -21,7 +21,7 @@ const Header = ({ isAccountPage, intl }) => {
           <div className={styles.product}>
             <div className={styles.products}>
               <Link className={styles.logo} to="/">
-                <img src={mainLogo} alt='logo' />
+                <img src={mainLogo} alt='logo' width="105px" />
               </Link>
             </div>
           </div>
@@ -37,8 +37,6 @@ const Header = ({ isAccountPage, intl }) => {
           <Link className={styles.link} to='/pricing' onClick={closeNav}>
             {tr('header.pricing', "Pricing")}
           </Link>
-          <div className={styles.dividerRight}/>
-          <AccountBtn isAccountPage={isAccountPage} onClick={closeNav} />
         </nav>
       </div>
     </header>

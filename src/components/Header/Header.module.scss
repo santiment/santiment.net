@@ -13,14 +13,11 @@
   user-select: none;
   max-width: 1140px;
   margin: 0 auto;
-
-  @include responsive('tablet') {
-    max-width: 768px;
-  }
+  padding: 0 24px;
 
   @include responsive('phone', 'phone-xs') {
     width: 100%;
-    padding: 20px 15px;
+    padding: 20px 24px;
   }
 }
 
