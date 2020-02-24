@@ -1,0 +1,24 @@
+@import '~@santiment-network/ui/mixins';
+
+.wrapper {
+	padding: 0 24px;
+}
+
+.widget {
+	max-width: 980px;
+	margin: 0 auto 40px;
+	width: 100%;
+	padding: 0 24px;
+}
+
+.desc {
+	max-width: 722px;
+	@include text('body-1');
+	color: var(--waterloo);
+	margin: 0 auto 60px;
+	text-align: center;
+}
+
+.title {
+	margin-bottom: 16px;
+}
