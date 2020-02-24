@@ -17,7 +17,7 @@ const IndexPage = ({ intl }) => (
     <Feed />
     <Cases />
     <Features />
-    <TestImonials />
+    {/* <TestImonials /> */}
     <GetStarted />
   </Layout>
 )
