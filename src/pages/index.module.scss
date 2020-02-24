@@ -1,7 +1,7 @@
 @import '~@santiment-network/ui/mixins';
 
 .main {
-	background: url('../images/bg.svg') repeat-x center -200px;
+	background: url('../images/bg.svg') repeat-x center -150px;
 
 	@include responsive('phone-xs', 'phone') {
 		background: none;
