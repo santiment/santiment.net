@@ -4,7 +4,7 @@ export const categories = [
       {
         children: 'about',
         name: 'About us',
-        href: 'https://santiment.net/about-santiment/'
+        href: 'https://santiment.net/about-us/'
       },
       {
         children: 'pricing',

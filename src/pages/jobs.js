@@ -4,7 +4,6 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import GetStarted from '../components/GetStarted/GetStarted'
 import Subheading from '../components/Heading/Subheading'
-import Pricing from '../components/Pricing'
 import styles from './jobs.module.scss'
 
 const JobsPage = ({ intl }) => (

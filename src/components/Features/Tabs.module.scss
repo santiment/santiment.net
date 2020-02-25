@@ -32,7 +32,7 @@
   @include text('body-1');
   color: var(--waterloo);
   margin-bottom: 22px;
-  text-align: center;
+  text-align: left;
 
   @include responsive('laptop') {
     @include text('body-2');
@@ -40,6 +40,7 @@
 
   @include responsive('phone-xs', 'phone', 'tablet') {
     @include text('body-2');
+    text-align: center;
   }
 }
 
@@ -119,13 +120,11 @@
   }
 }
 
-
 @import '~@santiment-network/ui/mixins.scss';
 
 .container {
   position: relative;
 }
-
 
 .slider {
   text-align: center;
@@ -145,11 +144,11 @@
 
 .content {
   @include responsive('phone-xs', 'phone', 'tablet') {
-  outline: none;
-  display: flex !important;
-  flex-direction: column;
-  height: 100%;
-}
+    outline: none;
+    display: flex !important;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 .arrow {
@@ -189,7 +188,6 @@
     }
   }
 }
-
 
 :global {
   /* Slider */

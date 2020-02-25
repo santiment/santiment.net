@@ -124,7 +124,7 @@ const Footer = ({ intl }) => {
             <a
               target='_blank'
               rel='noopener noreferrer'
-              href='https://santiment.net/terms-conditions/'
+              href='https://santiment.net/terms/'
               className={cx(styles.text, styles.link)}
             >
               {tr('footer.terms', 'Terms')}
