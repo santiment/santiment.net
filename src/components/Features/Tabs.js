@@ -40,7 +40,7 @@ const Tabs = () => {
         <div className={styles.content}>
           <h4 className={styles.title}>{active.title}</h4>
           <div className={styles.desc}>{active.description}</div>
-          <img className={styles.img} src={active.img} />
+          <img className={styles.img} src={active.img} alt="" />
         </div>
       </div>
       <div className={styles.container}>
@@ -72,7 +72,7 @@ const Tabs = () => {
               <div className={styles.content} key={item.title}>
                 <h4 className={styles.title}>{item.title}</h4>
                 <div className={styles.desc}>{item.description}</div>
-                <img className={styles.img} src={item.img} />
+                <img className={styles.img} src={item.img} alt="" />
               </div>
             ))}
           </Slider>

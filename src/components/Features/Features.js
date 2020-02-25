@@ -1,6 +1,5 @@
 import React from 'react'
 import cx from 'classnames'
-import Icon from '@santiment-network/ui/Icon'
 import Heading from '../Heading/Heading'
 import Tabs from './Tabs'
 import TryButton from './Button'
@@ -14,7 +13,7 @@ const Features = () => (
     <div className={cx(styles.feature, styles.feature__trends)}>
         <h4 className={cx(styles.title,styles.title__mobile)}>Emerging Social Trends</h4>
       <div className={styles.img__wrapper}>
-        <img className={styles.img__trends} src={trends} />
+        <img className={styles.img__trends} src={trends} alt="" />
         <a
           target='_blank'
           rel='noopener noreferrer'
@@ -43,7 +42,7 @@ const Features = () => (
           Insights and behavioral reports about the markets
         </h4>
       <div className={styles.img__wrapper}>
-        <img className={styles.img__insights} src={insights} />
+        <img className={styles.img__insights} src={insights} alt="" />
         <a
           target='_blank'
           rel='noopener noreferrer'

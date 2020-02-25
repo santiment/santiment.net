@@ -48,7 +48,7 @@ export const data = [
 	{
 		title: 'Price-DAA divergence signals',
 		description: "By tracking divergence trends in price and on-chain activity, our data can produce strong buy and sell signals for BTC, ETH and a variety of altcoins",
-		img: signals
+		img: daa_signals
 	},
 	{
 		title: 'Whale tracking and monitoring',

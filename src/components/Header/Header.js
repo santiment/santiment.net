@@ -1,5 +1,4 @@
 import React, { useRef } from 'react'
-import cx from 'classnames'
 import Icon from '@santiment-network/ui/Icon'
 import { injectIntl, Link } from 'gatsby-plugin-intl'
 import { tr } from '../../utils/translate'

@@ -28,18 +28,16 @@ import Vassil from './images/Vassil.png'
 import Yordan from './images/Yordan.png'
 import Yura from './images/Yura.png'
 
-export const GROUPS = [
-  {
+export const GROUPS = {
     CORE: 'Core team',
     RESEARCH: 'Research Group',
+    DEVS: 'Development team',
     COMMUNICATIONS: 'Communications',
     MARKETING: 'Marketing',
-    DESIGN: 'Design',
     BISUNESS: 'Business Development',
-    DEVS: 'Development team',
+    DESIGN: 'Design',
     ADVISORS: 'Advisors'
   }
-]
 
 export const PEOPLE = [
   {
@@ -97,19 +95,6 @@ export const PEOPLE = [
     ]
   },
   {
-    name: 'Alexander Grablevski',
-    position: 'Data Scientist',
-    group: GROUPS.RESEARCH,
-    img: Alex,
-    description:
-      'He has a Major in Economics, enjoys DS and ML, and has deep experience in econometrics, including awards in several Econometric competitions. He also has a passion for discovering crypto space and used to work as analyst of crypto projects. He currently is a teacher for Cryptocurrencies and Derivatives course in Belarusian National Technical University. Likes learning and discovering new things.',
-    links: [
-      {
-        linkedin: 'https://www.linkedin.com/in/alexander-grablevski-4544a7149/'
-      }
-    ]
-  },
-  {
     name: 'Jan Smirny',
     position: 'Data Scientist',
     group: GROUPS.RESEARCH,
@@ -133,6 +118,19 @@ export const PEOPLE = [
       {
         linkedin: 'https://www.linkedin.com/in/irina-pranovich-93400310a/',
         github: 'https://github.com/ipranovich'
+      }
+    ]
+  },
+  {
+    name: 'Alexander Grablevski',
+    position: 'Data Scientist',
+    group: GROUPS.RESEARCH,
+    img: Alex,
+    description:
+      'He has a Major in Economics, enjoys DS and ML, and has deep experience in econometrics, including awards in several Econometric competitions. He also has a passion for discovering crypto space and used to work as analyst of crypto projects. He currently is a teacher for Cryptocurrencies and Derivatives course in Belarusian National Technical University. Likes learning and discovering new things.',
+    links: [
+      {
+        linkedin: 'https://www.linkedin.com/in/alexander-grablevski-4544a7149/'
       }
     ]
   },
@@ -343,7 +341,6 @@ export const PEOPLE = [
   {
     name: 'Yordan Pavlov',
     position: 'Big Data Engineer',
-    group: GROUPS.DEVS,
     img: Yordan,
     group: GROUPS.RESEARCH,
     description:
@@ -400,7 +397,7 @@ export const PEOPLE = [
   {
     name: 'Lyudmil Danailov',
     position: 'Junior Developer',
-    group: GROUPS.DEVS,
+    group: GROUPS.RESEARCH,
     img: Lyudmil,
     description:
       'Lyudmil is starting his career in development while studying Informatics at Sofia University. He’s also a martial artist and guitar player, and really enjoys reading books in English (and in the future, maybe Italian, French or Japanese). He also loves spending time with his girlfriend and playing with his dog in his hometown of Varna.',

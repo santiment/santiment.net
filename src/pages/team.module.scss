@@ -3,6 +3,8 @@
 .wrapper {
   padding: 0 24px;
   margin-bottom: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .title {
@@ -40,4 +42,43 @@
 	& img {
 		max-width: 100%;
 	}
+}
+
+.item {
+	max-width: 330px;
+	margin: 0 40px 30px 0;
+
+	@include responsive('phone-xs', 'phone') {
+		margin: 0 auto 30px;
+	}
+}
+
+.group {
+	@include text('body-2', 'm');
+	padding: 0 0 8px;
+	border-bottom: 1px solid var(--porcelain);
+	margin: 40px 0 36px;
+	color: var(--waterloo);
+}
+
+.container {
+	@include grid-wrap(3);
+}
+
+.name {
+	@include text('h4', 'm');
+	color: var(--rhino);
+	margin: 24px 0 4px;
+}
+
+.position {
+	@include text('body-2');
+	color: var(--jungle-green);
+	margin-bottom: 16px;
+}
+
+.description {
+	margin-top: 18px;
+	@include text('body-3');
+	color: var(--waterloo);
 }

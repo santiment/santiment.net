@@ -11,12 +11,12 @@ import styles from './Feed.module.scss'
 
 const Feed = () => (
   <div className={styles.wrapper}>
-    <img className={styles.img} src={trends} />
-    <img className={styles.img} src={insight} />
-    <img className={styles.img} src={signal} />
-    <img className={styles.img__mobile} src={trendsMobile} />
-    <img className={styles.img__mobile} src={insightMobile} />
-    <img className={styles.img__mobile} src={signalMobile} />
+    <img className={styles.img} src={trends} alt="" />
+    <img className={styles.img} src={insight} alt="" />
+    <img className={styles.img} src={signal} alt="" />
+    <img className={styles.img__mobile} src={trendsMobile} alt="" />
+    <img className={styles.img__mobile} src={insightMobile} alt="" />
+    <img className={styles.img__mobile} src={signalMobile} alt="" />
     <Button
       className={styles.btn}
       variant='flat'
