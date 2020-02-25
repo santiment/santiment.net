@@ -45,6 +45,7 @@ export const PEOPLE = [
     img: Maksim,
     position: 'Founder',
     group: GROUPS.CORE,
+    sanbaseLink: 'https://app.santiment.net/profile/836',
     description:
       'Veteran product creator and entrepreneur with more than 15 years experience leading international teams, and more than 10 years in financial markets analysis. A distinguished sentiment analyst and crowd psychology expert, he’s a regular media commentator who has been featured in Forbes and other financial publications. He also draws on his unique background in a yogic way of life to foster a human-focused, balanced approach to building communities and decentralized platforms.',
     links: {
@@ -56,6 +57,7 @@ export const PEOPLE = [
     img: Valentin,
     position: 'CTO',
     group: GROUPS.CORE,
+    sanbaseLink: 'https://app.santiment.net/profile/121',
     description:
       'Software engineer with 10+ years experience building startups, plus a silver medal winner on the International Olympiad of Informatics 2004. He loves building great products, performance optimizations and advanced software like AI and scalable systems. When he’s not cracking up code, he’s trekking in the mountains or kitesurfing on the beach.',
     links: {
@@ -68,6 +70,7 @@ export const PEOPLE = [
     name: 'Yura Zatsepin',
     img: Yura,
     position: 'Product Dev Lead',
+    sanbaseLink: 'https://app.santiment.net/profile/120',
     group: GROUPS.CORE,
     description:
       'He’s developed a guitar education service, online payment services for banks, and MMO mobile/flash games and extensions for purchase. He also won first place in 2 hackathons (Gazprom, QIWI) and got special prizes from Evernote. He now wants to turn his passion for building great applications toward the crypto world.',
@@ -230,6 +233,7 @@ export const PEOPLE = [
     position: 'Project Coordinator',
     img: Garry,
     group: GROUPS.BISUNESS,
+    sanbaseLink: 'https://app.santiment.net/profile/6',
     description:
       'Organizer, structurizer, and master in wrangling complex data into manageable forms. Keeps Santiment projects running smoothly and never stops learning. Aviator.',
     links: {
@@ -241,6 +245,7 @@ export const PEOPLE = [
     position: 'Content & SEO',
     group: GROUPS.MARKETING,
     img: Dino,
+    sanbaseLink: 'https://app.santiment.net/profile/1269',
     description:
       'Resident wordsmith and SEO nerd, Dino oversees all things content. He’s worked in a medley of startups big and small before joining Santiment, specializing in content creation, search engine optimization and many other -ations. He has since caught the crypto bug and is currently a refreshingly average swing trader. Get in touch with him to talk content collabs and/or favorite html tags.',
     links: {

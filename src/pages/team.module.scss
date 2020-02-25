@@ -75,6 +75,7 @@
 	@include text('body-2');
 	color: var(--jungle-green);
 	margin-bottom: 16px;
+	display: block;
 }
 
 .description {
@@ -85,4 +86,9 @@
 
 .icons {
 	margin: 16px 0 0;
+}
+
+.arrow {
+	margin-left: 6px;
+	fill: var(--casper);
 }

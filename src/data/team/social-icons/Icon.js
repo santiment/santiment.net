@@ -6,7 +6,7 @@ import Twitter from './Twitter'
 import LinkedIn from './LinkedIn'
 import Medium from './Medium'
 
-export const Icon = ({ type, href, className }) => {
+export const SocialIcon = ({ type, href, className }) => {
   return (
     <a href={href} target='_blank' rel='noopener noreferrer'>
       {type === 'linkedin' && <LinkedIn className={className} />}
