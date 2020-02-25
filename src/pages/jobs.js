@@ -20,7 +20,7 @@ const JobsPage = ({ intl }) => (
       </div>
       <div className={styles.widget}>
         {/* Recooty Widget START */}
-          <iframe id="iframe-container-1" width="100%" height="250" frameborder="0" src="https://widget.recooty.com/openings.php?key=5b86a52a1629a2613c83154ee16153d23e70d73ff0b6b"></iframe>
+          <iframe title="jobs" id="iframe-container-1" width="100%" height="250" frameborder="0" src="https://widget.recooty.com/openings.php?key=5b86a52a1629a2613c83154ee16153d23e70d73ff0b6b"></iframe>
         {/* Recooty Widget END */}
       </div>
     </div>

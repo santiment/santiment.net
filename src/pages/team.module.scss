@@ -1,0 +1,94 @@
+@import '~@santiment-network/ui/mixins';
+
+.wrapper {
+  padding: 0 24px;
+  margin-bottom: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 16px;
+}
+
+.desc {
+  max-width: 722px;
+  @include text('body-1');
+  color: var(--waterloo);
+  margin: 0 auto 60px;
+  text-align: center;
+
+   @include responsive('phone-xs') {
+    @include text('body-2');
+  margin: 0 auto 40px;
+    }
+}
+
+.icon {
+	fill: var(--waterloo);
+	margin-right: 14px;
+	cursor: poiner;
+
+	&:hover {
+		fill: var(--rhino);
+	}
+}
+
+.img {
+	width: 124px;
+	height: 124px;
+	object-fit: contain;
+
+	& img {
+		max-width: 100%;
+	}
+}
+
+.item {
+	max-width: 330px;
+	margin: 0 40px 30px 0;
+
+	@include responsive('phone-xs', 'phone') {
+		margin: 0 auto 30px;
+	}
+}
+
+.group {
+	@include text('body-2', 'm');
+	padding: 0 0 8px;
+	border-bottom: 1px solid var(--porcelain);
+	margin: 40px 0 36px;
+	color: var(--waterloo);
+}
+
+.container {
+	@include grid-wrap(3);
+}
+
+.name {
+	@include text('h4', 'm');
+	color: var(--rhino);
+	margin: 24px 0 4px;
+}
+
+.position {
+	@include text('body-2');
+	color: var(--jungle-green);
+	margin-bottom: 16px;
+	display: block;
+}
+
+.description {
+	margin-top: 8px;
+	@include text('body-3');
+	color: var(--waterloo);
+}
+
+.icons {
+	margin: 16px 0 0;
+}
+
+.arrow {
+	margin-left: 6px;
+	fill: var(--casper);
+}

@@ -2,6 +2,11 @@
 
 .wrapper {
   padding: 0 24px;
+  margin-bottom: 80px;
+
+  @include responsive('phone-xs', 'phone') {
+    margin-bottom: 0;
+  }
 }
 
 .feature {
