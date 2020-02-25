@@ -1,5 +1,4 @@
 import React from "react"
-import styles from "./Twitter.module.scss"
 
 const Twitter = ({ className }) => (
 	<svg width="24" height="24" className={className} xmlns="http://www.w3.org/2000/svg">
