@@ -45,10 +45,10 @@ export const PEOPLE = [
     img: Maksim,
     position: 'Founder',
     group: GROUPS.CORE,
-    sanbaseLink: 'https://app.santiment.net/profile/836',
     description:
       'Veteran product creator and entrepreneur with more than 15 years experience leading international teams, and more than 10 years in financial markets analysis. A distinguished sentiment analyst and crowd psychology expert, he’s a regular media commentator who has been featured in Forbes and other financial publications. He also draws on his unique background in a yogic way of life to foster a human-focused, balanced approach to building communities and decentralized platforms.',
     links: {
+      sanbase: 'https://app.santiment.net/profile/836',
       linkedin: 'https://www.linkedin.com/in/maksim-balashevich-640a8948/'
     }
   },
@@ -57,12 +57,12 @@ export const PEOPLE = [
     img: Valentin,
     position: 'CTO',
     group: GROUPS.CORE,
-    sanbaseLink: 'https://app.santiment.net/profile/121',
     description:
       'Software engineer with 10+ years experience building startups, plus a silver medal winner on the International Olympiad of Informatics 2004. He loves building great products, performance optimizations and advanced software like AI and scalable systems. When he’s not cracking up code, he’s trekking in the mountains or kitesurfing on the beach.',
     links: {
-      linkedin: 'https://www.linkedin.com/in/valentinmihov/',
+      sanbase: 'https://app.santiment.net/profile/121',
       twitter: 'https://twitter.com/valentinmihov',
+      linkedin: 'https://www.linkedin.com/in/valentinmihov/',
       github: 'https://github.com/valo'
     }
   },
@@ -70,11 +70,11 @@ export const PEOPLE = [
     name: 'Yura Zatsepin',
     img: Yura,
     position: 'Product Dev Lead',
-    sanbaseLink: 'https://app.santiment.net/profile/120',
     group: GROUPS.CORE,
     description:
       'He’s developed a guitar education service, online payment services for banks, and MMO mobile/flash games and extensions for purchase. He also won first place in 2 hackathons (Gazprom, QIWI) and got special prizes from Evernote. He now wants to turn his passion for building great applications toward the crypto world.',
     links: {
+      sanbase: 'https://app.santiment.net/profile/120',
       github: 'https://github.com/Partysun'
     }
   },
@@ -142,8 +142,8 @@ export const PEOPLE = [
     description:
       'Builds partnerships at the project level, and brings users, developers and traders in the Santiment community together. She’s committed to diversity, inclusion and representation for the industry, facilitating meetups and learning opportunities for the wider Santiment community. She graduated from Sydney University with a Bachelor of Liberal Arts & Science and previously worked in non-profit and social enterprise before joining Santiment.',
     links: {
-      linkedin: 'https://www.linkedin.com/in/tanserena/',
-      twitter: 'https://twitter.com/tserenam'
+      twitter: 'https://twitter.com/tserenam',
+      linkedin: 'https://www.linkedin.com/in/tanserena/'
     }
   },
   {
@@ -165,8 +165,8 @@ export const PEOPLE = [
     description:
       'With a freshly-minted MBA in finance from Chapman University, Brian has 10+ years of marketing, financial, and data analytics experience. He enjoys creating financial models to improve modern-day investing strategies and to study the intricacies of market variations. He’s also fascinated by cryptocurrency and loves being part of a growing community that represents a change from the status quo of traditional banking and transactions. When away from work, he’s an avid music producer and writer, and enjoys playing tennis, basketball, and cards.',
     links: {
-      linkedin: 'https://www.linkedin.com/in/brian-quinlivan-mba-3a95b18b/',
       twitter: 'https://twitter.com/brianquinlivan',
+      linkedin: 'https://www.linkedin.com/in/brian-quinlivan-mba-3a95b18b/',
       medium: 'https://medium.com/@bquinliv3',
       facebook: 'https://www.facebook.com/brian.quinlivan.7'
     }
@@ -233,10 +233,10 @@ export const PEOPLE = [
     position: 'Project Coordinator',
     img: Garry,
     group: GROUPS.BISUNESS,
-    sanbaseLink: 'https://app.santiment.net/profile/6',
     description:
       'Organizer, structurizer, and master in wrangling complex data into manageable forms. Keeps Santiment projects running smoothly and never stops learning. Aviator.',
     links: {
+      sanbase: 'https://app.santiment.net/profile/6',
       linkedin: 'https://www.linkedin.com/in/kabankin/'
     }
   },
@@ -245,10 +245,10 @@ export const PEOPLE = [
     position: 'Content & SEO',
     group: GROUPS.MARKETING,
     img: Dino,
-    sanbaseLink: 'https://app.santiment.net/profile/1269',
     description:
       'Resident wordsmith and SEO nerd, Dino oversees all things content. He’s worked in a medley of startups big and small before joining Santiment, specializing in content creation, search engine optimization and many other -ations. He has since caught the crypto bug and is currently a refreshingly average swing trader. Get in touch with him to talk content collabs and/or favorite html tags.',
     links: {
+      sanbase: 'https://app.santiment.net/profile/1269',
       linkedin: 'https://www.linkedin.com/in/dino-ibisbegovic-5911b711/',
       email: 'dino.i@santiment.net'
     }
@@ -272,8 +272,8 @@ export const PEOPLE = [
     description:
       'Ivan is a new crypto enthusiast and developer with C++ experience writing software for telecoms and working as a university teaching assistant in computer programming. He is also pursuing a BA in Computer Science. He loves music, books, mountaineering and exploring nature.',
     links: {
-      github: 'https://github.com/IvanIvanoff',
-      linkedin: 'https://www.linkedin.com/in/ivan-aleksandrov-63b8668a/'
+      linkedin: 'https://www.linkedin.com/in/ivan-aleksandrov-63b8668a/',
+      github: 'https://github.com/IvanIvanoff'
     }
   },
   {
@@ -355,9 +355,9 @@ export const PEOPLE = [
     description:
       'Lyudmil is starting his career in development while studying Informatics at Sofia University. He’s also a martial artist and guitar player, and really enjoys reading books in English (and in the future, maybe Italian, French or Japanese). He also loves spending time with his girlfriend and playing with his dog in his hometown of Varna.',
     links: {
+      github: 'https://github.com/spiderjako',
       email:
-        'https://santiment.net/about-santiment/team/lyudmil_danailov@abv.bg',
-      github: 'https://github.com/spiderjako'
+        'https://santiment.net/about-santiment/team/lyudmil_danailov@abv.bg'
     }
   },
   {

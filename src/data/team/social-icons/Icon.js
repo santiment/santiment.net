@@ -5,6 +5,8 @@ import Github from './Github'
 import Twitter from './Twitter'
 import LinkedIn from './LinkedIn'
 import Medium from './Medium'
+import Sanbase from './Sanbase'
+import Facebook from './Facebook'
 
 export const SocialIcon = ({ type, href, className }) => {
   return (
@@ -14,6 +16,8 @@ export const SocialIcon = ({ type, href, className }) => {
       {type === 'medium' && <Medium className={className} />}
       {type === 'twitter' && <Twitter className={className} />}
       {type === 'github' && <Github className={className} />}
+      {type === 'sanbase' && <Sanbase className={className} />}
+      {type === 'facebook' && <Facebook className={className} />}
     </a>
   )
 }
