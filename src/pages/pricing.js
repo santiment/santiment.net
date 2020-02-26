@@ -7,7 +7,7 @@ import Pricing from '../components/Pricing'
 
 const PricingPage = ({ intl }) => (
   <Layout>
-    <SEO title="Santiment Pricing" />
+    <SEO title="Santiment Pricing" description='Analyze crypto assets from multiple angles, and react to developing shifts in market sentiment and network trends.' />
     <Pricing />
     <GetStarted />
   </Layout>

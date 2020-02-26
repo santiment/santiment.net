@@ -61,18 +61,14 @@
 }
 
 .title {
-  @include text('h4');
+  @include text('body-1');
   color: var(--rhino);
-
-  @include responsive('phone-xs', 'phone', 'tablet') {
-    @include text('body-1');
-  }
 }
 
 .link {
   display: flex;
   align-items: center;
-  margin-top: 16px;
+  margin-top: 12px;
   fill: var(--jungle-green);
   color: var(--jungle-green);
 

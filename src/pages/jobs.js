@@ -8,7 +8,11 @@ import styles from './jobs.module.scss'
 
 const JobsPage = ({ intl }) => (
   <Layout>
-    <SEO title='Santiment Jobs' />
+    <SEO title='Santiment Jobs' description='We’re a 100% distributed team working together from around the world,
+        and we welcome top talent to help us change the future of trading
+        crypto-markets. We’re constantly focused on keeping our work in a
+        collaborative, creative and open environment. If these are your values
+        too, come join us!' />
     <div className={styles.wrapper}>
       <Subheading className={styles.title}>Join us at Santiment</Subheading>
       <div className={styles.desc}>

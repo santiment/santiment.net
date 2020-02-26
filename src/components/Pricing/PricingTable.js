@@ -90,7 +90,6 @@ export default ({ classes = {}, onDialogClose }) => {
         }
 
         const SanbasePrice = '$0'
-        console.log(Sandata)
 
         return (
           <>

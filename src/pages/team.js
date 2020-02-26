@@ -19,7 +19,9 @@ PEOPLE.forEach(item => {
 
 const TeamPage = ({ intl }) => (
   <Layout>
-    <SEO title='Santiment Jobs' />
+    <SEO title='Santiment Team' description='In true crypto fashion, our team is as decentralised as they come -
+        spanning 10 countries and 7 time zones (which makes organizing team
+        calls a blast:)' />
     <div className={styles.wrapper}>
       <Subheading className={styles.title}>Santiment team</Subheading>
       <div className={styles.desc}>

@@ -87,6 +87,8 @@
   align-items: center;
 
   &:hover {
+    color: var(--jungle-green-hover);
+
     & .external {
       fill: var(--jungle-green-hover);
     }
