@@ -4,24 +4,41 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import GetStarted from '../components/GetStarted/GetStarted'
 import Subheading from '../components/Heading/Subheading'
+import Heading from '../components/Heading/Heading'
+import team from '../images/team.jpg'
 import styles from './about.module.scss'
 
 const AboutPage = ({ intl }) => (
   <Layout>
-    <SEO title='Signals and Context for the crypto ecosystem' description='From the beginning, our team has been guided by a single mission - to eliminate information asymmetry in the crypto ecosystem...' />
+    <SEO
+      title='Signals and Context for the crypto ecosystem'
+      description='From the beginning, our team has been guided by a single mission - to eliminate information asymmetry in the crypto ecosystem...'
+    />
     <div className={styles.wrapper}>
-      <Subheading className={styles.title}>Signals and Context for the crypto ecosystem</Subheading>
+      <Subheading className={styles.title}>
+        Signals and Context for the crypto ecosystem
+      </Subheading>
       <div className={styles.desc}>
         <div>
-        	From the beginning, our team has been guided by a single mission - to eliminate <strong>information asymmetry</strong> in the crypto ecosystem.
+          From the beginning, our team has been guided by a single mission - to
+          eliminate <strong>information asymmetry</strong> in the crypto
+          ecosystem.
         </div>
         <div>
-        	Blockchain technology is changing the world, but there’s still a concerning lack of credible, actionable information on the crypto industry and its major stakeholders.
+          Blockchain technology is changing the world, but there’s still a
+          concerning lack of credible, actionable information on the crypto
+          industry and its major stakeholders.
         </div>
       </div>
       <h3 className={styles.heading}>Everyone is guessing</h3>
       <div className={styles.text}>
-      	Our mission is to block out the noise and provide data-driven insights on cryptocurrency networks, blockchain-based projects, crowd sentiment and market behavior.
+        Our mission is to block out the noise and provide data-driven insights
+        on cryptocurrency networks, blockchain-based projects, crowd sentiment
+        and market behavior.
+      </div>
+      <Heading>Our team</Heading>
+      <div className={styles.team}>
+        <img src={team} />
       </div>
     </div>
     <GetStarted />
