@@ -36,7 +36,7 @@ const TeamPage = ({ intl }) => (
           <h2 className={styles.group}>{key}</h2>
           <div className={styles.container}>
             {normalizesData[key].map(
-              ({ name, position, description, img, links, sanbaseLink }) => (
+              ({ name, position, description, img, links }) => (
                 <div className={styles.item} key={name}>
                   {img && (
                     <div className={styles.img}>
@@ -45,19 +45,6 @@ const TeamPage = ({ intl }) => (
                   )}
                   <h3 className={styles.name}>{name}</h3>
                   <span className={styles.position}>{position}</span>
-                  {sanbaseLink && (
-                    <Button
-                      className={styles.btn}
-                      border
-                      as='a'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      href={sanbaseLink}
-                    >
-                      Sanbase Profile
-                      <Icon type='pointer-right' className={styles.arrow} />
-                    </Button>
-                  )}
                   <div className={styles.icons}>
                     {Object.entries(links).map(([key, value]) => (
                       <SocialIcon className={styles.icon} href={value} type={key} />
