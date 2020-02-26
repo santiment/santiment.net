@@ -53,8 +53,8 @@ module.exports = {
         name: `Santiment`,
         short_name: `Santiment`,
         start_url: `/`,
-        background_color: `#5275FF`,
-        theme_color: `#5275FF`,
+        background_color: `#14c393`,
+        theme_color: `#14c393`,
         display: `minimal-ui`,
         icon: `src/images/logo-SAN.svg`, // This path is relative to the root of the site.
       },

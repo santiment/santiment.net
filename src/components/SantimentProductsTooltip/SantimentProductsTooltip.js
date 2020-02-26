@@ -97,7 +97,6 @@ const SantimentProductsTooltip = ({ className, intl, children }) => {
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.title}>{intl.formatMessage({ id: 'header.products' })}</div>
-          <MakeLink to='https://santiment.net' title={intl.formatMessage({ id: 'header.santiment.goto' })}/>
         </div>
         <div className={styles.products}>
           {PRODUCTS.map((item, index) => (
