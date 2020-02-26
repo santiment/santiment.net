@@ -37,7 +37,7 @@
       margin-right: 30px;
     }
 
-    @include responsive('tablet', 'phone', 'phone-xs') {
+    @include responsive('tablet') {
       max-width: 400px;
     }
 
@@ -49,4 +49,42 @@
 
 .title {
   margin-bottom: 48px;
+
+  @include responsive('phone', 'phone-xs') {
+
+  margin-bottom: 26px;
+  }
+}
+
+.heading {
+  @include text('h4', 'm');
+  color: var(--rhino);
+  margin: 88px auto 0;
+  text-align: center;
+
+    @include responsive('phone', 'phone-xs') {
+
+  margin: 48px auto 0;
+  }
+}
+
+.text {
+  max-width: 556px;
+  @include text('body-1');
+  color: var(--waterloo);
+  margin: 24px auto 96px;
+  text-align: center;
+
+
+  @include responsive('phone', 'phone-xs') {
+    max-width: 459px;
+    @include text('body-2');
+    text-align: left;
+  }
+
+
+  @include responsive('tablet') {
+    @include text('body-2');
+    max-width: 400px;
+  }
 }

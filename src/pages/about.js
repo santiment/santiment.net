@@ -19,6 +19,10 @@ const AboutPage = ({ intl }) => (
         	Blockchain technology is changing the world, but there’s still a concerning lack of credible, actionable information on the crypto industry and its major stakeholders.
         </div>
       </div>
+      <h3 className={styles.heading}>Everyone is guessing</h3>
+      <div className={styles.text}>
+      	Our mission is to block out the noise and provide data-driven insights on cryptocurrency networks, blockchain-based projects, crowd sentiment and market behavior.
+      </div>
     </div>
     <GetStarted />
   </Layout>
