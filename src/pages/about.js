@@ -8,6 +8,19 @@ import Heading from '../components/Heading/Heading'
 import team from '../images/team.jpg'
 import styles from './about.module.scss'
 
+const data = [
+  {
+    title: 'Machine Effort',
+    desc: 'We’re crunching massive amounts of information from a plurality of reliable sources, pulling it all into our growing stream of signals and datafeeds:',
+    points: ['Price and Volume data', 'Development (GitHub) Activity data', 'On-chain data', 'Holder behavior activity', 'Social media activity', 'Crowd sentiment data ']
+  },
+  {
+    title: 'Human Intuition',
+    desc: 'Our team and community are constantly testing the data’s integrity and viability, and building simple interfaces to turn this information into digestible, actionable insights:',
+    points: ['Research Reports', 'Network Audits', 'Price/Trend Analysis', 'Trading Strategies / Market Alphas', 'Sentiment Analysis']
+  }
+]
+
 const AboutPage = ({ intl }) => (
   <Layout>
     <SEO
@@ -40,6 +53,13 @@ const AboutPage = ({ intl }) => (
       <div className={styles.team}>
         <img src={team} />
       </div>
+      <div className={styles.info}>
+        30 experts | 10 countries | 2016 founded | 57k ETH raised
+      </div>
+      {/* <Heading>How do we accomplish our goals?</Heading> */}
+      {/* <Subheading> */}
+      {/*   Bringing machine effort and human intuition together */}
+      {/* </Subheading> */}
     </div>
     <GetStarted />
   </Layout>

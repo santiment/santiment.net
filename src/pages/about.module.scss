@@ -108,3 +108,11 @@
     border-radius: 16px;
   }
 }
+
+.info {
+  @include text('body-2');
+  text-align: center;
+  font-style: italic;
+  color: var(--casper);
+  margin-top: 16px;
+}
