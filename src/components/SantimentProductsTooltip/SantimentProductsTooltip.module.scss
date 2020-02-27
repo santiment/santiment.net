@@ -138,7 +138,7 @@
 }
 
 .opened {
-  background: var(--green-light);
+  background: var(--jungle-green-light);
   border-radius: 2px;
   fill: var(--jungle-green);
 }
@@ -147,6 +147,11 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+
+
+  &__opened {
+    color: var(--jungle-green);
+  }
 }
 
 .sanbaseLink {

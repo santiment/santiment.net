@@ -4,6 +4,7 @@ import { injectIntl, Link } from 'gatsby-plugin-intl'
 import { tr } from '../../utils/translate'
 import mainLogo from './../../images/logos/santiment.svg'
 import SantimentProductsTooltip from '../SantimentProductsTooltip/SantimentProductsTooltip'
+import CompanyDropdown from '../CompanyDropdown/CompanyDropdown'
 import styles from './Header.module.scss'
 
 const Header = ({ isAccountPage, intl }) => {
@@ -45,6 +46,11 @@ const Header = ({ isAccountPage, intl }) => {
             Academy
             <Icon type="external-link" className={styles.external} />
           </a>
+          <div className={styles.link}>
+            <CompanyDropdown intl={intl}>
+              <div>Company</div>
+            </CompanyDropdown>
+          </div>
         </nav>
       </div>
     </header>
