@@ -1,5 +1,9 @@
 @import '~@santiment-network/ui/mixins.scss';
 
+.wrapper {
+  padding: 0 24px;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;

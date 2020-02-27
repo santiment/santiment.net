@@ -6,7 +6,7 @@ import styles from './index.module.scss'
 
 export default () => {
   return (
-    <section id='pricing'>
+    <section id='pricing' className={styles.wrapper}>
       <Title className={styles.title}>
         {tr('pricing.title.top', "Santiment Pricing")}
         <div className={styles.desc}>
