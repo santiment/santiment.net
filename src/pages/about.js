@@ -5,6 +5,7 @@ import SEO from '../components/seo'
 import GetStarted from '../components/GetStarted/GetStarted'
 import Subheading from '../components/Heading/Subheading'
 import Heading from '../components/Heading/Heading'
+import Products from '../components/Products/Products'
 import team from '../images/team.jpg'
 import styles from './about.module.scss'
 
@@ -60,6 +61,7 @@ const AboutPage = ({ intl }) => (
       {/* <Subheading> */}
       {/*   Bringing machine effort and human intuition together */}
       {/* </Subheading> */}
+      <Products />
     </div>
     <GetStarted />
   </Layout>

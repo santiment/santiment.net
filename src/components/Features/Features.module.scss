@@ -5,8 +5,12 @@
   // margin-bottom: 80px;
   margin: 120px 0 0;
 
-  @include responsive('phone-xs', 'phone') {
-    margin-bottom: 0;
+  @include responsive('phone-xs') {
+    margin-bottom: -90px;
+  }
+
+  @include responsive('phone') {
+    margin-bottom: -50px;
   }
 }
 
