@@ -2,6 +2,42 @@
 
 .wrapper {
   padding: 0 24px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+.title {
+  margin-bottom: 32px;
+
+  @include responsive('phone-xs') {
+    @include text('h4', 'm');
+    margin-bottom: 24px;
+  }
+}
+
+.desc {
+  max-width: 556px;
+  color: var(--waterloo);
+  @include text('body-1');
+  margin: 41px 0 16px;
+  text-align: center;
+
+  @include responsive('phone-xs', 'phone') {
+  @include text('body-1');
+  }
+}
+
+.img {
+  max-width: 1140px;
+  width: 60vw;
+  border: 1px solid var(--porcelain);
+  border-radius: 8px;
+  margin-top: 26px;
+
+  @include responsive('phone-xs', 'phone', 'tablet') {
+    width: 100%;
+  }
+}

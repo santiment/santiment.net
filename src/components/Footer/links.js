@@ -60,7 +60,7 @@ export const categories = [
       {
         children: 'api',
         name: 'SanAPI',
-        href: 'https://api.santiment.net/graphiql'
+        href: 'https://neuro.santiment.net/'
       },
       {
         children: 'Sansheets',
