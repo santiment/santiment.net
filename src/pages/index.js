@@ -6,6 +6,7 @@ import Feed from '../components/Feed/Feed'
 import Cases from '../components/Cases/Cases'
 import TestImonials from '../components/TestImonials/TestImonials'
 import Features from '../components/Features/Features'
+import Products from '../components/Products/Products'
 import GetStarted from '../components/GetStarted/GetStarted'
 import SEO from '../components/seo'
 import styles from './index.module.scss'
@@ -16,8 +17,9 @@ const IndexPage = ({ intl }) => (
     <WelcomeBlock />
     {/* <Feed /> */}
     <Features />
-    {/* <TestImonials /> */}
+    <Products />
     <Cases />
+    {/* <TestImonials /> */}
     <GetStarted />
   </Layout>
 )
