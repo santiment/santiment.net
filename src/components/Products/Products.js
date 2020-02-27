@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import cx from 'classnames'
 import Tabs from '@santiment-network/ui/Tabs'
 import Heading from '../Heading/Heading'
 import Sanbase from './images/sanbase.png'
@@ -25,10 +26,10 @@ const TABS = {
   }
 }
 
-const Products = () => {
+const Products = ({className}) => {
   const [selected, setSelected] = useState('Sanbase')
   return (
-    <div className={styles.wrapper}>
+    <div className={cx(styles.wrapper, className)}>
       <Heading className={styles.title}>Our products</Heading>
       <Tabs
         onSelect={tab => setSelected(tab)}

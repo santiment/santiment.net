@@ -61,7 +61,7 @@ const AboutPage = ({ intl }) => (
       {/* <Subheading> */}
       {/*   Bringing machine effort and human intuition together */}
       {/* </Subheading> */}
-      <Products />
+      <Products className={styles.products} />
     </div>
     <GetStarted />
   </Layout>
