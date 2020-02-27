@@ -4,7 +4,7 @@ export const categories = [
       {
         children: 'about',
         name: 'About us',
-        href: 'https://santiment.net/about-us/'
+        href: 'https://santiment.net/about/'
       },
       {
         children: 'pricing',
@@ -16,7 +16,7 @@ export const categories = [
       {
         children: 'contact',
         name: 'Contact us',
-        href: 'https://santiment.net/about-santiment/contact/'
+        href: 'mailto:support@santiment.net'
       }
     ]
   },
