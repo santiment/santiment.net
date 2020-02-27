@@ -6,6 +6,10 @@
   @include responsive('tablet') {
     max-width: 775px;
   }
+
+  @include responsive('phone-xs') {
+    margin-top:  -90px;
+  }
 }
 
 .subtitle {

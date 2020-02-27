@@ -2,7 +2,8 @@
 
 .wrapper {
   padding: 0 24px;
-  margin-bottom: 80px;
+  // margin-bottom: 80px;
+  margin: 120px 0 0;
 
   @include responsive('phone-xs', 'phone') {
     margin-bottom: 0;
