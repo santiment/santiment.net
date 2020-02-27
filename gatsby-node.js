@@ -8,5 +8,5 @@
 
 exports.createPages = ({ graphql, actions }) => {
   const { createRedirect } = actions
-  createRedirect({ fromPath: '/sandata', toPath: '/data.santiment.net', isPermanent: true })
+  createRedirect({ fromPath: '/sandata', toPath: '/team', isPermanent: true })
 }
