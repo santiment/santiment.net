@@ -59,7 +59,7 @@ const AboutPage = ({ intl }) => (
       </div>
       <Heading>How do we accomplish our goals?</Heading>
       <Subheading>
-        Bringing machine effort and human intuition together
+        Bringing machine effort and human <br/>intuition together
       </Subheading>
       <Products className={styles.products} />
     </div>

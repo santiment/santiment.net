@@ -10,6 +10,7 @@
 .title {
 	@include text('h3', 'm');
 	color: var(--mystic);
+  text-align: center;
 
 	@include responsive('phone-xs', 'phone') {
 		@include text('h4', 'm');
