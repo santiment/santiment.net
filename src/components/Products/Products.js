@@ -10,17 +10,17 @@ import styles from './Products.module.scss'
 
 const TABS = {
   Sanbase: {
-    desc: 'Over a dozen unique on-chain, social and development metrics, custom market templates, unlimited low-latency signals and access to exclusive market reports',
+    desc: 'Exclusive on-chain, social and development metrics, low-latency market signals, custom Spreadsheet templates & daily insights on the cryptocurrency market',
     link: 'https://app.santiment.net/',
     img: Sanbase
   },
   Sandata: {
-    desc: 'Over a dozen unique on-chain, social and development metrics, custom market templates, unlimited low-latency signals and access to exclusive market reports',
+    desc: 'Advanced on-chain & social information on 900+ cryptocurrencies. Analyze the behavior of whales, miners, exchanges, network users, the crypto community and more.',
     link: 'https://data.santiment.net/',
     img: Sandata
   },
   SanAPI: {
-    desc: 'Over a dozen unique on-chain, social and development metrics, custom market templates, unlimited low-latency signals and access to exclusive market reports',
+    desc: 'One of the most comprehensive crypto APIs on the market. Single endpoint access for on-chain, social, pricing and development information on 900+ coins',
     link: 'https://neuro.santiment.net/',
     img: SanAPI
   }
