@@ -3,6 +3,7 @@ import Icon from '@santiment-network/ui/Icon'
 import Button from '@santiment-network/ui/Button'
 import Subheading from '../Heading/Subheading'
 import { data } from './data'
+import chart from './chart.png'
 import styles from './AboutSAN.module.scss'
 
 const AboutSAN = () => (
@@ -21,7 +22,23 @@ const AboutSAN = () => (
       We expect the token economy will have three main dimensions:
     </p>
 
-    <ul className={styles.list}>
+    <div className={styles.content}>
+
+    	<img className={styles.img} src={chart} />
+
+    {/* <ul className={styles.chart}> */}
+    {/*   {data.map(({ title, who, desc }) => ( */}
+    {/*     <li className={styles.circle} key={title}> */}
+    {/*       <h4 className={styles.title}> */}
+    {/*         {title} */}
+    {/*       </h4> */}
+    {/*       <div className={styles.who}>{who}</div> */}
+    {/*       <div className={styles.description}>{desc}</div> */}
+    {/*     </li> */}
+    {/*   ))} */}
+    {/* </ul> */}
+
+        <ul className={styles.list}>
       {data.map(({ title, goal, how }) => (
         <li className={styles.item} key={title}>
           <h4 className={styles.title}>
@@ -33,6 +50,7 @@ const AboutSAN = () => (
         </li>
       ))}
     </ul>
+    </div>
   </div>
 )
 

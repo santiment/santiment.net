@@ -32,6 +32,11 @@
 .list {
   display: flex;
   flex-direction: column;
+
+  @include responsive('phone-xs', 'phone', 'tablet', 'laptop') {
+    @include grid-wrap(3);
+    margin: 30px auto;
+  }
 }
 
 .item {
@@ -41,6 +46,13 @@
   border: 1px solid var(--porcelain);
   margin-bottom: 16px;
 
+  @include responsive('phone-xs', 'phone', 'tablet', 'laptop') {
+    margin: 0 auto;
+  }
+}
+
+.item,
+.circle {
   &:nth-of-type(1) {
     --color: var(--jungle-green);
   }
@@ -78,4 +90,58 @@
 .icon {
   fill: var(--casper);
   margin-right: 8px;
+}
+
+.who {
+  @include text('body-3');
+  color: var(--waterloo);
+  margin: 8px auto 24px;
+  text-align: center;
+}
+
+.description {
+  @include text('caption');
+  text-align: center;
+  width: 220px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include responsive('phone-xs', 'phone', 'tablet', 'laptop') {
+    flex-direction: column;
+  }
+}
+
+.chart {
+  width: 496px;
+  height: 496px;
+  background: radial-gradient(50% 50% at 50% 50%, #ffffff 42.71%, #fafafd 100%);
+  border-radius: 50%;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  padding: 48px 30px 0;
+  border: 1px solid var(--porcelain);
+  box-shadow: 0px 2px 6px rgba(24, 27, 43, 0.03),
+    0px 4px 24px rgba(24, 27, 43, 0.05);
+  width: 290px;
+  height: 290px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img {
+  max-width: 716px;
+  margin-right: 30px;
+  width: 100%;
+
+  @include responsive('phone-xs') {
+    display: none;
+  }
 }
