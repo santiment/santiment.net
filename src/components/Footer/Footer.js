@@ -117,8 +117,7 @@ const Footer = ({ intl }) => {
         </div>
         <div className={styles.bottom}>
           <div className={cx(styles.text, styles.rights)}>
-            © {year.getFullYear()}{' '}
-            {tr('footer.rights', 'Santiment Inc. All rights reserved')}
+            © 2016-{year.getFullYear()} Santiment
           </div>
           <div>
             <a

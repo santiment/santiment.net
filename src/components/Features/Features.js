@@ -10,6 +10,7 @@ import styles from './Features.module.scss'
 const Features = () => (
   <div className={styles.wrapper}>
     <Heading>Features</Heading>
+    <Tabs />
     <div className={cx(styles.feature, styles.feature__trends)}>
         <h4 className={cx(styles.title,styles.title__mobile)}>Emerging Social Trends</h4>
       <div className={styles.img__wrapper}>
@@ -72,7 +73,6 @@ const Features = () => (
         <TryButton />
       </div>
     </div>
-    <Tabs />
   </div>
 )
 

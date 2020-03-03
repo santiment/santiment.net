@@ -2,7 +2,7 @@
 
 .wrapper {
   padding: 0 24px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .feature {
@@ -10,6 +10,10 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 80px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &__insights {
     flex-direction: row-reverse;

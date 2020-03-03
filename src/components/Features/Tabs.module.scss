@@ -3,6 +3,7 @@
 .wrapper {
   display: flex;
   justify-content: center;
+  margin: 50px 0;
 
   @include responsive('phone-xs', 'phone', 'tablet') {
     display: none;
@@ -11,6 +12,7 @@
 
 .container {
   display: none;
+  margin: 50px 0 30px;
 
   @include responsive('phone-xs', 'phone', 'tablet') {
     display: flex;
