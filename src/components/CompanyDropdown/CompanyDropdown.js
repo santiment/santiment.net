@@ -20,7 +20,7 @@ const ITEMS = [
   },
   {
     title: 'Contact us',
-    link: '/contact'
+    link: 'mailto:support@santiment.net'
   }
 ]
 

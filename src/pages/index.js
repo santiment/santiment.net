@@ -15,10 +15,10 @@ const IndexPage = ({ intl }) => (
   <Layout classes={styles}>
     <SEO title="Santiment - See what other crypto traders are missing" />
     <WelcomeBlock />
+    <Cases />
     {/* <Feed /> */}
     <Features />
     <Products />
-    <Cases />
     {/* <TestImonials /> */}
     <GetStarted />
   </Layout>

@@ -17,12 +17,12 @@ export const data = [
 	},
 	{
 		title: 'Sonar Signals',
-		description: "Reacting to sudden fluctuations in the market can often be impossible without being glued to charts and market news on a minute by minute basis. Luckily, we offer unlimited public and private signals for our paid users. And they’re fully customizable, with five different types of thresholds for Sanbase to monitor for you, associated with any project you want to monitor.",
+		description: "Set up low-latency alerts for changes to a coin’s price, on-chain activity, social media mentions and the behavior of its ‘whales’. Unlimited market signals for Sanbase Pro users!",
 		img: signals
 	},
 	{
 		title: 'Watchlists',
-		description: "We all have specific projects in our portfolio that we’d like to track without having to browse through projects we have no interest in monitoring. Pro users can create unlimited watchlists for various portfolios and strategies. They can also use them in tandem with Sonar alerts to have all specific watchlist assets tracked by any signal they create.",
+		description: "Keep tabs on the price, on-chain & development activity of your favorite coins with personalized watchlists. Get detailed weekly analytics for all your watchlists with Sanbase Pro.",
 		img: watchlists
 	},
 	{

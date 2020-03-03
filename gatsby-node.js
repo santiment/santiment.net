@@ -16,7 +16,7 @@ exports.createPages = ({ graphql, actions }) => {
   createRedirect({ fromPath: '/about-santiment/transparency/', toPath: '/' })
   createRedirect({ fromPath: '/about-santiment/jobs/', toPath: '/jobs' })
   createRedirect({ fromPath: '/about-santiment', toPath: '/about' })
-  createRedirect({ fromPath: '/about-santiment/contact/', toPath: 'mailto:support@santiment.net' })
+  createRedirect({ fromPath: '/about-santiment/contact/', toPath: '/contact' })
   createRedirect({ fromPath: '/discord', toPath: 'https://discordapp.com/invite/MPH2uP5' })
   createRedirect({ fromPath: '/terms-conditions/', toPath: '/terms' })
 }

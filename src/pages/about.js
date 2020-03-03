@@ -55,12 +55,12 @@ const AboutPage = ({ intl }) => (
         <img src={team} alt='team' />
       </div>
       <div className={styles.info}>
-        30 experts | 10 countries | 2016 founded | 57k ETH raised
+        34 experts | 12 countries | 2016 founded | 57k ETH raised
       </div>
-      {/* <Heading>How do we accomplish our goals?</Heading> */}
-      {/* <Subheading> */}
-      {/*   Bringing machine effort and human intuition together */}
-      {/* </Subheading> */}
+      <Heading>How do we accomplish our goals?</Heading>
+      <Subheading>
+        Bringing machine effort and human intuition together
+      </Subheading>
       <Products className={styles.products} />
     </div>
     <GetStarted />
