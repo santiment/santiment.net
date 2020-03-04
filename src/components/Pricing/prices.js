@@ -26,7 +26,7 @@ export default {
   Sandata: {
     title: 'Basic',
     desc: 'Pro traders, digital asset funds, market analysts',
-    more: 'https://data.santiment.net',
+    more: '/sandata',
     Component: () => (
       <Button variant='fill' as="a" rel="noopener noreferrer" target="_blank" href='https://data.santiment.net' className={cx(styles.link, styles.link__dark)}>
         {tr('main.btn', 'Get started')}

@@ -6,4 +6,9 @@
 
 .btn {
 	max-width: 200px;
+
+	@include responsive('phone-xs', 'phone') {
+		margin: 0 auto;
+		display: flex;
+	}
 }

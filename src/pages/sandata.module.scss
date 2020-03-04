@@ -1,0 +1,94 @@
+@import '~@santiment-network/ui/mixins';
+
+.wrapper {
+  padding: 80px 24px;
+  margin: - 80px 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: url('../images/sandata.jpg') no-repeat 100% 100%;
+}
+
+.desc {
+	max-width: 722px;
+	@include text('body-1');
+	color: var(--athens);
+	margin: 0 auto 60px;
+	text-align: center;
+}
+
+.title {
+	margin-bottom: 16px;
+	color: var(--white);
+}
+
+.container {
+	padding: 0 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+	width: 200px;
+	justify-content: space-between;
+
+	@include responsive('phone-xs', 'phone') {
+		flex-direction: column;
+	}
+}
+
+.login {
+	background: none !important;
+
+	@include responsive('phone-xs', 'phone') {
+		margin-top: 20px;
+	}
+}
+
+.headingOne, .headingTwo, .text {
+	text-align: center;
+}
+
+.headingOne {
+	@include text('h4');
+	max-width: 500px;
+	margin: 60px 0 30px;
+}
+
+.headingTwo {
+	@include text('h3', 'm');
+	max-width: 650px;
+	margin: 30px 0 30px;
+}
+
+.text {
+	@include text('body-1');
+	margin: 30px 0 60px;
+	max-width: 600px;
+}
+
+.getStarted {
+  padding: 62px 24px;
+  background: url('../components/GetStarted/bg.svg') repeat-x center bottom, var(--jungle-green);
+
+  @include responsive('phone-xs', 'phone') {
+    background: var(--jungle-green);
+    padding: 24px;
+  }
+}
+
+.headingThird {
+  @include text('h3', 'm');
+  color: var(--white);
+  text-align: center;
+  margin: 0 auto;
+
+  @include responsive('phone-xs', 'phone') {
+    @include text('body-1', 'm');
+  margin: 0 auto 16px;
+  }
+}
+
