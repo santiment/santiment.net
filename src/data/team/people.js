@@ -387,7 +387,7 @@ export const PEOPLE = [
     img: Ante,
     group: GROUPS.RESEARCH,
     description:
-      'I have a BSc in Mathematics. I have experience in data analysis of malicious files. I am passionate about data science and exploring crypto. I enjoy playing football, traveling and meeting new cultures.',
+      'Ante has a background in mathematics with experience in analyzing large amounts of malicious files. He is passionate about data science and exploring innovations in crypto space. He enjoys playing football, traveling and meeting new people.',
     links: {
       linkedin: 'https://www.linkedin.com/in/ante-sosa-80a198157/',
       github: 'https://github.com/antisaa'
