@@ -19,4 +19,18 @@ exports.createPages = ({ graphql, actions }) => {
   createRedirect({ fromPath: '/about-santiment/contact/', toPath: '/contact' })
   createRedirect({ fromPath: '/discord', toPath: 'https://discordapp.com/invite/MPH2uP5' })
   createRedirect({ fromPath: '/terms-conditions/', toPath: '/terms' })
+
+
+  createRedirect({ fromPath: '/get-santiment-insights-bitfinex', toPath: 'https://partners.santiment.net/get-santiment-insights-bitfinex' })
+
+  createRedirect({ fromPath: '/learn-more-about-santiment-bitfinex', toPath: 'https://partners.santiment.net/learn-more-about-santiment-bitfinex' })
+
+  createRedirect({ fromPath: '/santiment-free-trial-bitfinex', toPath: 'https://partners.santiment.net/santiment-free-trial-bitfinex' })
+
+  createRedirect({ fromPath: '/santiment-bitfinex-free-trial-extension', toPath: 'https://partners.santiment.net/santiment-bitfinex-free-trial-extension' })
+
+  createRedirect({ fromPath: '/santiment-bitfinex-survey', toPath: 'https://partners.santiment.net/santiment-bitfinex-survey' })
+
+  createRedirect({ fromPath: '/santiment-bitfinex-webinar', toPath: 'https://partners.santiment.net/santiment-bitfinex-webinar' })
+
 }
