@@ -17,10 +17,6 @@ const ITEMS = [
   {
     title: 'Jobs',
     link: '/jobs'
-  },
-  {
-    title: 'Contact us',
-    link: 'mailto:support@santiment.net'
   }
 ]
 
