@@ -34,6 +34,7 @@
 .desc {
   @include text('body-1');
   margin-top: 16px;
+  max-width: 565px;
   color: var(--waterloo);
 
 
