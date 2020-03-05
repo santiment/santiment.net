@@ -12,10 +12,10 @@ const AccountBtn = ({ intl }) => {
   return (
     <div className={styles.account}>
       <Query query={CURRENT_USER_QUERY}>
-        {({ data: { currentUser } = {} }) => {
+        {({ data: { currentUser } = {}, loading }) => {
           const isLoggedIn = Boolean(currentUser)
 
-          return isLoggedIn ? (
+          return loading ? null : isLoggedIn ? (
             <UserAvatar {...currentUser} />
           ) : (
             <>
