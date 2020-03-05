@@ -26,14 +26,12 @@ const SubscriptionForm = ({
 
   const checkEmail = debounce(email => {
     let error
-    if (!email) {
-      error = 'Email is required'
-    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)) {
+    if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)) {
       error = 'Invalid email address'
     }
 
-    setError(error)
-  })
+    setError(email ? error : '')
+  }, 500)
 
   const buttonProps = email ? {
     type: 'submit'
