@@ -7,13 +7,13 @@
 .description {
   @include text('body-1');
   color: var(--waterloo);
-  max-width: 603px;
+  max-width: 565px;
   text-align: center;
   margin: 0 auto;
 }
 
 .title {
-  max-width: 640px;
+  max-width: 600px;
   margin: 0 auto 16px;
 
   @include responsive('phone-xs') {
