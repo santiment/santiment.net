@@ -1,6 +1,7 @@
 import React from "react"
 import Button from '@santiment-network/ui/Button'
 import Input from '@santiment-network/ui/Input'
+import Icon from '@santiment-network/ui/Icon'
 import { Mutation } from 'react-apollo'
 import { tr } from '../../utils/translate'
 import { EMAIL_LOGIN_MUTATION } from '../../gql/user'
@@ -44,6 +45,7 @@ const GetStarted = () => (
                 isLoading={loading}
               >
                 {tr('start.btn', 'Get started')}
+              <Icon type='pointer-right' className={styles.arrow} />
               </Button>
             </form>
           )}
