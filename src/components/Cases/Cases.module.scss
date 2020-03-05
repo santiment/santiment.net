@@ -36,7 +36,7 @@
 
   @include responsive('tablet') {
     &:nth-child(2n + 1) {
-      margin-right: 65px;
+      margin-right: 50px;
     }
     margin-bottom: 32px !important;
   }
