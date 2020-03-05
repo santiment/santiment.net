@@ -5,6 +5,7 @@ import { tr } from '../../utils/translate'
 import mainLogo from './../../images/logos/santiment.svg'
 import SantimentProductsTooltip from '../SantimentProductsTooltip/SantimentProductsTooltip'
 import CompanyDropdown from '../CompanyDropdown/CompanyDropdown'
+import AccountBtn from '../AccountBtn/AccountBtn'
 import styles from './Header.module.scss'
 
 const Header = ({ isAccountPage, intl }) => {
@@ -52,6 +53,7 @@ const Header = ({ isAccountPage, intl }) => {
             </CompanyDropdown>
           </div>
         </nav>
+          <AccountBtn />
       </div>
     </header>
   )
