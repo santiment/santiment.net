@@ -11,8 +11,8 @@ import styles from './WelcomeBlock.module.scss'
 const WelcomeBlock = () => (
   <section className={styles.wrapper}>
     <Subheading className={styles.title}>
-      We provide tools to help you analyze crypto markets and find data-driven
-      opportunities to optimize your investing.
+      Tools to help you analyze the crypto market and find data-driven investing
+      opportunities
     </Subheading>
     <div className={styles.description}>
       Santiment is a behavior analytics platform for cryptocurrencies, sourcing

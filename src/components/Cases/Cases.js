@@ -41,11 +41,7 @@ const items = [
 
 const Cases = () => (
   <section className={styles.wrapper}>
-    <Heading>Case studies</Heading>
-    <Subheading className={styles.subtitle}>
-      Tools to help you analyze the crypto market and find data-driven investing
-      opportunities
-    </Subheading>
+    <Heading className={styles.subtitle}>Case studies</Heading>
     <ul className={styles.list}>
       {items.map(({ link, icon, title, key }) => (
         <li className={styles.item} key={key}>
