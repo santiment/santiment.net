@@ -2,6 +2,10 @@
 
 .account {
   margin-left: auto;
+
+  @include responsive('phone-xs', 'phone') {
+  	display: none;
+  }
 }
 
 .create {

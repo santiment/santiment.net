@@ -53,7 +53,7 @@ const Header = ({ isAccountPage, intl }) => {
             </CompanyDropdown>
           </div>
         </nav>
-          <AccountBtn />
+        <AccountBtn />
       </div>
     </header>
   )
