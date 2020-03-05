@@ -35,6 +35,7 @@ const Products = ({className}) => {
         onSelect={tab => setSelected(tab)}
         options={Object.keys(TABS)}
         defaultSelectedIndex='Sanbase'
+        className={styles.tabs}
       />
       <p className={styles.desc}>{TABS[selected].desc}</p>
       <Button href={TABS[selected].link} />

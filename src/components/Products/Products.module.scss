@@ -49,3 +49,9 @@
     width: 100%;
   }
 }
+
+.tabs {
+  & div {
+    @include text('h4');
+  }
+}
