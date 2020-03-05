@@ -1,20 +1,22 @@
 import React from 'react'
 import cx from 'classnames'
+import { Query } from 'react-apollo'
 import { injectIntl, Link } from 'gatsby-plugin-intl'
 import Icon from '@santiment-network/ui/Icon'
 import Button from '@santiment-network/ui/Button'
-import { Query } from 'react-apollo'
 import { CURRENT_USER_QUERY } from '../../gql/user'
+import UserAvatar from '../UserAvatar/UserAvatar'
 import styles from './AccountBtn.module.scss'
 
-const AccountBtn = ({ intl, isAccountPage }) => {
+const AccountBtn = ({ intl }) => {
   return (
     <div className={styles.account}>
       <Query query={CURRENT_USER_QUERY}>
         {({ data: { currentUser } = {} }) => {
           const isLoggedIn = Boolean(currentUser)
+
           return isLoggedIn ? (
-            <div>Logged</div>
+            <UserAvatar {...currentUser} />
           ) : (
             <>
               <Button

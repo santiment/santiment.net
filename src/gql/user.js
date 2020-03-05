@@ -4,6 +4,7 @@ const userDataFragment = gql`
   fragment userDataFragment on User {
     id
     email
+    avatarUrl
     username
     privacyPolicyAccepted
     apikeys
