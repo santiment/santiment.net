@@ -15,7 +15,6 @@ const SubscriptionForm = ({
   add,
   classes = {}
 }) => {
-  const [waiting, setWaiting] = useState(false)
   const [error, setError] = useState(false)
   const [email, setEmail] = useState()
 
@@ -63,7 +62,6 @@ const SubscriptionForm = ({
         type='email'
         placeholder={placeholder}
         name='email'
-        disabled={waiting}
         onChange={onEmailChange}
         isError={error}
       />
@@ -78,7 +76,7 @@ const SubscriptionForm = ({
         variant='fill'
         accent='positive'
         disabled={error && email}
-        isLoading={waiting || loading}
+        isLoading={loading}
       >
         {cta}
         <Icon type='pointer-right' className={styles.arrow} />

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Mutation } from 'react-apollo'
-import { tr } from '../../utils/translate'
 import Subheading from '../Heading/Subheading'
 import { EMAIL_LOGIN_MUTATION } from '../../gql/user'
 import { NotificationsContext } from '../Notifications/Notifications'
