@@ -10,6 +10,10 @@
 
 .create {
   margin-left: 16px;
+
+    @include responsive('tablet') {
+    display: none;
+  }
 }
 
 .login {
