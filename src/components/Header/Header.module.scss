@@ -29,6 +29,8 @@
 .logo {
   display: flex;
   align-items: center;
+  margin-right: 48px;
+  margin-top: -4px;
 
   &:hover {
     color: var(--rhino);

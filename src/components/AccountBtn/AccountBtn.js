@@ -1,50 +1,51 @@
 import React from 'react'
 import cx from 'classnames'
+import { Query } from 'react-apollo'
 import { injectIntl, Link } from 'gatsby-plugin-intl'
 import Icon from '@santiment-network/ui/Icon'
 import Button from '@santiment-network/ui/Button'
-import { Query } from 'react-apollo'
 import { CURRENT_USER_QUERY } from '../../gql/user'
+import UserAvatar from '../UserAvatar/UserAvatar'
 import styles from './AccountBtn.module.scss'
 
-const btnProps = {
-  false: {
-    accent: 'blue',
-    border: true,
-    className: styles.login,
-    children: intl =>
-      intl.formatMessage({
-        id: 'cta.sign_up',
-      }),
-    onClick: () => {
-      window.gtag('event', 'login_action_call', {
-        location: 'Navbar',
-        text: 'Sign up',
-      })
-    },
-  },
-  true: { className: styles.account, children: <Icon type='profile' className={styles.profileIcon} /> },
-}
-
-const AccountBtn = ({ intl, isAccountPage }) => {
+const AccountBtn = ({ intl }) => {
   return (
-    <Query query={CURRENT_USER_QUERY}>
-      {({ data: { currentUser } = {} }) => {
-        const { children, ...props } = btnProps[Boolean(currentUser)]
-        return (
-          <Button
-            as={Link}
-            to='/account'
-            variant='flat'
-            isActive={isAccountPage}
-            {...props}
-            className={cx(props.className, styles.profileBtn)}
-          >
-            {typeof children === 'function' ? children(intl) : children}
-          </Button>
-        )
-      }}
-    </Query>
+    <div className={styles.account}>
+      <Query query={CURRENT_USER_QUERY}>
+        {({ data: { currentUser } = {}, loading }) => {
+          const isLoggedIn = Boolean(currentUser)
+
+          return loading ? null : isLoggedIn ? (
+            <UserAvatar {...currentUser} />
+          ) : (
+            <>
+              <Button
+                as='a'
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://app.santiment.net/login'
+                variant='flat'
+                border
+                className={styles.login}
+              >
+                Log in
+              </Button>
+              <Button
+                as='a'
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://app.santiment.net/sign-up'
+                variant='fill'
+                accent='positive'
+                className={styles.create}
+              >
+                Create account
+              </Button>
+            </>
+          )
+        }}
+      </Query>
+    </div>
   )
 }
 

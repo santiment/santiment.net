@@ -286,6 +286,13 @@
   @include responsive('phone-xs') {
     margin-bottom: 40px;
   }
+
+  &:hover,
+  &:focus {
+    .input {
+      border: 1px solid var(--jungle-green) !important;
+    }
+  }
 }
 
 .input {
@@ -297,7 +304,8 @@
   height: 40px;
   padding-right: 138px;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     border: 1px solid var(--jungle-green) !important;
   }
 }
