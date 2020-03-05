@@ -35,6 +35,16 @@ const SubscriptionForm = ({
     setError(error)
   })
 
+  const buttonProps = email ? {
+    type: 'submit'
+  } : {
+    as: 'a',
+    targer: '_blank',
+    rel: 'noopener noreferrer',
+    href: 'https://app.santiment.net/sign-up',
+    type: 'button'
+  }
+
   return (
     <form
       className={cx(styles.form, classes.form)}
@@ -65,6 +75,7 @@ const SubscriptionForm = ({
         </Label>
       )}
       <Button
+        {...buttonProps}
         className={cx(styles.btn, classes.button)}
         variant='fill'
         accent='positive'
