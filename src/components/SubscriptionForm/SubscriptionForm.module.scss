@@ -40,3 +40,18 @@
 .arrow {
   margin-left: 6px;
 }
+
+.formError {
+  margin-right: auto;
+  position: absolute;
+  bottom: -18px;
+
+  @include text('caption');
+
+  font-size: 10px;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    @include text('caption');
+    bottom: -20px;
+  }
+}
