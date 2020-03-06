@@ -8,7 +8,7 @@ import styles from './index.module.scss'
 export default {
   Sanbase: {
     discount: 'price.bill_discount.free',
-    desc: 'If you’re starting out',
+    desc: 'Flagship platform for crypto enthusiasts and retail investors',
     more: 'https://academy.santiment.net/products-and-plans/sanbase-pro-features/',
     Component: () => (
       <Button variant='fill' as="a" rel="noopener noreferrer" target="_blank" href='https://app.santiment.net/pricing' accent='positive' className={styles.link}>
@@ -41,7 +41,7 @@ export default {
     ],
   },
   SanAPI: {
-    desc: 'Hobby traders, crypto enthusiasts',
+    desc: 'Built for crypto developers, quants and third-party apps',
     Component: () => (
       <Button variant='fill' accent='blue' as="a" rel="noopener noreferrer" target="_blank" href='https://neuro.santiment.net/#pricing' className={styles.link}>
         {tr('cta.try_free', 'Try it for free')}
