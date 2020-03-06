@@ -200,9 +200,9 @@ export const PEOPLE = [
     group: GROUPS.DESIGN,
     img: Kim,
     description:
-      'Anastasia is a passionate product-marketing designer who believes in simple and balanced design. She helps Santiment look pretty and structured. She has worked mostly with B2B and e-commerce companies but has always was looked forward to creating something unique and high-valued in a new industry.',
+      'User-focused visual/interactive designer specializing in partnership integrations, and enterprise apps for web and mobile. Dreams in html/css and data visualizations. Wordsmither. Aspiring crypto trader.',
     links: {
-      linkedin: 'https://www.linkedin.com/in/anastasia-gelemeeva-663ab110a'
+      linkedin: 'https://linkedin.com/in/kimcarson'
     }
   },
   {
