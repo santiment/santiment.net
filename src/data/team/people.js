@@ -49,6 +49,7 @@ export const PEOPLE = [
       'Veteran product creator and entrepreneur with more than 15 years experience leading international teams, and more than 10 years in financial markets analysis. A distinguished sentiment analyst and crowd psychology expert, he’s a regular media commentator who has been featured in Forbes and other financial publications. He also draws on his unique background in a yogic way of life to foster a human-focused, balanced approach to building communities and decentralized platforms.',
     links: {
       sanbase: 'https://app.santiment.net/profile/836',
+      twitter: 'https://twitter.com/balance_ra',
       linkedin: 'https://www.linkedin.com/in/maksim-balashevich-640a8948/'
     }
   },
@@ -154,7 +155,7 @@ export const PEOPLE = [
     description:
       'Mayumi is focused on establishing Santiment partnerships in North Asia. She is the bridge between the Japanese-speaking community, and brings experience in finance and localization. An avid crypto trader, she is passionate about exploring the capabilities of blockchain and beyond.',
     links: {
-      email: 'mayumi.t@santiment.net'
+      email: 'mailto:mayumi.t@santiment.net'
     }
   },
   {
@@ -250,7 +251,7 @@ export const PEOPLE = [
     links: {
       sanbase: 'https://app.santiment.net/profile/1269',
       linkedin: 'https://www.linkedin.com/in/dino-ibisbegovic-5911b711/',
-      email: 'dino.i@santiment.net'
+      email: 'mailto:dino.i@santiment.net'
     }
   },
   {
@@ -357,7 +358,7 @@ export const PEOPLE = [
     links: {
       github: 'https://github.com/spiderjako',
       email:
-        'https://santiment.net/about-santiment/team/lyudmil_danailov@abv.bg'
+        'mailto:lyudmil_danailov@abv.bg'
     }
   },
   {
