@@ -35,7 +35,7 @@ const Features = () => (
           highest spike in mentions on crypto social media, compared to each
           associated word’s previous 2-week average.
         </div>
-        <TryButton />
+        <TryButton href='https://app.santiment.net/labs/trends' />
       </div>
     </div>
     <div className={cx(styles.feature, styles.feature__insights)}>
@@ -70,7 +70,7 @@ const Features = () => (
           Join our leaderboard! - if you create a top article that the Santiment
           community really appreciates, you’ll receive free crypto as a reward!
         </div>
-        <TryButton />
+        <TryButton href='https://insights.santiment.net/' />
       </div>
     </div>
   </div>
