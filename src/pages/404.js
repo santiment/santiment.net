@@ -4,10 +4,11 @@ import SEO from "../components/seo"
 import Subheading from '../components/Heading/Subheading'
 import styles from './404.module.scss'
 
-const NotFoundPage = ({ location }) => {
-	console.log(location)
-
-	return (
+const NotFoundPage = ({ location: {pathname} }) => {
+	if (pathname.includes('blog')) {
+		window.location.href = `https://partners.santiment.net${pathname}`
+		return null
+	} else return (
 	  <Layout>
 	    <SEO title="404: Not found" />
 	    <div className={styles.wrapper}>
