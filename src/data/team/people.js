@@ -8,7 +8,6 @@ import Dino from './images/Dino.png'
 import Garry from './images/Garry.png'
 import Irina from './images/Irina.png'
 import Ivan from './images/Ivan.png'
-import IvanK from './images/IvanK.png'
 import Jan from './images/Jan.png'
 import Jia from './images/Jia.png'
 import Kelvin from './images/Kelvin.png'
@@ -122,17 +121,6 @@ export const PEOPLE = [
       'He has a Major in Economics, enjoys DS and ML, and has deep experience in econometrics, including awards in several Econometric competitions. He also has a passion for discovering crypto space and used to work as analyst of crypto projects. He currently is a teacher for Cryptocurrencies and Derivatives course in Belarusian National Technical University. Likes learning and discovering new things.',
     links: {
       linkedin: 'https://www.linkedin.com/in/alexander-grablevski-4544a7149/'
-    }
-  },
-  {
-    name: 'Ivan Klimuk',
-    position: 'Data Scientist',
-    group: GROUPS.RESEARCH,
-    img: IvanK,
-    description:
-      'A data scientist by trade, Ivan has been performing deep learning and data mining research in bioinformatics, in collaboration with the Luxembourg Institute of Health and the Norwegian University of Life Sciences. Originally, he’s a radio-physicist and has studied all things related to signals and information theory. Last year he discovered blockchain and was hooked. He also enjoys sports (esp. football), music, cinematography and travel',
-    links: {
-      linkedin: 'https://www.linkedin.com/in/ivan-klimuk-30491a157/'
     }
   },
   {
