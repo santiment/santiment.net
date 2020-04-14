@@ -7,6 +7,7 @@
   border-radius: 4px;
   background: none;
   display: flex;
+  flex-direction: column;
   position: relative;
 
   @include responsive('phone-xs') {
@@ -15,7 +16,6 @@
 }
 
 .input {
-  height: 46px;
   background: var(--white) !important;
   border: none !important;
   color: var(--rhino);
@@ -54,4 +54,32 @@
     @include text('caption');
     bottom: -20px;
   }
+}
+
+.checkBlock {
+  margin-top: 17px;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  font-weight: 600;
+  cursor: pointer;
+
+  @include text('caption')
+}
+
+.checkbox {
+  margin-right: 8px;
+
+  div {
+    background-color: var(--white) !important;
+  }
+
+  svg {
+    fill: var(--mystic) !important;
+  }
+}
+
+.subscriptionLabel {
+  position: relative;
+  top: 1px;
 }

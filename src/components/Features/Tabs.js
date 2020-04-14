@@ -25,8 +25,9 @@ const Tabs = () => {
     <>
       <div className={styles.wrapper}>
         <ul className={styles.tabs}>
-          {data.map(item => (
+          {data.map((item, index) => (
             <li
+                key={index}
               className={cx(
                 styles.item,
                 active === item && styles.item__active

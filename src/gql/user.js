@@ -47,47 +47,12 @@ export const CURRENT_USER_QUERY = gql`
   ${userDataFragment}
 `
 
-export const GENERATE_APIKEY_MUTATION = gql`
-  mutation {
-    apikeysMutation: generateApikey {
-      apikeys
-    }
-  }
-`
-
-export const REVOKE_APIKEY_MUTATION = gql`
-  mutation revokeApikey($apikey: String!) {
-    apikeysMutation: revokeApikey(apikey: $apikey) {
-      apikeys
-    }
-  }
-`
-
-export const GDPR_MUTATION = gql`
-  mutation updateTermsAndConditions($privacyPolicyAccepted: Boolean!) {
-    updateTermsAndConditions(privacyPolicyAccepted: $privacyPolicyAccepted) {
-      id
-      privacyPolicyAccepted
-    }
-  }
-`
-
-export const VERIFY_EMAIL_MUTATION = gql`
-  mutation emailLoginVerify($email: String!, $token: String!) {
-    emailLoginVerify(email: $email, token: $token) {
-      token
-      user {
-        ...userDataFragment
-      }
-    }
-  }
-
-  ${userDataFragment}
-`
-
 export const EMAIL_LOGIN_MUTATION = gql`
-  mutation($email: String!) {
-    emailLogin(email: $email) {
+  mutation(
+      $email: String!
+      $subscribeToWeeklyNewsletter: Boolean = false
+  ) {
+    emailLogin(email: $email, subscribeToWeeklyNewsletter: $subscribeToWeeklyNewsletter) {
       success
     }
   }

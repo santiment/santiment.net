@@ -75,6 +75,7 @@ const Footer = ({ intl }) => {
                           sendConfirmationEmail({
                             variables: {
                               email: e.currentTarget.email.value,
+                              subscribeToWeeklyNewsletter: true
                             },
                           }).then(() => {
                             addNot({

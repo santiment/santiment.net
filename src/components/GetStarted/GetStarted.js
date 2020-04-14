@@ -1,7 +1,5 @@
 import React from "react"
-
 import { Mutation } from 'react-apollo'
-import { tr } from '../../utils/translate'
 import { EMAIL_LOGIN_MUTATION } from '../../gql/user'
 import { NotificationsContext } from '../Notifications/Notifications'
 import SubscriptionForm from '../SubscriptionForm/SubscriptionForm'
@@ -14,7 +12,7 @@ const GetStarted = () => (
       {({ add }) => (
         <Mutation mutation={EMAIL_LOGIN_MUTATION}>
           {(sendConfirmationEmail, { loading }) => (
-            <SubscriptionForm loading={loading} send={sendConfirmationEmail} add={add} classes={styles} />
+            <SubscriptionForm loading={loading} send={sendConfirmationEmail} add={add} classes={styles} showCheckbox />
           )}
         </Mutation>
       )}
