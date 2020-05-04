@@ -38,6 +38,8 @@
 	width: 124px;
 	height: 124px;
 	object-fit: contain;
+	border-radius: 50%;
+	background-color: var(--rhino);
 
 	& img {
 		max-width: 100%;

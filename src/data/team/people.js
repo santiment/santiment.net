@@ -8,7 +8,6 @@ import Dino from './images/Dino.png'
 import Garry from './images/Garry.png'
 import Irina from './images/Irina.png'
 import Ivan from './images/Ivan.png'
-import Jan from './images/Jan.png'
 import Jia from './images/Jia.png'
 import Kelvin from './images/Kelvin.png'
 import Kim from './images/Kim.png'
@@ -24,6 +23,7 @@ import Tsetso from './images/Tsetso.png'
 import Tzanko from './images/Tzanko.png'
 import Valentin from './images/Valentin.png'
 import Vassil from './images/Vassil.png'
+import Vlad from './images/Vlad.png'
 import Yordan from './images/Yordan.png'
 import Yura from './images/Yura.png'
 
@@ -87,17 +87,6 @@ export const PEOPLE = [
       'Number theorist, software developer and devops leader keeping Santiment systems in shape. Brings experience with backend logic and data structures as well. Data scientist. New crypto explorer. Meditator.',
     links: {
       linkedin: 'https://www.linkedin.com/in/tzanko-matev-2328425/'
-    }
-  },
-  {
-    name: 'Jan Smirny',
-    position: 'Data Scientist',
-    group: GROUPS.RESEARCH,
-    img: Jan,
-    description:
-      'Jan is a data scientist with a background in psychology and proven experience with cognitive modeling, bayesian statistics and machine learning. He is fascinated by the intersection of financial markets and behaviorism – and what better place to explore that relationship than crypto!',
-    links: {
-      linkedin: 'https://www.linkedin.com/in/jan-smirny-6a7a64116/'
     }
   },
   {
@@ -380,6 +369,17 @@ export const PEOPLE = [
     links: {
       linkedin: 'https://www.linkedin.com/in/ante-sosa-80a198157/',
       github: 'https://github.com/antisaa'
+    }
+  },
+  {
+    name: 'Vladimir Donskoi',
+    position: 'Administration Manager',
+    img: Vlad,
+    group: GROUPS.BISUNESS,
+    description:
+      'Dr. Vladimir Donskoi - expert in the development of new growth models and entrepreneurial ecosystems; studies at Harvard and Oxford universities; experience in founding, managing and strategic consulting for a number of companies.',
+    links: {
+      linkedin: 'https://www.linkedin.com/in/dr-vladimir-donskoi-022257109/'
     }
   }
 ]
