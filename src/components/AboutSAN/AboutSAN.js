@@ -11,8 +11,6 @@ const AboutSAN = () => (
     <Subheading className={styles.heading}>About SAN Tokens</Subheading>
     <p className={styles.desc}>
       SAN is a utility token that provides access to exclusive parts of Sanbase.
-      The first level of economics, basic SAN staking, is live for our
-      experimental Sandata dashboards.
     </p>
     <Button className={styles.btn} border as='a' target='_blank' rel='noopener noreferrer' href='https://academy.santiment.net/san-tokens/how-to-buy-san/'>
     	<Icon type='question-round-small' className={styles.icon} />

@@ -8,6 +8,7 @@ import styles from './TokensTooltip.module.scss'
 const TokensTooltip = () => (
 	 <div className={styles.sanTokens}>
 	  <Tooltip
+	  	on='click'
 	    trigger={
 	      <div className={styles.tooltipTrigger}>
 	        <span>{tr('pricing.discount', 'Holding 1000 SAN tokens will result in a 20% discount on all plans')}</span>

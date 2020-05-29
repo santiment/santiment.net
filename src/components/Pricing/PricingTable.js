@@ -9,7 +9,6 @@ import Plan from './Plan'
 import {
   findSanAPIPlan,
   findSanbasePlan,
-  findSandataPlan,
   formatPrice
 } from '../../utils/plans'
 import { tr } from '../../utils/translate'
@@ -56,10 +55,9 @@ export default ({ classes = {}, onDialogClose }) => {
     <Query query={PLANS_QUERY}>
       {({ data: { productsWithPlans = [] } }) => {
         const Sanbase = productsWithPlans.find(findSanbasePlan)
-        const Sandata = productsWithPlans.find(findSandataPlan)
         const SanAPI = productsWithPlans.find(findSanAPIPlan)
 
-        let SanAPIPrice, SandataPrice
+        let SanAPIPrice, SanbasePrice
 
         if (SanAPI) {
           const SanAPIPlans =
@@ -75,21 +73,18 @@ export default ({ classes = {}, onDialogClose }) => {
           SanAPIPrice = formatPrice(amount, name, billing)
         }
 
-        if (Sandata) {
-          const SandataPlans =
-            (Sandata.plans || [])
+        if (Sanbase) {
+          const SanbasePlans =
+            (Sanbase.plans || [])
               .filter(
                 ({ amount, interval, isDeprecated }) =>
                   interval === billing && amount > 0 && !isDeprecated
               )
               .sort(({ id: a }, { id: b }) => a - b) || []
 
-          const { amount, name } = SandataPlans[0]
-
-          SandataPrice = formatPrice(amount, name, billing)
+          const { amount, name } = SanbasePlans[0]
+          SanbasePrice = formatPrice(amount, name, billing)
         }
-
-        const SanbasePrice = '$0'
 
         return (
           <>
@@ -100,7 +95,6 @@ export default ({ classes = {}, onDialogClose }) => {
 
             <div className={cx(styles.cards, classes.cards)}>
               <Plan name='Sanbase' price={SanbasePrice} />
-              <Plan name='Sandata' price={SandataPrice} />
               <Plan name='SanAPI' price={SanAPIPrice} />
             </div>
             <PayWithCrypto />
