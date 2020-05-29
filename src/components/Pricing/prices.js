@@ -23,23 +23,6 @@ export default {
       'Sansheets plugin with pre-made templates',
     ],
   },
-  Sandata: {
-    title: 'Basic',
-    desc: 'Pro traders, digital asset funds, market analysts',
-    more: '/sandata',
-    Component: () => (
-      <Button variant='fill' as="a" rel="noopener noreferrer" target="_blank" href='https://data.santiment.net' className={cx(styles.link, styles.link__dark)}>
-        {tr('main.btn', 'Get started')}
-      </Button>
-    ),
-    features: [
-      '120 more  on-chain, social & dev metrics',
-      'Custom-built indicators',
-      'Historical & current data for 900+ coins',
-      'New & experimental metrics',
-      'Network Activity, Exchange Flows, Holder Behavior and much more',
-    ],
-  },
   SanAPI: {
     desc: 'Built for crypto developers, quants and third-party apps',
     Component: () => (
