@@ -76,7 +76,7 @@ const SantimentProductsTooltip = ({ className, intl, children }) => {
       passOpenStateAs='isActive'
       closeTimeout={150}
       position='bottom'
-      align='start'
+      align='center'
       offsetY={7}
       className={styles.tooltip}
       trigger={
