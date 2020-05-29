@@ -3,7 +3,6 @@ import cx from 'classnames'
 import Tabs from '@santiment-network/ui/Tabs'
 import Heading from '../Heading/Heading'
 import Sanbase from './images/sanbase.png'
-import Sandata from './images/sandata.png'
 import SanAPI from './images/sanapi.png'
 import Button from '../Features/Button'
 import styles from './Products.module.scss'
@@ -13,11 +12,6 @@ const TABS = {
     desc: 'Exclusive on-chain, social and development metrics, low-latency market signals, custom Spreadsheet templates & daily insights on the cryptocurrency market',
     link: 'https://app.santiment.net/',
     img: Sanbase
-  },
-  Sandata: {
-    desc: 'Advanced on-chain & social information on 900+ cryptocurrencies. Analyze the behavior of whales, miners, exchanges, network users, the crypto community and more.',
-    link: 'https://data.santiment.net/',
-    img: Sandata
   },
   SanAPI: {
     desc: 'One of the most comprehensive crypto APIs on the market. Single endpoint access for on-chain, social, pricing and development information on 900+ coins',
