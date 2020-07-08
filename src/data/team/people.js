@@ -21,7 +21,6 @@ import Rinat from './images/Rinat.png'
 import Serena from './images/Serena.png'
 import Tsetso from './images/Tsetso.png'
 import Tzanko from './images/Tzanko.png'
-import Valentin from './images/Valentin.png'
 import Vassil from './images/Vassil.png'
 import Vlad from './images/Vlad.png'
 import Yordan from './images/Yordan.png'
@@ -50,20 +49,6 @@ export const PEOPLE = [
       sanbase: 'https://app.santiment.net/profile/836',
       twitter: 'https://twitter.com/balance_ra',
       linkedin: 'https://www.linkedin.com/in/maksim-balashevich-640a8948/'
-    }
-  },
-  {
-    name: 'Valentin Mihov',
-    img: Valentin,
-    position: 'CTO',
-    group: GROUPS.CORE,
-    description:
-      'Software engineer with 10+ years experience building startups, plus a silver medal winner on the International Olympiad of Informatics 2004. He loves building great products, performance optimizations and advanced software like AI and scalable systems. When he’s not cracking up code, he’s trekking in the mountains or kitesurfing on the beach.',
-    links: {
-      sanbase: 'https://app.santiment.net/profile/121',
-      twitter: 'https://twitter.com/valentinmihov',
-      linkedin: 'https://www.linkedin.com/in/valentinmihov/',
-      github: 'https://github.com/valo'
     }
   },
   {
