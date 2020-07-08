@@ -1,7 +1,8 @@
 import Alan from './images/Alan.png'
 import Alex from './images/Alex.png'
-import Ante from './images/Ante.png'
 import Anastasiya from './images/Anastasiya.png'
+import Anatoliy from './images/Anatoliy.png'
+import Ante from './images/Ante.png'
 import Brian from './images/Brian.png'
 import Dima from './images/Dima.png'
 import Dino from './images/Dino.png'
@@ -67,7 +68,7 @@ export const PEOPLE = [
     name: 'Tzanko Matev',
     position: 'PhD Developer / Mathematician',
     img: Tzanko,
-    group: GROUPS.RESEARCH,
+    group: GROUPS.CORE,
     description:
       'Number theorist, software developer and devops leader keeping Santiment systems in shape. Brings experience with backend logic and data structures as well. Data scientist. New crypto explorer. Meditator.',
     links: {
@@ -365,6 +366,18 @@ export const PEOPLE = [
       'Dr. Vladimir Donskoi - expert in the development of new growth models and entrepreneurial ecosystems; studies at Harvard and Oxford universities; experience in founding, managing and strategic consulting for a number of companies.',
     links: {
       linkedin: 'https://www.linkedin.com/in/dr-vladimir-donskoi-022257109/'
+    }
+  },
+    {
+    name: 'Anatoliy Pozdeyev',
+    position: 'Big Data Engineer',
+    img: Anatoliy,
+    group: GROUPS.RESEARCH,
+    description:
+      'Master degree in computer security and cryptography, software engineer with entrepreneur background, 15+ years experience. Made a lot of projects in different fields (security, IPTV, mobile, games). Now his main passion is Big Data and Crypto. He likes challenges, when it is necessary to think, rather than just knocking on a keyboard. He desires to compete in Iron Man triathlon, 4km swim, 200 bike ride, and 40 runs!',
+    links: {
+      linkedin: 'https://www.linkedin.com/in/anatoly-pozdeev-4b086011/',
+      github: 'https://github.com/apozdeyev'
     }
   }
 ]
