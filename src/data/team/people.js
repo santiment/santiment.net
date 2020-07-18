@@ -9,7 +9,6 @@ import Dino from './images/Dino.png'
 import Garry from './images/Garry.png'
 import Irina from './images/Irina.png'
 import Ivan from './images/Ivan.png'
-import Jia from './images/Jia.png'
 import Kelvin from './images/Kelvin.png'
 import Kim from './images/Kim.png'
 import Lyudmil from './images/Lyudmil.png'
@@ -167,17 +166,6 @@ export const PEOPLE = [
       'User-focused visual/interactive designer specializing in partnership integrations, and enterprise apps for web and mobile. Dreams in html/css and data visualizations. Wordsmither. Aspiring crypto trader.',
     links: {
       linkedin: 'https://linkedin.com/in/kimcarson'
-    }
-  },
-  {
-    name: 'Feng Jiahong',
-    position: 'Graphic Illustrator',
-    group: GROUPS.DESIGN,
-    img: Jia,
-    description:
-      'Design and visual druidess. Creator of the Santiment brand, ants, and other magic creatures. Inspired by the adventure of the crypto world. Brings fintech experience, too.',
-    links: {
-      linkedin: 'https://www.linkedin.com/in/jiahong-feng-903a8187/'
     }
   },
   {
