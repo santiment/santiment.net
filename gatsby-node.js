@@ -9,7 +9,7 @@
 exports.createPages = ({ graphql, actions }) => {
   const { createRedirect } = actions
   createRedirect({ fromPath: '/sansheets', toPath: 'https://sheets.santiment.net/' })
-  createRedirect({ fromPath: '/sandata', toPath: 'https://data.santiment.net/' })
+  createRedirect({ fromPath: '/sandata', toPath: '/' })
   createRedirect({ fromPath: '/about-santiment/how-to-buy-san/', toPath: 'https://academy.santiment.net/san-tokens/how-to-buy-san/' })
 
   createRedirect({ fromPath: '/about-santiment/team/', toPath: '/team' })
