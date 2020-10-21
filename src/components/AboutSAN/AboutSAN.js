@@ -22,7 +22,7 @@ const AboutSAN = () => (
 
     <div className={styles.content}>
 
-    	<img className={styles.img} src={chart} />
+    	<img className={styles.img} src={chart} alt='img' />
 
     {/* <ul className={styles.chart}> */}
     {/*   {data.map(({ title, who, desc }) => ( */}

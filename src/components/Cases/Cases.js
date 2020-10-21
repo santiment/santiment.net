@@ -1,7 +1,6 @@
 import React from 'react'
 import Icon from '@santiment-network/ui/Icon'
 import Heading from '../Heading/Heading'
-import Subheading from '../Heading/Subheading'
 import tops from './tops.svg'
 import bottoms from './bottoms.svg'
 import activity from './activity.svg'
@@ -46,7 +45,7 @@ const Cases = () => (
       {items.map(({ link, icon, title, key }) => (
         <li className={styles.item} key={key}>
           <div>
-            <img src={icon} className={styles.icon} />
+            <img src={icon} className={styles.icon} alt='img'/>
           </div>
           <div className={styles.text}>
             <h4 className={styles.title}>{title}</h4>

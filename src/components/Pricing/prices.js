@@ -1,5 +1,4 @@
 import React from 'react'
-import cx from 'classnames'
 import Button from '@santiment-network/ui/Button'
 import { tr } from '../../utils/translate'
 import styles from './index.module.scss'
