@@ -13,12 +13,14 @@ import Kelvin from './images/Kelvin.png'
 import Kim from './images/Kim.png'
 import Lyudmil from './images/Lyudmil.png'
 import Maksim from './images/Maksim.png'
+import MaksimR from './images/MaksimR.png'
 import Max from './images/Max.png'
 import Mayumi from './images/Mayumi.png'
 import Nastya from './images/Nastya.png'
 import Nikolay from './images/Nikolay.png'
 import Rinat from './images/Rinat.png'
 import Serena from './images/Serena.png'
+import Serge from './images/Serge.png'
 import Tsetso from './images/Tsetso.png'
 import Tzanko from './images/Tzanko.png'
 import Vassil from './images/Vassil.png'
@@ -356,7 +358,30 @@ export const PEOPLE = [
       linkedin: 'https://www.linkedin.com/in/dr-vladimir-donskoi-022257109/'
     }
   },
-    {
+  {
+    name: 'Serge Nedashkovsky',
+    position: 'Data Scientist',
+    img: Serge,
+    group: GROUPS.RESEARCH,
+    description:
+      'Love graphs, analytics, data processing and machine learning. For the last three years, have been researching and constantly amazed at how the Ethereum transaction graph changes. Happy to bring this knowledge to you.',
+    links: {
+      linkedin: 'https://linkedin.com/in/serge-nedashkovsky',
+      github: 'http://github.com/Snedashkovsky'
+    }
+  },
+  {
+    name: 'Maksim Razhev',
+    position: 'Big Data Engineer',
+    img: MaksimR,
+    group: GROUPS.RESEARCH,
+    description:
+      'Data Science and Blockchain enthusiast. Interested in building smart applications that can give insights into how the world works. Believes that data can answer almost any question, except maybe the Ultimate Question of Life. Besides blockchain analytics, also likes to study history, read classics, and sometimes participate in machine learning competitions.',
+    links: {
+      linkedin: 'https://github.com/ninjascant',
+    }
+  },
+  {
     name: 'Anatoliy Pozdeyev',
     position: 'Big Data Engineer',
     img: Anatoliy,
