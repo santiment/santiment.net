@@ -378,7 +378,7 @@ export const PEOPLE = [
     description:
       'Data Science and Blockchain enthusiast. Interested in building smart applications that can give insights into how the world works. Believes that data can answer almost any question, except maybe the Ultimate Question of Life. Besides blockchain analytics, also likes to study history, read classics, and sometimes participate in machine learning competitions.',
     links: {
-      linkedin: 'https://github.com/ninjascant',
+      github: 'https://github.com/ninjascant',
     }
   },
   {
