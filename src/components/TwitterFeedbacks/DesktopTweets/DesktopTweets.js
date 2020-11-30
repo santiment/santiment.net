@@ -16,15 +16,14 @@ function getColumnsCount () {
     screenWidth = window.innerWidth
   }
 
-  return Math.floor(window.innerWidth / (columnWidth + gutterSize)) || 1
+  return Math.floor(screenWidth / (columnWidth + gutterSize)) || 1
 }
 
 const DesktopTweets = () => {
   const [columnsCount, setColumnsCount] = useState(() => getColumnsCount())
 
   function _calculateColumnCount () {
-    const newCount = getColumnsCount()
-    console.log(newCount)
+  const newCount = getColumnsCount()
 
     if (newCount !== columnsCount) {
       setColumnsCount(newCount)
