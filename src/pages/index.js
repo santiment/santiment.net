@@ -2,7 +2,7 @@ import React from 'react'
 import { injectIntl } from 'gatsby-plugin-intl'
 import Layout from '../components/layout'
 import WelcomeBlock from '../components/WelcomeBlock/WelcomeBlock'
-// import Feed from '../components/Feed/Feed'
+import Testimonails from '../components/Testimonials'
 import Cases from '../components/Cases/Cases'
 import Features from '../components/Features/Features'
 import Products from '../components/Products/Products'
@@ -16,10 +16,10 @@ const IndexPage = ({ intl }) => (
     <SEO title="Santiment - See what other crypto traders are missing" />
     <WelcomeBlock />
     <Cases />
-    {/* <Feed /> */}
     <Features />
     <Products />
     <Companies />
+    <Testimonails />
     <GetStarted />
   </Layout>
 )
