@@ -40,7 +40,7 @@ const items = [
 
 const Cases = () => (
   <section className={styles.wrapper}>
-    <Heading className={styles.subtitle}>Use Cases</Heading>
+    <Heading className={styles.subtitle}>Use cases</Heading>
     <ul className={styles.list}>
       {items.map(({ link, icon, title, key }) => (
         <li className={styles.item} key={key}>

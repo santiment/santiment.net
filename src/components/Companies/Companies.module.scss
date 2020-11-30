@@ -1,0 +1,58 @@
+@import '~@santiment-network/ui/mixins';
+
+.container {
+  margin: 64px auto 120px auto;
+  margin-bottom: 120px;
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include responsive('phone', 'phone-xs') {
+    margin: 24px auto 60px auto;
+  }
+}
+
+.header {
+  margin-bottom: 80px;
+
+  @include responsive('laptop', 'tablet') {
+    margin-bottom: 60px;
+  }
+
+  @include responsive('phone', 'phone-xs') {
+    margin-bottom: 40px;
+  }
+}
+
+.list {
+  display: grid;
+  grid-column-gap: 76px;
+  grid-row-gap: 58px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  max-width: 780px;
+
+  img {
+    align-self: center;
+    justify-self: center;
+  }
+
+  @include responsive('laptop', 'tablet') {
+    img {
+      max-width: 170px;
+    }
+  }
+
+  @include responsive('phone', 'phone-xs') {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 48px;
+    grid-row-gap: 48px;
+
+    img {
+      max-width: 140px;
+    }
+  }
+}
