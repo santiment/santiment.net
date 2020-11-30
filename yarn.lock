@@ -1154,10 +1154,10 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@santiment-network/ui@=0.5.146":
-  version "0.5.146"
-  resolved "https://registry.yarnpkg.com/@santiment-network/ui/-/ui-0.5.146.tgz#8fc0193409c44259f5f5a40f03736c88ec3d73bb"
-  integrity sha512-S4wK1ydnQpdedwlUDP3GCPg1iscC/83vQMoYq5AxDwOMa2Q/D13DhrJPTwGytuWbCjXvvr8cpCi2VwVsZN3HYg==
+"@santiment-network/ui@^0.5.207":
+  version "0.5.207"
+  resolved "https://registry.yarnpkg.com/@santiment-network/ui/-/ui-0.5.207.tgz#110928de129dfa0779985d29848c540d8a7a9b3c"
+  integrity sha512-PSiGOA8pZrCEud2hdW3q2ajBtyGFVWenPzJrtYh5P4tICwZmj9NBae6Ak36kOv8K+tBqm9fB72NMBm7MwkcFUQ==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -9817,7 +9817,7 @@ prompts@^2.3.0:
     kleur "^3.0.3"
     sisteransi "^1.0.4"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -10139,12 +10139,25 @@ react-reconciler@^0.24.0:
     prop-types "^15.6.2"
     scheduler "^0.18.0"
 
+react-responsive-masonry@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-responsive-masonry/-/react-responsive-masonry-2.1.0.tgz#5ef1c38c0ac542776ab29ff97a0adfa7f8bc929c"
+  integrity sha512-sAMV04NcanmusNdCMRmLoT6YJU/kQ7s1PEG1Ycnx1aQU4iqZfmADlcletEhEBl5jT0EPatHrgW5/d3LNTy37oQ==
+
 react-side-effect@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-1.2.0.tgz#0e940c78faba0c73b9b0eba9cd3dda8dfb7e7dae"
   integrity sha512-v1ht1aHg5k/thv56DRcjw+WtojuuDHFUgGfc+bFHOWsF4ZK6C2V57DO0Or0GPsg6+LSTE0M6Ry/gfzhzSwbc5w==
   dependencies:
     shallowequal "^1.0.1"
+
+react-sizes@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-sizes/-/react-sizes-2.0.0.tgz#c2100daf3bf74077fb410f09204340c1af5c1d4f"
+  integrity sha512-YNGPQGJTxNMD4wdFRmVmqlLZlwhETVW06H7dVbOjj+OV1ckz/gkH3/5MfRuSO8t99nMOmi+Uj14jkvG+zlP57w==
+  dependencies:
+    lodash.throttle "^4.1.1"
+    prop-types "^15.6.0"
 
 react-slick@^0.24.0:
   version "0.24.0"
