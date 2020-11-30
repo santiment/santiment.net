@@ -25,15 +25,6 @@ const DesktopTweets = () => {
     }
   }
 
-  const _onResize = useCallback(
-    () => {
-      _calculateColumnCount()
-    },
-    [_calculateColumnCount]
-  )
-
-  useEventListener('resize', _onResize)
-
   return (
     <Masonry columnsCount={columnsCount} gutter={'24px'}>
       {TweetsParsed.map((item, index) => (
