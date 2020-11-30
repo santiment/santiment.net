@@ -23,11 +23,11 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  @include text('h3', 'm');
+  @include text('h3', 'l');
   color: var(--rhino);
 
   @include responsive('phone', 'phone-xs') {
-    @include text('h4', 'm');
+    @include text('h4', 'l');
   }
 }
 
