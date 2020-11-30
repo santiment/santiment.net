@@ -11,6 +11,11 @@ const SETTINGS = {
 
 function getColumnsCount () {
   const { columnWidth, gutterSize } = SETTINGS
+  let screenWidth = 0
+  if (typeof window !== 'undefined') {
+    screenWidth = window.innerWidth
+  }
+
   return Math.floor(window.innerWidth / (columnWidth + gutterSize)) || 1
 }
 
