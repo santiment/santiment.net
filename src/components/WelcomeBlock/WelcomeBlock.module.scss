@@ -13,11 +13,11 @@
 }
 
 .title {
-  max-width: 600px;
+  max-width: 635px;
   margin: 0 auto 16px;
 
   @include responsive('phone-xs') {
-    @include text('h4', 'm');
+    @include text('h4', 'l');
     margin-bottom: 24px;
   }
 }

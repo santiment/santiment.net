@@ -2,12 +2,12 @@
 
 .text {
 	text-align: center;
-	@include text('h3', 'm');
+	@include text('h3', 'l');
 	color: var(--rhino);
 	margin: 0 auto 48px;
 
 	@include responsive('phone-xs', 'phone') {
 		margin-bottom: 32px;
-		@include text('h4', 'm');
+		@include text('h4', 'l');
 	}
 }

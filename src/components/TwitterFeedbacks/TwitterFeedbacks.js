@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import Slider from 'react-slick'
 import Icon from '@santiment-network/ui/Icon'
-import { DesktopOnly, MobileOnly } from '../Responsive'
 import DesktopTweets from './DesktopTweets/DesktopTweets'
 import { TweetCard, TweetsParsed } from './Tweets'
 import styles from './TwitterFeedbacks.module.scss'
@@ -48,21 +47,16 @@ const TwitterFeedbacks = () => {
           More reviews from Twitter
         </div>
       </div>
-      <DesktopOnly>
-        <div className={styles.list}>
-          <DesktopTweets />
-        </div>
-      </DesktopOnly>
-
-      <MobileOnly>
-        <div className={styles.slider}>
-          <Slider {...SLIDER_SETTINGS} ref={slider}>
-            {TweetsParsed.map((item, index) => (
-              <TweetCard item={item} key={index} />
-            ))}
-          </Slider>
-        </div>
-      </MobileOnly>
+      <div className={styles.list}>
+        <DesktopTweets />
+      </div>
+      <div className={styles.slider}>
+        <Slider {...SLIDER_SETTINGS} ref={slider}>
+          {TweetsParsed.map((item, index) => (
+            <TweetCard item={item} key={index} />
+          ))}
+        </Slider>
+      </div>
     </div>
   )
 }
