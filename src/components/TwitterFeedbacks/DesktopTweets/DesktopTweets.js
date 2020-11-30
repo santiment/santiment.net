@@ -1,6 +1,5 @@
-import React, { useCallback, useState } from 'react'
+import React, { useState } from 'react'
 import Masonry from 'react-responsive-masonry'
-import { useEventListener } from '../../../hooks/eventListeners'
 import { TweetCard, TweetsParsed } from '../Tweets'
 
 const SETTINGS = {
