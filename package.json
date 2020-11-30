@@ -38,6 +38,8 @@
     "react-ga": "^2.6.0",
     "react-helmet": "^5.2.1",
     "react-slick": "^0.24.0",
+    "react-sizes": "^2.0.0",
+    "react-responsive-masonry": "^2.1.0",
     "react-transition-group": "^4.1.1",
     "slick-carousel": "^1.8.1"
   },

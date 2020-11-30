@@ -8,6 +8,7 @@ import Features from '../components/Features/Features'
 import Products from '../components/Products/Products'
 import Companies from '../components/Companies/Companies'
 import GetStarted from '../components/GetStarted/GetStarted'
+import TwitterFeedbacks from '../components/TwitterFeedbacks/TwitterFeedbacks'
 import SEO from '../components/seo'
 import styles from './index.module.scss'
 
@@ -20,6 +21,7 @@ const IndexPage = ({ intl }) => (
     <Products />
     <Companies />
     <Testimonails />
+    <TwitterFeedbacks />
     <GetStarted />
   </Layout>
 )
