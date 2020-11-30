@@ -28,6 +28,10 @@
   width: 100%;
   align-items: center;
   justify-content: center;
+
+  @include responsive('phone', 'phone-xs') {
+    display: none;
+  }
 }
 
 .twitterEmbed {
@@ -200,6 +204,11 @@
 .slider {
   width: 100%;
   margin-top: 40px;
+
+
+  @include responsive('laptop', 'desktop', 'tablet') {
+    display: none;
+  }
 
   div {
     .slick-slide {
