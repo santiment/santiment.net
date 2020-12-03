@@ -19,15 +19,7 @@ function getColumnsCount () {
 }
 
 const DesktopTweets = () => {
-  const [columnsCount, setColumnsCount] = useState(() => getColumnsCount())
-
-  function _calculateColumnCount () {
-  const newCount = getColumnsCount()
-
-    if (newCount !== columnsCount) {
-      setColumnsCount(newCount)
-    }
-  }
+  const [columnsCount] = useState(() => getColumnsCount())
 
   return (
     <Masonry columnsCount={columnsCount} gutter={'24px'}>
