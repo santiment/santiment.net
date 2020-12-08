@@ -15,7 +15,7 @@ import Lyudmil from './images/Lyudmil.png'
 import Maksim from './images/Maksim.png'
 import MaksimR from './images/MaksimR.png'
 import Max from './images/Max.png'
-import Mayumi from './images/Mayumi.png'
+// import Mayumi from './images/Mayumi.png'
 import Nastya from './images/Nastya.png'
 import Nikolay from './images/Nikolay.png'
 import Rinat from './images/Rinat.png'
@@ -109,17 +109,6 @@ export const PEOPLE = [
     links: {
       twitter: 'https://twitter.com/tserenam',
       linkedin: 'https://www.linkedin.com/in/tanserena/'
-    }
-  },
-  {
-    name: 'Mayumi Tsukada',
-    position: 'Partnerships (North Asia)',
-    group: GROUPS.BISUNESS,
-    img: Mayumi,
-    description:
-      'Mayumi is focused on establishing Santiment partnerships in North Asia. She is the bridge between the Japanese-speaking community, and brings experience in finance and localization. An avid crypto trader, she is passionate about exploring the capabilities of blockchain and beyond.',
-    links: {
-      email: 'mailto:mayumi.t@santiment.net'
     }
   },
   {
@@ -349,7 +338,7 @@ export const PEOPLE = [
   },
   {
     name: 'Vladimir Donskoi',
-    position: 'Administration Manager',
+    position: 'Managing Director',
     img: Vlad,
     group: GROUPS.BISUNESS,
     description:
