@@ -9,13 +9,13 @@ import Dino from './images/Dino.png'
 import Garry from './images/Garry.png'
 import Irina from './images/Irina.png'
 import Ivan from './images/Ivan.png'
+import Kate from './images/Kate.png'
 import Kelvin from './images/Kelvin.png'
 import Kim from './images/Kim.png'
 import Lyudmil from './images/Lyudmil.png'
 import Maksim from './images/Maksim.png'
 import MaksimR from './images/MaksimR.png'
 import Max from './images/Max.png'
-// import Mayumi from './images/Mayumi.png'
 import Nastya from './images/Nastya.png'
 import Nikolay from './images/Nikolay.png'
 import Rinat from './images/Rinat.png'
@@ -25,6 +25,7 @@ import Tsetso from './images/Tsetso.png'
 import Tzanko from './images/Tzanko.png'
 import Vassil from './images/Vassil.png'
 import Vlad from './images/Vlad.png'
+import VladV from './images/VladV.png'
 import Yordan from './images/Yordan.png'
 import Yura from './images/Yura.png'
 
@@ -381,5 +382,28 @@ export const PEOPLE = [
       linkedin: 'https://www.linkedin.com/in/anatoly-pozdeev-4b086011/',
       github: 'https://github.com/apozdeyev'
     }
-  }
+  },
+  {
+    name: 'Katsiaryna Dzibuk',
+    position: 'Junior Data Scientist',
+    img: Kate,
+    group: GROUPS.RESEARCH,
+    description:
+        'Katsiaryna holds a BSc in field of AI. A person of numbers being in love with mathematics and statistics. Likes to learn Japanese and spend time with her cats.',
+    links: {
+      linkedin: 'https://www.linkedin.com/in/alresha/',
+    }
+  },,
+  {
+    name: 'Vladislav Volynets',
+    position: 'Junior Data Scientist',
+    img: VladV,
+    group: GROUPS.RESEARCH,
+    description:
+        'Vlad joined our team while studying at the Belarusian State University. Enjoys learning math, implementing various kinds of classical algorithms, and understanding ml algorithms under the hood. Likes to play basketball, table tennis and spend time with his friends.',
+    links: {
+      linkedin: 'https://www.linkedin.com/in/vladislav-volynets-131b0b194',
+      github: 'https://github.com/volynvlad'
+    }
+  },
 ]
