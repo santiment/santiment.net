@@ -1,4 +1,3 @@
-import Alan from './images/Alan.png'
 import Alex from './images/Alex.png'
 import Anastasiya from './images/Anastasiya.png'
 import Anatoliy from './images/Anatoliy.png'
@@ -124,18 +123,6 @@ export const PEOPLE = [
       linkedin: 'https://www.linkedin.com/in/brian-quinlivan-mba-3a95b18b/',
       medium: 'https://medium.com/@bquinliv3',
       facebook: 'https://www.facebook.com/brian.quinlivan.7'
-    }
-  },
-  {
-    name: 'Alan Podemski',
-    position: 'Product Designer',
-    group: GROUPS.DESIGN,
-    img: Alan,
-    description:
-      'Self-taught and with a strong eye for detail, Alan has 9 years of experience in presenting user experience solutions that make people’s lives easier. He jumped into crypto in 2016 and has been learning about market metrics and human behaviour ever since. After the regular workday, he enjoys spending time inviting new folks into cryptocurrencies and supporting the no-code development movement.',
-    links: {
-      twitter: 'https://twitter.com/alanpodemski',
-      linkedin: 'https://www.linkedin.com/in/alanpodemski/'
     }
   },
   {
