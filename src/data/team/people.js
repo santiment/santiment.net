@@ -16,6 +16,7 @@ import Maksim from './images/Maksim.png'
 import MaksimR from './images/MaksimR.png'
 import Max from './images/Max.png'
 import Nastya from './images/Nastya.png'
+import Nail from './images/Nail.png'
 import Nikolay from './images/Nikolay.png'
 import Rinat from './images/Rinat.png'
 import Serena from './images/Serena.png'
@@ -380,7 +381,7 @@ export const PEOPLE = [
     links: {
       linkedin: 'https://www.linkedin.com/in/alresha/',
     }
-  },,
+  },
   {
     name: 'Vladislav Volynets',
     position: 'Junior Data Scientist',
@@ -391,6 +392,17 @@ export const PEOPLE = [
     links: {
       linkedin: 'https://www.linkedin.com/in/vladislav-volynets-131b0b194',
       github: 'https://github.com/volynvlad'
+    }
+  },
+  {
+    name: 'Nail Khafizov',
+    position: 'Blockchain developer',
+    img: Nail,
+    group: GROUPS.DEVS,
+    description:
+        'He likes to develop extraordinary and complex apps. He is sure: blockchain will lead us to the bright future. Programming is his passion.',
+    links: {
+      github: 'https://github.com/nailkhaf/'
     }
   },
 ]
