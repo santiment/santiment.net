@@ -2,6 +2,11 @@
 
 .tooltip {
   z-index: 20;
+
+  @include responsive('phone-xs', 'phone') {
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .wrapper {

@@ -1154,10 +1154,10 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@santiment-network/ui@^0.5.207":
-  version "0.5.207"
-  resolved "https://registry.yarnpkg.com/@santiment-network/ui/-/ui-0.5.207.tgz#110928de129dfa0779985d29848c540d8a7a9b3c"
-  integrity sha512-PSiGOA8pZrCEud2hdW3q2ajBtyGFVWenPzJrtYh5P4tICwZmj9NBae6Ak36kOv8K+tBqm9fB72NMBm7MwkcFUQ==
+"@santiment-network/ui@^0.5.223":
+  version "0.5.223"
+  resolved "https://registry.yarnpkg.com/@santiment-network/ui/-/ui-0.5.223.tgz#c3b4c3984e2235c9e63f16eec3df1ea3c6e223aa"
+  integrity sha512-6LSpUblsZORp0i08glePNMXWujwHKqh2YGHRtpLC24iGflGwilvePDoFdPG8/omk3odjLaknbq4EFr3nS0G4sw==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"

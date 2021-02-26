@@ -8,7 +8,7 @@ import CompanyDropdown from '../CompanyDropdown/CompanyDropdown'
 import AccountBtn from '../AccountBtn/AccountBtn'
 import styles from './Header.module.scss'
 
-const Header = ({ isAccountPage, intl }) => {
+const Header = ({ intl }) => {
   const toggle = useRef(null)
 
   const closeNav = () => {
