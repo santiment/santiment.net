@@ -20,7 +20,6 @@ import Nail from './images/Nail.png'
 import Nikolay from './images/Nikolay.png'
 import Rinat from './images/Rinat.png'
 import Serena from './images/Serena.png'
-import Serge from './images/Serge.png'
 import Tsetso from './images/Tsetso.png'
 import Tzanko from './images/Tzanko.png'
 import Vassil from './images/Vassil.png'
@@ -334,18 +333,6 @@ export const PEOPLE = [
       'Dr. Vladimir Donskoi - expert in the development of new growth models and entrepreneurial ecosystems; studies at Harvard and Oxford universities; experience in founding, managing and strategic consulting for a number of companies.',
     links: {
       linkedin: 'https://www.linkedin.com/in/dr-vladimir-donskoi-022257109/'
-    }
-  },
-  {
-    name: 'Serge Nedashkovsky',
-    position: 'Data Scientist',
-    img: Serge,
-    group: GROUPS.RESEARCH,
-    description:
-      'Love graphs, analytics, data processing and machine learning. For the last three years, have been researching and constantly amazed at how the Ethereum transaction graph changes. Happy to bring this knowledge to you.',
-    links: {
-      linkedin: 'https://linkedin.com/in/serge-nedashkovsky',
-      github: 'http://github.com/Snedashkovsky'
     }
   },
   {
