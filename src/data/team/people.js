@@ -13,7 +13,6 @@ import Kelvin from './images/Kelvin.png'
 import Kim from './images/Kim.png'
 import Lyudmil from './images/Lyudmil.png'
 import Maksim from './images/Maksim.png'
-import MaksimR from './images/MaksimR.png'
 import Max from './images/Max.png'
 import Nastya from './images/Nastya.png'
 import Nail from './images/Nail.png'
@@ -333,17 +332,6 @@ export const PEOPLE = [
       'Dr. Vladimir Donskoi - expert in the development of new growth models and entrepreneurial ecosystems; studies at Harvard and Oxford universities; experience in founding, managing and strategic consulting for a number of companies.',
     links: {
       linkedin: 'https://www.linkedin.com/in/dr-vladimir-donskoi-022257109/'
-    }
-  },
-  {
-    name: 'Maksim Razhev',
-    position: 'Big Data Engineer',
-    img: MaksimR,
-    group: GROUPS.RESEARCH,
-    description:
-      'Data Science and Blockchain enthusiast. Interested in building smart applications that can give insights into how the world works. Believes that data can answer almost any question, except maybe the Ultimate Question of Life. Besides blockchain analytics, also likes to study history, read classics, and sometimes participate in machine learning competitions.',
-    links: {
-      github: 'https://github.com/ninjascant',
     }
   },
   {
