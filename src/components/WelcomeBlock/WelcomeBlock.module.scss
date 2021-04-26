@@ -1,39 +1,36 @@
 @import '~@santiment-network/ui/mixins.scss';
 
 .wrapper {
-  padding: 0 24px;
-}
-
-.description {
-  @include text('body-1');
-  color: var(--waterloo);
-  max-width: 565px;
-  text-align: center;
-  margin: 0 auto;
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  max-width: 100%;
+  overflow: visible;
 }
 
 .title {
-  max-width: 635px;
-  margin: 0 auto 16px;
+  max-width: 738px;
+  margin: 0 auto 40px;
+  text-align: center;
+
+  @include text('h2');
+  color: var(--rhino);
 
   @include responsive('phone-xs') {
-    @include text('h4', 'l');
-    margin-bottom: 24px;
+    @include text('h3');
   }
 }
 
 .form {
-  max-width: 450px;
-  margin: 32px auto 24px;
+  max-width: 432px;
   border: none;
   border-radius: 4px;
   background: none;
   display: flex;
   position: relative;
-
-  @include responsive('phone-xs') {
-    margin-bottom: 40px;
-  }
 
   &:hover,
   &:focus {
@@ -72,4 +69,54 @@
 
 .arrow {
   margin-left: 6px;
+}
+
+.coin {
+  position: absolute;
+}
+
+.bitcoin {
+  top: 0vw;
+  left: 12vw;
+}
+
+.litecoin {
+  top: 15vw;
+  left: 5vw;
+}
+
+.eth {
+  right: 16vw;
+  bottom: 6vw;
+}
+
+.zcash {
+  right: 8vw;
+  bottom: 23vw;
+}
+
+.ripple {
+  right: 3vw;
+  bottom: 13vw;
+}
+
+.dash {
+  top: 15vw;
+  left: 19vw;
+}
+
+.topSpot, .bottomSpot {
+  position: absolute;
+  max-width: 60vw;
+  height: auto;
+}
+
+.topSpot {
+  top: 0;
+  left: 0;
+}
+
+.bottomSpot {
+  right: 0;
+  bottom: -10px;
 }
