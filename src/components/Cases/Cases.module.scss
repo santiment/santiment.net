@@ -3,13 +3,13 @@
 .wrapper {
   padding: 24px;
   max-width: 915px;
-  margin: 120px auto 0;
+  margin: 0 auto;
   @include responsive('tablet') {
     max-width: 775px;
   }
 
   @include responsive('phone-xs', 'phone') {
-  margin: 20px auto 0;
+  margin: 0 auto;
   }
 }
 
