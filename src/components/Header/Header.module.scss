@@ -3,11 +3,15 @@
 
 .header {
   background: var(--white);
-  z-index: 10;
+  z-index: 1000;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  animation-name: shiftDown;
+  animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
 }
 
 .container {
@@ -160,4 +164,16 @@
 .external {
   margin-left: 5px;
   fill: var(--waterloo);
+}
+
+@keyframes shiftDown {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

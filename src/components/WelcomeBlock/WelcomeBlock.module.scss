@@ -22,6 +22,12 @@
   text-align: center;
   z-index: 1;
 
+  animation-name: shiftUp;
+  animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
+  animation-duration: 0.8s;
+  animation-delay: .6s;
+  animation-fill-mode: both;
+
   @include responsive('tablet', 'phone') {
     max-width:80%;
   }
@@ -51,6 +57,12 @@
   display: flex;
   position: relative;
   margin: 0 auto;
+
+  animation-name: shiftUp;
+  animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
+  animation-duration: 0.8s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
 
   &:hover,
   &:focus {
@@ -108,6 +120,24 @@
   @media only screen and (max-width: (320px)) {
     transform: scale(0.5);
   }
+}
+
+.coinRight, .coinLeft {
+  animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
+  animation-duration: 0.8s;
+  animation-delay: 1.3s;
+  animation-fill-mode: both;
+  will-change: opacity;
+}
+
+.coinRight {
+  animation-name: coinMovingRight;
+  will-change: bottom, right;
+}
+
+.coinLeft {
+  animation-name: coinMovingLeft;
+  will-change: top, left;
 }
 
 .bitcoin {
@@ -195,4 +225,41 @@
 .bottomSpot {
   right: 0;
   bottom: -10px;
+}
+
+@keyframes shiftUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes coinMovingRight {
+  0% {
+    bottom: 40%;
+    right: 40%;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes coinMovingLeft {
+  0% {
+    top: 40%;
+    left: 40%;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
