@@ -1,39 +1,68 @@
 @import '~@santiment-network/ui/mixins.scss';
 
 .wrapper {
-  padding: 0 24px;
-}
+  margin-top: 70px;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  max-width: 100%;
+  overflow: visible;
 
-.description {
-  @include text('body-1');
-  color: var(--waterloo);
-  max-width: 565px;
-  text-align: center;
-  margin: 0 auto;
+  @include responsive('phone-xs', 'phone') {
+    min-height: calc(100vh - 70px);
+  }
 }
 
 .title {
-  max-width: 635px;
-  margin: 0 auto 16px;
+  max-width: 738px;
+  margin: 0 auto 40px;
+  text-align: center;
+  z-index: 1;
 
-  @include responsive('phone-xs') {
-    @include text('h4', 'l');
-    margin-bottom: 24px;
+  animation-name: shiftUp;
+  animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
+  animation-duration: 0.8s;
+  animation-delay: .6s;
+  animation-fill-mode: both;
+
+  @include responsive('tablet', 'phone') {
+    max-width:80%;
+  }
+
+  @include text('h2');
+  color: var(--rhino);
+
+  @include responsive('phone-xs', 'phone') {
+    @include text('h3');
+  }
+
+  @include responsive('phone-xs', 'phone') {
+    @include text('h3');
+  }
+
+  @media only screen and (max-width: (320px)) {
+    @include text('h4');
   }
 }
 
 .form {
-  max-width: 450px;
-  margin: 32px auto 24px;
+  max-width: 432px;
+  z-index: 1;
   border: none;
   border-radius: 4px;
   background: none;
   display: flex;
   position: relative;
+  margin: 0 auto;
 
-  @include responsive('phone-xs') {
-    margin-bottom: 40px;
-  }
+  animation-name: shiftUp;
+  animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
+  animation-duration: 0.8s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
 
   &:hover,
   &:focus {
@@ -72,4 +101,165 @@
 
 .arrow {
   margin-left: 6px;
+}
+
+.coin {
+  position: absolute;
+  z-index: 0;
+
+
+  @include responsive('laptop') {
+    transform: scale(0.9);
+  }
+
+  @include responsive('phone-xs', 'phone', 'tablet') {
+    transform: scale(0.7);
+  }
+
+
+  @media only screen and (max-width: (320px)) {
+    transform: scale(0.5);
+  }
+}
+
+.coinRight, .coinLeft {
+  animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
+  animation-duration: 0.8s;
+  animation-delay: 1.3s;
+  animation-fill-mode: both;
+  will-change: opacity;
+}
+
+.coinRight {
+  animation-name: coinMovingRight;
+  will-change: bottom, right;
+}
+
+.coinLeft {
+  animation-name: coinMovingLeft;
+  will-change: top, left;
+}
+
+.bitcoin {
+  top: -22px;
+  left: 12%;
+
+  @include responsive('phone-xs', 'phone', 'tablet') {
+    top: -40px;
+    left: 12%;
+  }
+}
+
+.litecoin {
+  top: 28%;
+  left: 5%;
+
+  @include responsive('phone-xs', 'phone', 'tablet') {
+    top: 14%;
+  }
+}
+
+.eth {
+  right: 20%;
+  bottom: -60px;
+
+  @include responsive('phone-xs', 'phone', 'tablet') {
+    bottom: -5%;
+  }
+
+  @include responsive('phone-xs') {
+    right: 31%;
+  }
+}
+
+.zcash {
+  right: 10%;
+  bottom: 30%;
+
+  @include responsive('phone-xs', 'phone', 'tablet') {
+    bottom: 80px;
+  }
+}
+
+.ripple {
+  right: 5%;
+  bottom: 6%;
+
+  @include responsive('phone-xs', 'phone', 'tablet') {
+    bottom: 0%;
+    right: 3%;
+  }
+}
+
+.dash {
+  top: 50%;
+  left: 15%;
+
+  @include responsive('phone-xs', 'phone', 'tablet') {
+    top: 12%;
+    left: 26%;
+  }
+
+  @include responsive('phone-xs') {
+    left: 36%;
+  }
+}
+
+.topSpot, .bottomSpot {
+  position: absolute;
+  max-width: 60vw;
+  max-height: 40vh;
+
+
+  @include responsive('tablet', 'phone') {
+    max-width: 50vw;
+    max-height: 60vw;
+  }
+}
+
+.topSpot {
+  top: 0;
+  left: 0;
+}
+
+.bottomSpot {
+  right: 0;
+  bottom: -10px;
+}
+
+@keyframes shiftUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes coinMovingRight {
+  0% {
+    bottom: 40%;
+    right: 40%;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes coinMovingLeft {
+  0% {
+    top: 40%;
+    left: 40%;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

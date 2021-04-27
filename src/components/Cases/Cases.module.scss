@@ -3,14 +3,20 @@
 .wrapper {
   padding: 24px;
   max-width: 915px;
-  margin: 120px auto 0;
+  margin: 0 auto;
   @include responsive('tablet') {
     max-width: 775px;
   }
 
   @include responsive('phone-xs', 'phone') {
-  margin: 20px auto 0;
+    margin: 0 auto;
   }
+
+  animation-name: shiftUp;
+  animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
+  animation-duration: 0.8s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
 }
 
 .subtitle {
@@ -85,4 +91,18 @@
 
 .arrow {
   margin-left: 6px;
+}
+
+
+
+@keyframes shiftUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

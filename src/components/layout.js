@@ -16,6 +16,7 @@ import Notifications from './Notifications/Notifications'
 import CookiePopup from './CookiePopup/CookiePopup'
 import styles from './layout.module.scss'
 import Helmet from 'react-helmet'
+import Delayed from "./Delayed";
 
 if (process.env.NODE_ENV === 'production') {
   GoogleAnalytics.initialize('UA-100571693-8')
@@ -36,7 +37,9 @@ const Layout = ({ children, isAccountPage, classes = {} }) => (
           {envScript}
           <Header isAccountPage={isAccountPage} />
           <main className={cx(styles.main, classes.main)}>{children}</main>
-          <Footer />
+            <Delayed waitBeforeShow="1000">
+                <Footer />
+            </Delayed>
         </div>
       </Notifications>
       <CookiePopup />
