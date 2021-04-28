@@ -14,9 +14,10 @@ import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import Notifications from './Notifications/Notifications'
 import CookiePopup from './CookiePopup/CookiePopup'
-import styles from './layout.module.scss'
 import Helmet from 'react-helmet'
 import Delayed from "./Delayed";
+import './fonts.module.scss'
+import styles from './layout.module.scss'
 
 if (process.env.NODE_ENV === 'production') {
   GoogleAnalytics.initialize('UA-100571693-8')

@@ -48,11 +48,11 @@ export default function HTML (props) {
           content='width=device-width, initial-scale=1, shrink-to-fit=no'
         />
           <link rel="preconnect" href="https://api.santiment.net"/>
-          <link rel="preload" href="/static/ProximaNova-Medium-bb60c435799b51088264f49d22d7c688.woff2" as="font" type="font/woff2" crossOrigin />
-          <link rel="preconnect" crossOrigin href="https://js.intercomcdn.com"/>
-          <link rel="preconnect" crossOrigin href="https://widget.intercom.io"/>
-          <link rel="preload" href="/static/ProximaNova-Regular-3da7be18692d6693b842f8d673dd9e2c.woff2" as="font" type="font/woff2" crossOrigin />
-          <link rel="preload" href="/static/ProximaNova-Bold-12f2f5acb0986079c3bc0aa621f5c5b9.woff2" as="font" type="font/woff2" crossOrigin />
+          <link rel="preload" href="/static/ProximaNova-Medium-bb60c435799b51088264f49d22d7c688.woff2" as="font" type="font/woff2" crossOrigin="true" />
+          <link rel="preconnect" crossOrigin="true" href="https://js.intercomcdn.com"/>
+          <link rel="preconnect" crossOrigin="true" href="https://widget.intercom.io"/>
+          <link rel="preload" href="/static/ProximaNova-Regular-3da7be18692d6693b842f8d673dd9e2c.woff2" as="font" type="font/woff2" crossOrigin="true" />
+          <link rel="preload" href="/static/ProximaNova-Bold-12f2f5acb0986079c3bc0aa621f5c5b9.woff2" as="font" type="font/woff2" crossOrigin="true" />
           {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
