@@ -3,43 +3,27 @@ import { Query } from 'react-apollo'
 import { injectIntl } from 'gatsby-plugin-intl'
 import Button from '@santiment-network/ui/Button'
 import { CURRENT_USER_QUERY } from '../../gql/user'
-import UserAvatar from '../UserAvatar/UserAvatar'
 import styles from './AccountBtn.module.scss'
 
 const AccountBtn = ({ intl }) => {
   return (
     <div className={styles.account}>
       <Query query={CURRENT_USER_QUERY}>
-        {({ data: { currentUser } = {}, loading }) => {
+        {({ data: { currentUser } = {} }) => {
           const isLoggedIn = Boolean(currentUser)
 
-          return loading ? null : isLoggedIn ? (
-            <UserAvatar {...currentUser} />
-          ) : (
-            <>
+          return (
               <Button
                 as='a'
                 target='_blank'
                 rel='noopener noreferrer'
-                href='https://app.santiment.net/login'
+                href={isLoggedIn ? 'https://app.santiment.net/' : 'https://app.santiment.net/sign-up'}
                 variant='flat'
                 border
                 className={styles.login}
               >
-                Log in
+                  {isLoggedIn ? 'Back to App' : 'Create an account'}
               </Button>
-              <Button
-                as='a'
-                target='_blank'
-                rel='noopener noreferrer'
-                href='https://app.santiment.net/sign-up'
-                variant='fill'
-                accent='positive'
-                className={styles.create}
-              >
-                Create account
-              </Button>
-            </>
           )
         }}
       </Query>

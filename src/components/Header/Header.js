@@ -40,6 +40,13 @@ const Header = ({ intl }) => {
               <div>Products</div>
             </SantimentProductsTooltip>
           </div>
+          <div className={styles.link}>
+            <CompanyDropdown intl={intl}>
+              <div>Company</div>
+            </CompanyDropdown>
+          </div>
+        </nav>
+        <div className={styles.right}>
           <Link className={styles.link} to='/pricing' onClick={closeNav}>
             {tr('header.pricing', 'Pricing')}
           </Link>
@@ -47,13 +54,8 @@ const Header = ({ intl }) => {
             Academy
             <Icon type="external-link" className={styles.external} />
           </a>
-          <div className={styles.link}>
-            <CompanyDropdown intl={intl}>
-              <div>Company</div>
-            </CompanyDropdown>
-          </div>
-        </nav>
         <AccountBtn />
+        </div>
       </div>
     </header>
   )

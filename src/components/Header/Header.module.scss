@@ -38,7 +38,7 @@
 .logo {
   display: flex;
   align-items: center;
-  margin-right: 48px;
+  margin-right: 64px;
   margin-top: -4px;
 
   &:hover {
@@ -69,6 +69,12 @@
   fill: var(--white);
 }
 
+.right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -94,7 +100,7 @@
 
 .link {
   color: var(--waterloo);
-  margin-left: 32px;
+  margin-right: 32px;
   display: flex;
   align-items: center;
 

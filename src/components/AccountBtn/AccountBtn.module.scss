@@ -8,15 +8,7 @@
   }
 }
 
-.create {
-  margin-left: 16px;
-
-    @include responsive('tablet') {
-    display: none;
-  }
-}
-
 .login {
-  min-width: 84px;
+  min-width: 115px;
   justify-content: center;
 }
