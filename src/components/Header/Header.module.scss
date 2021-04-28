@@ -12,6 +12,7 @@
   animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
   animation-duration: 0.8s;
   animation-fill-mode: both;
+  border-bottom: 1px solid var(--porcelain);
 }
 
 .container {
@@ -70,14 +71,13 @@
 }
 
 .right {
-  display: flex;
-  align-items: center;
   margin-left: auto;
 }
 
 .nav {
   display: flex;
   align-items: center;
+  width: 100%;
 
   @include responsive('phone', 'phone-xs') {
     display: none;
