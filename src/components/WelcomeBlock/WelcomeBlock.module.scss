@@ -20,7 +20,7 @@
   max-width: 738px;
   margin: 0 auto 40px;
   text-align: center;
-  z-index: 1;
+  z-index: 2;
 
   animation-name: shiftUp;
   animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
@@ -50,7 +50,7 @@
 
 .form {
   max-width: 432px;
-  z-index: 1;
+  z-index: 2;
   border: none;
   border-radius: 4px;
   background: none;
@@ -105,7 +105,7 @@
 
 .coin {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
 
 
   @include responsive('laptop') {
@@ -209,6 +209,7 @@
   position: absolute;
   max-width: 60vw;
   max-height: 40vh;
+  z-index: 0;
 
 
   @include responsive('tablet', 'phone') {

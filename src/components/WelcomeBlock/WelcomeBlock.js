@@ -16,16 +16,16 @@ import styles from './WelcomeBlock.module.scss'
 
 const WelcomeBlock = () => (
   <section className={styles.wrapper}>
-      <img src={topSpot} className={styles.topSpot} alt="" />
-      <img src={bottomSpot} className={styles.bottomSpot} alt="" />
       <img src={Dash} className={cx(styles.dash, styles.coin, styles.coinLeft)} alt="dash" />
       <img src={Litecoin} className={cx(styles.litecoin, styles.coin, styles.coinLeft)} alt="litecoin" />
       <img src={Bitcoin} className={cx(styles.bitcoin, styles.coin, styles.coinLeft)} alt="bitcoin" />
       <img src={Ripple} className={cx(styles.ripple, styles.coin, styles.coinRight)} alt="ripple" />
       <img src={Eth} className={cx(styles.eth, styles.coin, styles.coinRight)} alt="eth" />
       <img src={Zcash} className={cx(styles.zcash, styles.coin, styles.coinRight)} alt="zcash" />
-    <h1 className={styles.title}>
-        On-chain, social & fundamental insights on 1500+ cryptocurrencies
+      <img src={topSpot} className={styles.topSpot} alt="" />
+      <img src={bottomSpot} className={styles.bottomSpot} alt="" />
+      <h1 className={styles.title}>
+          On-chain, social & fundamental insights on 1500+ cryptocurrencies
     </h1>
     <NotificationsContext.Consumer>
       {({ add }) => (
