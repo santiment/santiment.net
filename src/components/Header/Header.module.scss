@@ -12,6 +12,7 @@
   animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
   animation-duration: 0.8s;
   animation-fill-mode: both;
+  border-bottom: 1px solid var(--porcelain);
 }
 
 .container {
@@ -38,7 +39,7 @@
 .logo {
   display: flex;
   align-items: center;
-  margin-right: 48px;
+  margin-right: 64px;
   margin-top: -4px;
 
   &:hover {
@@ -69,9 +70,14 @@
   fill: var(--white);
 }
 
+.right {
+  margin-left: auto;
+}
+
 .nav {
   display: flex;
   align-items: center;
+  width: 100%;
 
   @include responsive('phone', 'phone-xs') {
     display: none;
@@ -94,7 +100,7 @@
 
 .link {
   color: var(--waterloo);
-  margin-left: 32px;
+  margin-right: 32px;
   display: flex;
   align-items: center;
 

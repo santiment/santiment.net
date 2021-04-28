@@ -1,10 +1,10 @@
 import React, { useRef } from 'react'
+import cx from 'classnames'
 import Icon from '@santiment-network/ui/Icon'
 import { injectIntl, Link } from 'gatsby-plugin-intl'
 import { tr } from '../../utils/translate'
 import mainLogo from './../../images/logos/santiment.svg'
 import SantimentProductsTooltip from '../SantimentProductsTooltip/SantimentProductsTooltip'
-import CompanyDropdown from '../CompanyDropdown/CompanyDropdown'
 import AccountBtn from '../AccountBtn/AccountBtn'
 import styles from './Header.module.scss'
 
@@ -40,18 +40,22 @@ const Header = ({ intl }) => {
               <div>Products</div>
             </SantimentProductsTooltip>
           </div>
-          <Link className={styles.link} to='/pricing' onClick={closeNav}>
-            {tr('header.pricing', 'Pricing')}
+          <Link className={styles.link} to='/about' onClick={closeNav}>
+            {tr('header.about', 'About')}
           </Link>
-          <a href="https://academy.santiment.net/" target="_blank" rel="noopener noreferrer" className={styles.link}>
+          <Link className={styles.link} to='/team' onClick={closeNav}>
+            {tr('header.team', 'Team')}
+          </Link>
+          <Link className={styles.link} to='/jobs' onClick={closeNav}>
+            {tr('header.jobs', 'Jobs')}
+          </Link>
+          <a href="https://academy.santiment.net/" target="_blank" rel="noopener noreferrer" className={cx(styles.link, styles.right)}>
             Academy
             <Icon type="external-link" className={styles.external} />
           </a>
-          <div className={styles.link}>
-            <CompanyDropdown intl={intl}>
-              <div>Company</div>
-            </CompanyDropdown>
-          </div>
+          <Link className={styles.link} to='/pricing' onClick={closeNav}>
+            {tr('header.pricing', 'Pricing')}
+          </Link>
         </nav>
         <AccountBtn />
       </div>
