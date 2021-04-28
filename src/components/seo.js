@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
-import santiment from "../images/santiment.svg";
+import santiment from "../images/santiment.png";
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -35,7 +35,23 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `og:image:width`,
+          content: '1200',
+        },
+        {
+          property: `og:image:height`,
+          content: '678',
+        },
+        {
           property: `og:image`,
+          content: imageUrl,
+        },
+        {
+          property: `og:image:url`,
+          content: imageUrl,
+        },
+        {
+          property: `og:image:secure`,
           content: imageUrl,
         },
         {
@@ -69,6 +85,14 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `twitter:image`,
           content: imageUrl,
+        },
+        {
+          name: `og:url`,
+          content: 'https://santiment.net/',
+        },
+        {
+          name: `og:site_name`,
+          content: 'Santiment',
         }
       ].concat(meta)}
     />
