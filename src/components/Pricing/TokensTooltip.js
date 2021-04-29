@@ -58,7 +58,7 @@ const TokensTooltip = () => (
 	          - {tr('pricing.discount.step.refresh', "Refresh this page and proceed with your purchase")}
 	        </li>
 	        <li className={styles.item}>
-	          - {tr('pricing.discount.step.system', "Our system checks your Sanbase account for 1500+ SAN during the checkout, and automatically applies a 20% discount")}{' '}
+	          - {tr('pricing.discount.step.system', "Our system checks your Sanbase account for 1000+ SAN during the checkout, and automatically applies a 20% discount")}{' '}
 	        </li>
 	      </ul>
 	      <p className={styles.text}>
