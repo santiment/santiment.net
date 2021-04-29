@@ -1,14 +1,27 @@
 @import '~@santiment-network/ui/mixins.scss';
 
 .icon {
-	margin-left: 6px;
+	margin-left: 8px;
+	transition: transform 0.2s ease-out;
 }
 
 .btn {
-	max-width: 200px;
+	min-width: 153px;
+	width: auto;
+	justify-content: center;
+	height: 40px;
+
+	@include text('body-2');
 
 	@include responsive('phone-xs', 'phone') {
 		margin: 0 auto;
 		display: flex;
 	}
+
+	&:hover, &:focus {
+		& .icon {
+			transform: translateX(4px);
+		}
+	}
+
 }
