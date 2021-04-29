@@ -117,10 +117,6 @@
   margin-bottom: 55px;
   margin-top: 32px;
 
-  @include responsive('phone-xs') {
-    flex-direction: column;
-    align-items: center;
-  }
 
   &__toggle path {
     display: none;
@@ -130,12 +126,8 @@
     @include text('body-2');
 
     color: var(--waterloo);
-    margin: 0 32px;
+    margin: 0 24px;
     cursor: pointer;
-
-    @include responsive('phone-xs') {
-      margin: 8px 0;
-    }
 
     &_active {
       color: var(--rhino);
@@ -156,6 +148,11 @@
     left: calc(100% + 12px);
     white-space: nowrap;
 
+    @include responsive('phone-xs') {
+      top: 100%;
+      left: 0;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -164,6 +161,10 @@
       height: 18px;
       left: -27px;
       top: -7px;
+
+      @include responsive('phone-xs') {
+        display: none;
+      }
     }
   }
 }

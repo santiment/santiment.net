@@ -49,7 +49,7 @@ const Billing = ({ selected, onClick }) => {
   )
 }
 
-export default ({ classes = {}, onDialogClose }) => {
+export default ({ classes = {} }) => {
   const [billing, setBilling] = React.useState('year')
   return (
     <Query query={PLANS_QUERY}>
