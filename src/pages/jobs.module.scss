@@ -1,7 +1,13 @@
 @import '~@santiment-network/ui/mixins';
 
 .wrapper {
-	padding: 0 24px;
+	@include responsive('tablet', 'phone', 'phone-xs', 'laptop') {
+		padding: 0 24px;
+	}
+
+	@include responsive('phone-xs') {
+		padding: 0 16px;
+	}
 }
 
 .widget {
