@@ -54,11 +54,11 @@
 }
 
 .item {
-	max-width: 330px;
+	max-width: 358px;
 	margin: 0 0 10px;
 
 	@include responsive('phone-xs', 'phone') {
-		margin: 0 auto 10px;
+		margin: 0 auto 10px 0;
 	}
 }
 
@@ -72,7 +72,7 @@
 
 .container {
 	@include grid-wrap(3);
-	grid-gap: 50px;
+	grid-gap: 32px;
 }
 
 .name {
