@@ -26,8 +26,9 @@
   padding: 0 24px;
 
   @include responsive('phone', 'phone-xs') {
+    height: 56px;
     width: 100%;
-    padding: 20px 24px;
+    padding: 18px 16px;
   }
 }
 
@@ -182,4 +183,9 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.hamburger {
+  margin-top: 7px;
+  fill: var(--waterloo);
 }

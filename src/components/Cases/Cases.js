@@ -56,7 +56,7 @@ const Cases = () => (
               className={styles.link}
             >
               See case study
-              <Icon type='pointer-right' className={styles.arrow} />
+              <Icon type='pointer-right-small' className={styles.arrow} />
             </a>
           </div>
         </li>

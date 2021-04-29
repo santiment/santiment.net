@@ -34,11 +34,16 @@
   top: 4px;
   line-height: 20px !important;
   font-size: 14px !important;
+
+  &:hover .arrow {
+    transform: translateX(4px);
+  }
 }
 
 
 .arrow {
   margin-left: 6px;
+  transition: transform 0.2s ease-out;
 }
 
 .formError {

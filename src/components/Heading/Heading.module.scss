@@ -8,9 +8,9 @@
 }
 
 .title {
-	@include text('h3', 'l');
+	@include text('h2', 'l');
 	color: var(--mystic);
-  text-align: center;
+  	text-align: center;
 
 	@include responsive('phone-xs', 'phone') {
 		@include text('h4', 'l');
@@ -21,7 +21,7 @@
   &:before, &:after {
   	content: '';
   	position: absolute;
-  	top: 18px;
+  	top: 23px;
   	display: block;
   	width: 5px;
   	height: 5px;

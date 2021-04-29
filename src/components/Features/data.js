@@ -1,22 +1,23 @@
-import analitycs from './images/analitycs.png'
-import whale from './images/whale_tracking.png'
-import watchlists from './images/watchlists.png'
-import templates from './images/templates.png'
 import studio from './images/studio.png'
-import sonar_trends from './images/sonar_trends.png'
 import signals from './images/signals.png'
-import reports from './images/reports.png'
+import watchlists from './images/watchlists.png'
+import sonar_trends from './images/sonar_trends.png'
+import screener from './images/screener.png'
 import indicators from './images/indicators.png'
+import reports from './images/reports.png'
+import analitycs from './images/analitycs.png'
 import daa_signals from './images/daa_signals.png'
+import whale from './images/whale_tracking.png'
+import templates from './images/templates.png'
 
 export const data = [
 	{
 		title: 'Sanbase Studio',
-		description: "See on-chain, social and development information visualized against price for 900+ crypto assets, and set up alerts for major network anomalies.",
+		description: "See on-chain, social and development information visualized against price for 1000+ crypto assets, and set up alerts for major network anomalies.",
 		img: studio
 	},
 	{
-		title: 'Sonar Signals',
+		title: 'Alerts',
 		description: "Set up low-latency alerts for changes to a coin’s price, on-chain activity, social media mentions and the behavior of its ‘whales’. Unlimited market signals for Sanbase Pro users!",
 		img: signals
 	},
@@ -29,6 +30,11 @@ export const data = [
 		title: 'Social Trends',
 		description: "Our proprietary Social Metrics are extremely effective in identifying exit opportunities. Peak social hype - especially during an uptrend - often correlates with an impending top.",
 		img: sonar_trends
+	},
+	{
+		title: 'Screener',
+		description: "Track and filter cryptocurrencies by dozens of on-chain, social and financial parameters. Create custom watchlists and set up real-time alerts for any changes to your Screener.",
+		img: screener
 	},
 	{
 		title: 'Unique market metrics & indicators',
@@ -47,11 +53,11 @@ export const data = [
 	},
 	{
 		title: 'Price-DAA divergence signals',
-		description: "By tracking divergence trends in price and on-chain activity, our data can produce strong buy and sell signals for BTC, ETH and a variety of altcoins",
+		description: "Access dozens of custom metrics unavailable anywhere else - like our MVRV Long/Short divergence, which has a strong track record in predicting major trend shifts in Bitcoin:",
 		img: daa_signals
 	},
 	{
-		title: 'Whale tracking and monitoring',
+		title: 'Large holders tracking and monitoring',
 		description: "Go granular with top blockchain transactions and discover smart money, market makers, and other price-moving addresses. Then - set up alerts for when they start to make moves. ",
 		img: whale
 	},

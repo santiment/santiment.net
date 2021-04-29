@@ -35,7 +35,7 @@
   color: var(--waterloo);
   margin-bottom: 22px;
   text-align: left;
-  max-width: 535px;
+  max-width: 622px;
 
   @include responsive('laptop') {
     @include text('body-2');

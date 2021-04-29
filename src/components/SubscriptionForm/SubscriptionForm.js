@@ -98,7 +98,7 @@ const SubscriptionForm = ({
         isLoading={loading}
       >
         {cta}
-        <Icon type='pointer-right' className={styles.arrow} />
+        <Icon type='pointer-right-small' className={styles.arrow} />
       </Button>
     </form>
   )
