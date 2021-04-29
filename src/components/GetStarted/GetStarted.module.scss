@@ -1,28 +1,50 @@
 @import '~@santiment-network/ui/mixins.scss';
 
 .wrapper {
-  padding: 32px 24px;
-  background: url('./bg.svg') repeat-x center bottom, var(--jungle-green);
+  padding: 64px 0;
+  background: url('./bg.svg') no-repeat 90% 50%, var(--jungle-green);
 
   @include responsive('phone-xs', 'phone') {
     background: var(--jungle-green);
-    padding: 24px;
+    padding: 40px 0;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0;
+
+  @include responsive('phone', 'phone-xs', 'tablet', 'laptop') {
+    width: 100%;
+    padding: 0 24px;
+  }
+
+  @include responsive('phone-xs') {
+    padding: 0 16px;
   }
 }
 
 .title {
-  @include text('h4', 'm');
+  @include text('h3');
   color: var(--white);
-  text-align: center;
-  margin: 0 auto 24px;
+  margin: 0 0 32px;
+
 
   @include responsive('phone-xs', 'phone') {
-    @include text('body-2', 'm');
-  margin: 0 auto 16px;
+    @include text('body-1');
+    margin: 0 0 24px;
   }
 }
 
 .button {
   background-color: var(--rhino) !important;
   color: var(--white);
+}
+
+.form {
+  margin: 0;
 }

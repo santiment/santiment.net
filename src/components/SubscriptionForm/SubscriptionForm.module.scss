@@ -1,8 +1,8 @@
 @import '~@santiment-network/ui/mixins.scss';
 
 .form {
-  max-width: 450px;
-  margin: 32px auto 24px;
+  width: 432px;
+  margin: 0 auto 24px;
   border: none;
   border-radius: 4px;
   background: none;
@@ -12,6 +12,7 @@
 
   @include responsive('phone-xs') {
     margin-bottom: 0;
+    width: 100%;
   }
 }
 
@@ -22,6 +23,14 @@
   outline: none;
   height: 40px;
   padding-right: 138px;
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 40px white inset !important;
+  }
+
 }
 
 .btn {
@@ -75,12 +84,13 @@
 .checkbox {
   margin-right: 8px;
 
-  div {
+  & div {
     background-color: var(--white) !important;
+    border-color: transparent !important;
   }
 
-  svg {
-    fill: var(--mystic) !important;
+  & svg path {
+    stroke: var(--jungle-green) !important;
   }
 }
 

@@ -19,7 +19,7 @@ const SubscriptionForm = ({
 }) => {
   const [error, setError] = useState(false)
   const [email, setEmail] = useState()
-  const [hasSubscribed, setHasSubscribed] = useState(false)
+  const [hasSubscribed, setHasSubscribed] = useState(true)
 
   const onEmailChange = ({ currentTarget: { value } }) => {
     setEmail(value)
@@ -76,9 +76,7 @@ const SubscriptionForm = ({
       {showCheckbox && <div className={styles.checkBlock} onClick={() => setHasSubscribed(!hasSubscribed)}>
         <Checkbox
             isActive={hasSubscribed}
-            className={cx(
-                styles.checkbox,
-            )}
+            className={styles.checkbox}
             disabled={!email}
         />
         <div

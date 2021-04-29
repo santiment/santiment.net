@@ -16,6 +16,7 @@
 	@include responsive('phone-xs', 'phone') {
 		margin: 0 auto;
 		display: flex;
+		width: 100%;
 	}
 
 	&:hover, &:focus {
