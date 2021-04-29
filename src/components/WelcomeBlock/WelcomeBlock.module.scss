@@ -12,7 +12,8 @@
   overflow: visible;
 
   @include responsive('phone-xs', 'phone') {
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 56px);
+    margin-top: 56px;
   }
 }
 
