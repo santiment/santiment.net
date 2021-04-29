@@ -311,6 +311,14 @@
   &:focus {
     border: 1px solid var(--jungle-green) !important;
   }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 40px var(--athens) inset !important;
+  }
+
 }
 
 .btn {
