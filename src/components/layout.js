@@ -31,12 +31,12 @@ const envScript = process.env.NODE_ENV === 'production' && (
   </Helmet>
 )
 
-const Layout = ({ children, isAccountPage, classes = {} }) => (
+const Layout = ({ children, classes = {} }) => (
     <Intercom>
       <Notifications>
         <div className={styles.container}>
           {envScript}
-          <Header isAccountPage={isAccountPage} />
+          <Header />
           <main className={cx(styles.main, classes.main)}>{children}</main>
             <Delayed waitBeforeShow="1000">
                 <Footer />

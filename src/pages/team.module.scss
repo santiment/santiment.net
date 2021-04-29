@@ -1,10 +1,17 @@
 @import '~@santiment-network/ui/mixins';
 
 .wrapper {
-  padding: 0 24px;
-  margin-bottom: 30px;
-  max-width: 1000px;
-  margin: 0 auto 50px;
+	max-width: 1140px;
+	margin: 0 auto 50px;
+
+
+	@include responsive('tablet', 'phone', 'phone-xs', 'laptop') {
+		padding: 0 24px;
+	}
+
+	@include responsive('phone-xs') {
+		padding: 0 16px;
+	}
 }
 
 .title {

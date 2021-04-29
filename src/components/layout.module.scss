@@ -36,11 +36,11 @@ section {
 }
 
 .main {
-  margin-top: 80px;
+  margin-top: 150px;
   min-height: 30vh;
 
   @include responsive('phone', 'phone-xs') {
-    margin-top: 23px;
+    margin-top: 80px;
   }
 }
 
