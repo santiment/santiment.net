@@ -13,7 +13,7 @@ import templates from './images/templates.png'
 export const data = [
 	{
 		title: 'Sanbase Studio',
-		description: "See on-chain, social and development information visualized against price for 1000+ crypto assets, and set up alerts for major network anomalies.",
+		description: "See on-chain, social and development information visualized against price for 1500+ crypto assets, and set up alerts for major network anomalies.",
 		img: studio
 	},
 	{
