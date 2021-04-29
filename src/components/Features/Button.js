@@ -15,7 +15,7 @@ const TryButton = ({href = 'https://app.santiment.net/login'}) => (
     href={href}
   >
     {tr('try.btn', 'Try it yourself')}
-    <Icon type='pointer-right' className={styles.icon} />
+    <Icon type='pointer-right-small' className={styles.icon} />
   </Button>
 )
 

@@ -61,7 +61,7 @@ const ProductItem = ({
 
 const MakeLink = ({ to, title, className, as: El = 'a' }) => (
   <El href={to} className={cx(styles.link, className)}>
-    {title} <Icon className={styles.linkArrow} type='pointer-right' />
+    {title} <Icon className={styles.linkArrow} type='pointer-right-small' />
   </El>
 )
 

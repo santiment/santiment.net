@@ -1,4 +1,5 @@
 import React from 'react'
+import cx from 'classnames'
 import { Query } from 'react-apollo'
 import { injectIntl } from 'gatsby-plugin-intl'
 import Button from '@santiment-network/ui/Button'
@@ -20,7 +21,7 @@ const AccountBtn = ({ intl }) => {
                 href={isLoggedIn ? 'https://app.santiment.net/' : 'https://app.santiment.net/sign-up'}
                 variant='flat'
                 border
-                className={styles.login}
+                className={cx(styles.login, !isLoggedIn && styles.create)}
               >
                   {isLoggedIn ? 'Back to App' : 'Create an account'}
               </Button>
