@@ -34,7 +34,7 @@ const envScript = process.env.NODE_ENV === 'production' && (
 const Layout = ({ children, classes = {} }) => (
     <Intercom>
       <Notifications>
-        <div className={styles.container}>
+        <div>
           {envScript}
           <Header />
           <main className={cx(styles.main, classes.main)}>{children}</main>

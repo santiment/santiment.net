@@ -26,7 +26,7 @@ section {
   margin: 0 auto;
 
   @include responsive('tablet') {
-    max-width: 768px;
+    max-width: 100%;
   }
 
   @include responsive('phone', 'phone-xs') {
