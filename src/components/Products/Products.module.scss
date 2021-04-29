@@ -41,8 +41,6 @@
 .img {
   max-width: 1140px;
   width: 60vw;
-  border: 1px solid var(--porcelain);
-  border-radius: 8px;
   margin-top: 26px;
 
   @include responsive('phone-xs', 'phone', 'tablet') {
@@ -52,11 +50,16 @@
 
 .tabs {
   margin-top: 10px;
+
   & div {
-    @include text('h4');
+    padding: 0 24px 14px;
+
+    @include text('h4', 'l');
 
     @include responsive('phone-xs', 'phone', 'tablet') {
-    @include text('body-1');
-  }
+      padding: 0 32px 12px;
+
+      @include text('body-1');
+    }
   }
 }
