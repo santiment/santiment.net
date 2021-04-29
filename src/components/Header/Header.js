@@ -28,7 +28,7 @@ const Header = ({ intl }) => {
           </div>
         </div>
         <label htmlFor='hamburger'>
-          <Icon type='hamburger' />
+          <Icon type='hamburger' className={styles.hamburger}/>
         </label>
         <input id='hamburger' type='checkbox' ref={toggle} />
         <nav className={styles.nav}>
