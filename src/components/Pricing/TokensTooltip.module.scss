@@ -4,12 +4,13 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
-  color: var(--jungle-green);
+  color: var(--rhino);
   padding: 7px 0;
   margin-bottom: 30px;
 }
 
 .tooltip {
+  z-index: 2000;
   max-width: 550px;
   a {
     color: var(--jungle-green);
@@ -18,7 +19,8 @@
 
 .tooltipTrigger {
   @include responsive('phone', 'phone-xs') {
-    width: 70%;
+    max-width: 270px;
+    width: 100%;
     text-align: center;
   }
 }
@@ -26,7 +28,7 @@
 .icon {
   margin: 0 0 -3px 6px;
   color: var(--jungle-green);
-  fill: var(--jungle-green);
+  fill: var(--waterloo);
 }
 
 .text {

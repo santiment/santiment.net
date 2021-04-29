@@ -15,8 +15,7 @@ const PlanCard = ({
   name,
   price,
   className,
-  classes = {},
-  btnProps
+  classes = {}
 }) => {
   const card = PLANS[name]
 

@@ -23,7 +23,10 @@
   user-select: none;
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 24px;
+
+  @include responsive('tablet', 'laptop') {
+    padding: 0 24px;
+  }
 
   @include responsive('phone', 'phone-xs') {
     height: 56px;

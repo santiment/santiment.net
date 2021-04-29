@@ -1,13 +1,13 @@
 import React from 'react'
 import Icon from '@santiment-network/ui/Icon'
-import Tooltip from '@santiment-network/ui/Tooltip'
+import ContextMenu from '@santiment-network/ui/ContextMenu'
 import Panel from '@santiment-network/ui/Panel/Panel'
 import { tr } from '../../utils/translate'
 import styles from './TokensTooltip.module.scss'
 
 const TokensTooltip = () => (
 	 <div className={styles.sanTokens}>
-	  <Tooltip
+	  <ContextMenu
 	  	on='click'
 	    trigger={
 	      <div className={styles.tooltipTrigger}>
@@ -66,7 +66,7 @@ const TokensTooltip = () => (
 	        {tr('pricing.discount.note.text', "To claim the 20% discount, you just need to hold/HODL enough SAN. The tokens still belong to you - our system simply checks if you have them in your wallet")}
 	      </p>
 	    </Panel>
-	  </Tooltip>
+	  </ContextMenu>
 	</div>
 )
 

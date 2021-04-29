@@ -1,7 +1,13 @@
 @import '~@santiment-network/ui/mixins.scss';
 
 .wrapper {
-  padding: 0 24px;
+  @include responsive('tablet', 'phone', 'phone-xs', 'laptop') {
+    padding: 0 24px;
+  }
+
+  @include responsive('phone-xs') {
+    padding: 0 16px;
+  }
 }
 
 .cards {
@@ -15,7 +21,6 @@
 }
 
 .title {
-  margin-bottom: 40px;
   max-width: 750px;
   width: 100%;
   display: flex;
@@ -49,6 +54,13 @@
   width: 100%;
   justify-content: center;
 
+  &:hover {
+    & .arrow {
+      transform: translateX(4px);
+    }
+  }
+
+
   &__dark {
     background: var(--rhino);
     color: var(--white);
@@ -56,7 +68,6 @@
     &:hover{
     background: var(--mirage);
     color: var(--white);
-
     }
   }
 }
@@ -112,10 +123,6 @@
   margin-bottom: 55px;
   margin-top: 32px;
 
-  @include responsive('phone-xs') {
-    flex-direction: column;
-    align-items: center;
-  }
 
   &__toggle path {
     display: none;
@@ -125,12 +132,8 @@
     @include text('body-2');
 
     color: var(--waterloo);
-    margin: 0 32px;
+    margin: 0 24px;
     cursor: pointer;
-
-    @include responsive('phone-xs') {
-      margin: 8px 0;
-    }
 
     &_active {
       color: var(--rhino);
@@ -151,6 +154,11 @@
     left: calc(100% + 12px);
     white-space: nowrap;
 
+    @include responsive('phone-xs') {
+      top: 100%;
+      left: 0;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -159,6 +167,10 @@
       height: 18px;
       left: -27px;
       top: -7px;
+
+      @include responsive('phone-xs') {
+        display: none;
+      }
     }
   }
 }
@@ -170,4 +182,9 @@
   &:last-child {
     margin: 0;
   }
+}
+
+.arrow {
+  margin-left: 8px;
+  transition: transform 0.2s ease-out;
 }

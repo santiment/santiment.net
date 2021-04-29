@@ -100,9 +100,9 @@
 }
 
 .price {
-  font-weight: bold;
-  font-size: 38px;
-  line-height: 44px;
+  font-weight: 600 !important;
+  font-size: 32px !important;
+  line-height: 40px !important;
 
   &__type {
     color: var(--waterloo);
