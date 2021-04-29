@@ -19,7 +19,7 @@ const ProductItem = ({
 }) => {
   const Wrapper = ({ children, className }) =>
     isIntercomButton ? (
-        <>{children}</>
+        <span className={className}>{children}</span>
       // <ContactUs as='a' className={className} message={message}>
       //   {children}
       // </ContactUs>
