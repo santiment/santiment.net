@@ -9,6 +9,10 @@
   @include responsive('tablet', 'phone', 'phone-xs') {
     padding: 56px 24px 46px;
   }
+
+  @include responsive('phone-xs') {
+    padding: 56px 16px 46px;
+  }
 }
 
 .content {

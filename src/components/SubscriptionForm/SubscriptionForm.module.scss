@@ -1,8 +1,8 @@
 @import '~@santiment-network/ui/mixins.scss';
 
 .form {
-  max-width: 450px;
-  margin: 32px auto 24px;
+  width: 432px;
+  margin: 0 auto 24px;
   border: none;
   border-radius: 4px;
   background: none;
@@ -12,6 +12,7 @@
 
   @include responsive('phone-xs') {
     margin-bottom: 0;
+    width: 100%;
   }
 }
 
