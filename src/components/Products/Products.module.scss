@@ -42,8 +42,16 @@
   max-width: 1140px;
   margin-top: 42px;
 
-  @include responsive('phone-xs', 'phone', 'tablet') {
+  @include responsive('phone-xs', 'phone', 'tablet', 'laptop') {
     width: 100%;
+  }
+
+  @include responsive('tablet', 'phone', 'phone-xs', 'laptop') {
+    padding: 0 24px;
+  }
+
+  @include responsive('phone-xs') {
+    padding: 0 16px;
   }
 }
 

@@ -2,7 +2,6 @@ import React from 'react'
 import cx from 'classnames'
 import Heading from '../Heading/Heading'
 import Subheading from '../Heading/Subheading'
-import { PenAndPaper } from '../Illustrations/PenAndPaper'
 import styles from './index.module.scss'
 
 const testimonials = [
@@ -57,8 +56,6 @@ const BgImage = (
 const Testimonials = () => {
   return (
     <section className={styles.wrapper}>
-      {PenAndPaper}
-
       <Heading className={styles.title}>Testimonials</Heading>
       <Subheading className={styles.description}>
         Our users send us bunch of smiles with our services, just read some of
