@@ -54,6 +54,13 @@
   width: 100%;
   justify-content: center;
 
+  &:hover {
+    & .arrow {
+      transform: translateX(4px);
+    }
+  }
+
+
   &__dark {
     background: var(--rhino);
     color: var(--white);
@@ -61,7 +68,6 @@
     &:hover{
     background: var(--mirage);
     color: var(--white);
-
     }
   }
 }
@@ -176,4 +182,9 @@
   &:last-child {
     margin: 0;
   }
+}
+
+.arrow {
+  margin-left: 8px;
+  transition: transform 0.2s ease-out;
 }

@@ -53,9 +53,9 @@ export default ({ classes = {} }) => {
   const [billing, setBilling] = React.useState('year')
   return (
     <Query query={PLANS_QUERY}>
-      {({ data: { productsWithPlans = [] } }) => {
-        const Sanbase = productsWithPlans.find(findSanbasePlan)
-        const SanAPI = productsWithPlans.find(findSanAPIPlan)
+      {({ data }) => {
+          const Sanbase = data && data.productsWithPlans ? data.productsWithPlans.find(findSanbasePlan) : 0
+        const SanAPI = data && data.productsWithPlans ? data.productsWithPlans.find(findSanAPIPlan) : 0
 
         let SanAPIPrice, SanbasePrice
 
@@ -97,7 +97,7 @@ export default ({ classes = {} }) => {
               <Plan name='Sanbase' price={SanbasePrice} />
               <Plan name='SanAPI' price={SanAPIPrice} />
             </div>
-            <PayWithCrypto />
+              <PayWithCrypto />
           </>
         )
       }}

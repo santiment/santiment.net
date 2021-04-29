@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '@santiment-network/ui/Button'
 import { tr } from '../../utils/translate'
 import styles from './index.module.scss'
+import Icon from "@santiment-network/ui/Icon";
 
 
 export default {
@@ -12,6 +13,7 @@ export default {
     Component: () => (
       <Button variant='fill' as="a" rel="noopener noreferrer" target="_blank" href='https://app.santiment.net/pricing' accent='positive' className={styles.link}>
         {tr('main.btn', 'Get started')}
+        <Icon type='pointer-right-small' className={styles.arrow} />
       </Button>
     ),
     features: [
@@ -27,6 +29,7 @@ export default {
     Component: () => (
       <Button variant='fill' accent='blue' as="a" rel="noopener noreferrer" target="_blank" href='https://neuro.santiment.net/#pricing' className={styles.link}>
         {tr('cta.try_free', 'Try it for free')}
+        <Icon type='pointer-right-small' className={styles.arrow} />
       </Button>
     ),
     more: 'https://neuro.santiment.net/',

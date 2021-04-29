@@ -5,11 +5,16 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin: 30px 0;
+	margin: 30px auto;
 	padding: 30px 15px;
 	background: linear-gradient(180deg, var(--white) 2.22%, rgba(255, 255, 255, 0.29) 49%, var(--white) 97.78%),  url(./waves.svg) no-repeat right top;
 	border: 1px solid var(--porcelain);
 	border-radius: 8px;
+	width: 744px;
+
+	@include responsive('tablet', 'phone', 'phone-xs') {
+		width: 100%;
+	}
 
 	transition: transform 200ms;
 
@@ -49,9 +54,16 @@
 	justify-content: center;
 
 	color: var(--jungle-green);
+
+	&:hover {
+		& .icon {
+			transform: translateX(4px);
+		}
+	}
 }
 
 .icon {
-	margin-left: 6px;
+	margin-left: 8px;
 	fill: var(--jungle-green);
+	transition: transform 0.2s ease-out;
 }
