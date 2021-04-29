@@ -11,6 +11,10 @@
   @include responsive('phone-xs', 'phone') {
   margin-bottom: 40px;
   }
+
+  @include responsive('phone-xs') {
+    padding: 0 16px;
+  }
 }
 
 .title {
@@ -44,14 +48,6 @@
 
   @include responsive('phone-xs', 'phone', 'tablet', 'laptop') {
     width: 100%;
-  }
-
-  @include responsive('tablet', 'phone', 'phone-xs', 'laptop') {
-    padding: 0 24px;
-  }
-
-  @include responsive('phone-xs') {
-    padding: 0 16px;
   }
 }
 
