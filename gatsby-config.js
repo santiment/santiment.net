@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Santiment - See what other crypto traders are missing`,
-    description: `We provide tools to help you analyze crypto markets and find data-driven opportunities to optimize your investing. Santiment is a behavior analytics platform for cryptocurrencies, sourcing on-chain, social and development information on 900+ coins.`,
+    description: `We provide tools to help you analyze crypto markets and find data-driven opportunities to optimize your investing. Santiment is a behavior analytics platform for cryptocurrencies, sourcing on-chain, social and development information on 1500+ coins.`,
     author: `Santiment`,
     siteUrl: 'https://santiment.net',
     siteName: 'Santiment'

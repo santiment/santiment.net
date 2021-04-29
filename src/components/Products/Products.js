@@ -14,7 +14,7 @@ const TABS = {
     img: Sanbase
   },
   SanAPI: {
-    desc: 'One of the most comprehensive crypto APIs on the market. Single endpoint access for on-chain, social, pricing and development information on 900+ coins',
+    desc: 'One of the most comprehensive crypto APIs on the market. Single endpoint access for on-chain, social, pricing and development information on 1500+ coins',
     link: 'https://neuro.santiment.net/',
     img: SanAPI
   }
