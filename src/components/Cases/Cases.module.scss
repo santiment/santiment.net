@@ -21,6 +21,11 @@
 
 .subtitle {
   margin-bottom: 64px;
+
+
+  @include responsive('phone-xs', 'phone') {
+    margin-bottom: 40px;
+  }
 }
 
 .list {
@@ -78,9 +83,15 @@
 .link {
   display: flex;
   align-items: center;
-  margin-top: 12px;
+  padding: 12px 0;
   fill: var(--jungle-green);
   color: var(--jungle-green);
+
+  &:hover {
+    & .arrow {
+      transform: translateX(4px);
+    }
+  }
 
   @include text('body-2');
 
@@ -91,6 +102,7 @@
 
 .arrow {
   margin-left: 6px;
+  transition: transform 0.2s ease-out;
 }
 
 
