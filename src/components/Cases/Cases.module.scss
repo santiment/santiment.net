@@ -54,7 +54,11 @@
 }
 
 .icon {
-  @include responsive('phone-xs', 'tablet') {
+  @include responsive('phone-xs', 'phone') {
+    width: 64px;
+  }
+
+  @include responsive('tablet') {
     width: 52px;
   }
 }
