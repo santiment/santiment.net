@@ -7,16 +7,18 @@ import styles from "./GetStarted.module.scss"
 
 const GetStarted = () => (
 	<div className={styles.wrapper}>
-		<h4 className={styles.title}>Ready to get started? Sign up now!</h4>
-		<NotificationsContext.Consumer>
-      {({ add }) => (
-        <Mutation mutation={EMAIL_LOGIN_MUTATION}>
-          {(sendConfirmationEmail, { loading }) => (
-            <SubscriptionForm loading={loading} send={sendConfirmationEmail} add={add} classes={styles} showCheckbox />
-          )}
-        </Mutation>
-      )}
-    </NotificationsContext.Consumer>
+		<div className={styles.container}>
+			<h4 className={styles.title}>Ready to get started? Sign up now!</h4>
+			<NotificationsContext.Consumer>
+		  {({ add }) => (
+			<Mutation mutation={EMAIL_LOGIN_MUTATION}>
+			  {(sendConfirmationEmail, { loading }) => (
+				<SubscriptionForm loading={loading} send={sendConfirmationEmail} add={add} classes={styles} showCheckbox />
+			  )}
+			</Mutation>
+		  )}
+		</NotificationsContext.Consumer>
+		</div>
 	</div>
 )
 
