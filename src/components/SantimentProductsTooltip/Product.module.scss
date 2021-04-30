@@ -9,6 +9,11 @@
   border-radius: 4px;
   background-color: var(--athens);
   transition: background 0.2s;
+
+  @include responsive('phone-xs', 'phone') {
+    min-width: 32px;
+    min-height: 32px;
+  }
 }
 
 .wrapper {
@@ -21,6 +26,11 @@
   cursor: pointer;
   display: inline;
   transition: background 0.2s;
+
+  @include responsive('phone-xs', 'phone') {
+    min-height: auto;
+    padding: 8px 16px;
+  }
 
   &__selected {
     & .imgWrapper {
@@ -47,6 +57,10 @@
   align-items: flex-start;
   color: var(--waterloo);
   text-decoration: none;
+
+  @include responsive('phone-xs', 'phone') {
+    align-items: center;
+  }
 }
 
 .img {
@@ -59,6 +73,11 @@
   margin: 0 0 4px 0;
 
   @include text('body-2', 'm');
+
+
+  @include responsive('phone-xs', 'phone') {
+    margin: 0;
+  }
 }
 
 .description {
@@ -67,6 +86,11 @@
   white-space: normal;
 
   @include text('body-3');
+
+
+  @include responsive('phone-xs', 'phone') {
+    display: none;
+  }
 }
 
 .info {

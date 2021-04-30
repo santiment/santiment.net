@@ -22,10 +22,10 @@ const IndexPage = ({ intl }) => (
         <Products />
         <Companies />
         <Testimonails />
-        <Delayed waitBeforeShow="3000">
+        {/*<Delayed waitBeforeShow="3000">*/}
             <TwitterFeedbacks />
             <GetStarted />
-        </Delayed>
+        {/*</Delayed>*/}
     </Layout>
 )
 

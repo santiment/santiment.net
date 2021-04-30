@@ -4,6 +4,10 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+
+  @include responsive('phone-xs', 'phone') {
+    display: none;
+  }
 }
 
 .tooltip {
@@ -14,8 +18,7 @@
   overflow: hidden;
 
   @include responsive('phone-xs', 'phone') {
-    bottom: 0;
-    left: 0;
+    display: none;
   }
 }
 
@@ -26,7 +29,17 @@
   align-items: flex-start;
   justify-content: center;
   background: var(--white);
+}
 
+.mobileWrapper {
+  display: none;
+
+  @include responsive('phone-xs', 'phone') {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--porcelain);
+  }
 }
 
 .background {
@@ -46,6 +59,10 @@
     transition: fill 0.2s;
     fill: var(--waterloo);
   }
+
+  @include responsive('phone-xs', 'phone') {
+    display: none;
+  }
 }
 
 .block {
@@ -54,10 +71,19 @@
 
 .block + .block {
   margin-left: 24px;
+
+
+  @include responsive('phone-xs', 'phone') {
+    margin-left: 0;
+  }
 }
 
 .product + .product {
   margin-top: 8px;
+
+  @include responsive('phone-xs', 'phone') {
+    margin: 0;
+  }
 }
 
 .title {
@@ -67,6 +93,10 @@
   margin: 0 0 20px 16px;
 
   @include text('body-3');
+
+  @include responsive('phone-xs', 'phone') {
+    margin: 16px 0 8px 16px;
+  }
 }
 
 .products {

@@ -8,10 +8,10 @@
   top: 0;
   left: 0;
   right: 0;
-  animation-name: shiftDown;
-  animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
-  animation-duration: 0.8s;
-  animation-fill-mode: both;
+  //animation-name: shiftDown;
+  //animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
+  //animation-duration: 0.8s;
+  //animation-fill-mode: both;
   border-bottom: 1px solid var(--porcelain);
 }
 
@@ -71,7 +71,7 @@
   position: absolute;
   top: 24px;
   right: 19px;
-  fill: var(--white);
+  fill: var(--waterloo);
 }
 
 .right {
@@ -89,16 +89,19 @@
     z-index: 10;
     top: 0;
     left: 0;
-    bottom: 0;
+    height: 100vh;
+    overflow: auto;
+    padding: 32px 24px;
     right: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: var(--white);
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 
     :global(#hamburger):checked + & {
       display: flex;
     }
+
   }
 }
 
@@ -120,13 +123,24 @@
 
   @include responsive('phone', 'phone-xs') {
     margin-left: 0;
+    margin-right: 0;
     margin-bottom: 20px;
-    color: var(--athens);
+    color: var(--rhino) !important;
+  }
+}
+
+.link + .link {
+  @include responsive('phone', 'phone-xs') {
+    margin-left: 16px;
   }
 }
 
 .linkLast {
   margin-right: 6px;
+
+  @include responsive('phone', 'phone-xs') {
+    margin-right: 0;
+  }
 }
 
 .dividerLeft {
