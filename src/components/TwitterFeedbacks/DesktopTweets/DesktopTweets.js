@@ -5,7 +5,7 @@ import { TweetCard, TweetsParsed } from '../Tweets'
 const SETTINGS = {
   columnWidth: 380,
   height: 300,
-  gutterSize: 10
+  gutterSize: 24
 }
 
 function getColumnsCount () {
