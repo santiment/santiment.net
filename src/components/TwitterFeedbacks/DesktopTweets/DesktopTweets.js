@@ -3,16 +3,16 @@ import Masonry from 'react-responsive-masonry'
 import { TweetCard, TweetsParsed } from '../Tweets'
 
 const SETTINGS = {
-  columnWidth: 380,
+  columnWidth: 360,
   height: 300,
-  gutterSize: 24
+  gutterSize: 16
 }
 
 function getColumnsCount () {
   const { columnWidth, gutterSize } = SETTINGS
   let screenWidth = 0
   if (typeof window !== 'undefined') {
-    screenWidth = window.innerWidth
+    screenWidth = window.innerWidth > 1140 ? 1140 : window.innerWidth
   }
 
   return Math.floor(screenWidth / (columnWidth + gutterSize)) || 1
