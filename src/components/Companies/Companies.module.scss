@@ -39,12 +39,6 @@
     justify-self: center;
   }
 
-  @include responsive('laptop', 'tablet') {
-    img {
-      max-width: 170px;
-    }
-  }
-
   @include responsive('phone', 'phone-xs') {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -53,6 +47,13 @@
 
     img {
       max-width: 140px;
+    }
+  }
+
+
+  @include responsive('laptop', 'tablet' , 'phone') {
+    img {
+      max-width: 170px;
     }
   }
 }
