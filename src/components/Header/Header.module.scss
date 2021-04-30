@@ -89,16 +89,19 @@
     z-index: 10;
     top: 0;
     left: 0;
-    bottom: 0;
+    height: 100vh;
+    overflow: auto;
+    padding: 32px 24px;
     right: 0;
     background: var(--white);
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 
     :global(#hamburger):checked + & {
       display: flex;
     }
+
   }
 }
 
@@ -120,13 +123,24 @@
 
   @include responsive('phone', 'phone-xs') {
     margin-left: 0;
+    margin-right: 0;
     margin-bottom: 20px;
     color: var(--rhino) !important;
   }
 }
 
+.link + .link {
+  @include responsive('phone', 'phone-xs') {
+    margin-left: 16px;
+  }
+}
+
 .linkLast {
   margin-right: 6px;
+
+  @include responsive('phone', 'phone-xs') {
+    margin-right: 0;
+  }
 }
 
 .dividerLeft {

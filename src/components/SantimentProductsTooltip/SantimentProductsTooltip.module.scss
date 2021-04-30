@@ -4,6 +4,10 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+
+  @include responsive('phone-xs', 'phone') {
+    display: none;
+  }
 }
 
 .tooltip {
@@ -14,8 +18,7 @@
   overflow: hidden;
 
   @include responsive('phone-xs', 'phone') {
-    bottom: 0;
-    left: 0;
+    display: none;
   }
 }
 
@@ -26,12 +29,16 @@
   align-items: flex-start;
   justify-content: center;
   background: var(--white);
+}
 
+.mobileWrapper {
+  display: none;
 
   @include responsive('phone-xs', 'phone') {
+    display: flex;
     flex-direction: column;
-    width: 100vw;
-    padding: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--porcelain);
   }
 }
 
