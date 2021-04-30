@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import cx from 'classnames'
-import Tooltip from '@santiment-network/ui/Tooltip'
+import ContextMenu from '@santiment-network/ui/ContextMenu'
 import {ArrowTrigger} from "./Arrow"
 import ProductItem from './Product'
 import SantimentLogo from "./SantimentLogo"
@@ -11,7 +11,7 @@ const SantimentProductsTooltip = ({ className, intl, children }) => {
   const [isOpen, setOpen] = useState(false)
 
   return (
-    <Tooltip
+    <ContextMenu
       passOpenStateAs='isActive'
       closeTimeout={150}
       position='bottom'
@@ -60,7 +60,7 @@ const SantimentProductsTooltip = ({ className, intl, children }) => {
                 </div>
             </div>
         </div>
-    </Tooltip>
+    </ContextMenu>
   )
 }
 

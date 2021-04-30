@@ -27,6 +27,12 @@
   justify-content: center;
   background: var(--white);
 
+
+  @include responsive('phone-xs', 'phone') {
+    flex-direction: column;
+    width: 100vw;
+    padding: 24px;
+  }
 }
 
 .background {
@@ -46,6 +52,10 @@
     transition: fill 0.2s;
     fill: var(--waterloo);
   }
+
+  @include responsive('phone-xs', 'phone') {
+    display: none;
+  }
 }
 
 .block {
@@ -54,10 +64,19 @@
 
 .block + .block {
   margin-left: 24px;
+
+
+  @include responsive('phone-xs', 'phone') {
+    margin-left: 0;
+  }
 }
 
 .product + .product {
   margin-top: 8px;
+
+  @include responsive('phone-xs', 'phone') {
+    margin: 0;
+  }
 }
 
 .title {
@@ -67,6 +86,10 @@
   margin: 0 0 20px 16px;
 
   @include text('body-3');
+
+  @include responsive('phone-xs', 'phone') {
+    margin: 16px 0 8px 16px;
+  }
 }
 
 .products {

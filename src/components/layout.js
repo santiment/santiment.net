@@ -38,9 +38,9 @@ const Layout = ({ children, classes = {} }) => (
           {envScript}
           <Header />
           <main className={cx(styles.main, classes.main)}>{children}</main>
-            <Delayed waitBeforeShow="1000">
+            {/*<Delayed waitBeforeShow="1000">*/}
                 <Footer />
-            </Delayed>
+            {/*</Delayed>*/}
         </div>
       </Notifications>
       <CookiePopup />
