@@ -73,8 +73,8 @@ export const categories = [
         href: 'https://graphs.santiment.net/'
       },
       {
-        name: 'How we compare',
-        href: 'https://academy.santiment.net/how-we-compare/'
+        name: 'Sanhunters',
+        href: 'https://hunters.santiment.net/'
       }
     ]
   }

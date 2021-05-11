@@ -31,12 +31,12 @@ const envScript = process.env.NODE_ENV === 'production' && (
   </Helmet>
 )
 
-const Layout = ({ children, classes = {} }) => (
+const Layout = ({ children, headerAnimation = false, classes = {} }) => (
     <Intercom>
       <Notifications>
         <div>
           {envScript}
-          <Header />
+          <Header headerAnimation={headerAnimation} />
           <main className={cx(styles.main, classes.main)}>{children}</main>
             {/*<Delayed waitBeforeShow="1000">*/}
                 <Footer />

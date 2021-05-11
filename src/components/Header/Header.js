@@ -8,7 +8,7 @@ import SantimentProductsTooltip from '../SantimentProductsTooltip/SantimentProdu
 import AccountBtn from '../AccountBtn/AccountBtn'
 import styles from './Header.module.scss'
 
-const Header = ({ intl }) => {
+const Header = ({ intl, headerAnimation }) => {
   const toggle = useRef(null)
 
   const closeNav = () => {
@@ -16,7 +16,7 @@ const Header = ({ intl }) => {
   }
 
   return (
-    <header className={styles.header}>
+    <header className={cx(styles.header, headerAnimation && styles.headerAnimation)}>
       <div className={styles.container}>
         <div className={styles.left}>
           <div className={styles.product}>
