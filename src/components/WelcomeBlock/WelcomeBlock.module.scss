@@ -23,11 +23,11 @@
   text-align: center;
   z-index: 2;
 
-  //animation-name: shiftUp;
-  //animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
-  //animation-duration: 0.8s;
-  //animation-delay: .6s;
-  //animation-fill-mode: both;
+  animation-name: shiftUp;
+  animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
+  animation-duration: 0.8s;
+  animation-delay: .6s;
+  animation-fill-mode: both;
 
   @include responsive('tablet', 'phone') {
     max-width:80%;
@@ -59,11 +59,11 @@
   position: relative;
   margin: 0 auto;
 
-  //animation-name: shiftUp;
-  //animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
-  //animation-duration: 0.8s;
-  //animation-delay: 1s;
-  //animation-fill-mode: both;
+  animation-name: shiftUp;
+  animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
+  animation-duration: 0.8s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
 
   &:hover,
   &:focus {
@@ -124,11 +124,11 @@
 }
 
 .coinRight, .coinLeft {
-  //animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
-  //animation-duration: 0.8s;
-  //animation-delay: 1.3s;
-  //animation-fill-mode: both;
-  //will-change: opacity;
+  animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
+  animation-duration: 0.8s;
+  animation-delay: 1.3s;
+  animation-fill-mode: both;
+  will-change: opacity;
 }
 
 .coinRight {

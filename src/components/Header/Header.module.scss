@@ -8,11 +8,14 @@
   top: 0;
   left: 0;
   right: 0;
-  //animation-name: shiftDown;
-  //animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
-  //animation-duration: 0.8s;
-  //animation-fill-mode: both;
   border-bottom: 1px solid var(--porcelain);
+}
+
+.headerAnimation {
+  animation-name: shiftDown;
+  animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
 }
 
 .container {
