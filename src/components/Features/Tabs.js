@@ -21,6 +21,8 @@ const Tabs = () => {
     slider.current.slickPrev()
   }
   const [active, setActive] = useState(data[0])
+  const [animation, setAnimation] = useState(false)
+
   return (
     <>
       <div className={styles.wrapper}>
@@ -32,13 +34,19 @@ const Tabs = () => {
                 styles.item,
                 active === item && styles.item__active
               )}
-              onClick={() => setActive(item)}
+              onClick={() => {
+                if (active !== item) {
+                  setAnimation(true)
+                  setTimeout(() => setActive(item), 200)
+                  setTimeout(() => setAnimation(false), 300)
+                }
+              }}
             >
               {item.title}
             </li>
           ))}
         </ul>
-        <div className={styles.content}>
+        <div className={cx(styles.content, animation && styles.contentHide)}>
           <h4 className={styles.title}>{active.title}</h4>
           <div className={styles.desc}>{active.description}</div>
           <img className={styles.img} src={active.img} alt="" />

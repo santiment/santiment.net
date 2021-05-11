@@ -149,11 +149,23 @@
 }
 
 .content {
+  @include responsive('desktop', 'laptop') {
+    transition: transform 0.2s ease-out, opacity 0.15s ease-out;
+  }
+
   @include responsive('phone-xs', 'phone', 'tablet') {
     outline: none;
     display: flex !important;
     flex-direction: column;
     height: 100%;
+  }
+}
+
+.contentHide {
+  @include responsive('desktop', 'laptop') {
+    transition: transform 0.25s ease-in, opacity 0.2s ease-in;
+    transform: translateX(20px);
+    opacity: 0;
   }
 }
 

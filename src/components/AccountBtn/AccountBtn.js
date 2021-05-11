@@ -21,9 +21,9 @@ const AccountBtn = ({ intl }) => {
                 href={isLoggedIn ? 'https://app.santiment.net/' : 'https://app.santiment.net/sign-up'}
                 variant='flat'
                 border
-                className={cx(styles.login, !isLoggedIn && styles.create)}
+                className={styles.login}
               >
-                  {isLoggedIn ? 'Back to App' : 'Create an account'}
+                  {isLoggedIn ? 'Back to Sanbase' : 'Create an account'}
               </Button>
           )
         }}
