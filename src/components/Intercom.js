@@ -29,12 +29,14 @@ const Intercom = ({ children }) => {
       {({ data: { currentUser } = {}, loading }) => {
         if (!loading) {
           const { email, username, id } = currentUser || {}
-          window.Intercom('boot', {
+          const settings = {
             app_id: 'cyjjko9u',
             user_id: id,
             name: username,
-            email,
-          })
+            email
+          }
+          window.Intercom('boot', settings)
+          window.intercomSettings = settings
         }
 
         return children
