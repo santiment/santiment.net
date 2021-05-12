@@ -32,13 +32,14 @@ const Footer = ({ intl }) => {
           <ul className={styles.categories}>
             {categories.map(({ links }, idx) => (
               <li key={idx} className={styles.category}>
-                {links.map(({ children, href, name = '' }, i) => (
+                {links.map(({ children, href, onClick, name = '' }, i) => (
                   <a
                     key={i}
                     target='_blank'
                     rel='noopener noreferrer'
                     children={tr(`footer.${children}`, name)}
                     href={href}
+                    onClick={onClick}
                     className={cx(styles.text, styles.category__item)}
                   />
                 ))}
@@ -143,7 +144,15 @@ const Footer = ({ intl }) => {
               href='https://www.notion.so/santiment/Santiment-Media-ff72838a16164db4b7e90478e18c3776'
               className={cx(styles.text, styles.link)}
             >
-              Media Kit
+              {tr('footer.mediakit', 'Media Kit')}
+            </a>
+            <a
+              rel='noopener noreferrer'
+              target='_blank'
+              href='https://status.santiment.net/'
+              className={cx(styles.text, styles.link)}
+            >
+              {tr('footer.status', 'Status')}
             </a>
           </div>
           <div className={styles.social}>

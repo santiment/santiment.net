@@ -16,6 +16,12 @@ export const categories = [
       {
         children: 'contact',
         name: 'Contact us',
+        onClick: evt => {
+          if (window.Intercom) {
+            evt.preventDefault()
+            window.Intercom('showNewMessage', 'Talk with expert about Data Science as a Service.')
+          }
+        },
         href: 'mailto:support@santiment.net'
       }
     ]
