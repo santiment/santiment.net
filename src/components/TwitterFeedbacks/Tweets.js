@@ -149,6 +149,50 @@ export const TweetsParsed = [
     <a href='https://twitter.com/XCryptonacciX/status/1327735651895304192?ref_src=twsrc%5Etfw'>
       November 14, 2020
     </a>
+  </blockquote>,
+  <blockquote className='twitter-tweet'>
+    <p lang='en' dir='ltr'>
+      We LOVE to hear about these kinds of success stories. Thanks for enjoying
+      and using our data to enhance your trading,{' '}
+      <a href='https://twitter.com/Ahab_1337?ref_src=twsrc%5Etfw'>@ahab_1337</a>
+      ! 🎉 <a href='https://t.co/j7FuTV9LBV'>https://t.co/j7FuTV9LBV</a>
+    </p>
+    &mdash; Santiment (@santimentfeed){' '}
+    <a href='https://twitter.com/santimentfeed/status/1383450235498754059?ref_src=twsrc%5Etfw'>
+      April 17, 2021
+    </a>
+  </blockquote>,
+  <blockquote className='twitter-tweet'>
+    <p lang='en' dir='ltr'>
+      Signed up to the free trial{' '}
+      <a href='https://twitter.com/santimentfeed?ref_src=twsrc%5Etfw'>
+        @santimentfeed
+      </a>{' '}
+      Love the interface so far.{' '}
+      <a href='https://twitter.com/search?q=%24ETH&amp;src=ctag&amp;ref_src=twsrc%5Etfw'>
+        $ETH
+      </a>{' '}
+      supply on exchanges continues to go down while price is still heading to
+      $3,000.{' '}
+      <a href='https://twitter.com/hashtag/ethererum?src=hash&amp;ref_src=twsrc%5Etfw'>
+        #ethererum
+      </a>{' '}
+      <a href='https://t.co/M9sYzjaiOb'>pic.twitter.com/M9sYzjaiOb</a>
+    </p>
+    &mdash; John 🇦🇺 (@Johninvesting){' '}
+    <a href='https://twitter.com/Johninvesting/status/1389019263902445571?ref_src=twsrc%5Etfw'>
+      May 3, 2021
+    </a>
+  </blockquote>,
+  <blockquote className='twitter-tweet'>
+    <p lang='en' dir='ltr'>
+      This product has made me a ton of money. Trade profitability has
+      skyrocketed. Lemme know if you want to chat about it
+    </p>
+    &mdash; Ahab (@Ahab_1337){' '}
+    <a href='https://twitter.com/Ahab_1337/status/1389198702355570694?ref_src=twsrc%5Etfw'>
+      May 3, 2021
+    </a>
   </blockquote>
 ]
 
