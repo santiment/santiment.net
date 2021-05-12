@@ -19,7 +19,7 @@ export const categories = [
         onClick: evt => {
           if (window.Intercom) {
             evt.preventDefault()
-            window.Intercom('showNewMessage', 'Talk with expert about Data Science as a Service.')
+            window.Intercom('showNewMessage', 'Hello! I have a question')
           }
         },
         href: 'mailto:support@santiment.net'
