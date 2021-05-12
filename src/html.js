@@ -9,13 +9,6 @@ const intercomScript = (
   />
 )
 
-const gtagScriptLink = (
-    <script
-        async
-        src='https://www.googletagmanager.com/gtag/js?id=UA-100571693-1%22%3E'
-    />
-)
-
 const gtagScript = (
   <script async
     dangerouslySetInnerHTML={{
@@ -67,9 +60,9 @@ export default function HTML (props) {
         />
         {props.postBodyComponents}
         {intercomScript}
-        {gtagScriptLink}
         {gtagScript}
         {firstPromoterScript}
+        <script async src='https://www.googletagmanager.com/gtag/js?id=UA-100571693-1%22%3E' />
       </body>
     </html>
   )
