@@ -30,8 +30,8 @@ export const BUSINESS_PRODUCTS = [
     img: datascience,
     title: 'Data Science as a Service',
     description: 'Bespoke market intelligence for digital assets',
-    message: 'Talk with expert about Data Science as a Service.',
-    isIntercomButton: true
+    to: '/',
+    onClick: () => window.Intercom && window.Intercom('showNewMessage', 'Talk with expert about Data Science as a Service.')
   }
 ]
 

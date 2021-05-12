@@ -1,16 +1,16 @@
 import React from 'react'
 import cx from 'classnames'
 import Message from '@santiment-network/ui/Message'
-// import ContactUs from '../../ContactUs/ContactUs'
 import styles from './Product.module.scss'
+
+const cb = () => {}
 
 const ProductItem = ({
   className,
   product: {
     to,
     img,
-    isIntercomButton,
-    message,
+    onClick,
     title,
     label,
     isSelected,
@@ -18,11 +18,8 @@ const ProductItem = ({
   }
 }) => {
   const Wrapper = ({ children, className }) =>
-    isIntercomButton ? (
-        <span className={className}>{children}</span>
-      // <ContactUs as='a' className={className} message={message}>
-      //   {children}
-      // </ContactUs>
+    onClick ? (
+        <span className={className} onClick={onClick}>{children}</span>
     ) : (
       <a
         className={className}

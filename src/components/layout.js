@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import cx from 'classnames'
@@ -15,7 +8,6 @@ import Footer from './Footer/Footer'
 import Notifications from './Notifications/Notifications'
 import CookiePopup from './CookiePopup/CookiePopup'
 import Helmet from 'react-helmet'
-import Delayed from "./Delayed";
 import './fonts.module.scss'
 import styles from './layout.module.scss'
 
