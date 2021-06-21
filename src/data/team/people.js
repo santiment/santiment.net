@@ -17,7 +17,6 @@ import Max from './images/Max.png'
 import Nastya from './images/Nastya.png'
 import Nail from './images/Nail.png'
 import Nikolay from './images/Nikolay.png'
-import Rinat from './images/Rinat.png'
 import Serena from './images/Serena.png'
 import Tsetso from './images/Tsetso.png'
 import Tzanko from './images/Tzanko.png'
@@ -263,18 +262,6 @@ export const PEOPLE = [
     links: {
       linkedin: 'https://www.linkedin.com/in/haritonasty/',
       github: 'https://github.com/haritonasty'
-    }
-  },
-  {
-    name: 'Rinat Rahimulin',
-    position: 'Frontend developer',
-    img: Rinat,
-    group: GROUPS.DEVS,
-    description:
-      'Rinat is a senior full stack developer with experience in fintech (crypto exchanges, trading) plus education and enterprise (CRM/ERP, widgets) solutions. He communicate with the business according to its needs and proposes the best technology solutions for the job. When he’s not working, he enjoys fantastic books and fishing.',
-    links: {
-      linkedin: 'https://www.linkedin.com/in/rfihtengolts',
-      github: 'https://github.com/garageinc'
     }
   },
   {
