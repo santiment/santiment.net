@@ -14,12 +14,7 @@ import Litecoin from './litecoin.svg'
 import Dash from './dash.svg'
 import styles from './WelcomeBlock.module.scss'
 
-const WelcomeBlock = () => {
-  if (typeof window !== 'undefined' && window.dataLayer) {
-    window.dataLayer.push({'event': 'optimize.activate'});
-  }
-
-  return (
+const WelcomeBlock = () => (
     <section className={styles.wrapper}>
       <img src={Dash} className={cx(styles.dash, styles.coin, styles.coinLeft)} alt="dash" />
       <img src={Litecoin} className={cx(styles.litecoin, styles.coin, styles.coinLeft)} alt="litecoin" />
@@ -43,6 +38,5 @@ const WelcomeBlock = () => {
       </NotificationsContext.Consumer>
     </section>
   )
-}
 
 export default WelcomeBlock
