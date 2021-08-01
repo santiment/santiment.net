@@ -5,12 +5,14 @@ import Ante from './images/Ante.png'
 import Brian from './images/Brian.png'
 import Dima from './images/Dima.png'
 import Dino from './images/Dino.png'
+import Ehrlan from './images/Ehrlan.png'
 import Garry from './images/Garry.png'
 import Irina from './images/Irina.png'
 import Ivan from './images/Ivan.png'
 import Kate from './images/Kate.png'
 import Kelvin from './images/Kelvin.png'
 import Kim from './images/Kim.png'
+import Ksenia from './images/Ksenia.png'
 import Lyudmil from './images/Lyudmil.png'
 import Maksim from './images/Maksim.png'
 import Max from './images/Max.png'
@@ -143,6 +145,29 @@ export const PEOPLE = [
       'User-focused visual/interactive designer specializing in partnership integrations, and enterprise apps for web and mobile. Dreams in html/css and data visualizations. Wordsmither. Aspiring crypto trader.',
     links: {
       linkedin: 'https://linkedin.com/in/kimcarson'
+    }
+  },
+  {
+    name: 'Ehrlan Zholdosh',
+    position: 'Designer',
+    group: GROUPS.DESIGN,
+    img: Ehrlan,
+    description:
+      'Ehrlan does product design over six years. Feels a sincere devotion to translating complex products into functional user-centered interfaces visually balanced across any device. Born with a blue heart and devoted to FC Chelsea.',
+    links: {
+      twitter: 'https://twitter.com/ehrlan8',
+      medium: 'https://ehrlan.medium.com/'
+    }
+  },
+  {
+    name: 'Ksenia Parfinovich',
+    position: 'Illustrator',
+    group: GROUPS.DESIGN,
+    img: Ksenia,
+    description:
+      'Ksenia has been illustrating for many years, making comics and books. She has been actively engage in graphic design and has given drawing lessons to adults and children. Likes to watch beautifully animated cartoons and read good literature.',
+    links: {
+      instagram: 'https://instagram.com/arget.m'
     }
   },
   {
