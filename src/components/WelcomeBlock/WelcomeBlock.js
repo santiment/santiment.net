@@ -14,8 +14,13 @@ import Litecoin from './litecoin.svg'
 import Dash from './dash.svg'
 import styles from './WelcomeBlock.module.scss'
 
-const WelcomeBlock = () => (
-  <section className={styles.wrapper}>
+const WelcomeBlock = () => {
+  if (typeof window !== 'undefined' && window.dataLayer) {
+    window.dataLayer.push({'event': 'optimize.activate'});
+  }
+
+  return (
+    <section className={styles.wrapper}>
       <img src={Dash} className={cx(styles.dash, styles.coin, styles.coinLeft)} alt="dash" />
       <img src={Litecoin} className={cx(styles.litecoin, styles.coin, styles.coinLeft)} alt="litecoin" />
       <img src={Bitcoin} className={cx(styles.bitcoin, styles.coin, styles.coinLeft)} alt="bitcoin" />
@@ -25,18 +30,19 @@ const WelcomeBlock = () => (
       <img src={topSpot} className={styles.topSpot} alt="" />
       <img src={bottomSpot} className={styles.bottomSpot} alt="" />
       <h1 className={styles.title}>
-          On-chain, social & fundamental insights on 1500+ cryptocurrencies
-    </h1>
-    <NotificationsContext.Consumer>
-      {({ add }) => (
-        <Mutation mutation={EMAIL_LOGIN_MUTATION}>
-          {(sendConfirmationEmail, { loading }) => (
-            <SubscriptionForm loading={loading} send={sendConfirmationEmail} add={add} classes={styles} />
-          )}
-        </Mutation>
-      )}
-    </NotificationsContext.Consumer>
-  </section>
-)
+        On-chain, social & fundamental insights on 1500+ cryptocurrencies
+      </h1>
+      <NotificationsContext.Consumer>
+        {({ add }) => (
+          <Mutation mutation={EMAIL_LOGIN_MUTATION}>
+            {(sendConfirmationEmail, { loading }) => (
+              <SubscriptionForm loading={loading} send={sendConfirmationEmail} add={add} classes={styles} />
+            )}
+          </Mutation>
+        )}
+      </NotificationsContext.Consumer>
+    </section>
+  )
+}
 
 export default WelcomeBlock
