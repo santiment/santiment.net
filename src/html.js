@@ -46,6 +46,7 @@ export default function HTML (props) {
           <link rel="preconnect" crossOrigin="true" href="https://widget.intercom.io"/>
           <link rel="preload" href="/static/ProximaNova-Regular-3da7be18692d6693b842f8d673dd9e2c.woff2" as="font" type="font/woff2" crossOrigin="true" />
           <link rel="preload" href="/static/ProximaNova-Bold-12f2f5acb0986079c3bc0aa621f5c5b9.woff2" as="font" type="font/woff2" crossOrigin="true" />
+          <script src="https://www.googleoptimize.com/optimize.js?id=OPT-TKTHGHT" />
           {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
