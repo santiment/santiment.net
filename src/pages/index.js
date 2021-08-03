@@ -8,7 +8,7 @@ import Products from '../components/Products/Products'
 import Companies from '../components/Companies/Companies'
 import GetStarted from '../components/GetStarted/GetStarted'
 import WelcomeBlock from '../components/WelcomeBlock/WelcomeBlock'
-import Feedbacks from '../components/TwitterFeedbacks/TwitterFeedbacks'
+import Feedbacks from '../components/Twitter'
 import styles from './index.module.scss'
 
 const IndexPage = ({ intl, location }) => {

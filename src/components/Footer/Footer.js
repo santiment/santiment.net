@@ -119,7 +119,7 @@ const Footer = ({ intl }) => {
         </div>
         <div className={styles.bottom}>
           <div className={cx(styles.text, styles.rights)}>
-            © 2016-{year.getFullYear()} Santiment
+            © 2016—{year.getFullYear()} Santiment
           </div>
           <div>
             <a
@@ -153,6 +153,14 @@ const Footer = ({ intl }) => {
               className={cx(styles.text, styles.link)}
             >
               {tr('footer.status', 'Status')}
+            </a>
+            <a
+              rel='noopener noreferrer'
+              target='_blank'
+              href='https://academy.santiment.net/changelog'
+              className={cx(styles.text, styles.link)}
+            >
+              {tr('footer.changelog', 'Changelog')}
             </a>
           </div>
           <div className={styles.social}>

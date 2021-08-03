@@ -11,7 +11,6 @@ export { wrapRootElement } from "./src/apollo/wrap-root-element"
 const activateOptimize = () => {
   window.dataLayer = window.dataLayer || []
   window.dataLayer.push({ event: "optimize.activate" })
-  console.log('here')
 }
 
 export const onRouteUpdate = () => {
