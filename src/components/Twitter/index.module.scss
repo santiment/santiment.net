@@ -3,6 +3,7 @@
 .container {
   padding: 96px 0 100px;
   margin: 0;
+  width: 100%;
 
   @include responsive('phone', 'phone-xs') {
     padding: 56px 0 44px;
