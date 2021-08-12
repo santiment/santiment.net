@@ -9,6 +9,7 @@ import Ehrlan from './images/Ehrlan.png'
 import Garry from './images/Garry.png'
 import Irina from './images/Irina.png'
 import Ivan from './images/Ivan.png'
+import IvanG from './images/IvanG.png'
 import Kate from './images/Kate.png'
 import Kelvin from './images/Kelvin.png'
 import Kim from './images/Kim.png'
@@ -390,6 +391,17 @@ export const PEOPLE = [
         'He likes to develop extraordinary and complex apps. He is sure: blockchain will lead us to the bright future. Programming is his passion.',
     links: {
       github: 'https://github.com/nailkhaf/'
+    }
+  },
+  {
+    name: 'Ivan Genev',
+    position: 'DevOps',
+    img: IvanG,
+    group: GROUPS.DEVS,
+    description:
+        'Ivan has more than 15 years of IT/infrastructure expertise. Throughout his career, he was working in large telecoms, on-line gaming companies and e-commerce platforms. Enjoys to learn new things and play with linux, networks and automation.',
+    links: {
+      linkedin: 'https://www.linkedin.com/in/couting/'
     }
   },
 ]

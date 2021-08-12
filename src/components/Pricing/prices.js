@@ -27,12 +27,12 @@ export default {
   SanAPI: {
     desc: 'Built for crypto developers, quants and third-party apps',
     Component: () => (
-      <Button variant='fill' accent='blue' as="a" rel="noopener noreferrer" target="_blank" href='https://neuro.santiment.net/#pricing' className={styles.link}>
+      <Button variant='fill' accent='blue' as="a" rel="noopener noreferrer" target="_blank" href='https://api.santiment.net/#pricing' className={styles.link}>
         {tr('cta.try_free', 'Try it for free')}
         <Icon type='pointer-right-small' className={styles.arrow} />
       </Button>
     ),
-    more: 'https://neuro.santiment.net/',
+    more: 'https://api.santiment.net/',
     features: [
       'The most comprehensive crypto API on the market',
       'TBs of processed on-chain, social, github and fundamental data',

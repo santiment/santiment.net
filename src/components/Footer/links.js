@@ -66,7 +66,7 @@ export const categories = [
       {
         children: 'api',
         name: 'SanAPI',
-        href: 'https://neuro.santiment.net/'
+        href: 'https://api.santiment.net/'
       },
       {
         children: 'Sansheets',

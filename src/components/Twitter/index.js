@@ -10,7 +10,6 @@ const items = [...tweets, ...tweets]
 export default () => (
   <div id="features" className={styles.container}>
     <section className={styles.wrapper}>
-      <Title className={styles.title}>{tr('twitter.title', "See what our users are saying")}</Title>
       <div className={styles.scroller}>
         <div className={styles.tweets} style={{ '--time': `${tweets.length * 3.5}s`}}>
           {items.map(({ displayName, handle, avatar, content, id }, idx) => (

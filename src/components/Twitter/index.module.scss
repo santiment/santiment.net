@@ -1,7 +1,6 @@
 @import '~@santiment-network/ui/mixins';
 
 .container {
-  background-color: var(--athens);
   padding: 96px 0 100px;
   margin: 0;
 
@@ -13,14 +12,6 @@
 .wrapper {
   margin: 0 !important;
   max-width: 100% !important;
-}
-
-.title {
-  margin: 0 auto 40px;
-
-  @include responsive('phone', 'phone-xs') {
-    margin: 0 auto 32px;
-  }
 }
 
 .scroller {
