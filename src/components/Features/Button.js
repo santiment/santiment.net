@@ -13,6 +13,7 @@ const TryButton = ({href = 'https://app.santiment.net/login'}) => (
     target='_blank'
     rel='noopener noreferrer'
     href={href}
+    onClick={() => window.gtag('event', 'sign_up')}
   >
     {tr('try.btn', 'Try it yourself')}
     <Icon type='pointer-right-small' className={styles.icon} />
