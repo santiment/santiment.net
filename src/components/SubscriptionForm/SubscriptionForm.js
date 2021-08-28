@@ -50,6 +50,7 @@ const SubscriptionForm = ({
       className={cx(styles.form, classes.form)}
       onSubmit={e => {
         e.preventDefault()
+        window.gtag('event', 'sign_up')
         send({
           variables: { email, subscribeToWeeklyNewsletter: hasSubscribed }
         }).then(() => {

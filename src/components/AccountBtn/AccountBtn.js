@@ -8,7 +8,7 @@ import styles from './AccountBtn.module.scss'
 
 const AccountBtn = ({ intl }) => {
   return (
-    <div className={styles.account}>
+    <div className={styles.account} onClick={() => window.gtag('event', 'sign_up')}>
       <Query query={CURRENT_USER_QUERY}>
         {({ data: { currentUser } = {} }) => {
           const isLoggedIn = Boolean(currentUser)
