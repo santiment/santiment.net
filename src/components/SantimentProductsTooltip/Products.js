@@ -10,7 +10,7 @@ export const BUSINESS_PRODUCTS = [
     img: sanbase,
     title: 'Sanbase',
     description:
-      'Behavior analysis & monitoring platform for 1500+ crypto assets',
+      'Behavior analysis & monitoring platform for 2000+ crypto assets',
     to: 'https://app.santiment.net'
   },
   {

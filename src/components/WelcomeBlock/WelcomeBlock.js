@@ -25,7 +25,7 @@ const WelcomeBlock = () => (
       <img src={topSpot} className={styles.topSpot} alt="" />
       <img src={bottomSpot} className={styles.bottomSpot} alt="" />
       <h1 className={styles.title}>
-        On-chain, social & fundamental insights on 1500+ cryptocurrencies
+        On-chain, social & fundamental insights on 2000+ cryptocurrencies
       </h1>
       <NotificationsContext.Consumer>
         {({ add }) => (
