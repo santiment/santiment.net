@@ -292,15 +292,13 @@ export const PEOPLE = [
   },
   {
     name: 'Lyudmil Danailov',
-    position: 'Junior Developer',
+    position: 'Developer',
     group: GROUPS.RESEARCH,
     img: Lyudmil,
     description:
-      'Lyudmil is starting his career in development while studying Informatics at Sofia University. He’s also a martial artist and guitar player, and really enjoys reading books in English (and in the future, maybe Italian, French or Japanese). He also loves spending time with his girlfriend and playing with his dog in his hometown of Varna.',
+      'Lyudmil is starting his career in development while studying Informatics at Sofia University. In his free time, he loves spending time playing guitar, learning languages and playing with his dog in his hometown of Varna.',
     links: {
-      github: 'https://github.com/spiderjako',
-      email:
-        'mailto:lyudmil_danailov@abv.bg'
+      github: 'https://github.com/spiderjako'
     }
   },
   {
@@ -361,7 +359,7 @@ export const PEOPLE = [
   },
   {
     name: 'Katsiaryna Dzibuk',
-    position: 'Junior Data Scientist',
+    position: 'Data Scientist',
     img: Kate,
     group: GROUPS.RESEARCH,
     description:
@@ -372,7 +370,7 @@ export const PEOPLE = [
   },
   {
     name: 'Vladislav Volynets',
-    position: 'Junior Data Scientist',
+    position: 'Data Scientist',
     img: VladV,
     group: GROUPS.RESEARCH,
     description:
