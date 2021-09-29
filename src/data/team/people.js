@@ -225,7 +225,7 @@ export const PEOPLE = [
     group: GROUPS.DEVS,
     img: Ivan,
     description:
-      'Ivan is a new crypto enthusiast and developer with C++ experience writing software for telecoms and working as a university teaching assistant in computer programming. He is also pursuing a BA in Computer Science. He loves music, books, mountaineering and exploring nature.',
+      'Ivan is a developer with C++ telecom industry background, BA in Computer Science and is nowadays pursuing Master\'s Degree in the field of AI. He believes in open source software and loves music, books, travelling, and occasionally teaching and advocating functional programming with Elixir at the university.',
     links: {
       linkedin: 'https://www.linkedin.com/in/ivan-aleksandrov-63b8668a/',
       github: 'https://github.com/IvanIvanoff'
