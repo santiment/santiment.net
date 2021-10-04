@@ -24,10 +24,11 @@ const JobsPage = ({ intl }) => (
         <br />
         List of our  
         <a
+          color="#5275ff"
           href="https://www.notion.so/santiment/Open-positions-f1880de7557b468a80b1465013f311cd"
           target='_blank'
           rel='noopener noreferrer'
-          >open positions</a>
+          > open positions</a>
         </div>
     </div>
     <GetStarted />
