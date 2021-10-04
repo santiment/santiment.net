@@ -21,12 +21,14 @@ const JobsPage = ({ intl }) => (
         crypto-markets. We’re constantly focused on keeping our work in a
         collaborative, creative and open environment. If these are your values
         too, come join us!
-      </div>
-      <div className={styles.widget}>
-        {/* Recooty Widget START */}
-          <iframe title="jobs" id="iframe-container-1" width="100%" height="250" frameborder="0" src="https://widget.recooty.com/openings.php?key=5b86a52a1629a2613c83154ee16153d23e70d73ff0b6b"></iframe>
-        {/* Recooty Widget END */}
-      </div>
+        <br />
+        List of our  
+        <a
+          href="https://www.notion.so/santiment/Open-positions-f1880de7557b468a80b1465013f311cd"
+          target='_blank'
+          rel='noopener noreferrer'
+          >open positions</a>
+        </div>
     </div>
     <GetStarted />
   </Layout>
