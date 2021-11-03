@@ -77,10 +77,6 @@ export const categories = [
         children: 'Sangraphs',
         name: 'Sangraphs',
         href: 'https://graphs.santiment.net/'
-      },
-      {
-        name: 'Sanhunters',
-        href: 'https://hunters.santiment.net/'
       }
     ]
   }
