@@ -17,12 +17,12 @@
 	margin: 0 auto 60px;
 	text-align: center;
 
-	& a {
+	a {
 		color: var(--jungle-green);
-	}
-
-	& a:hover {
-		color: var(--jungle-green-hover);
+		
+		&:hover {
+			color: var(--jungle-green-hover);
+		}
 	}
 }
 
