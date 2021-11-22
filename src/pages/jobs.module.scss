@@ -18,7 +18,11 @@
 	text-align: center;
 
 	& a {
-		color: var(--blue);
+		color: var(--jungle-green);
+	}
+
+	& a:hover {
+		color: var(--jungle-green-hover);
 	}
 }
 
