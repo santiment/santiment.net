@@ -16,6 +16,14 @@
 	color: var(--waterloo);
 	margin: 0 auto 60px;
 	text-align: center;
+
+	a {
+		color: var(--jungle-green);
+		
+		&:hover {
+			color: var(--jungle-green-hover);
+		}
+	}
 }
 
 .title {
