@@ -57,7 +57,7 @@ export const PEOPLE = [
   {
     name: 'Yura Zatsepin',
     img: Yura,
-    position: 'Product Dev Lead',
+    position: 'CPO',
     group: GROUPS.CORE,
     description:
       'He’s developed a guitar education service, online payment services for banks, and MMO mobile/flash games and extensions for purchase. He also won first place in 2 hackathons (Gazprom, QIWI) and got special prizes from Evernote. He now wants to turn his passion for building great applications toward the crypto world.',
