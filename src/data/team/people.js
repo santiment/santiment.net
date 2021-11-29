@@ -17,7 +17,6 @@ import Ksenia from './images/Ksenia.png'
 import Lyudmil from './images/Lyudmil.png'
 import Maksim from './images/Maksim.png'
 import Max from './images/Max.png'
-import Nastya from './images/Nastya.png'
 import Nail from './images/Nail.png'
 import Nikolay from './images/Nikolay.png'
 import Serena from './images/Serena.png'
@@ -276,18 +275,6 @@ export const PEOPLE = [
     links: {
       linkedin: 'https://www.linkedin.com/in/vassilkalkov/',
       github: 'https://github.com/kalkov'
-    }
-  },
-  {
-    name: 'Nastya Kharitonova',
-    position: 'Frontend developer',
-    group: GROUPS.DEVS,
-    img: Nastya,
-    description:
-      'Nastya loves to make awesome apps. She is attentive to details, and is crazy about friendly UX, animations and beautiful UI. As a frontend developer, she helps people understand the crypto world and tries to understand it herself.',
-    links: {
-      linkedin: 'https://www.linkedin.com/in/haritonasty/',
-      github: 'https://github.com/haritonasty'
     }
   },
   {
