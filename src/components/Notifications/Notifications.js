@@ -1,51 +1,51 @@
-import React, { Component } from 'react'
-import Notification from '@santiment-network/ui/Notification'
-import { CSSTransition, TransitionGroup } from 'react-transition-group'
-import styles from './Notifications.module.scss'
+import React, { Component } from "react";
+import Notification from "@santiment-network/ui/Notification";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import styles from "./Notifications.module.scss";
 
 export const NotificationsContext = React.createContext({
   notifications: [],
   add: () => {},
-  remove: () => {},
-})
+  remove: () => {}
+});
 
-const notifyDuration = 300
+const notifyDuration = 300;
 
-let lastId = 0
+let lastId = 0;
 
 class Notifications extends Component {
   state = {
     notifications: [],
     add: this.add,
-    remove: this.remove,
-  }
+    remove: this.remove
+  };
 
   add = ({ dismissAfter = 4000, ...notification }) => {
-    notification.id = lastId
-    lastId += 1
+    notification.id = lastId;
+    lastId += 1;
     this.setState(({ notifications }) => {
       setTimeout(() => {
-        this.remove(notification)
-      }, dismissAfter)
-      return { notifications: [...notifications, notification] }
-    })
-  }
+        this.remove(notification);
+      }, dismissAfter);
+      return { notifications: [...notifications, notification] };
+    });
+  };
 
   remove = notification => {
     this.setState(({ notifications }) => ({
-      notifications: notifications.filter(not => not !== notification),
-    }))
-  }
+      notifications: notifications.filter(not => not !== notification)
+    }));
+  };
 
   render() {
-    const { notifications } = this.state
-    const { children } = this.props
+    const { notifications } = this.state;
+    const { children } = this.props;
 
     const context = {
       notifications,
       add: this.add,
-      remove: this.remove,
-    }
+      remove: this.remove
+    };
 
     return (
       <>
@@ -61,7 +61,7 @@ class Notifications extends Component {
                 className={styles.notification}
                 onClose={() => this.remove(notification)}
                 style={{
-                  '--y-offset': `calc(-${i}00% - ${i}0px - 25px)`,
+                  "--y-offset": `calc(-${i}00% - ${i}0px - 25px)`
                 }}
               />
             </CSSTransition>
@@ -71,8 +71,8 @@ class Notifications extends Component {
           {children}
         </NotificationsContext.Provider>
       </>
-    )
+    );
   }
 }
 
-export default Notifications
+export default Notifications;

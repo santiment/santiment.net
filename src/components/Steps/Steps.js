@@ -1,8 +1,8 @@
-import React from 'react'
-import { data } from './data'
-import Subheading from '../Heading/Subheading'
-import Heading from '../Heading/Heading'
-import styles from './Steps.module.scss'
+import React from "react";
+import { data } from "./data";
+import Subheading from "../Heading/Subheading";
+import Heading from "../Heading/Heading";
+import styles from "./Steps.module.scss";
 
 const Steps = () => (
   <>
@@ -27,6 +27,6 @@ const Steps = () => (
       ))}
     </ol>
   </>
-)
+);
 
-export default Steps
+export default Steps;

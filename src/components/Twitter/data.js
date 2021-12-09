@@ -1,17 +1,16 @@
-import React from 'react'
-import Sheldon from './images/SheldonStack.jpg'
-import MennoPP from './images/MennoPP.jpg'
-import crypto_birb from './images/crypto_birb.jpg'
-import Merp from './images/0xMerp.jpg'
-import ortiercapital from './images/ortiercapital.jpg'
-import julianhosp from './images/julianhosp.jpg'
-import Slivinschi from './images/Slivinschi.jpg'
-import Ameer from './images/AmeerRosic.jpg'
-import Cryptonacci from './images/XCryptonacciX.jpg'
-import Coachkcrypto from './images/Coachkcrypto.jpg'
-import Ahab from './images/Ahab_1337.jpg'
-import Johninvesting from './images/Johninvesting.jpg'
-
+import React from "react";
+import Sheldon from "./images/SheldonStack.jpg";
+import MennoPP from "./images/MennoPP.jpg";
+import crypto_birb from "./images/crypto_birb.jpg";
+import Merp from "./images/0xMerp.jpg";
+import ortiercapital from "./images/ortiercapital.jpg";
+import julianhosp from "./images/julianhosp.jpg";
+import Slivinschi from "./images/Slivinschi.jpg";
+import Ameer from "./images/AmeerRosic.jpg";
+import Cryptonacci from "./images/XCryptonacciX.jpg";
+import Coachkcrypto from "./images/Coachkcrypto.jpg";
+import Ahab from "./images/Ahab_1337.jpg";
+import Johninvesting from "./images/Johninvesting.jpg";
 
 export const tweets = [
   {
@@ -23,19 +22,21 @@ export const tweets = [
       <blockquote>
         <p>
           Probed your platform, interesting metrics offering some very nuanced
-          insights. Between the on-chain analysis, development activity and macro
-          view - on the alt side, bullish on (@bancor)
-          <a href='https://twitter.com/search?q=%24bnt&src=cashtag_click'>
+          insights. Between the on-chain analysis, development activity and
+          macro view - on the alt side, bullish on (@bancor)
+          <a href="https://twitter.com/search?q=%24bnt&src=cashtag_click">
             $bnt
-          </a>{' '}
-          <a href='https://twitter.com/hashtag/DeFi?src=hash&amp;ref_src=twsrc%5Etfw'>
+          </a>{" "}
+          <a href="https://twitter.com/hashtag/DeFi?src=hash&amp;ref_src=twsrc%5Etfw">
             #DeFi
-          </a>{' '}
-          <a href='https://twitter.com/hashtag/Analytics?src=hash&amp;ref_src=twsrc%5Etfw'>
+          </a>{" "}
+          <a href="https://twitter.com/hashtag/Analytics?src=hash&amp;ref_src=twsrc%5Etfw">
             #Analytics
-          </a>{' '}
+          </a>{" "}
           Kudus (@santimentfeed)
-          <span role='img' aria-label='Thumbs up'>👍</span>
+          <span role="img" aria-label="Thumbs up">
+            👍
+          </span>
         </p>
       </blockquote>
     )
@@ -45,11 +46,7 @@ export const tweets = [
     handle: "MennoPP",
     avatar: MennoPP,
     displayName: "Menno Pietersen",
-    content: (
-        <p>
-          That is some fantastic data.
-        </p>
-    )
+    content: <p>That is some fantastic data.</p>
   },
   {
     id: "1325316475117207552",
@@ -58,8 +55,8 @@ export const tweets = [
     displayName: "Coach K (BTC Survivor since 2013)",
     content: (
       <p>
-        Love this kinds data now if you could make an indicator that showed it all
-        aggregated in a simple form that would be super cool
+        Love this kinds data now if you could make an indicator that showed it
+        all aggregated in a simple form that would be super cool
       </p>
     )
   },
@@ -71,7 +68,9 @@ export const tweets = [
     content: (
       <p>
         Great insight
-        <span role='img' aria-label='eyes'>👀</span>
+        <span role="img" aria-label="eyes">
+          👀
+        </span>
       </p>
     )
   },
@@ -83,11 +82,20 @@ export const tweets = [
     content: (
       <p>
         Signed up to the free trial
-        <a href="https://twitter.com/santimentfeed?ref_src=twsrc%5Etfw">@santimentfeed</a>
+        <a href="https://twitter.com/santimentfeed?ref_src=twsrc%5Etfw">
+          @santimentfeed
+        </a>
         <span>Love the interface so far.</span>
-        <a href="https://twitter.com/search?q=%24ETH&amp;src=ctag&amp;ref_src=twsrc%5Etfw">$ETH</a>
-        <span>supply on exchanges continues to go down while price is still heading to $3,000.</span>
-        <a href="https://twitter.com/hashtag/ethererum?src=hash&amp;ref_src=twsrc%5Etfw">#ethererum</a>
+        <a href="https://twitter.com/search?q=%24ETH&amp;src=ctag&amp;ref_src=twsrc%5Etfw">
+          $ETH
+        </a>
+        <span>
+          supply on exchanges continues to go down while price is still heading
+          to $3,000.
+        </span>
+        <a href="https://twitter.com/hashtag/ethererum?src=hash&amp;ref_src=twsrc%5Etfw">
+          #ethererum
+        </a>
       </p>
     )
   },
@@ -96,9 +104,7 @@ export const tweets = [
     handle: "0xMerp",
     avatar: Merp,
     displayName: "Merp(9,9)",
-    content: (
-      <p>great content as always</p>
-    )
+    content: <p>great content as always</p>
   },
   {
     id: "1320905514931412998",
@@ -107,8 +113,10 @@ export const tweets = [
     displayName: "Ortier Capital",
     content: (
       <p>
-        amazing ! keeep up the{' '}
-        <span aria-label='fire' role='img'>🔥🔥🔥</span>
+        amazing ! keeep up the{" "}
+        <span aria-label="fire" role="img">
+          🔥🔥🔥
+        </span>
         post
       </p>
     )
@@ -118,9 +126,7 @@ export const tweets = [
     handle: "julianhosp",
     avatar: julianhosp,
     displayName: "Dr. Julian Hosp",
-    content: (
-      <p>great work!</p>
-    )
+    content: <p>great work!</p>
   },
   {
     id: "1329226946656530436",
@@ -156,16 +162,16 @@ export const tweets = [
     content: (
       <p>
         I love these charts man!
-        <a href='https://twitter.com/hashtag/btc?src=hash&amp;ref_src=twsrc%5Etfw'>
+        <a href="https://twitter.com/hashtag/btc?src=hash&amp;ref_src=twsrc%5Etfw">
           #btc
-        </a>{' '}
-        <a href='https://twitter.com/hashtag/bitcoin?src=hash&amp;ref_src=twsrc%5Etfw'>
+        </a>{" "}
+        <a href="https://twitter.com/hashtag/bitcoin?src=hash&amp;ref_src=twsrc%5Etfw">
           #bitcoin
-        </a>{' '}
-        <a href='https://twitter.com/hashtag/crypto?src=hash&amp;ref_src=twsrc%5Etfw'>
+        </a>{" "}
+        <a href="https://twitter.com/hashtag/crypto?src=hash&amp;ref_src=twsrc%5Etfw">
           #crypto
-        </a>{' '}
-        <a href='https://t.co/M31sVoFOMA'>https://t.co/M31sVoFOMA</a>
+        </a>{" "}
+        <a href="https://t.co/M31sVoFOMA">https://t.co/M31sVoFOMA</a>
       </p>
     )
   },
@@ -176,12 +182,12 @@ export const tweets = [
     displayName: "Ahab",
     content: (
       <p>
-        Love the tools you provide. The on chain metrics were instrumental at turning 850usd to 39k usd in only 4 weeks.  Thanks for your work!
+        Love the tools you provide. The on chain metrics were instrumental at
+        turning 850usd to 39k usd in only 4 weeks. Thanks for your work!
       </p>
     )
-  },
-]
-
+  }
+];
 
 //deleted or blocked tweets
 
@@ -205,5 +211,3 @@ export const tweets = [
 //     </p>
 //   )
 // },
-
-

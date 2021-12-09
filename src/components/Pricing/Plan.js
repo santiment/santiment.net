@@ -1,6 +1,6 @@
-import React from 'react'
-import Plan from './PlanCard'
-import styles from './Plan.module.scss'
+import React from "react";
+import Plan from "./PlanCard";
+import styles from "./Plan.module.scss";
 
 const PLAN_CLASSES = {
   wrapper: styles.card,
@@ -10,16 +10,16 @@ const PLAN_CLASSES = {
   feature: styles.feature,
   feature__icon: styles.feature__icon,
   popular: styles.card__popular
-}
+};
 
 const PricingPlan = ({ ...props }) => {
   return (
     <Plan
       {...props}
       classes={PLAN_CLASSES}
-      btnProps={{ border: undefined, variant: 'fill' }}
+      btnProps={{ border: undefined, variant: "fill" }}
     />
-  )
-}
+  );
+};
 
-export default PricingPlan
+export default PricingPlan;

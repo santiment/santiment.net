@@ -1,16 +1,19 @@
-import React from 'react'
-import { injectIntl } from 'gatsby-plugin-intl'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import GetStarted from '../components/GetStarted/GetStarted'
-import Subheading from '../components/Heading/Subheading'
-import styles from './terms.module.scss'
+import React from "react";
+import { injectIntl } from "gatsby-plugin-intl";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import GetStarted from "../components/GetStarted/GetStarted";
+import Subheading from "../components/Heading/Subheading";
+import styles from "./terms.module.scss";
 
 const TermsPage = ({ intl }) => (
   <Layout>
-    <SEO title='Santiment Terms & Conditions' description='Please review the T&C contained herein carefully. By using the Services, you acknowledge and agree that You have read, understood, and accepted
+    <SEO
+      title="Santiment Terms & Conditions"
+      description="Please review the T&C contained herein carefully. By using the Services, you acknowledge and agree that You have read, understood, and accepted
         all of the following T&C, as well as all of the terms and conditions
-        which are incorporated herein by reference.' />
+        which are incorporated herein by reference."
+    />
     <div className={styles.wrapper}>
       <Subheading className={styles.title}>
         Santiment Terms & Conditions
@@ -31,14 +34,14 @@ const TermsPage = ({ intl }) => (
           of Commerce under No. <b>CHE-424.007.779</b> and with registered
           address Dammstrasse 16, 6300 Zug, Switzerland (“<b>Santiment</b>”) and
           the person, persons, or entity (“<b>You</b>”) using Santiment’s mobile
-          and web services at{' '}
+          and web services at{" "}
           <a
-            href='https://santiment.net/'
-            target='_blank'
-            rel='noopener noreferrer'
+            href="https://santiment.net/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             https://santiment.net/
-          </a>{' '}
+          </a>{" "}
           and, in general, accessing any data, information, signals, insights,
           analysis or other contents or using any services provided by Santiment
           (collectively the “<b>Services</b>”).
@@ -61,14 +64,14 @@ const TermsPage = ({ intl }) => (
         <p>
           1.4. Santiment may amend these T&C at any time. Amendments will be
           effective 7 (seven) days after the modified terms and conditions have
-          been posted on Santiment’s website at{' '}
+          been posted on Santiment’s website at{" "}
           <a
-            href='https://santiment.net/'
-            target='_blank'
-            rel='noopener noreferrer'
+            href="https://santiment.net/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             https://santiment.net/
-          </a>{' '}
+          </a>{" "}
           , except for amendments that relate to new features or made for legal
           purposes, which will become effective immediately. If You do not agree
           to such modified terms, You should discontinue Your use of the
@@ -113,11 +116,11 @@ const TermsPage = ({ intl }) => (
           2.5. Free use of Santiment API requires proper attribution. Free
           Santiment API users that wish to integrate Santiment data to their
           Product (website or app) will need to include a “do follow” link to
-          https://santiment.net/ on their homepage with the anchor text:{' '}
+          https://santiment.net/ on their homepage with the anchor text:{" "}
           <a
-            href='https://santiment.net/'
-            target='_blank'
-            rel='noopener noreferrer'
+            href="https://santiment.net/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             “Digital asset data collected and provided by Santiment”.
           </a>
@@ -211,11 +214,11 @@ const TermsPage = ({ intl }) => (
           7.1. In order to provide You with the Services, You acknowledge and
           agree that Santiment may collect, store and process Your personal data
           and/or information. By using the Services, You have read, understood,
-          and accepted to the terms of Santiment’s{' '}
+          and accepted to the terms of Santiment’s{" "}
           <a
-            href='https://app.santiment.net/privacy-policy'
-            target='_blank'
-            rel='noopener noreferrer'
+            href="https://app.santiment.net/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             privacy policy
           </a>
@@ -457,6 +460,6 @@ const TermsPage = ({ intl }) => (
     </div>
     <GetStarted />
   </Layout>
-)
+);
 
-export default injectIntl(TermsPage)
+export default injectIntl(TermsPage);

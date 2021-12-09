@@ -1,12 +1,12 @@
-import React from 'react'
-import Icon from '@santiment-network/ui/Icon'
-import Testimonials from "../Testimonials"
-import Twitter from "../Twitter"
-import styles from './index.module.scss'
+import React from "react";
+import Icon from "@santiment-network/ui/Icon";
+import Testimonials from "../Testimonials";
+import Twitter from "../Twitter";
+import styles from "./index.module.scss";
 
 const TwitterBg = ({ className }) => (
-  <Icon type='twitter' className={className} />
-)
+  <Icon type="twitter" className={className} />
+);
 
 const Feedbacks = () => (
   <div>
@@ -22,6 +22,6 @@ const Feedbacks = () => (
       <Twitter />
     </div>
   </div>
-)
+);
 
-export default Feedbacks
+export default Feedbacks;

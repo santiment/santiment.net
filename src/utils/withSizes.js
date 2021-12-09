@@ -4,4 +4,4 @@ export const mapSizesToProps = ({ width, height }) => ({
   isTablet: width <= 992 && width > 768,
   isPhone: width <= 768,
   isSmallPhone: width < 480
-})
+});

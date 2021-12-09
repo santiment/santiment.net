@@ -1,22 +1,21 @@
-import React from 'react'
-import { injectIntl } from 'gatsby-plugin-intl'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import GetStarted from '../components/GetStarted/GetStarted'
-import Subheading from '../components/Heading/Subheading'
-import Heading from '../components/Heading/Heading'
-import Steps from '../components/Steps/Steps'
-import AboutSAN from'../components/AboutSAN/AboutSAN'
-import Products from '../components/Products/Products'
-import team from '../images/team.jpg'
-import styles from './about.module.scss'
-
+import React from "react";
+import { injectIntl } from "gatsby-plugin-intl";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import GetStarted from "../components/GetStarted/GetStarted";
+import Subheading from "../components/Heading/Subheading";
+import Heading from "../components/Heading/Heading";
+import Steps from "../components/Steps/Steps";
+import AboutSAN from "../components/AboutSAN/AboutSAN";
+import Products from "../components/Products/Products";
+import team from "../images/team.jpg";
+import styles from "./about.module.scss";
 
 const AboutPage = ({ intl }) => (
   <Layout>
     <SEO
-      title='Signals and Context for the crypto ecosystem'
-      description='From the beginning, our team has been guided by a single mission - to eliminate information asymmetry in the crypto ecosystem...'
+      title="Signals and Context for the crypto ecosystem"
+      description="From the beginning, our team has been guided by a single mission - to eliminate information asymmetry in the crypto ecosystem..."
     />
     <div className={styles.wrapper}>
       <Subheading className={styles.title}>
@@ -42,7 +41,7 @@ const AboutPage = ({ intl }) => (
       </div>
       <Heading>Our team</Heading>
       <div className={styles.team}>
-        <img src={team} alt='team' />
+        <img src={team} alt="team" />
       </div>
       <div className={styles.info}>
         34 experts | 12 countries | 2016 founded | 57k ETH raised
@@ -53,6 +52,6 @@ const AboutPage = ({ intl }) => (
     </div>
     <GetStarted />
   </Layout>
-)
+);
 
-export default injectIntl(AboutPage)
+export default injectIntl(AboutPage);

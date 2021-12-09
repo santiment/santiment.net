@@ -1,43 +1,43 @@
 const MONTH_NAMES = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December',
-]
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+];
 const SHORT_MONTH_NAMES = [
-  'Jan',
-  'Feb',
-  'Mar',
-  'Apr',
-  'May',
-  'Jun',
-  'Jul',
-  'Aug',
-  'Sep',
-  'Oct',
-  'Nov',
-  'Dec',
-]
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec"
+];
 
 const WEEK_DAY_NAMES = [
-  'Sunday',
-  'Monday',
-  'Tuesday',
-  'Wednesday',
-  'Thursday',
-  'Friday',
-  'Saturday',
-]
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+];
 
-const SHORT_WEEK_DAY_NAMES = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+const SHORT_WEEK_DAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 /**
  *
@@ -54,11 +54,11 @@ const SHORT_WEEK_DAY_NAMES = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
  */
 export const getDateFormats = date => {
-  const month = date.getMonth()
-  const M = month + 1
-  const D = date.getDate()
-  const d = date.getDay()
-  const YYYY = date.getFullYear()
+  const month = date.getMonth();
+  const M = month + 1;
+  const D = date.getDate();
+  const d = date.getDay();
+  const YYYY = date.getFullYear();
 
   return {
     D,
@@ -70,14 +70,14 @@ export const getDateFormats = date => {
     MMM: SHORT_MONTH_NAMES[month],
     MMMM: MONTH_NAMES[month],
     YYYY,
-    YY: YYYY.toString().slice(-2),
-  }
-}
+    YY: YYYY.toString().slice(-2)
+  };
+};
 
 export const getTimeFormats = date => {
-  const m = date.getMinutes()
-  const s = date.getSeconds()
-  const H = date.getHours()
+  const m = date.getMinutes();
+  const s = date.getSeconds();
+  const H = date.getHours();
 
   return {
     H,
@@ -85,14 +85,14 @@ export const getTimeFormats = date => {
     m,
     mm: m < 10 ? `0${m}` : m,
     s,
-    ss: s < 10 ? `0${s}` : s,
-  }
-}
+    ss: s < 10 ? `0${s}` : s
+  };
+};
 
 export const getUTCTimeFormats = date => {
-  const m = date.getUTCMinutes()
-  const s = date.getUTCSeconds()
-  const H = date.getUTCHours()
+  const m = date.getUTCMinutes();
+  const s = date.getUTCSeconds();
+  const H = date.getUTCHours();
 
   return {
     H,
@@ -100,6 +100,6 @@ export const getUTCTimeFormats = date => {
     m,
     mm: m < 10 ? `0${m}` : m,
     s,
-    ss: s < 10 ? `0${s}` : s,
-  }
-}
+    ss: s < 10 ? `0${s}` : s
+  };
+};

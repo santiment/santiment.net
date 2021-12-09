@@ -1,8 +1,8 @@
-import React, { useState, useRef } from 'react'
-import cx from 'classnames'
-import Slider from 'react-slick'
-import { data } from './data.js'
-import styles from './Tabs.module.scss'
+import React, { useState, useRef } from "react";
+import cx from "classnames";
+import Slider from "react-slick";
+import { data } from "./data.js";
+import styles from "./Tabs.module.scss";
 
 const settings = {
   infinite: true,
@@ -10,18 +10,18 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false
-}
+};
 
 const Tabs = () => {
-  const slider = useRef(null)
+  const slider = useRef(null);
   const slickNext = () => {
-    slider.current.slickNext()
-  }
+    slider.current.slickNext();
+  };
   const slickPrev = () => {
-    slider.current.slickPrev()
-  }
-  const [active, setActive] = useState(data[0])
-  const [animation, setAnimation] = useState(false)
+    slider.current.slickPrev();
+  };
+  const [active, setActive] = useState(data[0]);
+  const [animation, setAnimation] = useState(false);
 
   return (
     <>
@@ -29,16 +29,16 @@ const Tabs = () => {
         <ul className={styles.tabs}>
           {data.map((item, index) => (
             <li
-                key={index}
+              key={index}
               className={cx(
                 styles.item,
                 active === item && styles.item__active
               )}
               onClick={() => {
                 if (active !== item) {
-                  setAnimation(true)
-                  setTimeout(() => setActive(item), 200)
-                  setTimeout(() => setAnimation(false), 300)
+                  setAnimation(true);
+                  setTimeout(() => setActive(item), 200);
+                  setTimeout(() => setAnimation(false), 300);
                 }
               }}
             >
@@ -59,19 +59,19 @@ const Tabs = () => {
             onClick={slickPrev}
           >
             <svg
-              width='7'
-              height='12'
-              viewBox='0 0 7 12'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'
+              width="7"
+              height="12"
+              viewBox="0 0 7 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d='M6 11L1 6L6 1'
-                stroke='#181B2B'
-                strokeWidth='2'
-                strokeMiterlimit='10'
-                strokeLinecap='round'
-                strokeLinejoin='round'
+                d="M6 11L1 6L6 1"
+                stroke="#181B2B"
+                strokeWidth="2"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </div>
@@ -91,25 +91,25 @@ const Tabs = () => {
             onClick={slickNext}
           >
             <svg
-              width='7'
-              height='12'
-              viewBox='0 0 7 12'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'
+              width="7"
+              height="12"
+              viewBox="0 0 7 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d='M1 11L6 6L1 1'
-                strokeWidth='2'
-                strokeMiterlimit='10'
-                strokeLinecap='round'
-                strokeLinejoin='round'
+                d="M1 11L6 6L1 1"
+                strokeWidth="2"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Tabs
+export default Tabs;

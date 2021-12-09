@@ -1,4 +1,4 @@
-import gql from 'graphql-tag'
+import gql from "graphql-tag";
 
 export const PLANS_QUERY = gql`
   query productsWithPlans {
@@ -14,7 +14,7 @@ export const PLANS_QUERY = gql`
       }
     }
   }
-`
+`;
 
 export const SUBSCRIBE_MUTATION = gql`
   mutation subscribe($cardToken: String!, $planId: Int!, $coupon: String) {
@@ -34,7 +34,7 @@ export const SUBSCRIBE_MUTATION = gql`
       }
     }
   }
-`
+`;
 
 export const UPDATE_SUBSCRIPTION_MUTATION = gql`
   mutation updateSubscription($subscriptionId: Int!, $planId: Int!) {
@@ -54,7 +54,7 @@ export const UPDATE_SUBSCRIPTION_MUTATION = gql`
       }
     }
   }
-`
+`;
 
 export const CANCEL_SUBSCRIPTION_MUTATION = gql`
   mutation cancelSubscription($subscriptionId: Int!) {
@@ -63,7 +63,7 @@ export const CANCEL_SUBSCRIPTION_MUTATION = gql`
       scheduledForCancellationAt
     }
   }
-`
+`;
 
 export const RENEW_SUBSCRIPTION_MUTATION = gql`
   mutation renewCancelledSubscription($id: Int!) {
@@ -73,4 +73,4 @@ export const RENEW_SUBSCRIPTION_MUTATION = gql`
       currentPeriodEnd
     }
   }
-`
+`;

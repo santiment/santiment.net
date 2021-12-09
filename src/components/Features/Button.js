@@ -1,23 +1,23 @@
-import React from 'react'
-import Button from '@santiment-network/ui/Button'
-import Icon from '@santiment-network/ui/Icon'
-import { tr } from '../../utils/translate'
-import styles from './Button.module.scss'
+import React from "react";
+import Button from "@santiment-network/ui/Button";
+import Icon from "@santiment-network/ui/Icon";
+import { tr } from "../../utils/translate";
+import styles from "./Button.module.scss";
 
-const TryButton = ({href = 'https://app.santiment.net/login'}) => (
+const TryButton = ({ href = "https://app.santiment.net/login" }) => (
   <Button
     className={styles.btn}
-    variant='fill'
-    accent='positive'
-    as='a'
-    target='_blank'
-    rel='noopener noreferrer'
+    variant="fill"
+    accent="positive"
+    as="a"
+    target="_blank"
+    rel="noopener noreferrer"
     href={href}
-    onClick={() => window.gtag('event', 'sign_up')}
+    onClick={() => window.gtag("event", "sign_up")}
   >
-    {tr('try.btn', 'Try it yourself')}
-    <Icon type='pointer-right-small' className={styles.icon} />
+    {tr("try.btn", "Try it yourself")}
+    <Icon type="pointer-right-small" className={styles.icon} />
   </Button>
-)
+);
 
-export default TryButton
+export default TryButton;
