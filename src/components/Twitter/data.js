@@ -12,19 +12,18 @@ import Coachkcrypto from './images/Coachkcrypto.jpg'
 import Ahab from './images/Ahab_1337.jpg'
 import Johninvesting from './images/Johninvesting.jpg'
 
-
 export const tweets = [
   {
-    id: "1334329471491592197",
-    handle: "SheldonStack",
+    id: '1334329471491592197',
+    handle: 'SheldonStack',
     avatar: Sheldon,
-    displayName: "Sheldon “3,3” Stack",
+    displayName: 'Sheldon “3,3” Stack',
     content: (
       <blockquote>
         <p>
           Probed your platform, interesting metrics offering some very nuanced
-          insights. Between the on-chain analysis, development activity and macro
-          view - on the alt side, bullish on (@bancor)
+          insights. Between the on-chain analysis, development activity and
+          macro view - on the alt side, bullish on (@bancor)
           <a href='https://twitter.com/search?q=%24bnt&src=cashtag_click'>
             $bnt
           </a>{' '}
@@ -35,98 +34,105 @@ export const tweets = [
             #Analytics
           </a>{' '}
           Kudus (@santimentfeed)
-          <span role='img' aria-label='Thumbs up'>👍</span>
+          <span role='img' aria-label='Thumbs up'>
+            👍
+          </span>
         </p>
       </blockquote>
     )
   },
   {
-    id: "1326784275539255298",
-    handle: "MennoPP",
+    id: '1326784275539255298',
+    handle: 'MennoPP',
     avatar: MennoPP,
-    displayName: "Menno Pietersen",
-    content: (
-        <p>
-          That is some fantastic data.
-        </p>
-    )
+    displayName: 'Menno Pietersen',
+    content: <p>That is some fantastic data.</p>
   },
   {
-    id: "1325316475117207552",
-    handle: "Coachkcrypto",
+    id: '1325316475117207552',
+    handle: 'Coachkcrypto',
     avatar: Coachkcrypto,
-    displayName: "Coach K (BTC Survivor since 2013)",
+    displayName: 'Coach K (BTC Survivor since 2013)',
     content: (
       <p>
-        Love this kinds data now if you could make an indicator that showed it all
-        aggregated in a simple form that would be super cool
+        Love this kinds data now if you could make an indicator that showed it
+        all aggregated in a simple form that would be super cool
       </p>
     )
   },
   {
-    id: "1322545215576690697",
-    handle: "crypto_birb",
+    id: '1322545215576690697',
+    handle: 'crypto_birb',
     avatar: crypto_birb,
-    displayName: "CRYPTO₿IRB",
+    displayName: 'CRYPTO₿IRB',
     content: (
       <p>
         Great insight
-        <span role='img' aria-label='eyes'>👀</span>
+        <span role='img' aria-label='eyes'>
+          👀
+        </span>
       </p>
     )
   },
   {
-    id: "1389019263902445571",
-    handle: "Johninvesting",
+    id: '1389019263902445571',
+    handle: 'Johninvesting',
     avatar: Johninvesting,
-    displayName: "John 🇦🇺🐊",
+    displayName: 'John 🇦🇺🐊',
     content: (
       <p>
         Signed up to the free trial
-        <a href="https://twitter.com/santimentfeed?ref_src=twsrc%5Etfw">@santimentfeed</a>
+        <a href='https://twitter.com/santimentfeed?ref_src=twsrc%5Etfw'>
+          @santimentfeed
+        </a>
         <span>Love the interface so far.</span>
-        <a href="https://twitter.com/search?q=%24ETH&amp;src=ctag&amp;ref_src=twsrc%5Etfw">$ETH</a>
-        <span>supply on exchanges continues to go down while price is still heading to $3,000.</span>
-        <a href="https://twitter.com/hashtag/ethererum?src=hash&amp;ref_src=twsrc%5Etfw">#ethererum</a>
+        <a href='https://twitter.com/search?q=%24ETH&amp;src=ctag&amp;ref_src=twsrc%5Etfw'>
+          $ETH
+        </a>
+        <span>
+          supply on exchanges continues to go down while price is still heading
+          to $3,000.
+        </span>
+        <a href='https://twitter.com/hashtag/ethererum?src=hash&amp;ref_src=twsrc%5Etfw'>
+          #ethererum
+        </a>
       </p>
     )
   },
   {
-    id: "1320914030265921536",
-    handle: "0xMerp",
+    id: '1320914030265921536',
+    handle: '0xMerp',
     avatar: Merp,
-    displayName: "Merp(9,9)",
-    content: (
-      <p>great content as always</p>
-    )
+    displayName: 'Merp(9,9)',
+    content: <p>great content as always</p>
   },
   {
-    id: "1320905514931412998",
-    handle: "ortiercapital",
+    id: '1320905514931412998',
+    handle: 'ortiercapital',
     avatar: ortiercapital,
-    displayName: "Ortier Capital",
+    displayName: 'Ortier Capital',
     content: (
       <p>
         amazing ! keeep up the{' '}
-        <span aria-label='fire' role='img'>🔥🔥🔥</span>
+        <span aria-label='fire' role='img'>
+          🔥🔥🔥
+        </span>
         post
       </p>
     )
   },
   {
-    id: "1326767360733286405",
-    handle: "julianhosp",
+    id: '1326767360733286405',
+    handle: 'julianhosp',
     avatar: julianhosp,
-    displayName: "Dr. Julian Hosp",
-    content: (
-      <p>great work!</p>
-    )
+    displayName: 'Dr. Julian Hosp',
+    content: <p>great work!</p>
   },
   {
-    id: "1329226946656530436",
-    handle: "ASlivinschi",
+    id: '1329226946656530436',
+    handle: 'ASlivinschi',
     avatar: Slivinschi,
-    displayName: "Alexei Slivinschi",
+    displayName: 'Alexei Slivinschi',
     content: (
       <p>
         Great analysis. I like it as you bring facts on the table rather than as
@@ -135,10 +141,10 @@ export const tweets = [
     )
   },
   {
-    id: "1328852470559338499",
-    handle: "AmeerRosic",
+    id: '1328852470559338499',
+    handle: 'AmeerRosic',
     avatar: Ameer,
-    displayName: "Ameer Rosic",
+    displayName: 'Ameer Rosic',
     content: (
       <p>
         Great insights.
@@ -149,10 +155,10 @@ export const tweets = [
     )
   },
   {
-    id: "1327735651895304192",
-    handle: "XCryptonacciX",
+    id: '1327735651895304192',
+    handle: 'XCryptonacciX',
     avatar: Cryptonacci,
-    displayName: "CryptoNacci",
+    displayName: 'CryptoNacci',
     content: (
       <p>
         I love these charts man!
@@ -170,18 +176,18 @@ export const tweets = [
     )
   },
   {
-    id: "1383428248525103111",
-    handle: "Ahab_1337",
+    id: '1383428248525103111',
+    handle: 'Ahab_1337',
     avatar: Ahab,
-    displayName: "Ahab",
+    displayName: 'Ahab',
     content: (
       <p>
-        Love the tools you provide. The on chain metrics were instrumental at turning 850usd to 39k usd in only 4 weeks.  Thanks for your work!
+        Love the tools you provide. The on chain metrics were instrumental at
+        turning 850usd to 39k usd in only 4 weeks. Thanks for your work!
       </p>
     )
-  },
+  }
 ]
-
 
 //deleted or blocked tweets
 
@@ -205,5 +211,3 @@ export const tweets = [
 //     </p>
 //   )
 // },
-
-

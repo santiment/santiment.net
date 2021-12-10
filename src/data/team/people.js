@@ -19,6 +19,7 @@ import Maksim from './images/Maksim.png'
 import Max from './images/Max.png'
 import Nail from './images/Nail.png'
 import Nikolay from './images/Nikolay.png'
+import Petra from './images/Petra.png'
 import Serena from './images/Serena.png'
 import Tsetso from './images/Tsetso.png'
 import Tzanko from './images/Tzanko.png'
@@ -97,6 +98,18 @@ export const PEOPLE = [
       'He has a Major in Economics, enjoys DS and ML, and has deep experience in econometrics, including awards in several Econometric competitions. He also has a passion for discovering crypto space and used to work as analyst of crypto projects. He currently is a teacher for Cryptocurrencies and Derivatives course in Belarusian National Technical University. Likes learning and discovering new things.',
     links: {
       linkedin: 'https://www.linkedin.com/in/alexander-grablevski-4544a7149/'
+    }
+  },
+  {
+    name: 'Petra Ujvari',
+    position: 'Sr. Relationship Manager',
+    img: Petra,
+    group: GROUPS.BISUNESS,
+    description:
+      'Petra is like the company’s human hand. Her natural talent to network, her open mind & heart make it easy to take care of most subtle tasks. She can spot things before others do and sense the sentiment. Petra, who considers herself a global citizen, has a strong background in international education and in promoting visionary blockchain projects for common good.',
+    links: {
+      email: 'mailto:petra.u@santiment.net',
+      telegram: 'https://t.me/ujvaripe'
     }
   },
   {
@@ -224,7 +237,7 @@ export const PEOPLE = [
     group: GROUPS.DEVS,
     img: Ivan,
     description:
-      'Ivan is a developer with C++ telecom industry background, BA in Computer Science and is nowadays pursuing Master\'s Degree in the field of AI. He believes in open source software and loves music, books, travelling, and occasionally teaching and advocating functional programming with Elixir at the university.',
+      "Ivan is a developer with C++ telecom industry background, BA in Computer Science and is nowadays pursuing Master's Degree in the field of AI. He believes in open source software and loves music, books, travelling, and occasionally teaching and advocating functional programming with Elixir at the university.",
     links: {
       linkedin: 'https://www.linkedin.com/in/ivan-aleksandrov-63b8668a/',
       github: 'https://github.com/IvanIvanoff'
@@ -350,9 +363,9 @@ export const PEOPLE = [
     img: Kate,
     group: GROUPS.RESEARCH,
     description:
-        'Katsiaryna holds a BSc in field of AI. A person of numbers being in love with mathematics and statistics. Likes to learn Japanese and spend time with her cats.',
+      'Katsiaryna holds a BSc in field of AI. A person of numbers being in love with mathematics and statistics. Likes to learn Japanese and spend time with her cats.',
     links: {
-      linkedin: 'https://www.linkedin.com/in/alresha/',
+      linkedin: 'https://www.linkedin.com/in/alresha/'
     }
   },
   {
@@ -361,7 +374,7 @@ export const PEOPLE = [
     img: VladV,
     group: GROUPS.RESEARCH,
     description:
-        'Vlad joined our team while studying at the Belarusian State University. Enjoys learning math, implementing various kinds of classical algorithms, and understanding ml algorithms under the hood. Likes to play basketball, table tennis and spend time with his friends.',
+      'Vlad joined our team while studying at the Belarusian State University. Enjoys learning math, implementing various kinds of classical algorithms, and understanding ml algorithms under the hood. Likes to play basketball, table tennis and spend time with his friends.',
     links: {
       linkedin: 'https://www.linkedin.com/in/vladislav-volynets-131b0b194',
       github: 'https://github.com/volynvlad'
@@ -373,7 +386,7 @@ export const PEOPLE = [
     img: Nail,
     group: GROUPS.DEVS,
     description:
-        'He likes to develop extraordinary and complex apps. He is sure: blockchain will lead us to the bright future. Programming is his passion.',
+      'He likes to develop extraordinary and complex apps. He is sure: blockchain will lead us to the bright future. Programming is his passion.',
     links: {
       github: 'https://github.com/nailkhaf/'
     }
@@ -384,9 +397,9 @@ export const PEOPLE = [
     img: IvanG,
     group: GROUPS.DEVS,
     description:
-        'Ivan has more than 15 years of IT/infrastructure expertise. Throughout his career, he was working in large telecoms, on-line gaming companies and e-commerce platforms. Enjoys to learn new things and play with linux, networks and automation.',
+      'Ivan has more than 15 years of IT/infrastructure expertise. Throughout his career, he was working in large telecoms, on-line gaming companies and e-commerce platforms. Enjoys to learn new things and play with linux, networks and automation.',
     links: {
       linkedin: 'https://www.linkedin.com/in/couting/'
     }
-  },
+  }
 ]

@@ -40,7 +40,6 @@
   }
 }
 
-
 .title {
   @include text('h4');
   color: var(--rhino);
@@ -53,9 +52,9 @@
   margin: 33px 0 40px;
 
   @include responsive('tablet', 'phone', 'phone-xs') {
-      @include text('body-2');
-  margin: 23px 0 28px;
-    }
+    @include text('body-2');
+    margin: 23px 0 28px;
+  }
 }
 
 .point {
@@ -70,9 +69,9 @@
   }
 
   @include responsive('tablet', 'phone', 'phone-xs') {
-      @include text('body-2');
-  margin-bottom: 20px;
-    }
+    @include text('body-2');
+    margin-bottom: 20px;
+  }
 
   &:before {
     content: '';

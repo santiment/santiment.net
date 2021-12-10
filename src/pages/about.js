@@ -6,11 +6,10 @@ import GetStarted from '../components/GetStarted/GetStarted'
 import Subheading from '../components/Heading/Subheading'
 import Heading from '../components/Heading/Heading'
 import Steps from '../components/Steps/Steps'
-import AboutSAN from'../components/AboutSAN/AboutSAN'
+import AboutSAN from '../components/AboutSAN/AboutSAN'
 import Products from '../components/Products/Products'
 import team from '../images/team.jpg'
 import styles from './about.module.scss'
-
 
 const AboutPage = ({ intl }) => (
   <Layout>

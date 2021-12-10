@@ -48,11 +48,11 @@ export const CURRENT_USER_QUERY = gql`
 `
 
 export const EMAIL_LOGIN_MUTATION = gql`
-  mutation(
-      $email: String!
-      $subscribeToWeeklyNewsletter: Boolean = false
-  ) {
-    emailLogin(email: $email, subscribeToWeeklyNewsletter: $subscribeToWeeklyNewsletter) {
+  mutation($email: String!, $subscribeToWeeklyNewsletter: Boolean = false) {
+    emailLogin(
+      email: $email
+      subscribeToWeeklyNewsletter: $subscribeToWeeklyNewsletter
+    ) {
       success
     }
   }

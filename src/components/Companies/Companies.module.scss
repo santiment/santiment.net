@@ -30,7 +30,6 @@
   align-items: center;
   justify-content: center;
 
-
   @include responsive('phone-xs', 'phone') {
     flex-wrap: wrap;
   }
@@ -39,11 +38,9 @@
     & img {
       margin-right: 104px;
 
-
       @include responsive('phone') {
         margin: 30px;
       }
-
 
       @include responsive('phone-xs') {
         margin: 20px;
@@ -57,7 +54,6 @@
 
   &:last-child {
     margin-top: 56px;
-
 
     @include responsive('phone-xs', 'phone') {
       margin-top: 0;
@@ -74,7 +70,6 @@
         margin: 30px;
       }
 
-
       @include responsive('phone-xs') {
         margin: 20px;
       }
@@ -86,10 +81,9 @@
   }
 }
 
-
 .list {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
 
   img {
     align-self: center;
@@ -97,7 +91,6 @@
   }
 
   @include responsive('desktop') {
-
   }
 
   @include responsive('phone-xs', 'phone') {
@@ -105,7 +98,6 @@
       max-width: 140px;
     }
   }
-
 
   @include responsive('laptop', 'tablet') {
     img {

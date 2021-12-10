@@ -24,23 +24,23 @@ const envScript = process.env.NODE_ENV === 'production' && (
 )
 
 const Layout = ({ children, headerAnimation = false, classes = {} }) => (
-    <Intercom>
-      <Notifications>
-        <div>
-          {envScript}
-          <Header headerAnimation={headerAnimation} />
-          <main className={cx(styles.main, classes.main)}>{children}</main>
-            {/*<Delayed waitBeforeShow="1000">*/}
-                <Footer />
-            {/*</Delayed>*/}
-        </div>
-      </Notifications>
-      <CookiePopup />
-    </Intercom>
+  <Intercom>
+    <Notifications>
+      <div>
+        {envScript}
+        <Header headerAnimation={headerAnimation} />
+        <main className={cx(styles.main, classes.main)}>{children}</main>
+        {/*<Delayed waitBeforeShow="1000">*/}
+        <Footer />
+        {/*</Delayed>*/}
+      </div>
+    </Notifications>
+    <CookiePopup />
+  </Intercom>
 )
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 }
 
 export default Layout

@@ -74,7 +74,6 @@
 
   @include text('body-2', 'm');
 
-
   @include responsive('phone-xs', 'phone') {
     margin: 0;
   }
@@ -86,7 +85,6 @@
   white-space: normal;
 
   @include text('body-3');
-
 
   @include responsive('phone-xs', 'phone') {
     display: none;

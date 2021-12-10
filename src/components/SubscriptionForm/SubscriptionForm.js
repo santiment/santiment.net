@@ -4,7 +4,7 @@ import Button from '@santiment-network/ui/Button'
 import Input from '@santiment-network/ui/Input'
 import Label from '@santiment-network/ui/Label'
 import Icon from '@santiment-network/ui/Icon'
-import {Checkbox} from "@santiment-network/ui/Checkboxes";
+import { Checkbox } from '@santiment-network/ui/Checkboxes'
 import debounce from 'lodash.debounce'
 import styles from './SubscriptionForm.module.scss'
 
@@ -35,15 +35,17 @@ const SubscriptionForm = ({
     setError(email ? error : '')
   }, 500)
 
-  const buttonProps = email ? {
-    type: 'submit'
-  } : {
-    as: 'a',
-    targer: '_blank',
-    rel: 'noopener noreferrer',
-    href: 'https://app.santiment.net/sign-up',
-    type: 'button'
-  }
+  const buttonProps = email
+    ? {
+        type: 'submit'
+      }
+    : {
+        as: 'a',
+        targer: '_blank',
+        rel: 'noopener noreferrer',
+        href: 'https://app.santiment.net/sign-up',
+        type: 'button'
+      }
 
   return (
     <form
@@ -74,20 +76,21 @@ const SubscriptionForm = ({
           {error}
         </Label>
       )}
-      {showCheckbox && <div className={styles.checkBlock} onClick={() => setHasSubscribed(!hasSubscribed)}>
-        <Checkbox
+      {showCheckbox && (
+        <div
+          className={styles.checkBlock}
+          onClick={() => setHasSubscribed(!hasSubscribed)}
+        >
+          <Checkbox
             isActive={hasSubscribed}
             className={styles.checkbox}
             disabled={!email}
-        />
-        <div
-            className={cx(
-                styles.subscriptionLabel
-            )}
-        >
-          Send me weekly updates from crypto market
+          />
+          <div className={cx(styles.subscriptionLabel)}>
+            Send me weekly updates from crypto market
+          </div>
         </div>
-      </div>}
+      )}
       <Button
         {...buttonProps}
         className={cx(styles.btn, classes.button)}

@@ -15,16 +15,16 @@ module.exports = {
         // supported language
         languages: [`en`, `ja`],
         // language file path
-        defaultLanguage: `en`,
+        defaultLanguage: `en`
         // option to redirect to `/ko` when connecting `/`
         // redirect: true,
-      },
+      }
     },
     {
       resolve: `gatsby-plugin-env-variables`,
       options: {
-        whitelist: ['BACKEND_URL'],
-      },
+        whitelist: ['BACKEND_URL']
+      }
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
@@ -32,8 +32,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -46,12 +46,12 @@ module.exports = {
         background_color: `#14c393`,
         theme_color: `#14c393`,
         display: `minimal-ui`,
-        icon: `src/images/logo-SAN.svg`, // This path is relative to the root of the site.
-      },
+        icon: `src/images/logo-SAN.svg` // This path is relative to the root of the site.
+      }
     },
     `gatsby-plugin-client-side-redirect`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ],
+  ]
 }

@@ -17,9 +17,12 @@ PEOPLE.forEach(item => {
 
 const TeamPage = ({ intl }) => (
   <Layout>
-    <SEO title='Santiment Team' description='In true crypto fashion, our team is as decentralised as they come -
+    <SEO
+      title='Santiment Team'
+      description='In true crypto fashion, our team is as decentralised as they come -
         spanning 12 countries and 8 time zones (which makes organizing team
-        calls a blast:)' />
+        calls a blast:)'
+    />
     <div className={styles.wrapper}>
       <Subheading className={styles.title}>Santiment team</Subheading>
       <div className={styles.desc}>
@@ -45,7 +48,11 @@ const TeamPage = ({ intl }) => (
                   <span className={styles.position}>{position}</span>
                   <div className={styles.icons}>
                     {Object.entries(links).map(([key, value]) => (
-                      <SocialIcon className={styles.icon} href={value} type={key} />
+                      <SocialIcon
+                        className={styles.icon}
+                        href={value}
+                        type={key}
+                      />
                     ))}
                   </div>
                   <p className={styles.description}>{description}</p>

@@ -10,13 +10,7 @@ import styles from './PlanCard.module.scss'
 const toggleCardDetails = ({ currentTarget }) =>
   currentTarget.classList.toggle(styles.card_opened)
 
-const PlanCard = ({
-  intl,
-  name,
-  price,
-  className,
-  classes = {}
-}) => {
+const PlanCard = ({ intl, name, price, className, classes = {} }) => {
   const card = PLANS[name]
 
   return (
@@ -42,12 +36,24 @@ const PlanCard = ({
       </div>
       <div className={styles.price}>
         <span>from {price}</span>
-        <span className={styles.period}> /{tr('billing.month.short', 'mo')}</span>
+        <span className={styles.period}>
+          {' '}
+          /{tr('billing.month.short', 'mo')}
+        </span>
       </div>
       <div className={styles.desc}>{card.desc}</div>
       <div className={styles.details}>
         <card.Component />
-        <Button as="a" rel="noopener noreferrer" target="_blank" href={card.more} border className={styles.more}>Learn more</Button>
+        <Button
+          as='a'
+          rel='noopener noreferrer'
+          target='_blank'
+          href={card.more}
+          border
+          className={styles.more}
+        >
+          Learn more
+        </Button>
         <Features data={card.features} classes={{ ...styles, ...classes }} />
       </div>
     </div>

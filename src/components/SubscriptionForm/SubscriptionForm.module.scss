@@ -30,7 +30,6 @@
   &:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 40px white inset !important;
   }
-
 }
 
 .btn {
@@ -48,7 +47,6 @@
     transform: translateX(4px);
   }
 }
-
 
 .arrow {
   margin-left: 6px;
@@ -78,7 +76,7 @@
   font-weight: 600;
   cursor: pointer;
 
-  @include text('caption')
+  @include text('caption');
 }
 
 .checkbox {

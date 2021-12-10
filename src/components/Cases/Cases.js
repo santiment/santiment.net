@@ -45,7 +45,7 @@ const Cases = () => (
       {items.map(({ link, icon, title, key }) => (
         <li className={styles.item} key={key}>
           <div>
-            <img src={icon} className={styles.icon} alt='img'/>
+            <img src={icon} className={styles.icon} alt='img' />
           </div>
           <div className={styles.text}>
             <h4 className={styles.title}>{title}</h4>

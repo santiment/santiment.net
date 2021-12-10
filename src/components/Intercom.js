@@ -12,8 +12,13 @@ const updateIntercom = () => {
       const iframe = document.querySelector('.intercom-launcher-frame')
 
       if (iframe) {
-        const intercomLauncher = iframe.contentDocument.querySelector('#intercom-container .intercom-launcher')
-        intercomLauncher.setAttribute("style", "background: #14C393 !important;")
+        const intercomLauncher = iframe.contentDocument.querySelector(
+          '#intercom-container .intercom-launcher'
+        )
+        intercomLauncher.setAttribute(
+          'style',
+          'background: #14C393 !important;'
+        )
         iframe.setAttribute('style', 'background: #14C393;')
 
         clearInterval(interval)

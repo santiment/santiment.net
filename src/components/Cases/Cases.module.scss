@@ -24,7 +24,6 @@
 .subtitle {
   margin-bottom: 64px;
 
-
   @include responsive('phone-xs', 'phone') {
     margin-bottom: 40px;
   }
@@ -110,8 +109,6 @@
   margin-left: 6px;
   transition: transform 0.2s ease-out;
 }
-
-
 
 @keyframes shiftUp {
   0% {
