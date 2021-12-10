@@ -9,18 +9,20 @@ import styles from './Products.module.scss'
 
 const TABS = {
   Sanbase: {
-    desc: 'Exclusive on-chain, social and development metrics, low-latency market signals, custom Spreadsheet templates & daily insights on the cryptocurrency market',
+    desc:
+      'Exclusive on-chain, social and development metrics, low-latency market signals, custom Spreadsheet templates & daily insights on the cryptocurrency market',
     link: 'https://app.santiment.net/',
     img: Sanbase
   },
   SanAPI: {
-    desc: 'One of the most comprehensive crypto APIs on the market. Single endpoint access for on-chain, social, pricing and development information on 2000+ coins',
+    desc:
+      'One of the most comprehensive crypto APIs on the market. Single endpoint access for on-chain, social, pricing and development information on 2000+ coins',
     link: 'https://api.santiment.net/',
     img: SanAPI
   }
 }
 
-const Products = ({className}) => {
+const Products = ({ className }) => {
   const [selected, setSelected] = useState('Sanbase')
   return (
     <div className={cx(styles.wrapper, className)}>

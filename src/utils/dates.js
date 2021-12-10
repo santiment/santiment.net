@@ -10,7 +10,7 @@ const MONTH_NAMES = [
   'September',
   'October',
   'November',
-  'December',
+  'December'
 ]
 const SHORT_MONTH_NAMES = [
   'Jan',
@@ -24,7 +24,7 @@ const SHORT_MONTH_NAMES = [
   'Sep',
   'Oct',
   'Nov',
-  'Dec',
+  'Dec'
 ]
 
 const WEEK_DAY_NAMES = [
@@ -34,7 +34,7 @@ const WEEK_DAY_NAMES = [
   'Wednesday',
   'Thursday',
   'Friday',
-  'Saturday',
+  'Saturday'
 ]
 
 const SHORT_WEEK_DAY_NAMES = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
@@ -70,7 +70,7 @@ export const getDateFormats = date => {
     MMM: SHORT_MONTH_NAMES[month],
     MMMM: MONTH_NAMES[month],
     YYYY,
-    YY: YYYY.toString().slice(-2),
+    YY: YYYY.toString().slice(-2)
   }
 }
 
@@ -85,7 +85,7 @@ export const getTimeFormats = date => {
     m,
     mm: m < 10 ? `0${m}` : m,
     s,
-    ss: s < 10 ? `0${s}` : s,
+    ss: s < 10 ? `0${s}` : s
   }
 }
 
@@ -100,6 +100,6 @@ export const getUTCTimeFormats = date => {
     m,
     mm: m < 10 ? `0${m}` : m,
     s,
-    ss: s < 10 ? `0${s}` : s,
+    ss: s < 10 ? `0${s}` : s
   }
 }

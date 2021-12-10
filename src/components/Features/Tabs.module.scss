@@ -80,8 +80,8 @@
   color: var(--waterloo);
   padding: 12px 22px 12px 48px;
   margin-bottom: 8px;
-  transition: background-color .05s ease-in-out;
-    border-radius: 100px 0px 0px 100px;
+  transition: background-color 0.05s ease-in-out;
+  border-radius: 100px 0px 0px 100px;
 
   @include responsive('laptop') {
     margin-bottom: 4px;
@@ -122,7 +122,6 @@
       left: 20px;
       top: 20px;
     }
-
   }
 }
 

@@ -8,9 +8,12 @@ export default () => {
   return (
     <section id='pricing' className={styles.wrapper}>
       <Title className={styles.title}>
-        {tr('pricing.title.top', "Santiment Pricing")}
+        {tr('pricing.title.top', 'Santiment Pricing')}
         <div className={styles.desc}>
-        {tr('pricing.title.bottom', "Analyze crypto assets from multiple angles, and react to developing shifts in market sentiment and network trends.")}
+          {tr(
+            'pricing.title.bottom',
+            'Analyze crypto assets from multiple angles, and react to developing shifts in market sentiment and network trends.'
+          )}
         </div>
       </Title>
       <PricingTable />

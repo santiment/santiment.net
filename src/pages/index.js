@@ -12,24 +12,24 @@ import Feedbacks from '../components/Feedbacks'
 import styles from './index.module.scss'
 
 const IndexPage = ({ intl, location }) => {
-    useEffect(() => {
-        if (typeof window !== 'undefined') {
-            window.scrollTo(0, 0)
-        }
-    }, [location])
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0)
+    }
+  }, [location])
 
-    return (
-        <Layout classes={styles} headerAnimation>
-            <SEO title="Santiment - See what other crypto traders are missing" />
-            <WelcomeBlock />
-            <Cases />
-            <Features />
-            <Products />
-            <Companies />
-            <Feedbacks />
-            <GetStarted />
-        </Layout>
-    )
+  return (
+    <Layout classes={styles} headerAnimation>
+      <SEO title='Santiment - See what other crypto traders are missing' />
+      <WelcomeBlock />
+      <Cases />
+      <Features />
+      <Products />
+      <Companies />
+      <Feedbacks />
+      <GetStarted />
+    </Layout>
+  )
 }
 
 export default injectIntl(IndexPage)

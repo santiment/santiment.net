@@ -8,23 +8,30 @@ import styles from './AccountBtn.module.scss'
 
 const AccountBtn = ({ intl }) => {
   return (
-    <div className={styles.account} onClick={() => window.gtag('event', 'sign_up')}>
+    <div
+      className={styles.account}
+      onClick={() => window.gtag('event', 'sign_up')}
+    >
       <Query query={CURRENT_USER_QUERY}>
         {({ data: { currentUser } = {} }) => {
           const isLoggedIn = Boolean(currentUser)
 
           return (
-              <Button
-                as='a'
-                target='_blank'
-                rel='noopener noreferrer'
-                href={isLoggedIn ? 'https://app.santiment.net/' : 'https://app.santiment.net/sign-up'}
-                variant='flat'
-                border
-                className={styles.login}
-              >
-                  {isLoggedIn ? 'Back to Sanbase' : 'Create an account'}
-              </Button>
+            <Button
+              as='a'
+              target='_blank'
+              rel='noopener noreferrer'
+              href={
+                isLoggedIn
+                  ? 'https://app.santiment.net/'
+                  : 'https://app.santiment.net/sign-up'
+              }
+              variant='flat'
+              border
+              className={styles.login}
+            >
+              {isLoggedIn ? 'Back to Sanbase' : 'Create an account'}
+            </Button>
           )
         }}
       </Query>

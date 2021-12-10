@@ -77,11 +77,12 @@ const Footer = ({ intl }) => {
                             variables: {
                               email: e.currentTarget.email.value,
                               subscribeToWeeklyNewsletter: true
-                            },
+                            }
                           }).then(() => {
                             addNot({
                               type: 'success',
-                              title: 'Verification email was sent to the provided email!',
+                              title:
+                                'Verification email was sent to the provided email!'
                             })
                           })
                         }}
@@ -99,7 +100,7 @@ const Footer = ({ intl }) => {
                           accent='positive'
                           isLoading={loading}
                         >
-                          {tr('subscribe.btn', "Subscribe")}
+                          {tr('subscribe.btn', 'Subscribe')}
                         </Button>
                       </form>
                     )}
@@ -111,7 +112,11 @@ const Footer = ({ intl }) => {
               <h4 className={cx(styles.heading, styles.heading__app)}>
                 Download Sanbase app
               </h4>
-              <a href='https://play.google.com/store/apps/details?id=net.santiment.sanbase.android' target="_blank" rel="noopener noreferrer">
+              <a
+                href='https://play.google.com/store/apps/details?id=net.santiment.sanbase.android'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 <img src={android} alt='play market' />
               </a>
             </div>
@@ -167,7 +172,8 @@ const Footer = ({ intl }) => {
             <a
               className={styles.social__link}
               href='https://santiment.net/discord'
-              target="_blank" rel="noopener noreferrer"
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <svg
                 className={cx(styles.social__img, styles.discord)}
@@ -183,7 +189,8 @@ const Footer = ({ intl }) => {
             <a
               className={styles.social__link}
               href='https://twitter.com/santimentfeed'
-              target="_blank" rel="noopener noreferrer"
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <svg
                 className={cx(styles.social__img, styles.twitter)}
@@ -196,7 +203,8 @@ const Footer = ({ intl }) => {
             <a
               className={styles.social__link}
               href='https://github.com/santiment'
-              target="_blank" rel="noopener noreferrer"
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <svg
                 className={cx(styles.social__img, styles.github)}
@@ -212,7 +220,8 @@ const Footer = ({ intl }) => {
             <a
               className={styles.social__link}
               href='https://t.me/santiment_network'
-              target="_blank" rel="noopener noreferrer"
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <svg
                 className={cx(styles.social__img, styles.telegram)}
@@ -225,7 +234,8 @@ const Footer = ({ intl }) => {
             <a
               className={styles.social__link}
               href='https://www.youtube.com/c/santimentnetwork'
-              target="_blank" rel="noopener noreferrer"
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <svg
                 className={cx(styles.social__img, styles.youtube)}

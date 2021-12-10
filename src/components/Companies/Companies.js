@@ -13,21 +13,21 @@ const Companies = () => {
   return (
     <div className={styles.container}>
       <Heading className={styles.header}>
-          As referenced in major publications
+        As referenced in major publications
       </Heading>
       <div className={styles.list}>
         <div className={styles.row}>
-        <img alt='bloomberg' src={BloomberImg} width="260"  />
-        <img alt='forbes' src={ForbesImg} width="176" />
-        <img alt='coindesk' src={CoindeskImg} width="226"  />
+          <img alt='bloomberg' src={BloomberImg} width='260' />
+          <img alt='forbes' src={ForbesImg} width='176' />
+          <img alt='coindesk' src={CoindeskImg} width='226' />
+        </div>
+        <div className={styles.row}>
+          <img alt='cointelegraph' src={CoinTelegraphImg} width='258' />
+          <img alt='cryptobriefing' src={CryptoBrImg} width='163' />
+          <img alt='newyorker' src={Newyorker} width='195' />
+          <img alt='bitcoin' src={BitcoinImg} width='255' />
+        </div>
       </div>
-      <div className={styles.row}>
-        <img alt='cointelegraph' src={CoinTelegraphImg} width="258"  />
-        <img alt='cryptobriefing' src={CryptoBrImg} width="163"  />
-        <img alt='newyorker' src={Newyorker} width="195"  />
-        <img alt='bitcoin' src={BitcoinImg} width="255"  />
-      </div>
-    </div>
     </div>
   )
 }

@@ -16,7 +16,9 @@ const Header = ({ intl, headerAnimation }) => {
   }
 
   return (
-    <header className={cx(styles.header, headerAnimation && styles.headerAnimation)}>
+    <header
+      className={cx(styles.header, headerAnimation && styles.headerAnimation)}
+    >
       <div className={styles.container}>
         <div className={styles.left}>
           <div className={styles.product}>
@@ -28,7 +30,7 @@ const Header = ({ intl, headerAnimation }) => {
           </div>
         </div>
         <label htmlFor='hamburger'>
-          <Icon type='hamburger' className={styles.hamburger}/>
+          <Icon type='hamburger' className={styles.hamburger} />
         </label>
         <input id='hamburger' type='checkbox' ref={toggle} />
         <nav className={styles.nav}>
@@ -49,9 +51,14 @@ const Header = ({ intl, headerAnimation }) => {
           <Link className={styles.link} to='/jobs' onClick={closeNav}>
             {tr('header.jobs', 'Jobs')}
           </Link>
-          <a href="https://academy.santiment.net/" target="_blank" rel="noopener noreferrer" className={cx(styles.link, styles.right)}>
+          <a
+            href='https://academy.santiment.net/'
+            target='_blank'
+            rel='noopener noreferrer'
+            className={cx(styles.link, styles.right)}
+          >
             Academy
-            <Icon type="external-link" className={styles.external} />
+            <Icon type='external-link' className={styles.external} />
           </a>
           <Link className={styles.link} to='/pricing' onClick={closeNav}>
             {tr('header.pricing', 'Pricing')}

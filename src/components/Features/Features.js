@@ -12,9 +12,11 @@ const Features = () => (
     <Heading>Features</Heading>
     <Tabs />
     <div className={cx(styles.feature, styles.feature__trends)}>
-        <h4 className={cx(styles.title,styles.title__mobile)}>Emerging Social Trends</h4>
+      <h4 className={cx(styles.title, styles.title__mobile)}>
+        Emerging Social Trends
+      </h4>
       <div className={styles.img__wrapper}>
-        <img className={styles.img__trends} src={trends} alt="" />
+        <img className={styles.img__trends} src={trends} alt='' />
         <a
           target='_blank'
           rel='noopener noreferrer'
@@ -39,11 +41,11 @@ const Features = () => (
       </div>
     </div>
     <div className={cx(styles.feature, styles.feature__insights)}>
-         <h4 className={cx(styles.title,styles.title__mobile)}>
-          Insights and behavioral reports about the markets
-        </h4>
+      <h4 className={cx(styles.title, styles.title__mobile)}>
+        Insights and behavioral reports about the markets
+      </h4>
       <div className={styles.img__wrapper}>
-        <img className={styles.img__insights} src={insights} alt="" />
+        <img className={styles.img__insights} src={insights} alt='' />
         <a
           target='_blank'
           rel='noopener noreferrer'

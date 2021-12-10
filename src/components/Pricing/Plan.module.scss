@@ -10,7 +10,6 @@
     width: 360px;
   }
 
-
   @include responsive('tablet', 'phone', 'phone-xs') {
     padding: 40px 32px 30px;
   }

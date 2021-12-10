@@ -8,9 +8,12 @@ import styles from './terms.module.scss'
 
 const TermsPage = ({ intl }) => (
   <Layout>
-    <SEO title='Santiment Terms & Conditions' description='Please review the T&C contained herein carefully. By using the Services, you acknowledge and agree that You have read, understood, and accepted
+    <SEO
+      title='Santiment Terms & Conditions'
+      description='Please review the T&C contained herein carefully. By using the Services, you acknowledge and agree that You have read, understood, and accepted
         all of the following T&C, as well as all of the terms and conditions
-        which are incorporated herein by reference.' />
+        which are incorporated herein by reference.'
+    />
     <div className={styles.wrapper}>
       <Subheading className={styles.title}>
         Santiment Terms & Conditions

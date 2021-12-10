@@ -11,10 +11,10 @@
   margin: 0 auto 60px;
   text-align: center;
 
-   @include responsive('phone-xs') {
+  @include responsive('phone-xs') {
     @include text('body-2');
-  margin: 0 auto 40px;
-    }
+    margin: 0 auto 40px;
+  }
 }
 
 .date {
@@ -23,9 +23,9 @@
   color: var(--casper);
   margin-bottom: 32px;
 
-    @include responsive('phone-xs') {
-  margin-bottom: 16px;
-    }
+  @include responsive('phone-xs') {
+    margin-bottom: 16px;
+  }
 }
 
 .title {
@@ -42,10 +42,9 @@
 
     @include text('body-1', 'm');
 
-
     @include responsive('phone-xs') {
-    @include text('body-2', 'm');
-    margin: 44px 0 16px;
+      @include text('body-2', 'm');
+      margin: 44px 0 16px;
     }
   }
 
@@ -55,7 +54,7 @@
     margin-bottom: 20px;
 
     @include responsive('phone-xs') {
-    @include text('body-3');
+      @include text('body-3');
     }
   }
 
@@ -67,9 +66,9 @@
     color: var(--jungle-green);
 
     &:hover {
-    color: var(--jungle-green-hover);
-    text-decoration: underline var(--jungle-green-light-3);
-    text-underline-offset: 4px;
+      color: var(--jungle-green-hover);
+      text-decoration: underline var(--jungle-green-light-3);
+      text-underline-offset: 4px;
     }
   }
 }

@@ -5,19 +5,13 @@ import styles from './Product.module.scss'
 
 const ProductItem = ({
   className,
-  product: {
-    to,
-    img,
-    onClick,
-    title,
-    label,
-    isSelected,
-    description
-  }
+  product: { to, img, onClick, title, label, isSelected, description }
 }) => {
   const Wrapper = ({ children, className }) =>
     onClick ? (
-        <span className={className} onClick={onClick}>{children}</span>
+      <span className={className} onClick={onClick}>
+        {children}
+      </span>
     ) : (
       <a
         className={className}

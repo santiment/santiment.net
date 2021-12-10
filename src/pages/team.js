@@ -1,27 +1,27 @@
-import React from "react";
-import { injectIntl } from "gatsby-plugin-intl";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import GetStarted from "../components/GetStarted/GetStarted";
-import Subheading from "../components/Heading/Subheading";
-import { PEOPLE, GROUPS } from "../data/team/people";
-import { SocialIcon } from "../data/team/social-icons/Icon";
-import styles from "./team.module.scss";
+import React from 'react'
+import { injectIntl } from 'gatsby-plugin-intl'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import GetStarted from '../components/GetStarted/GetStarted'
+import Subheading from '../components/Heading/Subheading'
+import { PEOPLE, GROUPS } from '../data/team/people'
+import { SocialIcon } from '../data/team/social-icons/Icon'
+import styles from './team.module.scss'
 
-const normalizesData = {};
+const normalizesData = {}
 PEOPLE.forEach(item => {
   normalizesData[item.group] = normalizesData[item.group]
     ? [...normalizesData[item.group], item]
-    : [item];
-});
+    : [item]
+})
 
 const TeamPage = ({ intl }) => (
   <Layout>
     <SEO
-      title="Santiment Team"
-      description="In true crypto fashion, our team is as decentralised as they come -
+      title='Santiment Team'
+      description='In true crypto fashion, our team is as decentralised as they come -
         spanning 12 countries and 8 time zones (which makes organizing team
-        calls a blast:)"
+        calls a blast:)'
     />
     <div className={styles.wrapper}>
       <Subheading className={styles.title}>Santiment team</Subheading>
@@ -65,6 +65,6 @@ const TeamPage = ({ intl }) => (
     </div>
     <GetStarted />
   </Layout>
-);
+)
 
-export default injectIntl(TeamPage);
+export default injectIntl(TeamPage)

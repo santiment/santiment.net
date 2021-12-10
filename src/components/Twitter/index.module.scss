@@ -51,7 +51,6 @@
     }
   }
 
-
   @include responsive('tablet') {
     animation-duration: calc(var(--time, 30s) * 1.5);
   }

@@ -33,7 +33,6 @@
   color: var(--white);
   margin: 0 0 32px;
 
-
   @include responsive('phone-xs', 'phone') {
     @include text('body-1');
     margin: 0 0 24px;

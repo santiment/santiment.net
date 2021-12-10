@@ -6,11 +6,7 @@ import TokensTooltip from './TokensTooltip'
 import PayWithCrypto from './PayWithCrypto'
 import { PLANS_QUERY } from '../../gql/plans'
 import Plan from './Plan'
-import {
-  findSanAPIPlan,
-  findSanbasePlan,
-  formatPrice
-} from '../../utils/plans'
+import { findSanAPIPlan, findSanbasePlan, formatPrice } from '../../utils/plans'
 import { tr } from '../../utils/translate'
 import styles from './index.module.scss'
 
@@ -54,8 +50,14 @@ export default ({ classes = {} }) => {
   return (
     <Query query={PLANS_QUERY}>
       {({ data }) => {
-          const Sanbase = data && data.productsWithPlans ? data.productsWithPlans.find(findSanbasePlan) : 0
-        const SanAPI = data && data.productsWithPlans ? data.productsWithPlans.find(findSanAPIPlan) : 0
+        const Sanbase =
+          data && data.productsWithPlans
+            ? data.productsWithPlans.find(findSanbasePlan)
+            : 0
+        const SanAPI =
+          data && data.productsWithPlans
+            ? data.productsWithPlans.find(findSanAPIPlan)
+            : 0
 
         let SanAPIPrice, SanbasePrice
 
@@ -97,7 +99,7 @@ export default ({ classes = {} }) => {
               <Plan name='Sanbase' price={SanbasePrice} />
               <Plan name='SanAPI' price={SanAPIPrice} />
             </div>
-              <PayWithCrypto />
+            <PayWithCrypto />
           </>
         )
       }}

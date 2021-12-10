@@ -8,7 +8,8 @@
   min-width: 360px;
   height: 400px;
   min-height: 400px;
-  box-shadow: 0 2px 24px rgba(24, 27, 43, 0.04), 1px 3px 7px rgba(47, 53, 77, 0.05);
+  box-shadow: 0 2px 24px rgba(24, 27, 43, 0.04),
+    1px 3px 7px rgba(47, 53, 77, 0.05);
   border-radius: 16px;
   border: 1px solid var(--porcelain);
   background-color: var(--white);
@@ -59,7 +60,6 @@
 }
 
 .userInfo {
-
 }
 
 .bird {
@@ -81,7 +81,6 @@
   @include text('body-3', 'm');
   color: var(--waterloo);
 
-
   @include responsive('phone', 'phone-xs') {
     @include text('caption', 'm');
   }
@@ -98,14 +97,13 @@
     @include text('body-1');
     color: #171927;
 
-
     @include responsive('phone', 'phone-xs') {
       @include text('body-2');
     }
   }
 
   & a {
-    color: #4DA0EB;
+    color: #4da0eb;
     margin: 0 4px;
   }
 

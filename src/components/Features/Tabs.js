@@ -29,7 +29,7 @@ const Tabs = () => {
         <ul className={styles.tabs}>
           {data.map((item, index) => (
             <li
-                key={index}
+              key={index}
               className={cx(
                 styles.item,
                 active === item && styles.item__active
@@ -49,7 +49,7 @@ const Tabs = () => {
         <div className={cx(styles.content, animation && styles.contentHide)}>
           <h4 className={styles.title}>{active.title}</h4>
           <div className={styles.desc}>{active.description}</div>
-          <img className={styles.img} src={active.img} alt="" />
+          <img className={styles.img} src={active.img} alt='' />
         </div>
       </div>
       <div className={styles.container}>
@@ -81,7 +81,7 @@ const Tabs = () => {
               <div className={styles.content} key={item.title}>
                 <h4 className={styles.title}>{item.title}</h4>
                 <div className={styles.desc}>{item.description}</div>
-                <img className={styles.img} src={item.img} alt="" />
+                <img className={styles.img} src={item.img} alt='' />
               </div>
             ))}
           </Slider>

@@ -6,7 +6,7 @@ import styles from './Notifications.module.scss'
 export const NotificationsContext = React.createContext({
   notifications: [],
   add: () => {},
-  remove: () => {},
+  remove: () => {}
 })
 
 const notifyDuration = 300
@@ -17,7 +17,7 @@ class Notifications extends Component {
   state = {
     notifications: [],
     add: this.add,
-    remove: this.remove,
+    remove: this.remove
   }
 
   add = ({ dismissAfter = 4000, ...notification }) => {
@@ -33,18 +33,18 @@ class Notifications extends Component {
 
   remove = notification => {
     this.setState(({ notifications }) => ({
-      notifications: notifications.filter(not => not !== notification),
+      notifications: notifications.filter(not => not !== notification)
     }))
   }
 
-  render() {
+  render () {
     const { notifications } = this.state
     const { children } = this.props
 
     const context = {
       notifications,
       add: this.add,
-      remove: this.remove,
+      remove: this.remove
     }
 
     return (
@@ -61,7 +61,7 @@ class Notifications extends Component {
                 className={styles.notification}
                 onClose={() => this.remove(notification)}
                 style={{
-                  '--y-offset': `calc(-${i}00% - ${i}0px - 25px)`,
+                  '--y-offset': `calc(-${i}00% - ${i}0px - 25px)`
                 }}
               />
             </CSSTransition>

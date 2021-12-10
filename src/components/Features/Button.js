@@ -4,7 +4,7 @@ import Icon from '@santiment-network/ui/Icon'
 import { tr } from '../../utils/translate'
 import styles from './Button.module.scss'
 
-const TryButton = ({href = 'https://app.santiment.net/login'}) => (
+const TryButton = ({ href = 'https://app.santiment.net/login' }) => (
   <Button
     className={styles.btn}
     variant='fill'

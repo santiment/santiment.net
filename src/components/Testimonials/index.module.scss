@@ -8,7 +8,6 @@
   justify-content: center;
   flex-direction: column;
 
-
   @include responsive('phone', 'phone-xs') {
     margin-bottom: 0;
   }
@@ -59,11 +58,11 @@
   }
 
   &_cryptobirb {
-    background-image: url("./cryptobirb.jpg");
+    background-image: url('./cryptobirb.jpg');
   }
 
   &_panama_crypto {
-    background-image: url("./panama_crypto.jpg");
+    background-image: url('./panama_crypto.jpg');
   }
 
   &__default {
