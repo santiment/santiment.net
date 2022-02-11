@@ -1,6 +1,4 @@
 import React from 'react'
-import Title from '../Title/Title'
-import { tr } from '../../utils/translate'
 import FakeTweet from './FakeTweet'
 import { tweets } from './data'
 import styles from './index.module.scss'
