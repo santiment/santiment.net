@@ -4,7 +4,7 @@ import styles from './FakeTweet.module.scss'
 export default ({ displayName, content, handle, id, avatar }) => (
   <a
     target='_blank'
-    rel='noopener noreferer'
+    rel='noreferrer'
     href={`https://twitter.com/${handle}/status/${id}`}
     aria-label='Opens Tweet on Twitter in a new tab'
     className={styles.tweet}

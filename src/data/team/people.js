@@ -4,10 +4,10 @@ import Anatoliy from './images/Anatoliy.png'
 import Ante from './images/Ante.png'
 import Brian from './images/Brian.png'
 import Dima from './images/Dima.png'
-import Dino from './images/Dino.png'
 import Ehrlan from './images/Ehrlan.png'
 import Garry from './images/Garry.png'
 import IgorK from './images/IgorK.png'
+import IlyaL from './images/IlyaL.png'
 import Irina from './images/Irina.png'
 import Ivan from './images/Ivan.png'
 import IvanG from './images/IvanG.png'
@@ -21,6 +21,7 @@ import Max from './images/Max.png'
 import Nail from './images/Nail.png'
 import Nikolay from './images/Nikolay.png'
 import Petra from './images/Petra.png'
+import SaeidR from './images/SaeidR.png'
 import Serena from './images/Serena.png'
 import Tsetso from './images/Tsetso.png'
 import Tzanko from './images/Tzanko.png'
@@ -211,8 +212,7 @@ export const PEOPLE = [
   {
     name: 'Dino Ibisbegovic',
     position: 'Content & SEO',
-    group: GROUPS.MARKETING,
-    img: Dino,
+    group: GROUPS.ADVISORS,
     description:
       'Resident wordsmith and SEO nerd, Dino oversees all things content. He’s worked in a medley of startups big and small before joining Santiment, specializing in content creation, search engine optimization and many other -ations. He has since caught the crypto bug and is currently a refreshingly average swing trader. Get in touch with him to talk content collabs and/or favorite html tags.',
     links: {
@@ -382,6 +382,18 @@ export const PEOPLE = [
     }
   },
   {
+    name: 'Ilya Lysko',
+    position: 'Data Scientist',
+    img: IlyaL,
+    group: GROUPS.RESEARCH,
+    description:
+      'Master degree in computer science. Passionate about data science, programming, crypto and finance areas. Outside of work, Ilya enjoy hiking, reading and playing table tennis.',
+    links: {
+      linkedin: 'https://linkedin.com/in/ilyalysko/',
+      github: 'https://github.com/ilya-lysko'
+    }
+  },
+  {
     name: 'Nail Khafizov',
     position: 'Blockchain developer',
     img: Nail,
@@ -413,5 +425,18 @@ export const PEOPLE = [
     links: {
       github: 'https://github.com/Woafflation'
     }
-  }
+  },
+  {
+    name: 'Saeid M.Rezaei',
+    position: 'Frontend developer',
+    img: SaeidR,
+    group: GROUPS.DEVS,
+    description:
+      'A self taught programmer with more than 15 years experience. Saeid has worked with many companies and many job positions such as backend, full stack, mobile and game developer. Currently Saeid is in love with frontend development. He likes to learn new thing everyday. His slang is building great things and not waiting for great things to build. He believes he was born to write code.',
+    links: {
+      linkedin: 'https://www.linkedin.com/in/saeid-aka-hojjat-mohammad-rezaei-3a227725/',
+      github: 'https://github.com/peratik',
+      telegram: 'https://t.me/peratik'
+    }
+  },
 ]
