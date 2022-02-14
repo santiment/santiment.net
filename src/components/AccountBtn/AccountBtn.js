@@ -1,5 +1,4 @@
 import React from 'react'
-import cx from 'classnames'
 import { Query } from 'react-apollo'
 import { injectIntl } from 'gatsby-plugin-intl'
 import Button from '@santiment-network/ui/Button'
