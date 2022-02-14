@@ -1,7 +1,7 @@
 import React from 'react'
 import Icon from '@santiment-network/ui/Icon'
+import Twitter from '@santiment-network/ui/Twitter'
 import Testimonials from '../Testimonials'
-import Twitter from '../Twitter'
 import styles from './index.module.scss'
 
 const TwitterBg = ({ className }) => (
