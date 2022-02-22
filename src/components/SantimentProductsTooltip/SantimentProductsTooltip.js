@@ -29,9 +29,9 @@ const SantimentProductsTooltip = ({ className, intl, children }) => {
       >
         <div className={styles.container}>
           <div className={styles.block}>
-            <h3 className={styles.title}>SAN business</h3>
+            <h3 className={styles.title}>SAN chain</h3>
             <div className={styles.products}>
-              {BUSINESS_PRODUCTS.map((item, index) => (
+              {CHAIN_PRODUCTS.map((item, index) => (
                 <ProductItem
                   key={index}
                   product={item}
@@ -41,9 +41,9 @@ const SantimentProductsTooltip = ({ className, intl, children }) => {
             </div>
           </div>
           <div className={styles.block}>
-            <h3 className={styles.title}>SAN chain</h3>
+            <h3 className={styles.title}>SAN business</h3>
             <div className={styles.products}>
-              {CHAIN_PRODUCTS.map((item, index) => (
+              {BUSINESS_PRODUCTS.map((item, index) => (
                 <ProductItem
                   key={index}
                   product={item}
