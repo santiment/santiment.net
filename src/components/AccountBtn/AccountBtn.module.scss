@@ -1,6 +1,6 @@
 @import '~@santiment-network/ui/mixins';
 
-.account {
+.wrapper {
   margin-left: auto;
 
   @include responsive('phone-xs', 'phone') {
@@ -8,7 +8,13 @@
   }
 }
 
-.login {
-  min-width: 153px;
+.button {
+  min-width:103px;
+  display: flex;
   justify-content: center;
+  align-items: center;
+
+  &__loggedIn {
+    min-width: 143px;
+  }
 }

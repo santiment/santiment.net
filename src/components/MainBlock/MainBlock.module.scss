@@ -1,0 +1,87 @@
+@import "~@santiment-network/ui/mixins.scss";
+
+.wrapper {
+  z-index: 2;
+  min-height: 528px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  max-width: 100%;
+  overflow: visible;
+}
+
+.title {
+  z-index: 2;
+  margin-bottom: 8px;
+  text-align: center;
+  color: var(--rhino);
+
+  @include text("h1", "l");
+
+  @include responsive("desktop", "laptop", "tablet") {
+    animation-name: shiftUp;
+    animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
+    animation-duration: 0.8s;
+    animation-delay: 0.6s;
+    animation-fill-mode: both;
+  }
+
+  @include responsive("tablet", "phone") {
+    max-width: 80%;
+  }
+
+  @include responsive("phone-xs", "phone") {
+    @include text("h3");
+  }
+
+  @include responsive("phone-xs", "phone") {
+    @include text("h3");
+  }
+
+  @media only screen and (max-width: (320px)) {
+    @include text("h4");
+  }
+}
+
+.description {
+  margin-bottom: 48px;
+  color: var(--casper);
+
+  @include text("body-1", "l");
+
+  @include responsive("desktop", "laptop", "tablet") {
+    animation-name: shiftUp;
+    animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
+    animation-duration: 0.8s;
+    animation-delay: 0.6s;
+    animation-fill-mode: both;
+  }
+}
+
+.input {
+  @include responsive("desktop", "laptop", "tablet") {
+    animation-name: shiftUp;
+    animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
+    animation-duration: 0.8s;
+    animation-delay: 0.6s;
+    animation-fill-mode: both;
+  }
+
+  @include responsive("phone-xs", "phone") {
+    width: 100%;
+  }
+}
+
+@keyframes shiftUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

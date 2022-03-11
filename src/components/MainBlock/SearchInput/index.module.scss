@@ -1,0 +1,26 @@
+@import '../../../../node_modules/@santiment-network/ui/mixins';
+
+.search {
+  margin: 0 auto;
+  transition: width 0.7s;
+  width: 480px;
+
+  @include responsive("phone-xs", "phone") {
+    width: 100%;
+  }
+}
+
+.input {
+  border-color: var(--black);
+  color: var(--black);
+  height: 40px;
+  text-overflow: ellipsis;
+
+  &::placeholder {
+    color: var(--black);
+  }
+}
+
+.icon {
+  fill: var(--black);
+}

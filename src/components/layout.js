@@ -2,12 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import cx from 'classnames'
 import GoogleAnalytics from 'react-ga'
+import Helmet from 'react-helmet'
 import Intercom from './Intercom'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import Notifications from './Notifications/Notifications'
 import CookiePopup from './CookiePopup/CookiePopup'
-import Helmet from 'react-helmet'
 import './fonts.module.scss'
 import styles from './layout.module.scss'
 
@@ -23,21 +23,34 @@ const envScript = process.env.NODE_ENV === 'production' && (
   </Helmet>
 )
 
-const Layout = ({ children, headerAnimation = false, classes = {} }) => (
-  <Intercom>
-    <Notifications>
-      <div>
-        {envScript}
-        <Header headerAnimation={headerAnimation} />
-        <main className={cx(styles.main, classes.main)}>{children}</main>
-        {/*<Delayed waitBeforeShow="1000">*/}
-        <Footer />
-        {/*</Delayed>*/}
-      </div>
-    </Notifications>
-    <CookiePopup />
-  </Intercom>
-)
+const Layout = ({
+  children,
+  headerAnimation = false,
+  classes = {},
+  headerComponent,
+  isNightMode
+}) => {
+  return (
+    <Intercom>
+      <Notifications>
+        <div className={classes.wrapper}>
+          <Helmet
+            bodyAttributes={{
+              class: isNightMode && 'night-mode'
+            }}
+          />
+          {envScript}
+          {headerComponent || <Header headerAnimation={headerAnimation} />}
+          <main className={cx(styles.main, classes.main)}>{children}</main>
+          {/*<Delayed waitBeforeShow="1000">*/}
+          <Footer isNightMode={isNightMode} />
+          {/*</Delayed>*/}
+        </div>
+      </Notifications>
+      <CookiePopup />
+    </Intercom>
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired
