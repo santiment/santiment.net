@@ -59,12 +59,12 @@ const Search = () => {
     <UISearch
       className={styles.search}
       inputClassName={styles.input}
-      iconClassName={styles.icon}
       forwardedRef={inputRef}
       placeholder='Search for assets, trends, etc...'
       autoComplete='off'
       onChange={v => setSearchTerm(v)}
       onClick={openSuggestions}
+      onBlur={closeSuggestions}
       onKeyDown={onKeyDown}
     >
       <Suggestions
@@ -72,7 +72,6 @@ const Search = () => {
         searchTerm={searchTerm}
         isOpened={isOpened}
         onSuggestionSelect={onSuggestionSelect}
-        closeSuggestions={closeSuggestions}
       />
     </UISearch>
   )

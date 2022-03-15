@@ -4,7 +4,7 @@ import Insights from './Insights'
 import {
   INSIGHTS_BY_SEARCH_TERM_QUERY,
   INSIGHTS_QUERY
-} from '../../../../gql/insights'
+} from '../../../../../gql/insights'
 
 const InsightsCategory = ({ searchTerm, ...props }) => {
   return (

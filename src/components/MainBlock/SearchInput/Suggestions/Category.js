@@ -4,7 +4,7 @@ import styles from './Category.module.scss'
 
 const Title = props => <h3 className={styles.title} {...props} />
 
-const Link = ({ to, ...props }) => <a href={to} {...props} />
+const Link = props => <a href={props.to} {...props} />
 
 export const Button = ({ className, As = Link, isCursored, ...props }) => {
   return (

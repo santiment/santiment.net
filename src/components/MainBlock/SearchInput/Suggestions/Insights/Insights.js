@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import {
   INSIGHTS_BY_SEARCH_TERM_QUERY,
   INSIGHTS_QUERY
-} from '../../../../gql/insights'
+} from '../../../../../gql/insights'
 import Category from '../Category'
 import styles from '../Category.module.scss'
 

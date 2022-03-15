@@ -9,7 +9,6 @@
   flex-direction: column;
   position: relative;
   max-width: 100%;
-  overflow: visible;
 }
 
 .title {
@@ -61,6 +60,7 @@
 }
 
 .input {
+  z-index: 100;
   @include responsive("desktop", "laptop", "tablet") {
     animation-name: shiftUp;
     animation-timing-function: cubic-bezier(0, 0.96, 1, 1);

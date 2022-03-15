@@ -434,9 +434,10 @@ export const PEOPLE = [
     description:
       'A self taught programmer with more than 15 years experience. Saeid has worked with many companies and many job positions such as backend, full stack, mobile and game developer. Currently Saeid is in love with frontend development. He likes to learn new thing everyday. His slang is building great things and not waiting for great things to build. He believes he was born to write code.',
     links: {
-      linkedin: 'https://www.linkedin.com/in/saeid-aka-hojjat-mohammad-rezaei-3a227725/',
+      linkedin:
+        'https://www.linkedin.com/in/saeid-aka-hojjat-mohammad-rezaei-3a227725/',
       github: 'https://github.com/peratik',
       telegram: 'https://t.me/peratik'
     }
-  },
+  }
 ]
