@@ -1,29 +1,29 @@
-import React, { useEffect } from "react";
-import cx from "classnames";
-import withSizes from "react-sizes";
-import { CSSTransition } from "react-transition-group";
-import AssetsCategory from "./Assets/AssetsCategory";
-import WalletsCategory from "./WalletsCategory";
-import TrendingWordsCategory from "./TrendingWords/TrendingWordsCategory";
-import InsightsCategory from "./Insights/InsightsCategory";
-import PeopleCategory from "./People/PeopleCategory";
-import styles from "./Suggestions.module.scss";
+import React, { useEffect } from 'react'
+import cx from 'classnames'
+import withSizes from 'react-sizes'
+import { CSSTransition } from 'react-transition-group'
+import AssetsCategory from './Assets/AssetsCategory'
+import WalletsCategory from './WalletsCategory'
+import TrendingWordsCategory from './TrendingWords/TrendingWordsCategory'
+import InsightsCategory from './Insights/InsightsCategory'
+import PeopleCategory from './People/PeopleCategory'
+import styles from './Suggestions.module.scss'
 
-function useOnClickOutside(ref, handler) {
+function useOnClickOutside (ref, handler) {
   useEffect(() => {
     const listener = event => {
       if (!ref.current || ref.current.contains(event.target)) {
-        return;
+        return
       }
-      handler(event);
-    };
-    document.addEventListener("mousedown", listener);
-    document.addEventListener("touchstart", listener);
+      handler(event)
+    }
+    document.addEventListener('mousedown', listener)
+    document.addEventListener('touchstart', listener)
     return () => {
-      document.removeEventListener("mousedown", listener);
-      document.removeEventListener("touchstart", listener);
-    };
-  }, [ref, handler]);
+      document.removeEventListener('mousedown', listener)
+      document.removeEventListener('touchstart', listener)
+    }
+  }, [ref, handler])
 }
 
 export const mapSizesToProps = ({ width, height }) => ({
@@ -32,7 +32,7 @@ export const mapSizesToProps = ({ width, height }) => ({
   isTablet: width <= 992 && width > 768,
   isPhone: width <= 768,
   isSmallPhone: width < 480
-});
+})
 
 const Suggestions = ({
   suggestionsRef,
@@ -42,29 +42,28 @@ const Suggestions = ({
   isLaptop,
   ...props
 }) => {
-  useOnClickOutside(suggestionsRef, () => closeSuggestions());
+  useOnClickOutside(suggestionsRef, () => closeSuggestions())
 
   useEffect(() => {
-    const dropdown = suggestionsRef.current;
+    const dropdown = suggestionsRef.current
     if (isOpened && dropdown) {
-      const { parentNode } = dropdown;
+      const { parentNode } = dropdown
 
-      const dropdownWidth = dropdown.offsetWidth;
+      const dropdownWidth = dropdown.offsetWidth
       const availableWidth =
         parentNode.clientWidth +
-        parseFloat(getComputedStyle(parentNode).marginLeft);
+        parseFloat(getComputedStyle(parentNode).marginLeft)
 
       dropdown.style.minWidth =
-        (dropdownWidth > availableWidth ? dropdownWidth : availableWidth) +
-        "px";
+        (dropdownWidth > availableWidth ? dropdownWidth : availableWidth) + 'px'
 
-      const isSmallScreen = isTablet || isLaptop;
+      const isSmallScreen = isTablet || isLaptop
 
       dropdown.style.left = isSmallScreen
-        ? availableWidth + 40 + "px"
-        : availableWidth / 2 + "px";
+        ? availableWidth + 40 + 'px'
+        : availableWidth / 2 + 'px'
     }
-  }, [isOpened]);
+  }, [isOpened])
 
   return (
     <CSSTransition in={isOpened} timeout={500} classNames={styles}>
@@ -79,7 +78,7 @@ const Suggestions = ({
         <PeopleCategory {...props} />
       </div>
     </CSSTransition>
-  );
-};
+  )
+}
 
-export default withSizes(mapSizesToProps)(Suggestions);
+export default withSizes(mapSizesToProps)(Suggestions)

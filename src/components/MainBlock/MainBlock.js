@@ -1,9 +1,8 @@
-import React from "react";
-import Search from "./SearchInput";
-import styles from "./MainBlock.module.scss";
+import React from 'react'
+import Search from './SearchInput'
+import styles from './MainBlock.module.scss'
 
 const MainBlock = () => {
-
   return (
     <section className={styles.wrapper}>
       <h1 className={styles.title}>Get Unique Insights</h1>
@@ -14,7 +13,7 @@ const MainBlock = () => {
         <Search />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default MainBlock;
+export default MainBlock

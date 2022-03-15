@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
-import cx from "classnames";
-import styles from "./Category.module.scss";
+import React, { useEffect } from 'react'
+import cx from 'classnames'
+import styles from './Category.module.scss'
 
-const Title = props => <h3 className={styles.title} {...props} />;
+const Title = props => <h3 className={styles.title} {...props} />
 
-const Link = ({ to, ...props }) => <a href={to} {...props} />;
+const Link = ({ to, ...props }) => <a href={to} {...props} />
 
 export const Button = ({ className, As = Link, isCursored, ...props }) => {
   return (
@@ -16,8 +16,8 @@ export const Button = ({ className, As = Link, isCursored, ...props }) => {
         isCursored && styles.button_cursored
       )}
     />
-  );
-};
+  )
+}
 
 const Category = ({
   className,
@@ -31,16 +31,16 @@ const Category = ({
   registerCursorColumn,
   onSuggestionSelect
 }) => {
-  const isCursoredColumn = columnName === titleKey;
+  const isCursoredColumn = columnName === titleKey
 
-  useEffect(() => registerCursorColumn(titleKey, items), [items]);
-  useEffect(() => () => registerCursorColumn(titleKey, []), []);
+  useEffect(() => registerCursorColumn(titleKey, items), [items])
+  useEffect(() => () => registerCursorColumn(titleKey, []), [])
 
-  function buildItemMouseDownHandler(item) {
+  function buildItemMouseDownHandler (item) {
     return e => {
-      e.preventDefault();
-      onSuggestionSelect(e.currentTarget, item, titleKey);
-    };
+      e.preventDefault()
+      onSuggestionSelect(e.currentTarget, item, titleKey)
+    }
   }
 
   return (
@@ -59,7 +59,7 @@ const Category = ({
         </Button>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default Category;
+export default Category
