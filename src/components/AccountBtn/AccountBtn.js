@@ -1,19 +1,19 @@
 import React from 'react'
+import cx from 'classnames'
 import { Query } from 'react-apollo'
-import { injectIntl } from 'gatsby-plugin-intl'
 import Button from '@santiment-network/ui/Button'
 import { CURRENT_USER_QUERY } from '../../gql/user'
 import styles from './AccountBtn.module.scss'
 
-const AccountBtn = ({ intl }) => {
+const AccountBtn = () => {
   return (
     <div
-      className={styles.account}
+      className={styles.wrapper}
       onClick={() => window.gtag('event', 'sign_up')}
     >
       <Query query={CURRENT_USER_QUERY}>
         {({ data: { currentUser } = {} }) => {
-          const isLoggedIn = Boolean(currentUser)
+          const isLoggedIn = !!currentUser
 
           return (
             <Button
@@ -25,11 +25,15 @@ const AccountBtn = ({ intl }) => {
                   ? 'https://app.santiment.net/'
                   : 'https://app.santiment.net/sign-up'
               }
-              variant='flat'
-              border
-              className={styles.login}
+              variant={isLoggedIn ? 'flat' : 'fill'}
+              border={isLoggedIn}
+              accent={!isLoggedIn && 'positive'}
+              className={cx(
+                styles.button,
+                isLoggedIn && styles.button__loggedIn
+              )}
             >
-              {isLoggedIn ? 'Back to Sanbase' : 'Create an account'}
+              {isLoggedIn ? 'Back to Sanbase' : 'Get Started'}
             </Button>
           )
         }}
@@ -38,4 +42,4 @@ const AccountBtn = ({ intl }) => {
   )
 }
 
-export default injectIntl(AccountBtn)
+export default AccountBtn

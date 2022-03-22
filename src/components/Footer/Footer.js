@@ -6,13 +6,14 @@ import Input from '@santiment-network/ui/Input'
 import { injectIntl } from 'gatsby-plugin-intl'
 import { tr } from '../../utils/translate'
 import logo from './images/santiment.svg'
+import mainLogoDark from './../../images/logos/santiment-dark.svg'
 import android from './images/google_play.svg'
 import { EMAIL_LOGIN_MUTATION } from '../../gql/user'
 import { NotificationsContext } from '../Notifications/Notifications'
 import { categories } from './links'
 import styles from './Footer.module.scss'
 
-const Footer = ({ intl }) => {
+const Footer = ({ intl, isNightMode }) => {
   const year = new Date()
   return (
     <footer className={styles.footer}>
@@ -20,7 +21,11 @@ const Footer = ({ intl }) => {
         <div className={styles.top}>
           <div>
             <a href='https://santiment.net/'>
-              <img src={logo} className={styles.logo} alt='santiment' />
+              <img
+                src={isNightMode ? mainLogoDark : logo}
+                className={styles.logo}
+                alt='santiment'
+              />
             </a>
             <div className={styles.desc}>
               {tr(

@@ -1,5 +1,15 @@
-@import '~@santiment-network/ui/mixins.scss';
-@import '~@santiment-network/ui/variables.scss';
+@import "~@santiment-network/ui/mixins.scss";
+@import "~@santiment-network/ui/variables.scss";
+
+:global(#hamburger) {
+  display: none;
+}
+
+:global([for="hamburger"]) {
+  @include responsive("desktop", "laptop", "tablet") {
+    display: none;
+  }
+}
 
 .header {
   background: var(--white);
@@ -12,7 +22,7 @@
 }
 
 .headerAnimation {
-  @include responsive('desktop', 'laptop', 'tablet') {
+  @include responsive("desktop", "laptop", "tablet") {
     animation-name: shiftDown;
     animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
     animation-duration: 0.8s;
@@ -29,45 +39,30 @@
   max-width: 1140px;
   margin: 0 auto;
 
-  @include responsive('tablet', 'laptop') {
+  @include responsive("tablet", "laptop") {
     padding: 0 24px;
   }
 
-  @include responsive('phone', 'phone-xs') {
+  @include responsive("phone", "phone-xs") {
     height: 56px;
     width: 100%;
     padding: 18px 16px;
   }
 }
 
-.left {
-  display: flex;
-  align-items: center;
-}
-
 .logo {
   display: flex;
   align-items: center;
-  margin-right: 64px;
-  margin-top: -4px;
+  margin-right: 56px;
+  margin-top: -8px;
+
+  &__icon {
+    fill: currentColor;
+    color: var(--white);
+  }
 
   &:hover {
     color: var(--rhino);
-  }
-
-  &__icon {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-:global(#hamburger) {
-  display: none;
-}
-
-:global([for='hamburger']) {
-  @include responsive('desktop', 'laptop', 'tablet') {
-    display: none;
   }
 }
 
@@ -87,7 +82,7 @@
   align-items: center;
   width: 100%;
 
-  @include responsive('phone', 'phone-xs') {
+  @include responsive("phone", "phone-xs") {
     display: none;
     position: fixed;
     z-index: 10;
@@ -113,7 +108,6 @@
   margin-right: 32px;
   display: flex;
   align-items: center;
-  cursor: pointer;
 
   &:hover {
     color: var(--jungle-green);
@@ -123,7 +117,9 @@
     }
   }
 
-  @include responsive('phone', 'phone-xs') {
+  @include text("body-3");
+
+  @include responsive("phone", "phone-xs") {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 20px;
@@ -132,58 +128,8 @@
 }
 
 .link + .link {
-  @include responsive('phone', 'phone-xs') {
+  @include responsive("phone", "phone-xs") {
     margin-left: 16px;
-  }
-}
-
-.linkLast {
-  margin-right: 6px;
-
-  @include responsive('phone', 'phone-xs') {
-    margin-right: 0;
-  }
-}
-
-.dividerLeft {
-  height: 40px;
-  border-left: 1px solid var(--porcelain);
-  margin: 0 12px;
-}
-
-.dividerRight {
-  height: 32px;
-  border-left: 1px solid var(--porcelain);
-  margin: 0 12px 0 24px;
-
-  @include responsive('phone', 'phone-xs') {
-    display: none;
-  }
-}
-
-.products {
-  display: flex;
-}
-
-.product {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.productName {
-  margin: 0 3px 0 8px;
-  @include text('body-2', 'm');
-
-  color: $rhino;
-}
-
-.headerIcon {
-  fill: var(--waterloo);
-
-  &:hover {
-    fill: var(--dodger-blue);
   }
 }
 

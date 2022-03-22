@@ -1,0 +1,138 @@
+diff --git a/node_modules/sanbase/src/components/Navbar/Search/AssetsCategory.js b/node_modules/sanbase/src/components/Navbar/Search/AssetsCategory.js
+index 360d96c..e4af0ec 100644
+--- a/node_modules/sanbase/src/components/Navbar/Search/AssetsCategory.js
++++ b/node_modules/sanbase/src/components/Navbar/Search/AssetsCategory.js
+@@ -34,7 +34,7 @@ const useSearchableAssets = assets =>
+ 
+ export const propsAccessor = ({ slug }) => ({
+   key: slug,
+-  to: '/charts?slug=' + slug
++  to: 'https://app.santiment.net/charts?slug=' + slug
+ })
+ 
+ export const Asset = ({ name, ticker }) => (
+diff --git a/node_modules/sanbase/src/components/Navbar/Search/Category.js b/node_modules/sanbase/src/components/Navbar/Search/Category.js
+index 74a31db..f283a40 100644
+--- a/node_modules/sanbase/src/components/Navbar/Search/Category.js
++++ b/node_modules/sanbase/src/components/Navbar/Search/Category.js
+@@ -1,11 +1,12 @@
+ import React, { useEffect } from 'react'
+ import cx from 'classnames'
+-import { Link } from 'react-router-dom'
+ import styles from './Category.module.scss'
+ 
+ // eslint-disable-next-line
+ const Title = props => <h3 className={styles.title} {...props} />
+ 
++const Link = ({to, ...props}) =>  <a {...props} href={to} target='_blank' rel='noopener noreferrer' />
++
+ export const Button = ({ className, As = Link, isCursored, ...props }) => (
+   <As
+     {...props}
+diff --git a/node_modules/sanbase/src/components/Navbar/Search/InsightsCategory.js b/node_modules/sanbase/src/components/Navbar/Search/InsightsCategory.js
+index 3c72ff5..c70d1ae 100644
+--- a/node_modules/sanbase/src/components/Navbar/Search/InsightsCategory.js
++++ b/node_modules/sanbase/src/components/Navbar/Search/InsightsCategory.js
+@@ -1,7 +1,7 @@
+ import React, { useState, useEffect, useMemo } from 'react'
+ import gql from 'graphql-tag'
+ import Category from './Category'
+-import { client } from '../../../apollo'
++import { client } from '@src/apollo/client'
+ import styles from './Category.module.scss'
+ 
+ const DEFAULT_SUGGESTIONS = []
+diff --git a/node_modules/sanbase/src/components/Navbar/Search/PeopleCategory.js b/node_modules/sanbase/src/components/Navbar/Search/PeopleCategory.js
+index 43c3465..3ae9f46 100644
+--- a/node_modules/sanbase/src/components/Navbar/Search/PeopleCategory.js
++++ b/node_modules/sanbase/src/components/Navbar/Search/PeopleCategory.js
+@@ -18,7 +18,7 @@ const POPULAR_AUTHORS_QUERY = gql`
+ 
+ const propsAccessor = ({ id }) => ({
+   key: id,
+-  to: '/profile/' + id
++  to: 'https://app.santiment.net/profile/' + id
+ })
+ 
+ function peoplePredicate (value) {
+diff --git a/node_modules/sanbase/src/components/Navbar/Search/TrendingWordsCategory.js b/node_modules/sanbase/src/components/Navbar/Search/TrendingWordsCategory.js
+index 4373597..0632d54 100644
+--- a/node_modules/sanbase/src/components/Navbar/Search/TrendingWordsCategory.js
++++ b/node_modules/sanbase/src/components/Navbar/Search/TrendingWordsCategory.js
+@@ -18,7 +18,7 @@ const TRENDING_WORDS_QUERY = gql`
+   }
+ `
+ 
+-const TREND_LINK = '/labs/trends/explore/'
++const TREND_LINK = 'https://app.santiment.net/labs/trends/explore/'
+ 
+ const propsAccessor = ({ word, key = word, As }) => ({
+   key,
+diff --git a/node_modules/sanbase/src/components/Navbar/Search/WalletsCategory.js b/node_modules/sanbase/src/components/Navbar/Search/WalletsCategory.js
+index 935af85..bcc94c5 100644
+--- a/node_modules/sanbase/src/components/Navbar/Search/WalletsCategory.js
++++ b/node_modules/sanbase/src/components/Navbar/Search/WalletsCategory.js
+@@ -5,7 +5,7 @@ import styles from './Category.module.scss'
+ import { getAddressInfrastructure } from '../../../utils/address'
+ 
+ const DEFAULT_SUGGESTIONS = []
+-const WALLET_LINK = '/labs/balance?address='
++const WALLET_LINK = 'https://app.santiment.net/labs/balance?address='
+ 
+ const propsAccessor = ({ word, key = word, As }) => ({
+   key,
+diff --git a/node_modules/sanbase/src/components/Navbar/Search/index.js b/node_modules/sanbase/src/components/Navbar/Search/index.js
+index 0161ddc..2940e1c 100644
+--- a/node_modules/sanbase/src/components/Navbar/Search/index.js
++++ b/node_modules/sanbase/src/components/Navbar/Search/index.js
+@@ -11,7 +11,7 @@ import styles from './index.module.scss'
+ 
+ const EDITABLE_TAGS = new Set(['INPUT', 'TEXTAREA'])
+ 
+-const Search = () => {
++const Search = ({className}) => {
+   const inputRef = useRef()
+   const [isOpened, setIsOpened] = useState(false)
+   const [searchTerm, setSearchTerm] = useState('')
+@@ -75,7 +75,7 @@ const Search = () => {
+ 
+   return (
+     <UISearch
+-      className={cx(styles.search, isOpened && styles.search_focused)}
++      className={cx(styles.search, isOpened && styles.search_focused, className)}
+       inputClassName={styles.input}
+       forwardedRef={inputRef}
+       placeholder='Search for assets, trends, etc...'
+diff --git a/node_modules/sanbase/src/redux.js b/node_modules/sanbase/src/redux.js
+index 545b099..8b2234f 100644
+--- a/node_modules/sanbase/src/redux.js
++++ b/node_modules/sanbase/src/redux.js
+@@ -1,25 +1,2 @@
+-import { createStore, applyMiddleware } from 'redux'
+-import { composeWithDevTools } from 'redux-devtools-extension'
+-import { createBrowserHistory } from 'history'
+-import { routerMiddleware } from 'react-router-redux'
+-import { createEpicMiddleware } from 'redux-observable'
+-import { client } from './apollo'
+-import epics from './epics/rootEpics.js'
+-import reducers from './reducers/rootReducers.js'
+-
+-export const history = createBrowserHistory()
+-
+-const middleware = [
+-  createEpicMiddleware(epics, {
+-    dependencies: {
+-      client
+-    }
+-  }),
+-  routerMiddleware(history)
+-]
+-
+-export const store = createStore(
+-  reducers,
+-  {},
+-  composeWithDevTools(applyMiddleware(...middleware))
+-)
++export const history = {}
++export const store = {}
+\ No newline at end of file

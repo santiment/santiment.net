@@ -4,11 +4,11 @@ This is the source for [`Base Landing Page`](https://santiment.net).
 
 ## Running locally
 
-If you have yarn you can run the app simply:
+If you have npm you can run the app simply:
 
 ```bash
-yarn
-yarn start
+npm
+npm start
 ```
 
 This is going to run the app on port 8000, so [`localhost:8000`](http://localhost:8000) should be accessible.

@@ -4,11 +4,17 @@ import Icon from '@santiment-network/ui/Icon'
 import { injectIntl, Link } from 'gatsby-plugin-intl'
 import { tr } from '../../utils/translate'
 import mainLogo from './../../images/logos/santiment.svg'
-import SantimentProductsTooltip from '../SantimentProductsTooltip/SantimentProductsTooltip'
+
+import Products from './Products'
 import AccountBtn from '../AccountBtn/AccountBtn'
 import styles from './Header.module.scss'
 
-const Header = ({ intl, headerAnimation }) => {
+const Header = ({
+  intl,
+  headerAnimation,
+  logo = mainLogo,
+  className = 'body-2',
+}) => {
   const toggle = useRef(null)
 
   const closeNav = () => {
@@ -17,14 +23,18 @@ const Header = ({ intl, headerAnimation }) => {
 
   return (
     <header
-      className={cx(styles.header, headerAnimation && styles.headerAnimation)}
+      className={cx(
+        styles.header,
+        headerAnimation && styles.headerAnimation,
+        className
+      )}
     >
       <div className={styles.container}>
         <div className={styles.left}>
           <div className={styles.product}>
             <div className={styles.products}>
               <Link className={styles.logo} to='/'>
-                <img src={mainLogo} alt='logo' width='105px' />
+                <img src={logo} alt='logo' width='105px' />
               </Link>
             </div>
           </div>
@@ -38,9 +48,7 @@ const Header = ({ intl, headerAnimation }) => {
             <Icon type='close' />
           </label>
           <div className={styles.link}>
-            <SantimentProductsTooltip intl={intl}>
-              <div>Products</div>
-            </SantimentProductsTooltip>
+            <Products />
           </div>
           <Link className={styles.link} to='/about' onClick={closeNav}>
             {tr('header.about', 'About')}

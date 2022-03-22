@@ -1,10 +1,10 @@
-@import '~@santiment-network/ui/main.scss';
-@import '~@santiment-network/ui/mixins.scss';
+@import "~@santiment-network/ui/main.scss";
+@import "~@santiment-network/ui/mixins.scss";
 
 body {
   color: var(--rhino);
-  font-size: 16px;
-  line-height: 24px;
+
+  @include text("body-2");
 }
 
 * {
@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: 'Proxima Nova', sans-serif !important;
+  font-family: "Proxima Nova", sans-serif !important;
   list-style: none;
   color: inherit;
 }
@@ -25,11 +25,11 @@ section {
   max-width: 1140px;
   margin: 0 auto;
 
-  @include responsive('tablet') {
+  @include responsive("tablet") {
     max-width: 100%;
   }
 
-  @include responsive('phone', 'phone-xs') {
+  @include responsive("phone", "phone-xs") {
     width: 100%;
     padding: 0 15px;
   }
@@ -39,7 +39,7 @@ section {
   margin-top: 150px;
   min-height: 30vh;
 
-  @include responsive('phone', 'phone-xs') {
+  @include responsive("phone", "phone-xs") {
     margin-top: 80px;
   }
 }
