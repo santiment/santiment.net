@@ -1,4 +1,4 @@
-@import "~@santiment-network/ui/mixins.scss";
+@import '~@santiment-network/ui/mixins.scss';
 
 .wrapper {
   z-index: 2;
@@ -18,9 +18,9 @@
   text-align: center;
   color: var(--rhino);
 
-  @include text("h1", "l");
+  @include text('h1', 'l');
 
-  @include responsive("desktop", "laptop", "tablet") {
+  @include responsive('desktop', 'laptop', 'tablet') {
     animation-name: shiftUp;
     animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
     animation-duration: 0.8s;
@@ -28,20 +28,20 @@
     animation-fill-mode: both;
   }
 
-  @include responsive("tablet", "phone") {
+  @include responsive('tablet', 'phone') {
     max-width: 80%;
   }
 
-  @include responsive("phone-xs", "phone") {
-    @include text("h3");
+  @include responsive('phone-xs', 'phone') {
+    @include text('h3');
   }
 
-  @include responsive("phone-xs", "phone") {
-    @include text("h3");
+  @include responsive('phone-xs', 'phone') {
+    @include text('h3');
   }
 
   @media only screen and (max-width: (320px)) {
-    @include text("h4");
+    @include text('h4');
   }
 }
 
@@ -49,9 +49,9 @@
   margin-bottom: 48px;
   color: var(--casper);
 
-  @include text("body-1", "l");
+  @include text('body-1', 'l');
 
-  @include responsive("desktop", "laptop", "tablet") {
+  @include responsive('desktop', 'laptop', 'tablet') {
     animation-name: shiftUp;
     animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
     animation-duration: 0.8s;
@@ -61,7 +61,7 @@
 }
 
 .input {
-  @include responsive("desktop", "laptop", "tablet") {
+  @include responsive('desktop', 'laptop', 'tablet') {
     animation-name: shiftUp;
     animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
     animation-duration: 0.8s;
@@ -69,7 +69,7 @@
     animation-fill-mode: both;
   }
 
-  @include responsive("phone-xs", "phone") {
+  @include responsive('phone-xs', 'phone') {
     width: 100%;
   }
 }
@@ -83,5 +83,25 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+.search {
+  width: 480px !important;
+  margin: 0 !important;
+  max-width: 100%;
+
+  > :global(input) {
+    height: 40px;
+    border-color: #fff;
+    padding-left: 34px;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  > :global(svg) {
+    fill: #fff;
   }
 }

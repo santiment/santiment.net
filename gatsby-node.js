@@ -70,8 +70,16 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
+        '@src': path.resolve('src'),
         webkit: path.resolve('node_modules/san-webkit/lib'),
         react: path.resolve('node_modules/react'),
+        'react-dom': path.resolve('node_modules/react-dom'),
+        'react-apollo': path.resolve('node_modules/react-apollo/'),
+        '@apollo/react-hooks': path.resolve('node_modules/@apollo/react-hooks'),
+        '@apollo/react-common': path.resolve(
+          'node_modules/@apollo/react-common'
+        ),
+        'apollo-client': path.resolve('node_modules/apollo-client'),
       },
     },
 
@@ -82,6 +90,19 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
           use: {
             loader: 'svelte-loader',
           },
+        },
+
+        {
+          test: /\.jsx?$/,
+          include: [path.resolve(__dirname, './node_modules/sanbase/src')],
+          use: [
+            {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env', '@babel/preset-react'],
+              },
+            },
+          ],
         },
       ],
     },
