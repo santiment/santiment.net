@@ -113,6 +113,7 @@
   margin-right: 32px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 
   &:hover {
     color: var(--jungle-green);
@@ -121,8 +122,6 @@
       fill: var(--jungle-green);
     }
   }
-
-  @include text('body-2');
 
   @include responsive('phone', 'phone-xs') {
     margin-left: 0;

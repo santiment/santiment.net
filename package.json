@@ -3,7 +3,6 @@
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@santiment-network/ui": "^0.5.271",
     "apollo-boost": "^0.4.0",
@@ -39,11 +38,16 @@
     "react-slick": "^0.24.0",
     "react-sizes": "^2.0.0",
     "react-transition-group": "^4.1.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "san-webkit": "https://github.com/santiment/san-webkit.git#3abb3ca",
+    "phoenix": "^1.6.6"
   },
   "devDependencies": {
     "prettier": "^1.17.1",
-    "prettier-standard": "^16.4.1"
+    "prettier-standard": "^16.4.1",
+    "svelte": "^3.46.3",
+    "svelte-adapter": "^0.3.0",
+    "svelte-loader": "^2.13.6"
   },
   "keywords": [
     "gatsby"
@@ -55,7 +59,9 @@
     "format": "prettier-standard 'src/**/*.js'",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "webkit": "node scripts/webkit",
+    "postinstall": "npm run webkit"
   },
   "repository": {
     "type": "git",

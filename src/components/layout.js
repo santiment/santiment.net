@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import cx from 'classnames'
 import GoogleAnalytics from 'react-ga'
 import Helmet from 'react-helmet'
+import { startResponsiveController } from 'webkit/responsive'
 import Intercom from './Intercom'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
@@ -10,6 +11,11 @@ import Notifications from './Notifications/Notifications'
 import CookiePopup from './CookiePopup/CookiePopup'
 import './fonts.module.scss'
 import styles from './layout.module.scss'
+import 'webkit/styles/main.css'
+
+if (typeof window !== 'undefined') {
+  startResponsiveController()
+}
 
 if (process.env.NODE_ENV === 'production') {
   GoogleAnalytics.initialize('UA-100571693-8')
@@ -28,7 +34,7 @@ const Layout = ({
   headerAnimation = false,
   classes = {},
   headerComponent,
-  isNightMode
+  isNightMode,
 }) => {
   return (
     <Intercom>
@@ -36,7 +42,7 @@ const Layout = ({
         <div className={classes.wrapper}>
           <Helmet
             bodyAttributes={{
-              class: isNightMode && 'night-mode'
+              class: isNightMode && 'night-mode',
             }}
           />
           {envScript}
@@ -53,7 +59,7 @@ const Layout = ({
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout
