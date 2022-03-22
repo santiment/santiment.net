@@ -55,6 +55,40 @@ index 43c3465..3ae9f46 100644
  })
  
  function peoplePredicate (value) {
+diff --git a/node_modules/sanbase/src/components/Navbar/Search/Suggestions.js b/node_modules/sanbase/src/components/Navbar/Search/Suggestions.js
+index 141487a..c1faae1 100644
+--- a/node_modules/sanbase/src/components/Navbar/Search/Suggestions.js
++++ b/node_modules/sanbase/src/components/Navbar/Search/Suggestions.js
+@@ -14,6 +14,7 @@ import styles from './Suggestions.module.scss'
+ const DEFAULT_RECENTS = []
+ 
+ const Suggestions = ({
++  className,
+   suggestionsRef,
+   isOpened,
+   isTablet,
+@@ -46,11 +47,7 @@ const Suggestions = ({
+       dropdown.style.minWidth =
+         (dropdownWidth > availableWidth ? dropdownWidth : availableWidth) + 'px'
+ 
+-      const isSmallScreen = isTablet || isLaptop
+-
+-      dropdown.style.right = isSmallScreen
+-        ? availableWidth + 40 + 'px'
+-        : availableWidth / 2 + 'px'
++      dropdown.style.right = availableWidth / 2 + 'px'
+     }
+   }, [isOpened])
+ 
+@@ -63,7 +60,7 @@ const Suggestions = ({
+     <CSSTransition in={isOpened} timeout={500} classNames={styles}>
+       <div
+         ref={suggestionsRef}
+-        className={cx(styles.dropdown, styles.exitDone)}
++        className={cx(styles.dropdown, styles.exitDone, className)}
+       >
+         <RecentsCategory {...props} items={recents} onClear={onRecentsClear} />
+         <AssetsCategory {...props} />
 diff --git a/node_modules/sanbase/src/components/Navbar/Search/TrendingWordsCategory.js b/node_modules/sanbase/src/components/Navbar/Search/TrendingWordsCategory.js
 index 4373597..0632d54 100644
 --- a/node_modules/sanbase/src/components/Navbar/Search/TrendingWordsCategory.js
@@ -82,7 +116,7 @@ index 935af85..bcc94c5 100644
  const propsAccessor = ({ word, key = word, As }) => ({
    key,
 diff --git a/node_modules/sanbase/src/components/Navbar/Search/index.js b/node_modules/sanbase/src/components/Navbar/Search/index.js
-index 0161ddc..2940e1c 100644
+index 0161ddc..777047f 100644
 --- a/node_modules/sanbase/src/components/Navbar/Search/index.js
 +++ b/node_modules/sanbase/src/components/Navbar/Search/index.js
 @@ -11,7 +11,7 @@ import styles from './index.module.scss'
@@ -90,7 +124,7 @@ index 0161ddc..2940e1c 100644
  const EDITABLE_TAGS = new Set(['INPUT', 'TEXTAREA'])
  
 -const Search = () => {
-+const Search = ({className}) => {
++const Search = ({className, dropdownClassName}) => {
    const inputRef = useRef()
    const [isOpened, setIsOpened] = useState(false)
    const [searchTerm, setSearchTerm] = useState('')
@@ -103,6 +137,14 @@ index 0161ddc..2940e1c 100644
        inputClassName={styles.input}
        forwardedRef={inputRef}
        placeholder='Search for assets, trends, etc...'
+@@ -90,6 +90,7 @@ const Search = () => {
+         searchTerm={searchTerm}
+         isOpened={isOpened}
+         onSuggestionSelect={onSuggestionSelect}
++        className={dropdownClassName}
+       />
+     </UISearch>
+   )
 diff --git a/node_modules/sanbase/src/redux.js b/node_modules/sanbase/src/redux.js
 index 545b099..8b2234f 100644
 --- a/node_modules/sanbase/src/redux.js

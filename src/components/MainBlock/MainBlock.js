@@ -16,7 +16,10 @@ const MainBlock = () => {
       </div>
       <div className={cx(styles.input, 'row h-center')}>
         <ApolloProvider client={client}>
-          <Search className={styles.search} />
+          <Search
+            className={styles.search}
+            dropdownClassName={styles.dropdown}
+          />
         </ApolloProvider>
       </div>
     </section>

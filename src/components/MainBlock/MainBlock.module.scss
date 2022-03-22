@@ -105,3 +105,12 @@
     fill: #fff;
   }
 }
+
+.dropdown {
+  @include responsive('phone-xs', 'phone') {
+    max-width: 100%;
+    min-width: auto;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
