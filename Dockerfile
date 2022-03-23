@@ -5,12 +5,10 @@ RUN GIT_HEAD=$GIT_HEAD
 
 WORKDIR /app
 
-COPY ./package.json /app/package.json
-COPY ./package-lock.json /app/package-lock.json
-
-RUN npm i
-
 COPY ./ /app
 
+RUN npm install --unsafe-perm
 RUN npm run build
+
+COPY --from=builder /app/node_modules /app/node_modules
 
