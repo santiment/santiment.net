@@ -65,7 +65,7 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "webkit": "node scripts/webkit",
-    "postinstall": "npm run webkit"
+    "postinstall": "patch-package && npm run webkit"
   },
   "repository": {
     "type": "git",
