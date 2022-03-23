@@ -1,4 +1,4 @@
-FROM node:10-buster-slim
+FROM node:13 AS builder
 
 ARG GIT_HEAD
 RUN GIT_HEAD=$GIT_HEAD
