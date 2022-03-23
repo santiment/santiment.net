@@ -39,6 +39,7 @@
     "react-sizes": "^2.0.0",
     "react-slick": "^0.24.0",
     "react-transition-group": "^4.1.1",
+    "svelte-preprocess-cssmodules": "https://github.com/DmitriVanGuard/svelte-preprocess-cssmodules#895859f",
     "san-webkit": "https://github.com/santiment/san-webkit.git#2166a48",
     "san-studio": "https://github.com/santiment/san-studio.git#f076792",
     "sanbase": "https://github.com/santiment/app.git#37f830ff9",
@@ -50,8 +51,7 @@
     "svelte": "^3.46.3",
     "svelte-adapter": "^0.3.0",
     "svelte-loader": "^2.13.6",
-    "patch-package": "^6.2.2",
-    "svelte-preprocess-cssmodules": "https://github.com/DmitriVanGuard/svelte-preprocess-cssmodules#895859f"
+    "patch-package": "^6.2.2"
   },
   "keywords": [
     "gatsby"
