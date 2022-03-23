@@ -6,12 +6,11 @@ RUN GIT_HEAD=$GIT_HEAD
 WORKDIR /app
 
 COPY ./package.json /app/package.json
-COPY ./yarn.lock /app/yarn.lock
+COPY ./package-lock.json /app/package-lock.json
 
-RUN npm install -g yarn --force
-RUN yarn install --production
+RUN npm i
 
 COPY ./ /app
 
-RUN yarn build
+RUN npm run build
 
