@@ -9,6 +9,3 @@ COPY ./ /app
 
 RUN npm install --unsafe-perm
 RUN npm run build
-
-COPY --from=builder /app/node_modules /app/node_modules
-
