@@ -50,7 +50,8 @@
     "svelte": "^3.46.3",
     "svelte-adapter": "^0.3.0",
     "svelte-loader": "^2.13.6",
-    "patch-package": "^6.2.2"
+    "patch-package": "^6.2.2",
+    "svelte-preprocess-cssmodules": "https://github.com/DmitriVanGuard/svelte-preprocess-cssmodules#895859f"
   },
   "keywords": [
     "gatsby"
