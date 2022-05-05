@@ -27,7 +27,7 @@ const TeamPage = ({ intl }) => (
       <Subheading className={styles.title}>Santiment team</Subheading>
       <div className={styles.desc}>
         In true crypto fashion, our team is as decentralised as they come -
-        spanning 12 countries and 8 time zones (which makes organizing team
+        spanning 19 countries and 8 time zones (which makes organizing team
         calls a blast:)
         <br />
         Meet the people dedicated to bringing context to the crypto ecosystem:
