@@ -20,7 +20,7 @@ const TeamPage = ({ intl }) => (
     <SEO
       title='Santiment Team'
       description='In true crypto fashion, our team is as decentralised as they come -
-        spanning 12 countries and 8 time zones (which makes organizing team
+        spanning 19 countries and 8 time zones (which makes organizing team
         calls a blast:)'
     />
     <div className={styles.wrapper}>

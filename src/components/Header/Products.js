@@ -15,8 +15,8 @@ const MobileProducts = () => {
       target: ref.current,
       props: {
         class: styles.products,
-        isColumn: true,
-      },
+        isColumn: true
+      }
     })
 
     return () => svelte.$destroy()
@@ -29,7 +29,7 @@ const Products = () => {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    return responsive$.subscribe((device) => {
+    return responsive$.subscribe(device => {
       setIsMobile(device === Device.Phone || device === Device.PhoneXs)
     })
   }, [])

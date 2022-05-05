@@ -6,9 +6,9 @@ import Brian from './images/Brian.png'
 import Dima from './images/Dima.png'
 import Ehrlan from './images/Ehrlan.png'
 import Garry from './images/Garry.png'
+import GabbyN from './images/GabbyN.png'
 import IgorK from './images/IgorK.png'
 import IlyaL from './images/IlyaL.png'
-import Irina from './images/Irina.png'
 import Ivan from './images/Ivan.png'
 import IvanG from './images/IvanG.png'
 import Kate from './images/Kate.png'
@@ -16,6 +16,7 @@ import Kelvin from './images/Kelvin.png'
 import Kim from './images/Kim.png'
 import Ksenia from './images/Ksenia.png'
 import Lyudmil from './images/Lyudmil.png'
+import LarryC from './images/LarryC.png'
 import Maksim from './images/Maksim.png'
 import Max from './images/Max.png'
 import Nail from './images/Nail.png'
@@ -77,18 +78,6 @@ export const PEOPLE = [
       'Number theorist, software developer and devops leader keeping Santiment systems in shape. Brings experience with backend logic and data structures as well. Data scientist. New crypto explorer. Meditator.',
     links: {
       linkedin: 'https://www.linkedin.com/in/tzanko-matev-2328425/'
-    }
-  },
-  {
-    name: 'Irina Pranovich',
-    position: 'Data Scientist',
-    group: GROUPS.RESEARCH,
-    img: Irina,
-    description:
-      'Data science nerd currently writing apps and creating visualizations for social data collection and analysis. A python coder, she’s built a knowledge base for a major university project based on graph theory, and holds a BSc with specialization in AI (Minsk). She studied Data Mining in Eötvös Loránd University (Budapest). She also takes amazing photos while exploring the world.',
-    links: {
-      linkedin: 'https://www.linkedin.com/in/irina-pranovich-93400310a/',
-      github: 'https://github.com/ipranovich'
     }
   },
   {
@@ -175,6 +164,17 @@ export const PEOPLE = [
     }
   },
   {
+    name: 'Gabriela Nikolova',
+    position: 'Designer',
+    group: GROUPS.DESIGN,
+    img: GabbyN,
+    description:
+      'Gabby has a passion for new tech solutions and innovation through research and empathy. Her other passion is entrepreneurship and she’s had a few technological startups in the past, learning first hand about the pitfalls, when designing a solution. She holds a degree in philology and MBA but has worked as a web designer through most of her life. Her interests vary from arts and music to marketing, psychology, and human behavior.',
+    links: {
+      linkedin: 'https://www.linkedin.com/in/gabbynikolova/'
+    }
+  },
+  {
     name: 'Ksenia Parfinovich',
     position: 'Illustrator',
     group: GROUPS.DESIGN,
@@ -211,7 +211,7 @@ export const PEOPLE = [
   },
   {
     name: 'Dino Ibisbegovic',
-    position: 'Content & SEO',
+    position: 'Advisor',
     group: GROUPS.ADVISORS,
     description:
       'Resident wordsmith and SEO nerd, Dino oversees all things content. He’s worked in a medley of startups big and small before joining Santiment, specializing in content creation, search engine optimization and many other -ations. He has since caught the crypto bug and is currently a refreshingly average swing trader. Get in touch with him to talk content collabs and/or favorite html tags.',
@@ -391,6 +391,18 @@ export const PEOPLE = [
     links: {
       linkedin: 'https://linkedin.com/in/ilyalysko/',
       github: 'https://github.com/ilya-lysko'
+    }
+  },
+  {
+    name: 'Larry CAO',
+    position: 'DeFi Analyst',
+    img: LarryC,
+    group: GROUPS.RESEARCH,
+    description:
+      'Master degree in data science. Larry is always ready to learn new things, and he is good at listening to different voices and make the best usage from them. Cooking makes Larry concentrated and investing makes Larry poor and brave. He might become degen for some time but after all he found that building is more interesting and meaningful. Larry tends to embrace new changes and adventures in life, from where he is also finding himself.',
+    links: {
+      linkedin: 'https://www.linkedin.com/in/larry-cao-78887012b/',
+      github: 'https://github.com/createMonster'
     }
   },
   {

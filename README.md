@@ -7,7 +7,7 @@ This is the source for [`Base Landing Page`](https://santiment.net).
 If you have npm you can run the app simply:
 
 ```bash
-npm
+npm install
 npm start
 ```
 

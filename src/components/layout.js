@@ -34,7 +34,7 @@ const Layout = ({
   headerAnimation = false,
   classes = {},
   headerComponent,
-  isNightMode,
+  isNightMode
 }) => {
   return (
     <Intercom>
@@ -42,7 +42,7 @@ const Layout = ({
         <div className={classes.wrapper}>
           <Helmet
             bodyAttributes={{
-              class: isNightMode && 'night-mode',
+              class: isNightMode && 'night-mode'
             }}
           />
           {envScript}
@@ -59,7 +59,7 @@ const Layout = ({
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 }
 
 export default Layout
