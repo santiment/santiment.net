@@ -171,7 +171,9 @@ export const PEOPLE = [
     description:
       'Gabby has a passion for new tech solutions and innovation through research and empathy. Her other passion is entrepreneurship and she’s had a few technological startups in the past, learning first hand about the pitfalls, when designing a solution. She holds a degree in philology and MBA but has worked as a web designer through most of her life. Her interests vary from arts and music to marketing, psychology, and human behavior.',
     links: {
-      linkedin: 'https://www.linkedin.com/in/gabbynikolova/'
+      website: 'https://www.gabbynik.com/',
+      linkedin: 'https://www.linkedin.com/in/gabbynikolova/',
+      dribble: 'https://dribbble.com/Gabbynik'
     }
   },
   {
