@@ -327,13 +327,12 @@ export const PEOPLE = [
   },
   {
     name: 'Ante Sosa',
-    position: 'Big Data Engineer',
+    position: 'Big Data Contractor',
     img: Ante,
     group: GROUPS.RESEARCH,
     description:
       'Ante has a background in mathematics with experience in analyzing large amounts of malicious files. He is passionate about data science and exploring innovations in crypto space. He enjoys playing football, traveling and meeting new people.',
     links: {
-      linkedin: 'https://www.linkedin.com/in/ante-sosa-80a198157/',
       github: 'https://github.com/antisaa'
     }
   },
