@@ -72,6 +72,7 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
       alias: {
         '@src': path.resolve('src'),
         webkit: path.resolve('node_modules/san-webkit/lib'),
+        studio: path.resolve('node_modules/san-studio/lib'),
         react: path.resolve('node_modules/react'),
         'react-dom': path.resolve('node_modules/react-dom'),
         'react-apollo': path.resolve('node_modules/react-apollo/'),
