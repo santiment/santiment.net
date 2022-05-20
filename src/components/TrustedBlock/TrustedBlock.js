@@ -13,10 +13,14 @@ const TrustedBlock = () => (
       <div className={styles.dot} />
     </div>
     <div className={styles.row}>
-      <img src={tbn} alt='TBN' />
-      <img src={bloomberg} alt='Bloomberg' />
-      <img src={bitfinex} alt='Bitfinex' />
-      <img src={cointelegraph} alt='Cointelegraph' />
+      <img src={tbn} alt='TBN' className={styles.tbn} />
+      <img src={bloomberg} alt='Bloomberg' className={styles.bloomberg} />
+      <img src={bitfinex} alt='Bitfinex' className={styles.bitfinex} />
+      <img
+        src={cointelegraph}
+        alt='Cointelegraph'
+        className={styles.cointelegraph}
+      />
     </div>
   </div>
 )

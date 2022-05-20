@@ -1,27 +1,28 @@
 import React from 'react'
 import cx from 'classnames'
-import { ApolloProvider } from '@apollo/react-common'
-import Search from 'sanbase/src/components/Navbar/Search'
-import Background from './Background/Background'
-import { client } from '../../apollo/client'
+import AccountBtn from '../AccountBtn/AccountBtn'
+import visual from './images/visual.png'
 import styles from './MainBlock.module.scss'
 
 const MainBlock = () => {
   return (
-    <section className={styles.wrapper}>
-      <Background />
-      <h1 className={styles.title}>Get Unique Insights</h1>
-      <div className={styles.description}>
-        For your crypto portfolio management
+    <section className={cx(styles.wrapper, 'row hv-center')}>
+      <div className={cx(styles.leftBlock, 'column')}>
+        <div className={cx(styles.title, 'txt-b mrg--b mrg-l')}>
+          Introducing Crypto & NFT Visual Explorer
+        </div>
+        <div className={cx(styles.description, 'h4')}>
+          On-Chain data, social media and sentiment analysis tools for the
+          crypto and NFT market
+        </div>
+        <AccountBtn
+          classes={{
+            wrapper: styles.btnWrapper,
+            btn: cx(styles.btn, 'body-2')
+          }}
+        />
       </div>
-      <div className={cx(styles.input, 'row h-center')}>
-        <ApolloProvider client={client}>
-          <Search
-            className={styles.search}
-            dropdownClassName={styles.dropdown}
-          />
-        </ApolloProvider>
-      </div>
+      <img className={styles.img} src={visual} alt='Chart' />
     </section>
   )
 }
