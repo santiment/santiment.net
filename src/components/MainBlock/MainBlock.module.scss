@@ -1,25 +1,12 @@
-@import '~@santiment-network/ui/mixins.scss';
+@import "~@santiment-network/ui/mixins.scss";
 
 .wrapper {
-  z-index: 2;
-  min-height: 528px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
   max-width: 100%;
-}
+  margin-top: 108px;
+  margin-bottom: 124px;
+  column-gap: 90px;
 
-.title {
-  z-index: 2;
-  margin-bottom: 8px;
-  text-align: center;
-  color: var(--rhino);
-
-  @include text('h1', 'l');
-
-  @include responsive('desktop', 'laptop', 'tablet') {
+  @include responsive("desktop", "laptop", "tablet") {
     animation-name: shiftUp;
     animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
     animation-duration: 0.8s;
@@ -27,50 +14,67 @@
     animation-fill-mode: both;
   }
 
-  @include responsive('tablet', 'phone') {
-    max-width: 80%;
+  :global(.phone-xs) &,
+  :global(.phone) &,
+  :global(.tablet) & {
+    flex-direction: column;
+    row-gap: 58px;
+    margin-top: 48px;
+    margin-bottom: 48px;
   }
+}
 
-  @include responsive('phone-xs', 'phone') {
-    @include text('h3');
-  }
+.leftBlock {
+  max-width: 480px;
+}
 
-  @include responsive('phone-xs', 'phone') {
-    @include text('h3');
-  }
+.title {
+  @include text("h1");
 
-  @media only screen and (max-width: (320px)) {
-    @include text('h4');
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    --margin: 12px;
+    @include text("h3");
+
+    font-weight: 500;
   }
 }
 
 .description {
+  color: #d2d6e7;
   margin-bottom: 48px;
-  color: var(--casper);
 
-  @include text('body-1', 'l');
-
-  @include responsive('desktop', 'laptop', 'tablet') {
-    animation-name: shiftUp;
-    animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
-    animation-duration: 0.8s;
-    animation-delay: 0.6s;
-    animation-fill-mode: both;
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    @include text("body-2");
+    margin-bottom: 24px;
   }
 }
 
-.input {
-  z-index: 100;
-  @include responsive('desktop', 'laptop', 'tablet') {
-    animation-name: shiftUp;
-    animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
-    animation-duration: 0.8s;
-    animation-delay: 0.6s;
-    animation-fill-mode: both;
-  }
+.btn {
+  height: 40px;
+  max-width: 196px;
+  border-radius: 6px;
 
-  @include responsive('phone-xs', 'phone') {
-    width: 100%;
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    @include text("body-3");
+    height: 32px;
+    max-width: 151px;
+  }
+}
+
+.btnWrapper {
+  margin-left: 0;
+  display: block !important;
+}
+
+.img {
+  max-width: 632px;
+
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    max-width: calc(100% + 20px);
   }
 }
 
@@ -83,34 +87,5 @@
   100% {
     transform: translateY(0);
     opacity: 1;
-  }
-}
-
-.search {
-  width: 480px !important;
-  margin: 0 !important;
-  max-width: 100%;
-
-  > :global(input) {
-    height: 40px;
-    border-color: #fff;
-    padding-left: 34px;
-
-    &::placeholder {
-      color: #fff;
-    }
-  }
-
-  > :global(svg) {
-    fill: #fff;
-  }
-}
-
-.dropdown {
-  @include responsive('phone-xs', 'phone') {
-    max-width: 100%;
-    min-width: auto;
-    gap: 20px;
-    flex-wrap: wrap;
   }
 }

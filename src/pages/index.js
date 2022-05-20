@@ -7,13 +7,17 @@ import SEO from '../components/seo'
 import styles from './index.module.scss'
 
 const Index = ({ location }) => {
+  const isNightMode = location.pathname === '/'
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       window.scrollTo(0, 0)
     }
-  }, [location])
 
-  const isNightMode = location.pathname === '/'
+    if (isNightMode) {
+      document.body.classList.add('night-mode')
+    }
+  }, [location])
 
   return (
     <Layout

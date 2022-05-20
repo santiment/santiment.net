@@ -40,11 +40,6 @@ const Layout = ({
     <Intercom>
       <Notifications>
         <div className={classes.wrapper}>
-          <Helmet
-            bodyAttributes={{
-              class: isNightMode && 'night-mode'
-            }}
-          />
           {envScript}
           {headerComponent || <Header headerAnimation={headerAnimation} />}
           <main className={cx(styles.main, classes.main)}>{children}</main>

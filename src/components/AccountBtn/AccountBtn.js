@@ -5,10 +5,10 @@ import Button from '@santiment-network/ui/Button'
 import { CURRENT_USER_QUERY } from '../../gql/user'
 import styles from './AccountBtn.module.scss'
 
-const AccountBtn = () => {
+const AccountBtn = ({ classes = {} }) => {
   return (
     <div
-      className={styles.wrapper}
+      className={cx(styles.wrapper, classes.wrapper)}
       onClick={() => window.gtag('event', 'sign_up')}
     >
       <Query query={CURRENT_USER_QUERY}>
@@ -30,7 +30,8 @@ const AccountBtn = () => {
               accent={!isLoggedIn && 'positive'}
               className={cx(
                 styles.button,
-                isLoggedIn && styles.button__loggedIn
+                isLoggedIn && styles.button__loggedIn,
+                classes.btn
               )}
             >
               {isLoggedIn ? 'Back to Sanbase' : 'Get Started'}
