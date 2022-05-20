@@ -13,7 +13,7 @@ const MainBlock = () => {
         </div>
         <div className={cx(styles.description, 'h4')}>
           On-Chain data, social media and sentiment analysis tools for the
-          cryptocurrency and NFT market
+          crypto and NFT market
         </div>
         <AccountBtn
           classes={{
