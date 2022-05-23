@@ -1,7 +1,6 @@
 import Alex from './images/Alex.png'
 import Anastasiya from './images/Anastasiya.png'
 import Anatoliy from './images/Anatoliy.png'
-import Ante from './images/Ante.png'
 import Brian from './images/Brian.png'
 import Dima from './images/Dima.png'
 import Ehrlan from './images/Ehrlan.png'
@@ -323,17 +322,6 @@ export const PEOPLE = [
       'He has a Master degree in industrial automation with more than 15 years of IT/infrastructure expertise. Throughout his career, he grew few large scale projects to more than 4000 hosts and devices. He is passionate with cloud technologies, automation, security, Linux, BSD and embedded systems. He is interested about scifi , technology and always enjoy learning new things on his spare time',
     links: {
       linkedin: 'https://www.linkedin.com/in/nkalev'
-    }
-  },
-  {
-    name: 'Ante Sosa',
-    position: 'Big Data Contractor',
-    img: Ante,
-    group: GROUPS.RESEARCH,
-    description:
-      'Ante has a background in mathematics with experience in analyzing large amounts of malicious files. He is passionate about data science and exploring innovations in crypto space. He enjoys playing football, traveling and meeting new people.',
-    links: {
-      github: 'https://github.com/antisaa'
     }
   },
   {
