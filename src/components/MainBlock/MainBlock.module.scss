@@ -18,7 +18,7 @@
   :global(.phone) &,
   :global(.tablet) & {
     flex-direction: column;
-    row-gap: 58px;
+    row-gap: 64px;
     margin-top: 48px;
     margin-bottom: 48px;
   }
@@ -30,18 +30,17 @@
 
 .title {
   @include text("h1");
+  font-weight: 500;
 
   :global(.phone-xs) &,
   :global(.phone) & {
     --margin: 12px;
     @include text("h3");
-
-    font-weight: 500;
   }
 }
 
 .description {
-  color: #d2d6e7;
+  color: #a2a7bd;
   margin-bottom: 48px;
 
   :global(.phone-xs) &,
@@ -58,9 +57,8 @@
 
   :global(.phone-xs) &,
   :global(.phone) & {
-    @include text("body-3");
-    height: 32px;
-    max-width: 151px;
+    height: 40px;
+    max-width: 100%;
   }
 }
 

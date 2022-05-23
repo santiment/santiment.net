@@ -31,9 +31,10 @@
 
   :global(.phone-xs) &,
   :global(.phone) & {
-    @include text("body-3", "l");
+    @include text("body-1", "m");
 
-    margin-bottom: 10px;
+    height: 18px;
+    margin-bottom: 24px;
     gap: 4px;
   }
 }

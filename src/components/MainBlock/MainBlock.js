@@ -8,7 +8,7 @@ const MainBlock = () => {
   return (
     <section className={cx(styles.wrapper, 'row hv-center')}>
       <div className={cx(styles.leftBlock, 'column')}>
-        <div className={cx(styles.title, 'txt-b mrg--b mrg-l')}>
+        <div className={cx(styles.title, 'mrg--b mrg-l')}>
           Introducing Crypto & NFT Visual Explorer
         </div>
         <div className={cx(styles.description, 'h4')}>

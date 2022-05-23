@@ -34,7 +34,7 @@ const AccountBtn = ({ classes = {} }) => {
                 classes.btn
               )}
             >
-              {isLoggedIn ? 'Back to Sanbase' : 'Get Started'}
+              {isLoggedIn ? 'Go to Sanbase' : 'Get Started'}
             </Button>
           )
         }}
