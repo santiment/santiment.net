@@ -17,6 +17,12 @@ const Index = ({ location }) => {
     if (isNightMode) {
       document.body.classList.add('night-mode')
     }
+
+    return () => {
+      if (isNightMode) {
+        document.body.classList.remove('night-mode')
+      }
+    }
   }, [location])
 
   return (
