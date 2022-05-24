@@ -90,19 +90,6 @@ const CookiesPage = () => (
           </thead>
           <tbody className={styles.tableBody}>
             <tr>
-              <td>Hotjar</td>
-              <td>
-                <a
-                  href='https://help.hotjar.com/hc/en-us/articles/115011789248-Hotjar-Cookie-Information'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  https://help.hotjar.com/hc/en-us/articles/115011789248-Hotjar-Cookie-Information
-                </a>
-              </td>
-              <td>According to third party policy</td>
-            </tr>
-            <tr>
               <td>Intercom</td>
               <td>
                 <a
