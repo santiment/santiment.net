@@ -7,5 +7,4 @@ WORKDIR /app
 
 COPY ./ /app
 
-RUN apk add make nasm autoconf automake libtool dpkg pkgconfig libpng libpng-dev g++
- && npm install --unsafe-perm && npm run build
+RUN apk add make nasm autoconf automake libtool dpkg pkgconfig libpng libpng-dev g++ && npm install --unsafe-perm && npm run build
