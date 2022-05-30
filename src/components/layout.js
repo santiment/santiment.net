@@ -4,7 +4,7 @@ import cx from 'classnames'
 import GoogleAnalytics from 'react-ga'
 import Helmet from 'react-helmet'
 import { track } from 'webkit/analytics'
-import { initTwitterPixel, TwitterTrackActions } from 'webkit/analytics/twitter'
+import { initTwitterPixel } from 'webkit/analytics/twitter'
 import { startResponsiveController } from 'webkit/responsive'
 import Intercom from './Intercom'
 import Header from './Header/Header'
@@ -40,7 +40,7 @@ const Layout = ({
 }) => {
   useEffect(() => {
     initTwitterPixel()
-    track.event(TwitterTrackActions.pageview)
+    track.pageview('santiment.net')
   }, [])
 
   return (
