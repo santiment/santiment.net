@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import cx from 'classnames'
 import GoogleAnalytics from 'react-ga'
 import Helmet from 'react-helmet'
+import { track } from 'webkit/analytics'
+import { initTwitterPixel, TwitterTrackActions } from 'webkit/analytics/twitter'
 import { startResponsiveController } from 'webkit/responsive'
 import Intercom from './Intercom'
 import Header from './Header/Header'
@@ -36,6 +38,11 @@ const Layout = ({
   headerComponent,
   isNightMode
 }) => {
+  useEffect(() => {
+    initTwitterPixel()
+    track.event(TwitterTrackActions.pageview)
+  }, [])
+
   return (
     <Intercom>
       <Notifications>
