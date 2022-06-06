@@ -3,15 +3,20 @@ import PropTypes from 'prop-types'
 import cx from 'classnames'
 import GoogleAnalytics from 'react-ga'
 import Helmet from 'react-helmet'
+import toReact from 'svelte-adapter/react'
 import { startResponsiveController } from 'webkit/responsive'
+import CookiePopup from 'webkit/ui/CookiesPopup.svelte'
+import Dialogs from 'webkit/ui/Dialog/Dialogs.svelte'
 import Intercom from './Intercom'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import Notifications from './Notifications/Notifications'
-import CookiePopup from './CookiePopup/CookiePopup'
 import './fonts.module.scss'
 import styles from './layout.module.scss'
 import 'webkit/styles/main.css'
+
+const ReactCookiePopup = toReact(CookiePopup, {}, 'div')
+const ReactDialogs = toReact(Dialogs, {}, 'div')
 
 if (typeof window !== 'undefined') {
   startResponsiveController()
@@ -33,8 +38,7 @@ const Layout = ({
   children,
   headerAnimation = false,
   classes = {},
-  headerComponent,
-  isNightMode
+  headerComponent
 }) => {
   return (
     <Intercom>
@@ -44,11 +48,12 @@ const Layout = ({
           {headerComponent || <Header headerAnimation={headerAnimation} />}
           <main className={cx(styles.main, classes.main)}>{children}</main>
           {/*<Delayed waitBeforeShow="1000">*/}
-          <Footer isNightMode={isNightMode} />
+          <Footer />
           {/*</Delayed>*/}
         </div>
       </Notifications>
-      <CookiePopup />
+      <ReactCookiePopup />
+      <ReactDialogs />
     </Intercom>
   )
 }

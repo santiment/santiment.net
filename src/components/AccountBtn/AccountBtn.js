@@ -1,7 +1,6 @@
 import React from 'react'
 import cx from 'classnames'
 import { Query } from 'react-apollo'
-import Button from '@santiment-network/ui/Button'
 import { CURRENT_USER_QUERY } from '../../gql/user'
 import styles from './AccountBtn.module.scss'
 
@@ -16,8 +15,7 @@ const AccountBtn = ({ classes = {} }) => {
           const isLoggedIn = !!currentUser
 
           return (
-            <Button
-              as='a'
+            <a
               target='_blank'
               rel='noopener noreferrer'
               href={
@@ -25,17 +23,15 @@ const AccountBtn = ({ classes = {} }) => {
                   ? 'https://app.santiment.net/'
                   : 'https://app.santiment.net/sign-up'
               }
-              variant={isLoggedIn ? 'flat' : 'fill'}
-              border={isLoggedIn}
-              accent={!isLoggedIn && 'positive'}
               className={cx(
                 styles.button,
-                isLoggedIn && styles.button__loggedIn,
+                'btn-1 row hv-center',
+                isLoggedIn && cx('btn-2', styles.button__loggedIn),
                 classes.btn
               )}
             >
               {isLoggedIn ? 'Go to Sanbase' : 'Get Started'}
-            </Button>
+            </a>
           )
         }}
       </Query>

@@ -25,7 +25,7 @@
   align-items: center;
   gap: 8px;
   margin-bottom: 24px;
-  color: var(--casper);
+  color: #D2D6E7;
 
   @include text("h4", "l");
 
@@ -43,7 +43,7 @@
   width: 5px;
   height: 5px;
   border-radius: 100%;
-  background: var(--casper);
+  background: #D2D6E7;
 
   :global(.phone-xs) &,
   :global(.phone) & {

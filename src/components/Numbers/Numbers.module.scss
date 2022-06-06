@@ -1,0 +1,81 @@
+@import "~@santiment-network/ui/mixins";
+
+.wrapper {
+  max-width: 100%;
+  margin: 0;
+  padding: 140px 0;
+  background-color: #ffffff;
+
+  @include responsive("laptop") {
+    padding: 64px 0;
+  }
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    padding: 64px 16px;
+  }
+}
+
+.content {
+  max-width: 1140px;
+  padding: 64px 68px;
+  background: #f7f8fb;
+  border-radius: 10px;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    max-width: 100%;
+    width: 100%;
+    padding: 64px 44px;
+  }
+}
+
+.numbers {
+  @include grid-wrap(3);
+
+  grid-gap: 48px 88px;
+
+  @include responsive("laptop") {
+    @include grid-wrap(2);
+    grid-gap: 24px 44px;
+  }
+
+  :global(.tablet) & {
+    grid-gap: 24px;
+  }
+
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    @include grid-wrap(1);
+    grid-gap: 16px;
+  }
+}
+
+.item {
+  gap: 8px;
+}
+
+.title {
+  color: #9faac4;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    @include text("body-3", "l");
+  }
+}
+
+.description {
+  font-size: 56px;
+  line-height: 56px;
+  color: #2f354d;
+
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    @include text("h1", "l");
+  }
+}

@@ -1,0 +1,125 @@
+@import "~@santiment-network/ui/mixins.scss";
+
+.wrapper {
+  max-width: 100%;
+  margin: 0;
+  padding: 140px 0;
+  background-color: #f7f8fb;
+
+  @include responsive("laptop") {
+    padding: 64px 0;
+  }
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    padding: 64px 0;
+  }
+}
+
+.content {
+  max-width: 1140px;
+  width: 100%;
+  gap: 140px;
+
+  @include responsive("laptop") {
+    flex-direction: column-reverse;
+    padding: 0 24px;
+    gap: 45px;
+  }
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    flex-direction: column-reverse;
+    padding: 0 16px;
+    gap: 45px;
+  }
+}
+
+.img {
+  width: 700px;
+  margin-right: -90px;
+  margin-left: -90px;
+
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.title {
+  color: #181b2b;
+
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    @include text("body-3", "l");
+  }
+}
+
+.addTitle {
+  color: #181b2b;
+
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    @include text("h4", "l");
+  }
+}
+
+.description {
+  color: #2f354d;
+  margin-bottom: 10px;
+
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    @include text("body-2");
+  }
+}
+
+.asset {
+  color: #14c393;
+}
+
+.block {
+  margin-top: 80px;
+  gap: 50px;
+
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    margin-top: 40px;
+  }
+}
+
+.assetImg {
+  position: absolute;
+  left: -15px;
+  top: -6px;
+  z-index: 0;
+
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    left: -20px;
+    top: -10px;
+  }
+}
+
+.subtitle {
+  z-index: 1;
+  color: #2f354d;
+  margin-bottom: 6px;
+
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    @include text("body-1", "m");
+  }
+}
+
+.subdescription {
+  color: #2f354d;
+
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    @include text("caption");
+  }
+}

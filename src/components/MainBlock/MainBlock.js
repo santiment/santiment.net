@@ -22,7 +22,7 @@ const MainBlock = () => {
           }}
         />
       </div>
-      <img className={styles.img} src={visual} alt='Chart' />
+      <img className={styles.img} src={visual} alt='img' />
     </section>
   )
 }

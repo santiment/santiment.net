@@ -9,7 +9,7 @@ const TrustedBlock = () => (
   <div className={styles.wrapper}>
     <div className={styles.title}>
       <div className={styles.dot} />
-      Trusted by
+      Trusted by 2000+ customers
       <div className={styles.dot} />
     </div>
     <div className={styles.row}>

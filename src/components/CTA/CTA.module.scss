@@ -1,0 +1,206 @@
+@import "~@santiment-network/ui/mixins";
+
+.wrapper {
+  max-width: 100%;
+  margin: 0;
+  padding: 140px 0;
+  background-color: #ffffff;
+
+  @include responsive("laptop") {
+    padding: 64px 0;
+  }
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    padding: 64px 0 0;
+  }
+}
+
+.content {
+  max-width: 1140px;
+  width: 100%;
+
+  @include responsive("laptop") {
+    padding: 0 24px;
+  }
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    flex-direction: column-reverse;
+    padding: 0 16px;
+  }
+}
+
+.leftBlockWrapper {
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    margin-right: -16px;
+    background-color: #f7f8fb;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.leftBlock {
+  max-width: 380px;
+  margin-right: 230px;
+
+  @include responsive("laptop") {
+    margin-right: 64px;
+  }
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    max-width: 328px;
+    margin-right: 0;
+    padding: 48px 16px;
+    align-items: center;
+  }
+}
+
+.rightBlock {
+  gap: 45px;
+  height: 174px;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    margin-bottom: 48px;
+  }
+}
+
+.title {
+  color: #2f354d;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    @include text("h4", "l");
+  }
+}
+
+.description {
+  color: #505573;
+  margin-bottom: 38px;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    @include text("body-2");
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.btn {
+  height: 40px;
+  max-width: 196px;
+  border-radius: 6px;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    max-width: 100%;
+  }
+}
+
+.btnWrapper {
+  margin-left: 0;
+  display: block !important;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    width: 100%;
+  }
+}
+
+.img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #2f354d;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    @include text("body-1", "l");
+  }
+}
+
+.subdescription {
+  color: #505573;
+  margin-bottom: 10px;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    @include text("body-3", "m");
+    text-align: center;
+  }
+}
+
+.arrowBtn {
+  max-width: 121px;
+  height: 32px;
+  --color: #14c393;
+  --color-hover: #1fac85;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    @include text("body-3", "m");
+  }
+}
+
+.divider {
+  width: 1px;
+  height: 100%;
+  background: #e7eaf3;
+  border-radius: 1px;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    width: 219px;
+    height: 1px;
+  }
+}
+
+.leftLink {
+  max-width: 214px;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 324px;
+  }
+}
+
+.rightLink {
+  max-width: 219px;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 324px;
+  }
+}
