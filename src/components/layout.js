@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import cx from 'classnames'
 import GoogleAnalytics from 'react-ga'
 import Helmet from 'react-helmet'
 import toReact from 'svelte-adapter/react'
+import { track } from 'webkit/analytics'
+import { initTwitterPixel } from 'webkit/analytics/twitter'
 import { startResponsiveController } from 'webkit/responsive'
 import CookiePopup from 'webkit/ui/CookiesPopup.svelte'
 import Dialogs from 'webkit/ui/Dialog/Dialogs.svelte'
@@ -40,6 +42,11 @@ const Layout = ({
   classes = {},
   headerComponent
 }) => {
+  useEffect(() => {
+    initTwitterPixel()
+    track.pageview('santiment.net')
+  }, [])
+
   return (
     <Intercom>
       <Notifications>
