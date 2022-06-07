@@ -79,6 +79,10 @@
 
 .asset {
   color: #14c393;
+
+  &:hover {
+    color: #1fac85;
+  }
 }
 
 .block {
