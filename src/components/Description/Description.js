@@ -19,13 +19,61 @@ const Description = () => (
         </div>
         <div className={cx(styles.description, 'body-1')}>
           We bring together everything that you can use to make your next
-          action. Datasets, <span className={styles.asset}>screeners</span>,{' '}
-          <span className={styles.asset}>watchlists</span>,{' '}
-          <span className={styles.asset}>alerts</span>, flexible{' '}
-          <span className={styles.asset}>chart layouts</span>,{' '}
-          <span className={styles.asset}>dashboards</span>,{' '}
-          <span className={styles.asset}>insights</span> from the community and
-          the San analytics team.
+          action. Datasets,{' '}
+          <a
+            rel='noopener noreferrer'
+            target='_blank'
+            href='https://app.santiment.net/screener/new'
+            className={styles.asset}
+          >
+            screeners
+          </a>
+          ,{' '}
+          <a
+            rel='noopener noreferrer'
+            target='_blank'
+            href='https://app.santiment.net/watchlists'
+            className={styles.asset}
+          >
+            watchlists
+          </a>
+          ,{' '}
+          <a
+            rel='noopener noreferrer'
+            target='_blank'
+            href='https://app.santiment.net/alerts'
+            className={styles.asset}
+          >
+            alerts
+          </a>
+          , flexible{' '}
+          <a
+            rel='noopener noreferrer'
+            target='_blank'
+            href='https://app.santiment.net/charts'
+            className={styles.asset}
+          >
+            chart layouts
+          </a>
+          ,{' '}
+          <a
+            rel='noopener noreferrer'
+            target='_blank'
+            href='https://app.santiment.net/dashboards'
+            className={styles.asset}
+          >
+            dashboards
+          </a>
+          ,{' '}
+          <a
+            rel='noopener noreferrer'
+            target='_blank'
+            href='https://insights.santiment.net/'
+            className={styles.asset}
+          >
+            insights
+          </a>{' '}
+          from the community and the San analytics team.
         </div>
         <div className={cx(styles.description, 'body-1')}>
           Since 2016, Santiment has produced a platform to research crypto data
