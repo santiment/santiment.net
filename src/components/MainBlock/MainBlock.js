@@ -12,8 +12,9 @@ const MainBlock = () => {
           Introducing Crypto & NFT Visual Explorer
         </div>
         <div className={cx(styles.description, 'h4')}>
-          On-Chain data, social media and sentiment analysis tools for the
-          crypto and NFT market
+          Santiment makes powerful OnChain, Social & Financial analysis
+          accessible to anyone. Interactive reports let you query crypto market
+          data with only a few clicks, then see visualisations in seconds.
         </div>
         <AccountBtn
           classes={{
@@ -22,7 +23,7 @@ const MainBlock = () => {
           }}
         />
       </div>
-      <img className={styles.img} src={visual} alt='Chart' />
+      <img className={styles.img} src={visual} alt='img' />
     </section>
   )
 }

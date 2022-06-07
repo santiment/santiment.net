@@ -1,10 +1,10 @@
 @import "~@santiment-network/ui/mixins.scss";
 
 .wrapper {
-  max-width: 100%;
+  max-width: 1140px;
   margin-top: 108px;
   margin-bottom: 124px;
-  column-gap: 90px;
+  column-gap: 144px;
 
   @include responsive("desktop", "laptop", "tablet") {
     animation-name: shiftUp;
@@ -14,9 +14,15 @@
     animation-fill-mode: both;
   }
 
+  @include responsive("laptop") {
+    padding: 0 24px;
+    column-gap: 114px;
+    justify-content: space-between;
+  }
+
+  :global(.tablet) &,
   :global(.phone-xs) &,
-  :global(.phone) &,
-  :global(.tablet) & {
+  :global(.phone) & {
     flex-direction: column;
     row-gap: 64px;
     margin-top: 48px;
@@ -68,11 +74,22 @@
 }
 
 .img {
-  max-width: 632px;
+  width: 632px;
+  height: 328px;
+  margin-right: -50px;
+  margin-left: -50px;
+
+  @include responsive("laptop") {
+    width: 400px;
+    height: auto;
+    margin-right: 0;
+  }
 
   :global(.phone-xs) &,
   :global(.phone) & {
-    max-width: calc(100% + 20px);
+    width: 100%;
+    height: auto;
+    margin: 0;
   }
 }
 

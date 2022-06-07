@@ -3,8 +3,12 @@ import Layout from '../components/layout'
 import LPHeader from '../components/LPHeader/LPHeader'
 import MainBlock from '../components/MainBlock/MainBlock'
 import TrustedBlock from '../components/TrustedBlock/TrustedBlock'
+import Numbers from '../components/Numbers/Numbers'
+import Twitter from '../components/Twitter/Twitter'
 import SEO from '../components/seo'
 import styles from './index.module.scss'
+import Cta from '../components/CTA/CTA'
+import Description from '../components/Description/Description'
 
 const Index = ({ location }) => {
   const isNightMode = location.pathname === '/'
@@ -27,13 +31,19 @@ const Index = ({ location }) => {
 
   return (
     <Layout
-      isNightMode={isNightMode}
       headerComponent={<LPHeader headerAnimation />}
-      classes={styles}
+      classes={{
+        wrapper: 'column justify',
+        main: styles.main
+      }}
     >
       <SEO title='Santiment - See what other crypto traders are missing' />
       <MainBlock />
       <TrustedBlock />
+      <Description />
+      <Numbers />
+      <Twitter />
+      <Cta />
     </Layout>
   )
 }

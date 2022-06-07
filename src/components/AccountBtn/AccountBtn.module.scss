@@ -1,20 +1,21 @@
-@import '~@santiment-network/ui/mixins';
+@import "~@santiment-network/ui/mixins";
 
 .wrapper {
   margin-left: auto;
 
-  @include responsive('phone-xs', 'phone') {
+  @include responsive("phone-xs", "phone") {
     display: none;
   }
 }
 
 .button {
-  min-width:103px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-width: 110px;
 
   &__loggedIn {
-    min-width: 143px;
+    ---border: var(--green) !important;
+    --color: var(--green) !important;
+    --color-hover: var(--green-hover) !important;
+
+    min-width: 131px;
   }
 }

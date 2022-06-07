@@ -1,0 +1,73 @@
+@import "~@santiment-network/ui/mixins";
+
+.wrapper {
+  max-width: 100%;
+  margin: 0;
+  padding: 140px 0;
+  background-color: #f7f8fb;
+
+  @include responsive("laptop") {
+    padding: 64px 0;
+  }
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    padding: 64px 0;
+  }
+}
+
+.title {
+  margin-bottom: 40px;
+  color: #181b2b;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    @include text("h4", "l");
+
+    padding: 0 16px;
+    margin-bottom: 32px;
+  }
+}
+
+.scroller {
+  height: 400px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 32px;
+}
+
+.tweets {
+  animation-name: moving;
+  animation-duration: var(--time, 30s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  animation-play-state: running;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+
+  @include responsive("tablet") {
+    animation-duration: calc(var(--time, 30s) * 1.5);
+  }
+
+  @include responsive("phone", "phone-xs") {
+    animation-duration: calc(var(--time, 30s) * 2);
+  }
+}
+
+@keyframes moving {
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
