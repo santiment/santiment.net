@@ -26,6 +26,7 @@ if (typeof window !== 'undefined') {
 
 if (process.env.NODE_ENV === 'production') {
   GoogleAnalytics.initialize('UA-100571693-8')
+  initTwitterPixel()
 } else {
   GoogleAnalytics.initialize('UA-100571693-8', { testMode: true })
 }
@@ -43,7 +44,6 @@ const Layout = ({
   headerComponent
 }) => {
   useEffect(() => {
-    initTwitterPixel()
     track.pageview('santiment.net')
   }, [])
 

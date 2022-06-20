@@ -40,9 +40,9 @@
     "react-slick": "^0.24.0",
     "react-transition-group": "^4.1.1",
     "svelte-preprocess-cssmodules": "https://github.com/DmitriVanGuard/svelte-preprocess-cssmodules#3b24f22",
-    "san-webkit": "https://github.com/santiment/san-webkit.git#c180cef",
-    "san-studio": "https://github.com/santiment/san-studio.git#4e61095",
-    "sanbase": "https://github.com/santiment/app.git#f89dc37",
+    "san-webkit": "https://github.com/santiment/san-webkit.git#e580c3c",
+    "san-studio": "https://github.com/santiment/san-studio.git#2006c70",
+    "sanbase": "https://github.com/santiment/app.git#575a058",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
