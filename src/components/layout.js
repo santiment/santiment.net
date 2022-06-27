@@ -24,6 +24,10 @@ if (typeof window !== 'undefined') {
   startResponsiveController()
 }
 
+if(typeof document !== 'undefined') {
+    initTwitterPixel()
+}
+
 if (process.env.NODE_ENV === 'production') {
   GoogleAnalytics.initialize('UA-100571693-8')
   initTwitterPixel()
