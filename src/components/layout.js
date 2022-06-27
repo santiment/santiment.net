@@ -22,10 +22,7 @@ const ReactDialogs = toReact(Dialogs, {}, 'div')
 
 if (typeof window !== 'undefined') {
   startResponsiveController()
-}
-
-if(typeof document !== 'undefined') {
-    initTwitterPixel()
+  initTwitterPixel()
 }
 
 if (process.env.NODE_ENV === 'production') {
