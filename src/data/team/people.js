@@ -28,6 +28,7 @@ import Tzanko from './images/Tzanko.png'
 import Vassil from './images/Vassil.png'
 import Vlad from './images/Vlad.png'
 import VladV from './images/VladV.png'
+import VladimirT from './images/VladimirT.png'
 import Yordan from './images/Yordan.png'
 import Yura from './images/Yura.png'
 
@@ -393,6 +394,15 @@ export const PEOPLE = [
       linkedin: 'https://www.linkedin.com/in/larry-cao-78887012b/',
       github: 'https://github.com/createMonster'
     }
+  },
+  {
+    name: 'Vladimir Terentev',
+    position: 'DeFi Analyst',
+    img: VladimirT,
+    group: GROUPS.RESEARCH,
+    description:
+      'Vladimir has an innate passion for researching and mastering any objective falls into his hands. Both BS and MS degrees in Computer Forensic gave him an extraordinary groundwork for his natural desire of dissecting digital world. His last professional mission was developing tools for cyber investigators and making their routine easy and smooth leveraging terabytes of unstructured data. Passionate about OSINT, stocks and crypto markets. Enjoys inventing ideas and implementing them.',
+    links: {}
   },
   {
     name: 'Nail Khafizov',
