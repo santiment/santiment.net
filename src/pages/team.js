@@ -15,7 +15,7 @@ PEOPLE.forEach(item => {
     : [item]
 })
 
-const TeamPage = ({ intl }) => (
+const TeamPage = () => (
   <Layout>
     <SEO
       title='Santiment Team'
