@@ -82,17 +82,29 @@ const Description = () => (
         </div>
         <div className={cx(styles.block, 'row hv-center')}>
           <div className='column hv-center relative'>
-            <img src={backGreen} alt='img' className={styles.assetImg} />
+            <img
+              src={backGreen}
+              alt='img'
+              className={cx(styles.assetImg, styles.first)}
+            />
             <div className={cx(styles.subtitle, 'h4')}>Financial</div>
             <div className={cx(styles.subdescription, 'body-2')}>datasets</div>
           </div>
           <div className='column hv-center relative'>
-            <img src={backYellow} alt='img' className={styles.assetImg} />
+            <img
+              src={backYellow}
+              alt='img'
+              className={cx(styles.assetImg, styles.second)}
+            />
             <div className={cx(styles.subtitle, 'h4')}>On-chain</div>
             <div className={cx(styles.subdescription, 'body-2')}>datasets</div>
           </div>
           <div className='column hv-center relative'>
-            <img src={backGrey} alt='img' className={styles.assetImg} />
+            <img
+              src={backGrey}
+              alt='img'
+              className={cx(styles.assetImg, styles.third)}
+            />
             <div className={cx(styles.subtitle, 'h4')}>Social</div>
             <div className={cx(styles.subdescription, 'body-2')}>datasets</div>
           </div>

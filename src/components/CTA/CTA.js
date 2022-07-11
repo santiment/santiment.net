@@ -41,7 +41,7 @@ const Cta = () => (
             target='_blank'
             rel='noopener noreferrer'
             href='https://app.santiment.net/pricing'
-            className={cx('btn txt-b row v-center', styles.arrowBtn)}
+            className={cx('btn txt-m row v-center', styles.arrowBtn)}
           >
             See our plans <img src={arrow} alt='Img' className='mrg--l mrg-s' />
           </a>
@@ -60,9 +60,9 @@ const Cta = () => (
             target='_blank'
             rel='noopener noreferrer'
             href='https://api.santiment.net/'
-            className={cx('btn txt-b row v-center', styles.arrowBtn)}
+            className={cx('btn txt-m row v-center', styles.arrowBtn)}
           >
-            Explore our API{' '}
+            Explore our API
             <img src={arrow} alt='Img' className='mrg--l mrg-s' />
           </a>
         </div>

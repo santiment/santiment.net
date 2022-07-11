@@ -6,9 +6,10 @@ import TrustedBlock from '../components/TrustedBlock/TrustedBlock'
 import Numbers from '../components/Numbers/Numbers'
 import Twitter from '../components/Twitter/Twitter'
 import SEO from '../components/seo'
-import styles from './index.module.scss'
 import Cta from '../components/CTA/CTA'
 import Description from '../components/Description/Description'
+import About from '../components/About/About'
+import styles from './index.module.scss'
 
 const Index = ({ location }) => {
   const isNightMode = location.pathname === '/'
@@ -42,6 +43,7 @@ const Index = ({ location }) => {
       <TrustedBlock />
       <Description />
       <Numbers />
+      <About />
       <Twitter />
       <Cta />
     </Layout>

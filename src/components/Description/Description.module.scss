@@ -3,7 +3,7 @@
 .wrapper {
   max-width: 100%;
   margin: 0;
-  padding: 140px 0;
+  padding: 160px 0;
   background-color: #f7f8fb;
 
   @include responsive("laptop") {
@@ -50,7 +50,7 @@
 }
 
 .title {
-  color: #181b2b;
+  color: #505573;
 
   :global(.phone-xs) &,
   :global(.phone) & {
@@ -59,7 +59,7 @@
 }
 
 .addTitle {
-  color: #181b2b;
+  color: #2f354d;
 
   :global(.phone-xs) &,
   :global(.phone) & {
@@ -81,6 +81,7 @@
   color: #14c393;
 
   &:hover {
+    text-decoration: underline;
     color: #1fac85;
   }
 }
@@ -97,9 +98,40 @@
 
 .assetImg {
   position: absolute;
-  left: -15px;
-  top: -6px;
   z-index: 0;
+}
+
+.first {
+  width: 47px;
+  height: 42px;
+  left: -12px;
+  top: -6px;
+
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    left: -20px;
+    top: -10px;
+  }
+}
+
+.second {
+  width: 50px;
+  height: 44px;
+  left: -10px;
+  top: -10px;
+
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    left: -20px;
+    top: -10px;
+  }
+}
+
+.third {
+  width: 56px;
+  height: 44px;
+  left: -16px;
+  top: -10px;
 
   :global(.phone-xs) &,
   :global(.phone) & {
@@ -111,7 +143,7 @@
 .subtitle {
   z-index: 1;
   color: #2f354d;
-  margin-bottom: 6px;
+  margin-bottom: 2px;
 
   :global(.phone-xs) &,
   :global(.phone) & {
@@ -120,7 +152,7 @@
 }
 
 .subdescription {
-  color: #2f354d;
+  color: #505573;
 
   :global(.phone-xs) &,
   :global(.phone) & {

@@ -3,7 +3,7 @@
 .wrapper {
   max-width: 100%;
   margin: 0;
-  padding: 140px 0;
+  padding: 160px 0;
   background-color: #ffffff;
 
   @include responsive("laptop") {
@@ -66,7 +66,6 @@
 
 .rightBlock {
   gap: 45px;
-  height: 174px;
 
   :global(.tablet) &,
   :global(.phone-xs) &,
@@ -91,7 +90,7 @@
 
 .description {
   color: #505573;
-  margin-bottom: 38px;
+  margin-bottom: 32px;
 
   :global(.tablet) &,
   :global(.phone-xs) &,
@@ -126,8 +125,9 @@
 }
 
 .img {
-  width: 40px;
-  margin-bottom: 10px;
+  width: 44px;
+  height: 38px;
+  margin-bottom: 14px;
 }
 
 .subtitle {
@@ -158,6 +158,10 @@
   --color: #14c393;
   --color-hover: #1fac85;
 
+  &:hover {
+    text-decoration: underline;
+  }
+
   :global(.tablet) &,
   :global(.phone-xs) &,
   :global(.phone) & {
@@ -167,7 +171,6 @@
 
 .divider {
   width: 1px;
-  height: 100%;
   background: #e7eaf3;
   border-radius: 1px;
 
@@ -180,7 +183,8 @@
 }
 
 .leftLink {
-  max-width: 214px;
+  max-width: 219px;
+  width: 100%;
 
   :global(.tablet) &,
   :global(.phone-xs) &,
@@ -194,6 +198,7 @@
 
 .rightLink {
   max-width: 219px;
+  width: 100%;
 
   :global(.tablet) &,
   :global(.phone-xs) &,
