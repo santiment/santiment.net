@@ -30,7 +30,6 @@ import Vlad from './images/Vlad.png'
 import VladV from './images/VladV.png'
 import VladimirT from './images/VladimirT.png'
 import Yordan from './images/Yordan.png'
-import Yura from './images/Yura.png'
 
 export const GROUPS = {
   CORE: 'Core team',
@@ -55,18 +54,6 @@ export const PEOPLE = [
       sanbase: 'https://app.santiment.net/profile/836',
       twitter: 'https://twitter.com/balance_ra',
       linkedin: 'https://www.linkedin.com/in/maksim-balashevich-640a8948/'
-    }
-  },
-  {
-    name: 'Yura Zatsepin',
-    img: Yura,
-    position: 'CPO',
-    group: GROUPS.CORE,
-    description:
-      'He’s developed a guitar education service, online payment services for banks, and MMO mobile/flash games and extensions for purchase. He also won first place in 2 hackathons (Gazprom, QIWI) and got special prizes from Evernote. He now wants to turn his passion for building great applications toward the crypto world.',
-    links: {
-      sanbase: 'https://app.santiment.net/profile/120',
-      github: 'https://github.com/Partysun'
     }
   },
   {
