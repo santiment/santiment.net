@@ -27,7 +27,7 @@ export default {
     features: [
       'Personal asset watchlists',
       'Curated market data feed',
-      '20+ on-chain, social & dev metrics',
+      'On-chain, Social & Development metrics - full historical and present-day data',
       'Low-latency market signals and alerts',
       'Sansheets plugin with pre-made templates'
     ]
