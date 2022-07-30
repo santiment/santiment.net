@@ -5,6 +5,7 @@
   margin: 0;
   padding: 160px 0;
   background-color: #f7f8fb;
+  overflow-x: hidden;
 
   @include responsive("laptop") {
     padding: 64px 0;

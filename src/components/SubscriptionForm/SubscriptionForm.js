@@ -4,7 +4,6 @@ import Button from '@santiment-network/ui/Button'
 import Input from '@santiment-network/ui/Input'
 import Label from '@santiment-network/ui/Label'
 import Icon from '@santiment-network/ui/Icon'
-import { Checkbox } from '@santiment-network/ui/Checkboxes'
 import debounce from 'lodash.debounce'
 import styles from './SubscriptionForm.module.scss'
 
@@ -14,12 +13,10 @@ const SubscriptionForm = ({
   loading,
   send,
   add,
-  showCheckbox = false,
   classes = {}
 }) => {
   const [error, setError] = useState(false)
   const [email, setEmail] = useState()
-  const [hasSubscribed, setHasSubscribed] = useState(true)
 
   const onEmailChange = ({ currentTarget: { value } }) => {
     setEmail(value)
@@ -54,7 +51,7 @@ const SubscriptionForm = ({
         e.preventDefault()
         window.gtag('event', 'sign_up')
         send({
-          variables: { email, subscribeToWeeklyNewsletter: hasSubscribed }
+          variables: { email, subscribeToWeeklyNewsletter: true }
         }).then(() => {
           add({
             type: 'success',
@@ -75,21 +72,6 @@ const SubscriptionForm = ({
         <Label accent='persimmon' className={styles.formError}>
           {error}
         </Label>
-      )}
-      {showCheckbox && (
-        <div
-          className={styles.checkBlock}
-          onClick={() => setHasSubscribed(!hasSubscribed)}
-        >
-          <Checkbox
-            isActive={hasSubscribed}
-            className={styles.checkbox}
-            disabled={!email}
-          />
-          <div className={cx(styles.subscriptionLabel)}>
-            Send me weekly updates from crypto market
-          </div>
-        </div>
       )}
       <Button
         {...buttonProps}

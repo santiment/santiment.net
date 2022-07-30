@@ -13,7 +13,7 @@ const Header = ({
   intl,
   headerAnimation,
   logo = mainLogo,
-  className = 'body-2'
+  className = 'body-3'
 }) => {
   const toggle = useRef(null)
 
