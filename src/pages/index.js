@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Device, responsive$ } from 'webkit/responsive'
+import { IsMobile } from 'webkit/stores/responsive'
 import Layout from '../components/layout'
 import LPHeader from '../components/LPHeader/LPHeader'
 import MainBlock from '../components/MainBlock/MainBlock'
@@ -18,9 +18,7 @@ const Index = ({ location }) => {
   const isNightMode = location.pathname === '/'
 
   useEffect(() => {
-    return responsive$.subscribe(device => {
-      setIsMobile(device !== Device.Desktop)
-    })
+    return IsMobile.subscribe(value => setIsMobile(value))
   }, [])
 
   useEffect(() => {
@@ -32,8 +30,10 @@ const Index = ({ location }) => {
       document.body.classList.add('night-mode')
     }
 
-    if (!isMobile) {
-      document.getElementById('___gatsby').style.overflowX = 'visible'
+    const rootElement = document.getElementById('___gatsby')
+
+    if (!isMobile && rootElement) {
+      rootElement.style.overflowX = 'visible'
     }
 
     return () => {
@@ -41,8 +41,8 @@ const Index = ({ location }) => {
         document.body.classList.remove('night-mode')
       }
 
-      if (!isMobile) {
-        document.getElementById('___gatsby').style.overflowX = 'hidden'
+      if (!isMobile && rootElement) {
+        rootElement.style.overflowX = 'hidden'
       }
     }
   }, [location])

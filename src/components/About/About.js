@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import cx from 'classnames'
-import { Device, responsive$ } from 'webkit/responsive'
+import { IsMobile } from 'webkit/stores/responsive'
 import CtaDesktop from './CtaDesktop/CtaDesktop'
 import alien from './images/alien.svg'
 import leftPuzzle from './images/left-puzzle.svg'
@@ -16,9 +16,7 @@ const About = () => {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    return responsive$.subscribe(device => {
-      setIsMobile(device !== Device.Desktop)
-    })
+    return IsMobile.subscribe(value => setIsMobile(value))
   }, [])
 
   return (
