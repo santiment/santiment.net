@@ -41,7 +41,7 @@ export const categories = [
       {
         children: 'trends',
         name: 'Social trends',
-        href: 'https://app.santiment.net/labs/trends'
+        href: 'https://app.santiment.net/dashboards/labs/trends'
       },
       {
         children: 'balance',

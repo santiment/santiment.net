@@ -1,5 +1,5 @@
-@import '~@santiment-network/ui/mixins.scss';
-@import '~@santiment-network/ui/variables.scss';
+@import "~@santiment-network/ui/mixins.scss";
+@import "~@santiment-network/ui/variables.scss";
 
 .header {
   background: var(--white);
@@ -12,7 +12,7 @@
 }
 
 .headerAnimation {
-  @include responsive('desktop', 'laptop', 'tablet') {
+  @include responsive("desktop", "laptop", "tablet") {
     animation-name: shiftDown;
     animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
     animation-duration: 0.8s;
@@ -29,11 +29,11 @@
   max-width: 1140px;
   margin: 0 auto;
 
-  @include responsive('tablet', 'laptop') {
+  @include responsive("laptop") {
     padding: 0 24px;
   }
 
-  @include responsive('phone', 'phone-xs') {
+  @include responsive("phone", "phone-xs", "tablet") {
     height: 56px;
     width: 100%;
     padding: 18px 16px;
@@ -65,8 +65,8 @@
   display: none;
 }
 
-:global([for='hamburger']) {
-  @include responsive('desktop', 'laptop', 'tablet') {
+:global([for="hamburger"]) {
+  @include responsive("desktop", "laptop") {
     display: none;
   }
 }
@@ -87,7 +87,7 @@
   align-items: center;
   width: 100%;
 
-  @include responsive('phone', 'phone-xs') {
+  @include responsive("phone", "phone-xs", "tablet") {
     display: none;
     position: fixed;
     z-index: 10;
@@ -123,7 +123,7 @@
     }
   }
 
-  @include responsive('phone', 'phone-xs') {
+  @include responsive("phone", "phone-xs", "tablet") {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 20px;
@@ -132,7 +132,7 @@
 }
 
 .link + .link {
-  @include responsive('phone', 'phone-xs') {
+  @include responsive("phone", "phone-xs", "tablet") {
     margin-left: 16px;
   }
 }
@@ -140,7 +140,7 @@
 .linkLast {
   margin-right: 6px;
 
-  @include responsive('phone', 'phone-xs') {
+  @include responsive("phone", "phone-xs", "tablet") {
     margin-right: 0;
   }
 }
@@ -156,7 +156,7 @@
   border-left: 1px solid var(--porcelain);
   margin: 0 12px 0 24px;
 
-  @include responsive('phone', 'phone-xs') {
+  @include responsive("phone", "phone-xs", "tablet") {
     display: none;
   }
 }
@@ -174,7 +174,7 @@
 
 .productName {
   margin: 0 3px 0 8px;
-  @include text('body-2', 'm');
+  @include text("body-2", "m");
 
   color: $rhino;
 }

@@ -9,10 +9,12 @@ import SEO from '../components/seo'
 import Cta from '../components/CTA/CTA'
 import Description from '../components/Description/Description'
 import About from '../components/About/About'
+import { useIsMobile } from '../hooks/responsive'
 import styles from './index.module.scss'
 
 const Index = ({ location }) => {
   const isNightMode = location.pathname === '/'
+  const { isMobile } = useIsMobile()
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -23,9 +25,19 @@ const Index = ({ location }) => {
       document.body.classList.add('night-mode')
     }
 
+    const rootElement = document.getElementById('___gatsby')
+
+    if (!isMobile && rootElement) {
+      rootElement.style.overflowX = 'visible'
+    }
+
     return () => {
       if (isNightMode) {
         document.body.classList.remove('night-mode')
+      }
+
+      if (!isMobile && rootElement) {
+        rootElement.style.overflowX = 'hidden'
       }
     }
   }, [location])

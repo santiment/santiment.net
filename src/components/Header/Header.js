@@ -4,7 +4,6 @@ import Icon from '@santiment-network/ui/Icon'
 import { injectIntl, Link } from 'gatsby-plugin-intl'
 import { tr } from '../../utils/translate'
 import mainLogo from './../../images/logos/santiment.svg'
-
 import Products from './Products'
 import AccountBtn from '../AccountBtn/AccountBtn'
 import styles from './Header.module.scss'
@@ -13,7 +12,7 @@ const Header = ({
   intl,
   headerAnimation,
   logo = mainLogo,
-  className = 'body-2'
+  className = 'body-3'
 }) => {
   const toggle = useRef(null)
 

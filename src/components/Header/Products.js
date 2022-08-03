@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import cx from 'classnames'
 import Svg from 'webkit/ui/Svg/react'
 import ProductsDropdown from 'webkit/ui/Products/react'
 import SvelteProductList from 'webkit/ui/Products/Products.svelte'
-import { Device, responsive$ } from 'webkit/responsive'
+import { useIsMobile } from '../../hooks/responsive'
 import styles from './Products.module.scss'
 
 const MobileProducts = () => {
@@ -26,13 +26,7 @@ const MobileProducts = () => {
 }
 
 const Products = () => {
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    return responsive$.subscribe(device => {
-      setIsMobile(device === Device.Phone || device === Device.PhoneXs)
-    })
-  }, [])
+  const { isMobile } = useIsMobile()
 
   if (isMobile) return <MobileProducts />
 
