@@ -3,7 +3,7 @@
 .wrapper {
   margin-left: auto;
 
-  @include responsive("phone-xs", "phone") {
+  @include responsive("phone-xs", "phone", "tablet") {
     display: none;
   }
 }

@@ -4,7 +4,6 @@ import Icon from '@santiment-network/ui/Icon'
 import { injectIntl, Link } from 'gatsby-plugin-intl'
 import { tr } from '../../utils/translate'
 import mainLogo from './../../images/logos/santiment.svg'
-
 import Products from './Products'
 import AccountBtn from '../AccountBtn/AccountBtn'
 import styles from './Header.module.scss'

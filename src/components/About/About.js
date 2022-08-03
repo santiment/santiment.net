@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import cx from 'classnames'
-import { IsMobile } from 'webkit/stores/responsive'
 import CtaDesktop from './CtaDesktop/CtaDesktop'
+import { useIsMobile } from '../../hooks/responsive'
 import alien from './images/alien.svg'
 import leftPuzzle from './images/left-puzzle.svg'
 import rightPuzzle from './images/right-puzzle.svg'
@@ -13,11 +13,7 @@ import arrow from './images/arrow.svg'
 import styles from './About.module.scss'
 
 const About = () => {
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    return IsMobile.subscribe(value => setIsMobile(value))
-  }, [])
+  const { isMobile } = useIsMobile()
 
   return (
     <div className={cx(styles.wrapper, 'row hv-center')}>

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import { IsMobile } from 'webkit/stores/responsive'
+import React, { useEffect } from 'react'
 import Layout from '../components/layout'
 import LPHeader from '../components/LPHeader/LPHeader'
 import MainBlock from '../components/MainBlock/MainBlock'
@@ -10,16 +9,12 @@ import SEO from '../components/seo'
 import Cta from '../components/CTA/CTA'
 import Description from '../components/Description/Description'
 import About from '../components/About/About'
+import { useIsMobile } from '../hooks/responsive'
 import styles from './index.module.scss'
 
 const Index = ({ location }) => {
-  const [isMobile, setIsMobile] = useState(false)
-
   const isNightMode = location.pathname === '/'
-
-  useEffect(() => {
-    return IsMobile.subscribe(value => setIsMobile(value))
-  }, [])
+  const { isMobile } = useIsMobile()
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
