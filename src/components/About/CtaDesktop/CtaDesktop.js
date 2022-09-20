@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useState } from 'react'
 import cx from 'classnames'
-import arrow from '../images/arrow.svg'
+import ReactLinkPointer from '../../LinkPointer'
 import first from '../images/1.png'
 import second from '../images/2.png'
 import third from '../images/3.png'
@@ -57,15 +57,7 @@ const CtaDesktop = () => {
             >
               Take a look at crypto market social trends and sentiment charts
             </div>
-            <a
-              target='_blank'
-              rel='noopener noreferrer'
-              href='https://app.santiment.net/s/1PcSbMgY'
-              className={cx('btn body-2 row v-center', styles.arrowBtn)}
-            >
-              Get to know social trends
-              <img src={arrow} alt='Img' className='mrg--l mrg-s' />
-            </a>
+            <ReactLinkPointer class="body-2" label="Get to know social trends" href="https://app.santiment.net/s/1PcSbMgY" target='_blank' rel='noopener noreferrer' />
           </div>
         </div>
         <div className={cx(styles.ctaBlockWrapper, 'column h-center')}>
@@ -84,15 +76,7 @@ const CtaDesktop = () => {
               Study aggregate investor behaviors as price moves to/from their
               cost basis
             </div>
-            <a
-              target='_blank'
-              rel='noopener noreferrer'
-              href='https://app.santiment.net/s/ybwyoqGG'
-              className={cx('btn body-2 row v-center', styles.arrowBtn)}
-            >
-              Track market movements
-              <img src={arrow} alt='Img' className='mrg--l mrg-s' />
-            </a>
+            <ReactLinkPointer class="body-2" label="Track market movements" href="https://app.santiment.net/s/ybwyoqGG" target='_blank' rel='noopener noreferrer' />
           </div>
         </div>
         <div className={cx(styles.ctaBlockWrapper, 'column h-center')}>
@@ -111,15 +95,7 @@ const CtaDesktop = () => {
               See asset holder distribution, top holders, and whales transaction
               tracking tools
             </div>
-            <a
-              target='_blank'
-              rel='noopener noreferrer'
-              href='https://app.santiment.net/s/czuEB2R6'
-              className={cx('btn body-2 row v-center', styles.arrowBtn)}
-            >
-              Investigate whales activities
-              <img src={arrow} alt='Img' className='mrg--l mrg-s' />
-            </a>
+            <ReactLinkPointer class="body-2" label="Investigate whales activities" href="https://app.santiment.net/s/czuEB2R6" target='_blank' rel='noopener noreferrer' />
           </div>
         </div>
         <div className={cx(styles.ctaBlockWrapper, 'column h-center')}>
@@ -137,15 +113,7 @@ const CtaDesktop = () => {
             >
               Get to know how often people are mentioning your NFT Collection
             </div>
-            <a
-              target='_blank'
-              rel='noopener noreferrer'
-              href='https://app.santiment.net/s/QGPJ95dm'
-              className={cx('btn body-2 row v-center', styles.arrowBtn)}
-            >
-              Check NFT collections
-              <img src={arrow} alt='Img' className='mrg--l mrg-s' />
-            </a>
+            <ReactLinkPointer class="body-2" label="Check NFT collections" href="https://app.santiment.net/s/QGPJ95dm" target='_blank' rel='noopener noreferrer' />
           </div>
         </div>
       </div>

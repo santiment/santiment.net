@@ -40,7 +40,7 @@ const Index = ({ location }) => {
         rootElement.style.overflowX = 'hidden'
       }
     }
-  }, [location])
+  }, [location, isMobile, isNightMode])
 
   return (
     <Layout

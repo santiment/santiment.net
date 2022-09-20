@@ -1,9 +1,9 @@
 import React from 'react'
 import cx from 'classnames'
+import ReactLinkPointer from '../LinkPointer'
 import AccountBtn from '../AccountBtn/AccountBtn'
 import coin from './images/coin.svg'
 import block from './images/block.svg'
-import arrow from './images/arrow.svg'
 import styles from './CTA.module.scss'
 
 const Cta = () => (
@@ -37,14 +37,7 @@ const Cta = () => (
             Get the most out of our advanced metrics and access the private
             community
           </div>
-          <a
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://app.santiment.net/pricing'
-            className={cx('btn txt-m row v-center', styles.arrowBtn)}
-          >
-            See our plans <img src={arrow} alt='Img' className='mrg--l mrg-s' />
-          </a>
+          <ReactLinkPointer class="txt-m" label="See our plans" target='_blank' rel='noopener noreferrer' href='https://app.santiment.net/pricing' />
         </div>
         <div className={styles.divider} />
         <div className={styles.rightLink}>
@@ -56,15 +49,7 @@ const Cta = () => (
             Integrate our social, on-chain and financial datasets with your data
             lake or quant pipeline
           </div>
-          <a
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://api.santiment.net/'
-            className={cx('btn txt-m row v-center', styles.arrowBtn)}
-          >
-            Explore our API
-            <img src={arrow} alt='Img' className='mrg--l mrg-s' />
-          </a>
+          <ReactLinkPointer class="txt-m" label="Explore our API" target='_blank' rel='noopener noreferrer' href='https://api.santiment.net/' />
         </div>
       </div>
     </div>

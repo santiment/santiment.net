@@ -240,23 +240,6 @@
   }
 }
 
-.arrowBtn {
-  max-width: 306px;
-  height: 32px;
-  --color: #14c393;
-  --color-hover: #1fac85;
-
-  &:hover {
-    text-decoration: underline;
-  }
-
-  :global(.tablet) &,
-  :global(.phone-xs) &,
-  :global(.phone) & {
-    @include text("body-3", "m");
-  }
-}
-
 @keyframes left-moving {
   from {
     transform: translate(0, 0);
