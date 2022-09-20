@@ -37,7 +37,13 @@ const Cta = () => (
             Get the most out of our advanced metrics and access the private
             community
           </div>
-          <ReactLinkPointer class="txt-m" label="See our plans" target='_blank' rel='noopener noreferrer' href='https://app.santiment.net/pricing' />
+          <ReactLinkPointer
+            class='txt-m'
+            label='See our plans'
+            target='_blank'
+            rel='noopener noreferrer'
+            href='https://app.santiment.net/pricing'
+          />
         </div>
         <div className={styles.divider} />
         <div className={styles.rightLink}>
@@ -49,7 +55,13 @@ const Cta = () => (
             Integrate our social, on-chain and financial datasets with your data
             lake or quant pipeline
           </div>
-          <ReactLinkPointer class="txt-m" label="Explore our API" target='_blank' rel='noopener noreferrer' href='https://api.santiment.net/' />
+          <ReactLinkPointer
+            class='txt-m'
+            label='Explore our API'
+            target='_blank'
+            rel='noopener noreferrer'
+            href='https://api.santiment.net/'
+          />
         </div>
       </div>
     </div>

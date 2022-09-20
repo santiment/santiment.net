@@ -62,7 +62,13 @@ const About = () => {
                   Take a look at crypto market social trends and sentiment
                   charts
                 </div>
-                <ReactLinkPointer class="body-2" label="Get to know social trends" target='_blank' rel='noopener noreferrer' href='https://app.santiment.net/s/1PcSbMgY' />
+                <ReactLinkPointer
+                  class='body-2'
+                  label='Get to know social trends'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://app.santiment.net/s/1PcSbMgY'
+                />
               </div>
               <img className={styles.ctaImg} src={first} alt='img' />
             </div>
@@ -90,7 +96,13 @@ const About = () => {
                   Study aggregate investor behaviors as price moves to/from
                   their cost basis
                 </div>
-                <ReactLinkPointer class="body-2" label="Track market movements" target='_blank' rel='noopener noreferrer' href='https://app.santiment.net/s/ybwyoqGG' />
+                <ReactLinkPointer
+                  class='body-2'
+                  label='Track market movements'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://app.santiment.net/s/ybwyoqGG'
+                />
               </div>
               <img className={styles.ctaImg} src={second} alt='img' />
             </div>
@@ -118,7 +130,13 @@ const About = () => {
                   See asset holder distribution, top holders, and whales
                   transaction tracking tools
                 </div>
-                <ReactLinkPointer class="body-2" label="Investigate whales activities" target='_blank' rel='noopener noreferrer' href='https://app.santiment.net/s/czuEB2R6' />
+                <ReactLinkPointer
+                  class='body-2'
+                  label='Investigate whales activities'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://app.santiment.net/s/czuEB2R6'
+                />
               </div>
               <img className={styles.ctaImg} src={third} alt='img' />
             </div>
@@ -146,7 +164,13 @@ const About = () => {
                   Get to know how often people are mentioning your NFT
                   Collection
                 </div>
-                <ReactLinkPointer class="body-2" label="Check NFT collections" target='_blank' rel='noopener noreferrer' href='https://app.santiment.net/s/QGPJ95dm' />
+                <ReactLinkPointer
+                  class='body-2'
+                  label='Check NFT collections'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://app.santiment.net/s/QGPJ95dm'
+                />
               </div>
               <img className={styles.ctaImg} src={fourth} alt='img' />
             </div>

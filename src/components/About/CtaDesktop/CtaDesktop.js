@@ -57,7 +57,13 @@ const CtaDesktop = () => {
             >
               Take a look at crypto market social trends and sentiment charts
             </div>
-            <ReactLinkPointer class="body-2" label="Get to know social trends" href="https://app.santiment.net/s/1PcSbMgY" target='_blank' rel='noopener noreferrer' />
+            <ReactLinkPointer
+              class='body-2'
+              label='Get to know social trends'
+              href='https://app.santiment.net/s/1PcSbMgY'
+              target='_blank'
+              rel='noopener noreferrer'
+            />
           </div>
         </div>
         <div className={cx(styles.ctaBlockWrapper, 'column h-center')}>
@@ -76,7 +82,13 @@ const CtaDesktop = () => {
               Study aggregate investor behaviors as price moves to/from their
               cost basis
             </div>
-            <ReactLinkPointer class="body-2" label="Track market movements" href="https://app.santiment.net/s/ybwyoqGG" target='_blank' rel='noopener noreferrer' />
+            <ReactLinkPointer
+              class='body-2'
+              label='Track market movements'
+              href='https://app.santiment.net/s/ybwyoqGG'
+              target='_blank'
+              rel='noopener noreferrer'
+            />
           </div>
         </div>
         <div className={cx(styles.ctaBlockWrapper, 'column h-center')}>
@@ -95,7 +107,13 @@ const CtaDesktop = () => {
               See asset holder distribution, top holders, and whales transaction
               tracking tools
             </div>
-            <ReactLinkPointer class="body-2" label="Investigate whales activities" href="https://app.santiment.net/s/czuEB2R6" target='_blank' rel='noopener noreferrer' />
+            <ReactLinkPointer
+              class='body-2'
+              label='Investigate whales activities'
+              href='https://app.santiment.net/s/czuEB2R6'
+              target='_blank'
+              rel='noopener noreferrer'
+            />
           </div>
         </div>
         <div className={cx(styles.ctaBlockWrapper, 'column h-center')}>
@@ -113,7 +131,13 @@ const CtaDesktop = () => {
             >
               Get to know how often people are mentioning your NFT Collection
             </div>
-            <ReactLinkPointer class="body-2" label="Check NFT collections" href="https://app.santiment.net/s/QGPJ95dm" target='_blank' rel='noopener noreferrer' />
+            <ReactLinkPointer
+              class='body-2'
+              label='Check NFT collections'
+              href='https://app.santiment.net/s/QGPJ95dm'
+              target='_blank'
+              rel='noopener noreferrer'
+            />
           </div>
         </div>
       </div>

@@ -25,7 +25,7 @@ const JobsPage = ({ intl }) => (
         collaborative, creative and open environment. If these are your values
         too, come join us!
         <br />
-        List of our {' '}
+        List of our{' '}
         <a
           href='https://www.notion.so/santiment/Open-positions-f1880de7557b468a80b1465013f311cd'
           target='_blank'
