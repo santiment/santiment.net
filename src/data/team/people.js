@@ -3,6 +3,7 @@ import Alexey from './images/Alexey.png'
 import Anastasiya from './images/Anastasiya.png'
 import Anatoliy from './images/Anatoliy.png'
 import Brian from './images/Brian.png'
+import DenisG from './images/DenisG.png'
 import Dima from './images/Dima.png'
 import Ehrlan from './images/Ehrlan.png'
 import Garry from './images/Garry.png'
@@ -19,7 +20,6 @@ import Lyudmil from './images/Lyudmil.png'
 import LarryC from './images/LarryC.png'
 import Maksim from './images/Maksim.png'
 import Max from './images/Max.png'
-import Nail from './images/Nail.png'
 import Nikolay from './images/Nikolay.png'
 import Petra from './images/Petra.png'
 import SaeidR from './images/SaeidR.png'
@@ -404,14 +404,14 @@ export const PEOPLE = [
     links: {}
   },
   {
-    name: 'Nail Khafizov',
-    position: 'Blockchain developer',
-    img: Nail,
-    group: GROUPS.DEVS,
-    description:
-      'He likes to develop extraordinary and complex apps. He is sure: blockchain will lead us to the bright future. Programming is his passion.',
+    name: 'Denis Golovachev',
+    position: 'Platform Engineer',
+    img: DenisG,
+    group: GROUPS.RESEARCH,
+    description: `Cryptography specialist with more than 10 years of Big Data AdTech architectural experience. Temple OS advocate and Plan9 follower. Editors War honored veteran (Stallman's squad) and JVM skeptic. 'Changing Stuff and Seeing What Happens' researcher with a long list of the curious stories that happened this way. Data scientists lifesaver.`,
     links: {
-      github: 'https://github.com/nailkhaf/'
+      github: 'https://github.com/WonderBeat',
+      linkedin: 'https://www.linkedin.com/in/wonderbeat/'
     }
   },
   {
