@@ -125,7 +125,7 @@ export const PEOPLE = [
     description:
       'Alexey has an MBA in marketing communications and 7+ years of experience. Throughout his career, he did marketing for: crypto startups, custom software development services, IT equipment, and complex B2B products. He believes in continuous education, that’s why he is always on the lookout for a new book, marketing course, or webinar.',
     links: {
-      linkedin: 'https://www.linkedin.com/in/alexey-komkov/',
+      linkedin: 'https://www.linkedin.com/in/alexey-komkov/'
     }
   },
   {

@@ -1,5 +1,6 @@
 import React from 'react'
 import cx from 'classnames'
+import ReactLinkPointer from '../LinkPointer'
 import CtaDesktop from './CtaDesktop/CtaDesktop'
 import { useIsMobile } from '../../hooks/responsive'
 import alien from './images/alien.svg'
@@ -9,7 +10,6 @@ import first from './images/1.png'
 import second from './images/2.png'
 import third from './images/3.png'
 import fourth from './images/4.png'
-import arrow from './images/arrow.svg'
 import styles from './About.module.scss'
 
 const About = () => {
@@ -62,15 +62,13 @@ const About = () => {
                   Take a look at crypto market social trends and sentiment
                   charts
                 </div>
-                <a
+                <ReactLinkPointer
+                  class='body-2'
+                  label='Get to know social trends'
                   target='_blank'
                   rel='noopener noreferrer'
                   href='https://app.santiment.net/s/1PcSbMgY'
-                  className={cx('btn body-2 row v-center', styles.arrowBtn)}
-                >
-                  Get to know social trends
-                  <img src={arrow} alt='Img' className='mrg--l mrg-s' />
-                </a>
+                />
               </div>
               <img className={styles.ctaImg} src={first} alt='img' />
             </div>
@@ -98,15 +96,13 @@ const About = () => {
                   Study aggregate investor behaviors as price moves to/from
                   their cost basis
                 </div>
-                <a
+                <ReactLinkPointer
+                  class='body-2'
+                  label='Track market movements'
                   target='_blank'
                   rel='noopener noreferrer'
                   href='https://app.santiment.net/s/ybwyoqGG'
-                  className={cx('btn body-2 row v-center', styles.arrowBtn)}
-                >
-                  Track market movements
-                  <img src={arrow} alt='Img' className='mrg--l mrg-s' />
-                </a>
+                />
               </div>
               <img className={styles.ctaImg} src={second} alt='img' />
             </div>
@@ -134,15 +130,13 @@ const About = () => {
                   See asset holder distribution, top holders, and whales
                   transaction tracking tools
                 </div>
-                <a
+                <ReactLinkPointer
+                  class='body-2'
+                  label='Investigate whales activities'
                   target='_blank'
                   rel='noopener noreferrer'
                   href='https://app.santiment.net/s/czuEB2R6'
-                  className={cx('btn body-2 row v-center', styles.arrowBtn)}
-                >
-                  Investigate whales activities
-                  <img src={arrow} alt='Img' className='mrg--l mrg-s' />
-                </a>
+                />
               </div>
               <img className={styles.ctaImg} src={third} alt='img' />
             </div>
@@ -170,15 +164,13 @@ const About = () => {
                   Get to know how often people are mentioning your NFT
                   Collection
                 </div>
-                <a
+                <ReactLinkPointer
+                  class='body-2'
+                  label='Check NFT collections'
                   target='_blank'
                   rel='noopener noreferrer'
                   href='https://app.santiment.net/s/QGPJ95dm'
-                  className={cx('btn body-2 row v-center', styles.arrowBtn)}
-                >
-                  Check NFT collections
-                  <img src={arrow} alt='Img' className='mrg--l mrg-s' />
-                </a>
+                />
               </div>
               <img className={styles.ctaImg} src={fourth} alt='img' />
             </div>

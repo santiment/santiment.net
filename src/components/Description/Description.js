@@ -24,7 +24,7 @@ const Description = () => (
             rel='noopener noreferrer'
             target='_blank'
             href='https://app.santiment.net/screener/new'
-            className={styles.asset}
+            className='link-pointer'
           >
             screeners
           </a>
@@ -33,7 +33,7 @@ const Description = () => (
             rel='noopener noreferrer'
             target='_blank'
             href='https://app.santiment.net/watchlists'
-            className={styles.asset}
+            className='link-pointer'
           >
             watchlists
           </a>
@@ -42,7 +42,7 @@ const Description = () => (
             rel='noopener noreferrer'
             target='_blank'
             href='https://app.santiment.net/alerts'
-            className={styles.asset}
+            className='link-pointer'
           >
             alerts
           </a>
@@ -51,7 +51,7 @@ const Description = () => (
             rel='noopener noreferrer'
             target='_blank'
             href='https://app.santiment.net/charts'
-            className={styles.asset}
+            className='link-pointer'
           >
             chart layouts
           </a>
@@ -60,7 +60,7 @@ const Description = () => (
             rel='noopener noreferrer'
             target='_blank'
             href='https://app.santiment.net/dashboards'
-            className={styles.asset}
+            className='link-pointer'
           >
             dashboards
           </a>
@@ -69,7 +69,7 @@ const Description = () => (
             rel='noopener noreferrer'
             target='_blank'
             href='https://insights.santiment.net/'
-            className={styles.asset}
+            className='link-pointer'
           >
             insights
           </a>{' '}
