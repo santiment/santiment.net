@@ -201,9 +201,16 @@ const TermsPage = ({ intl }) => (
           7.1. In order to provide You with the Services, You acknowledge and
           agree that Santiment may collect, store and process Your personal data
           and/or information. By using the Services, You have read, understood,
-          and accepted to the terms of Santiment’s privacy policy, and You
-          acknowledge and agree that Santiment may use such data and/or
-          information in accordance with the terms of its privacy policy.
+          and accepted to the terms of{' '}
+          <a
+            href='https://app.santiment.net/privacy-policy'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Santiment’s privacy policy
+          </a>
+          , and You acknowledge and agree that Santiment may use such data
+          and/or information in accordance with the terms of its privacy policy.
         </p>
 
         <h2>8. TERMINATION</h2>
