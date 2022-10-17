@@ -18,7 +18,7 @@ const AboutSAN = () => (
       as='a'
       target='_blank'
       rel='noopener noreferrer'
-      href='https://academy.santiment.net/san-tokens/how-to-buy-san/'
+      href='https://academy.santiment.net/san-tokens/how-to-buy-san-tokens/'
     >
       <Icon type='question-round-small' className={styles.icon} />
       How to buy SAN token?

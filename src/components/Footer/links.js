@@ -51,7 +51,7 @@ export const categories = [
       {
         children: 'buy',
         name: 'Buy SAN',
-        href: 'https://academy.santiment.net/san-tokens/how-to-buy-san/'
+        href: 'https://academy.santiment.net/san-tokens/how-to-buy-san-tokens/
       }
     ]
   },
