@@ -6,7 +6,6 @@ import Input from '@santiment-network/ui/Input'
 import { injectIntl } from 'gatsby-plugin-intl'
 import { tr } from '../../utils/translate'
 import logo from './images/santiment.svg'
-import android from './images/google_play.svg'
 import { EMAIL_LOGIN_MUTATION } from '../../gql/user'
 import { NotificationsContext } from '../Notifications/Notifications'
 import { categories } from './links'
@@ -71,18 +70,18 @@ const Footer = ({ intl }) => {
                     {(sendConfirmationEmail, { loading }) => (
                       <form
                         className={styles.form}
-                        onSubmit={e => {
+                        onSubmit={(e) => {
                           e.preventDefault()
                           sendConfirmationEmail({
                             variables: {
                               email: e.currentTarget.email.value,
-                              subscribeToWeeklyNewsletter: true
-                            }
+                              subscribeToWeeklyNewsletter: true,
+                            },
                           }).then(() => {
                             addNot({
                               type: 'success',
                               title:
-                                'Verification email was sent to the provided email!'
+                                'Verification email was sent to the provided email!',
                             })
                           })
                         }}
@@ -107,18 +106,6 @@ const Footer = ({ intl }) => {
                   </Mutation>
                 )}
               </NotificationsContext.Consumer>
-            </div>
-            <div className={styles.app}>
-              <h4 className={cx(styles.heading, styles.heading__app)}>
-                Download Sanbase app
-              </h4>
-              <a
-                href='https://play.google.com/store/apps/details?id=net.santiment.sanbase.android'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <img src={android} alt='play market' />
-              </a>
             </div>
           </div>
         </div>
