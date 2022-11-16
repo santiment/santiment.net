@@ -16,12 +16,9 @@ const TermsPage = ({ intl }) => (
       <Subheading className={styles.title}>
         Santiment Terms & Conditions
       </Subheading>
-      <div className={styles.date}>Last updated: October 7, 2022</div>
+      <div className={styles.date}>Last updated: November 2022</div>
       <div className={styles.desc}>
-        Please review the T&C contained herein carefully. By clicking “I agree”
-        or by using the Services, You acknowledge and agree that You have read,
-        understood, and accepted all of the following T&C, as well as all of the
-        terms and conditions which are incorporated herein by reference.
+        Please review the T&C contained herein carefully. By clicking “I agree” or by using the Services, You acknowledge and agree that You have read, understood, and accepted all of the following T&C, as well as all of the terms and conditions which are incorporated herein by reference.
       </div>
       <div className={styles.content}>
         <h2>1. RIGHTS AND OBLIGATIONS</h2>
@@ -81,7 +78,7 @@ const TermsPage = ({ intl }) => (
           2.1. Santiment, through the Services, enables You to access data,
           information, signals, insights, analysis or other contents including,
           among others, content streams, the Santiment Database (SANbase) and
-          data-feeds relating to cryptocurrencies and other digital assets.
+          data-feeds relating to cryptocurrencies and other digital assets (Santiment’s Data).
         </p>
         <p>
           2.2. Content streams can be selected according to Your investing
@@ -360,7 +357,10 @@ const TermsPage = ({ intl }) => (
           </u>
         </p>
         <p>
-          10.4. Santiment, through the Services, enables You to share, input,
+          10.4. In case that You wish to resell Santiment’s Data to third parties, a corporate subscription is required. The right to resell Santiment’s Data to third parties is only valid during the validity of the subscription you have entered into. You can no longer resell Santiment’s Data to third parties once the subscription has expired or been cancelled.  In the event that your subscription has expired or been cancelled you can keep the Santiment’s Data previously collected only for Your personal use.
+        </p>
+        <p>
+          10.5. Santiment, through the Services, enables You to share, input,
           upload, or otherwise make available to Santiment and its users data,
           information including insights, trends, signals and other contents
           which will be treated by Santiment, in each case, as non-confidential.
@@ -371,7 +371,7 @@ const TermsPage = ({ intl }) => (
           such contents for any purpose whatsoever.
         </p>
         <p>
-          10.5. By using the Services, You expressly represent and warrant to
+          10.6. By using the Services, You expressly represent and warrant to
           Santiment that You will not share, input, upload, or otherwise make
           available any content through the Services that: (i) is promotional in
           nature or constitutes junk mail, spam, chain letters, pyramid schemes
