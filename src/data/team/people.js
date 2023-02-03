@@ -22,7 +22,6 @@ import Maksim from './images/Maksim.png'
 import Max from './images/Max.png'
 import Nikolay from './images/Nikolay.png'
 import Petra from './images/Petra.png'
-import SaeidR from './images/SaeidR.png'
 import Serena from './images/Serena.png'
 import Tsetso from './images/Tsetso.png'
 import Tzanko from './images/Tzanko.png'
@@ -434,20 +433,6 @@ export const PEOPLE = [
       'Software developer, BE in Computer Science. Enjoys learning something new everyday, passionate about coding. He also loves tourism, reading science fiction literature and meeting new people.',
     links: {
       github: 'https://github.com/Woafflation'
-    }
-  },
-  {
-    name: 'Saeid M.Rezaei',
-    position: 'Frontend developer',
-    img: SaeidR,
-    group: GROUPS.DEVS,
-    description:
-      'A self taught programmer with more than 15 years experience. Saeid has worked with many companies and many job positions such as backend, full stack, mobile and game developer. Currently Saeid is in love with frontend development. He likes to learn new thing everyday. His slang is building great things and not waiting for great things to build. He believes he was born to write code.',
-    links: {
-      linkedin:
-        'https://www.linkedin.com/in/saeid-aka-hojjat-mohammad-rezaei-3a227725/',
-      github: 'https://github.com/peratik',
-      telegram: 'https://t.me/peratik'
     }
   }
 ]
