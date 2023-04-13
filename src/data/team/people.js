@@ -80,7 +80,7 @@ export const PEOPLE = [
   },
   {
     name: 'Petra Ujvari',
-    position: 'Sr. Relationship Manager',
+    position: 'HR Manager',
     img: Petra,
     group: GROUPS.BISUNESS,
     description: `From Senior Relationship Manager to Santiment's HR Manager, Petra is the ultimate people person. With a keen eye for talent and a passion for blockchain technology, Petra connects visionaries with opportunities to drive the future of decentralized finance. Drawing on a background in international education Petra brings a unique perspective to the world of HR. When not building top-performing teams, you can find her exploring the latest developments and networking with industry leaders`,
