@@ -4,7 +4,6 @@ import MennoPP from './images/MennoPP.jpg'
 import crypto_birb from './images/crypto_birb.jpg'
 import Merp from './images/0xMerp.jpg'
 import ortiercapital from './images/ortiercapital.jpg'
-import julianhosp from './images/julianhosp.jpg'
 import Slivinschi from './images/Slivinschi.jpg'
 import Ameer from './images/AmeerRosic.jpg'
 import Cryptonacci from './images/XCryptonacciX.jpg'
@@ -120,13 +119,6 @@ export const tweets = [
         post
       </p>
     )
-  },
-  {
-    id: '1326767360733286405',
-    handle: 'julianhosp',
-    avatar: julianhosp,
-    displayName: 'Dr. Julian Hosp',
-    content: <p>great work!</p>
   },
   {
     id: '1329226946656530436',
