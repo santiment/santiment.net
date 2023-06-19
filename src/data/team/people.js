@@ -205,7 +205,7 @@ export const PEOPLE = [
     img: Max,
     group: GROUPS.COMMUNICATIONS,
     description:
-      "Max got hooked on crypto in 2018, after the last bull run. While his portfolio is still in the red, he’s learned a lot during this bear market, including that “bear market conferences” can be great for making connections (Santiment was lucky to meet him at Devcon IV!) With more than 7 years of experience in small teams providing high-quality tech support, he can help answer all of your Santiment questions.",
+      "Meet Max, Santiment's tech support wizard. With a combined 10+ years of experience supporting small teams, Max has a talent for solving problems and a passion for all things crypto. After getting hooked on blockchain in 2018, Max has immersed himself in the world of decentralized finance, learning valuable lessons during the bear market and making connections at industry events like Devcon IV (where Santiment was lucky enough to meet him!). While his portfolio took a while to turn around, Max's enthusiasm and knowledge are always bullish - making him the perfect person to answer all your Santiment questions and help you navigate the exciting world of decentralized finance.",
     links: {
       twitter: "https://twitter.com/balresch"
     }
