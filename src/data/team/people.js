@@ -31,6 +31,8 @@ import Yordan from "./images/Yordan.png";
 import Pablo from "./images/Pablo.png";
 import Alena from "./images/Alena.png";
 import MaksimT from "./images/MaksimT.png";
+import Iryna from "./images/Iryna.png";
+import Sofia from "./images/Sofia.png";
 
 export const GROUPS = {
   CORE: "Core team",
@@ -378,6 +380,22 @@ export const PEOPLE = [
       github: "https://github.com/WonderBeat",
       linkedin: "https://www.linkedin.com/in/wonderbeat/"
     }
+  },
+  {
+    name: "Iryna Pranovich",
+    position: "Product Analyst",
+    img: Iryna,
+    group: GROUPS.RESEARCH,
+    description: `Meet Iryna, our product analyst with a master's degree in DeepTech entrepreneurship. With a passion for market analysis and a focus on innovation, Iryna uses her expertise to conduct research, analyze data to improve products in close collaboration with product and development teams. Outside of work, Iryna enjoys listening to audiobooks during long runs and playing padel tennis.`,
+    links: {}
+  },
+  {
+    name: "Sofia Volkova",
+    position: "Python Developer",
+    img: Sofia,
+    group: GROUPS.RESEARCH,
+    description: `Sofia holds a Master's degree in computer science and possess a solid background in the banking industry as an ETL developer and data engineer. She takes pleasure in tackling engineering challenges and take pride in crafting clean and efficient Python code. When Sofia is not immersed in technology, you can find her engaging in various sports activities, dancing, skateboarding, and staying up-to-date with the latest fashion trends.`,
+    links: {}
   },
   {
     name: "Ivan Genev",
