@@ -27,6 +27,7 @@ if (typeof window !== 'undefined') {
 
 if (process.env.NODE_ENV === 'production') {
   GoogleAnalytics.initialize('UA-100571693-8')
+  GoogleAnalytics.initialize('G-H53MB0V33X')
 } else {
   GoogleAnalytics.initialize('UA-100571693-8', { testMode: true })
 }
