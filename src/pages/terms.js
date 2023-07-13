@@ -27,7 +27,7 @@ const TermsPage = ({ intl }) => (
           a binding agreement between Santiment Sagl, a limited company
           registered under the laws of Switzerland, registered with the Register
           of Commerce under No. <b>CHE-424.007.779</b> and with registered
-          address c/o IBEX SERVICES Ltd., Via Balestra No. 6, 6830, Chiasso (“
+          address Dammstr. 16, Zug, 6300, Switzerland (“
           <b>Santiment</b>”) and the person, persons, or entity (“<b>You</b>”)
           using Santiment’s mobile and web services at{' '}
           <a
