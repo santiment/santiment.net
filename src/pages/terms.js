@@ -16,7 +16,7 @@ const TermsPage = ({ intl }) => (
       <Subheading className={styles.title}>
         Santiment Terms & Conditions
       </Subheading>
-      <div className={styles.date}>Last updated: November 2022</div>
+      <div className={styles.date}>Last updated: July 2023</div>
       <div className={styles.desc}>
         Please review the T&C contained herein carefully. By clicking “I agree” or by using the Services, You acknowledge and agree that You have read, understood, and accepted all of the following T&C, as well as all of the terms and conditions which are incorporated herein by reference.
       </div>
@@ -24,7 +24,7 @@ const TermsPage = ({ intl }) => (
         <h2>1. RIGHTS AND OBLIGATIONS</h2>
         <p>
           1.1. The following terms and conditions (the “<b>T&C</b>”) constitute
-          a binding agreement between Santiment Sagl, a limited company
+          a binding agreement between Santiment AG, a limited company
           registered under the laws of Switzerland, registered with the Register
           of Commerce under No. <b>CHE-424.007.779</b> and with registered
           address Dammstr. 16, Zug, 6300, Switzerland (“
@@ -464,7 +464,7 @@ const TermsPage = ({ intl }) => (
           please contact us at
           <br />
           <br />
-          Santiment LLC
+          Santiment AG
           <br />
           Dammstrasse 16
           <br />
