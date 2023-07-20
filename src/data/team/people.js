@@ -28,11 +28,12 @@ import Vlad from "./images/Vlad.png";
 import VladV from "./images/VladV.png";
 import VladimirT from "./images/VladimirT.png";
 import Yordan from "./images/Yordan.png";
-import Pablo from "./images/Pablo.png";
 import Alena from "./images/Alena.png";
 import MaksimT from "./images/MaksimT.png";
 import Iryna from "./images/Iryna.png";
 import Sofia from "./images/Sofia.png";
+import Plamena from "./images/Plamena.png";
+import AlexanderS from "./images/AlexanderS.png";
 
 export const GROUPS = {
   CORE: "Core team",
@@ -420,15 +421,6 @@ export const PEOPLE = [
     }
   },
   {
-    name: "Pablo Baiocchi",
-    position: "Junior Financial Officer",
-    img: Pablo,
-    group: GROUPS.BISUNESS,
-    description:
-      "A computer engineer with post graduate work in finance and experience as both a developer and financial officer. Has a passion for finance, quantitative analysis, and the crypto space. Has a deep love for animals and nature and enjoys outdoor activities and calisthenics.",
-    links: {}
-  },
-  {
     name: "Alena Busorgina",
     position: "Marketing Designer",
     img: Alena,
@@ -444,6 +436,24 @@ export const PEOPLE = [
     group: GROUPS.DEVS,
     description:
       "Meet Maksim, our Python dev who turned into a finance enthusiast. With a passion for market analysis and a talent for numbers, he brings a unique perspective to our product team. Whether he's crunching data or fine-tuning our strategy, Maksim's expertise and insights are always on point.",
+    links: {}
+  },
+  {
+    name: "Plamena Deliyska",
+    position: "Lawyer and Administration",
+    img: Plamena,
+    group: GROUPS.BISUNESS,
+    description:
+      "I am a fond lover of law, an admirer of analytical thinking and a passionate keeper of order. I have 14 + years of experience helping companies with their corporate governance, compliance, contract relations, establishment of investments and financing, structuring the intergroup relations, including establishment of foreign subsidiaries, etc. Recently, I added focus on the technology and crypto markets for their legal and compliance challenges. In my free time, I enjoy exploring new destinations, savoring culinary delights, and immersing myself in nature. I live dynamically, but I love balance, that's how I feel the moment and the present, which are the only ones that belong to us.",
+    links: {}
+  },
+  {
+    name: "Alexander Semenov",
+    position: "Data Research Lead",
+    img: AlexanderS,
+    group: GROUPS.RESEARCH,
+    description:
+      "Alexander has 15 years of experience of work in consulting, research, teaching and Academy (h-index = 7). His area of expertise is computational social science with a focus on social network analysis and graph mining. Before joining Santiment he was head of analytics for the largest ISP and head of R&D for the gaming department of largest bank in Russia. In Santiment he supervises product analytics and social data.",
     links: {}
   }
 ];
