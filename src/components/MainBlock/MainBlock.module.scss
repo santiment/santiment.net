@@ -1,10 +1,32 @@
 @import "~@santiment-network/ui/mixins.scss";
 
+.backgroundContainer {
+  display: flex;
+  z-index: -10;
+  overflow: hidden;
+  background-image: url('./images/curved-line.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    background-image: none;
+  }
+}
+
 .wrapper {
   max-width: 1140px;
-  margin-top: 108px;
-  margin-bottom: 124px;
-  column-gap: 144px;
+  padding: 0;
+  padding-top: 108px;
+  margin: 0 auto;
+  width: 100%;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    padding-top: 46px;
+  }
 
   @include responsive("desktop", "laptop", "tablet") {
     animation-name: shiftUp;
@@ -13,25 +35,17 @@
     animation-delay: 0.6s;
     animation-fill-mode: both;
   }
+}
 
-  @include responsive("laptop") {
-    padding: 0 24px;
-    column-gap: 114px;
-    justify-content: space-between;
-  }
+.leftBlock {
+  max-width: 568px;
+  margin: 0 20px 140px;
 
   :global(.tablet) &,
   :global(.phone-xs) &,
   :global(.phone) & {
-    flex-direction: column;
-    row-gap: 64px;
-    margin-top: 48px;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
   }
-}
-
-.leftBlock {
-  max-width: 480px;
 }
 
 .title {
@@ -74,23 +88,8 @@
 }
 
 .img {
-  width: 632px;
-  height: 328px;
-  margin-right: -50px;
-  margin-left: -50px;
-
-  @include responsive("laptop") {
-    width: 400px;
-    height: auto;
-    margin-right: 0;
-  }
-
-  :global(.phone-xs) &,
-  :global(.phone) & {
-    width: 100%;
-    height: auto;
-    margin: 0;
-  }
+  height: 100%;
+  width: 100%;
 }
 
 @keyframes shiftUp {
@@ -102,5 +101,44 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+
+.illustration-right {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    display: none;
+  }
+}
+
+.illustration-bottom {
+  display: none;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    display: block;
+  }
+}
+
+.logos-wrapper {
+  width: 100%;
+  margin: 0 20px;
+  padding-bottom: 76px;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 40px;
   }
 }
