@@ -1,3 +1,7 @@
+.wrapper {
+  overflow: hidden;
+}
+
 .title {
   gap: 8px;
 }
@@ -31,7 +35,6 @@
 }
 
 .logo {
-  height: 32px;
 
   :global(.phone-xs) &,
   :global(.phone) & {

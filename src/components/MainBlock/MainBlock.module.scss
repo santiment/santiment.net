@@ -89,7 +89,12 @@
 
 .img {
   height: 100%;
-  width: 100%;
+
+  :global(.tablet) &,
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    width: 100%;
+  }
 }
 
 @keyframes shiftUp {
