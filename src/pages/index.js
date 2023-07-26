@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import Layout from '../components/layout'
 import LPHeader from '../components/LPHeader/LPHeader'
 import MainBlock from '../components/MainBlock/MainBlock'
-import TrustedBlock from '../components/TrustedBlock/TrustedBlock'
 import Numbers from '../components/Numbers/Numbers'
 import Twitter from '../components/Twitter/Twitter'
 import SEO from '../components/seo'
@@ -47,12 +46,11 @@ const Index = ({ location }) => {
       headerComponent={<LPHeader headerAnimation />}
       classes={{
         wrapper: 'column justify',
-        main: styles.main
+        main: styles.main,
       }}
     >
-      <SEO title='Santiment - See what other crypto traders are missing' />
+      <SEO title="Santiment - See what other crypto traders are missing" />
       <MainBlock />
-      <TrustedBlock />
       <Description />
       <Numbers />
       <About />

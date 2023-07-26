@@ -1,28 +1,65 @@
 import React from 'react'
-import tbn from './logos/TBN.svg'
-import bloomberg from './logos/bloomberg.svg'
-import bitfinex from './logos/bitfinex.svg'
-import cointelegraph from './logos/cointelegraph.svg'
+import cx from 'classnames'
 import styles from './TrustedBlock.module.scss'
 
-const TrustedBlock = () => (
-  <div className={styles.wrapper}>
-    <div className={styles.title}>
-      <div className={styles.dot} />
-      Trusted by 2000+ customers
-      <div className={styles.dot} />
+import binance from './logos/binance.svg'
+import bloomberg from './logos/bloomberg.svg'
+import ethereum from './logos/ethereum.svg'
+import cnn from './logos/cnn.svg'
+import coindesk from './logos/coindesk.svg'
+import cointelegraph from './logos/cointelegraph.svg'
+import nasdaq from './logos/nasdaq.svg'
+import ripple from './logos/ripple.svg'
+import birbNest from './logos/birb-nest.png'
+import wired from './logos/wired.svg'
+import bitcoinMagazine from './logos/bitcoin-magazine.svg'
+import bitfinex from './logos/bitfinex.svg'
+import cardano from './logos/cardano.svg'
+import kraken from './logos/kraken.svg'
+import kucoin from './logos/kucoin.svg'
+import maker from './logos/maker.svg'
+
+const logos = {
+  binance,
+  bloomberg,
+  ethereum,
+  cnn,
+  coindesk,
+  cointelegraph,
+  nasdaq,
+  ripple,
+  wired,
+  birbNest,
+  bitcoinMagazine,
+  bitfinex,
+  cardano,
+  kraken,
+  kucoin,
+  maker,
+}
+
+const TrustedBlock = () => {
+  const marquee = (
+    <span className={cx(styles.marquee, 'row hv-center')}>
+      {Object.entries(logos).map(([name, logo]) => {
+        return <img className={cx(styles.logo, 'mrg-xxl mrg--l')} src={logo} alt={`${name} logo`} />
+      })}
+    </span>
+  )
+
+  return (
+    <div>
+      <h3 className={cx(styles.title, 'row v-center body-1 mrg-xl mrg--b')}>
+        <div className={cx(styles.dot)} />
+        As seen on
+        <div className={cx(styles.dot)} />
+      </h3>
+      <div className={cx(styles.wrapper, 'row v-center')}>
+        {marquee}
+        {marquee}
+      </div>
     </div>
-    <div className={styles.row}>
-      <img src={tbn} alt='TBN' className={styles.tbn} />
-      <img src={bloomberg} alt='Bloomberg' className={styles.bloomberg} />
-      <img src={bitfinex} alt='Bitfinex' className={styles.bitfinex} />
-      <img
-        src={cointelegraph}
-        alt='Cointelegraph'
-        className={styles.cointelegraph}
-      />
-    </div>
-  </div>
-)
+  )
+}
 
 export default TrustedBlock
