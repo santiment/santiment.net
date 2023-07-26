@@ -10,7 +10,6 @@ import coindesk from './logos/coindesk.svg'
 import cointelegraph from './logos/cointelegraph.svg'
 import nasdaq from './logos/nasdaq.svg'
 import ripple from './logos/ripple.svg'
-import birbNest from './logos/birb-nest.png'
 import wired from './logos/wired.svg'
 import bitcoinMagazine from './logos/bitcoin-magazine.svg'
 import bitfinex from './logos/bitfinex.svg'
@@ -28,9 +27,8 @@ const logos = {
   cointelegraph,
   nasdaq,
   ripple,
-  wired,
-  birbNest,
   bitcoinMagazine,
+  wired,
   bitfinex,
   cardano,
   kraken,
@@ -48,7 +46,7 @@ const TrustedBlock = () => {
   )
 
   return (
-    <div>
+    <div className={cx(styles.wrapper)}>
       <h3 className={cx(styles.title, 'row v-center body-1 mrg-xl mrg--b')}>
         <div className={cx(styles.dot)} />
         As seen on
