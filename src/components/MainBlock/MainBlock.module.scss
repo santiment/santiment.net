@@ -6,6 +6,7 @@
   background-image: url('./images/curved-line.svg');
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
 
   :global(.tablet) &,
   :global(.phone-xs) &,
@@ -100,10 +101,9 @@
 .img {
   height: 100%;
 
-  :global(.tablet) &,
   :global(.phone-xs) &,
   :global(.phone) & {
-    width: 100%;
+    height: 372px;
   }
 }
 
@@ -121,11 +121,17 @@
 
 
 .illustrationRight {
+  --section-center: calc((100% - 1440px) / 2);
+
   height: 100%;
   position: absolute;
   top: 0;
-  right: 0;
+  left: calc(var(--section-center) + 720px);
   z-index: -1;
+
+  @include responsive('laptop') {
+    left: calc(var(--section-center) + 580px);
+  }
 
   :global(.tablet) &,
   :global(.phone-xs) &,
@@ -135,12 +141,25 @@
 }
 
 .illustrationBottom {
+  --screen-center: calc(100% / 2);
+
   display: none;
 
   :global(.tablet) &,
   :global(.phone-xs) &,
   :global(.phone) & {
     display: block;
+    position: relative;
+  }
+
+  :global(.tablet) & {
+    left: calc(var(--screen-center) - 340px);
+  }
+
+  :global(.phone-xs) &,
+  :global(.phone) & {
+    left: calc(var(--screen-center) - 200px);
+
   }
 }
 
