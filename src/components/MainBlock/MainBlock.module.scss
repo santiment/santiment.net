@@ -2,8 +2,7 @@
 
 .backgroundContainer {
   display: flex;
-  z-index: -10;
-  overflow: hidden;
+  z-index: 0;
   background-image: url('./images/curved-line.svg');
   background-position: center;
   background-repeat: no-repeat;
@@ -39,12 +38,23 @@
 
 .leftBlock {
   max-width: 568px;
-  margin: 0 20px 140px;
+  margin: 0 0 140px;
 
   :global(.tablet) &,
   :global(.phone-xs) &,
   :global(.phone) & {
     margin-bottom: 32px;
+  }
+}
+
+.leftBlock,
+.logosWrapper {
+  @include responsive("laptop") {
+    padding: 0 24px;
+  }
+
+  @include responsive("phone", "phone-xs", "tablet") {
+    padding: 0 16px;
   }
 }
 
@@ -110,7 +120,7 @@
 }
 
 
-.illustration-right {
+.illustrationRight {
   height: 100%;
   position: absolute;
   top: 0;
@@ -124,7 +134,7 @@
   }
 }
 
-.illustration-bottom {
+.illustrationBottom {
   display: none;
 
   :global(.tablet) &,
@@ -134,9 +144,8 @@
   }
 }
 
-.logos-wrapper {
+.logosWrapper {
   width: 100%;
-  margin: 0 20px;
   padding-bottom: 76px;
 
   :global(.tablet) &,
