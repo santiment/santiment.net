@@ -7,7 +7,6 @@ import DenisG from "./images/DenisG.png";
 import Dima from "./images/Dima.png";
 import Garry from "./images/Garry.png";
 import GabbyN from "./images/GabbyN.png";
-import IgorK from "./images/IgorK.png";
 import IlyaL from "./images/IlyaL.png";
 import Ivan from "./images/Ivan.png";
 import IvanG from "./images/IvanG.png";
@@ -407,17 +406,6 @@ export const PEOPLE = [
       "Ivan has more than 15 years of IT/infrastructure expertise. Throughout his career, he was working in large telecoms, on-line gaming companies and e-commerce platforms. Enjoys to learn new things and play with linux, networks and automation.",
     links: {
       linkedin: "https://www.linkedin.com/in/couting/"
-    }
-  },
-  {
-    name: "Igor Ko",
-    position: "Frontend developer",
-    img: IgorK,
-    group: GROUPS.DEVS,
-    description:
-      "Software developer, BE in Computer Science. Enjoys learning something new everyday, passionate about coding. He also loves tourism, reading science fiction literature and meeting new people.",
-    links: {
-      github: "https://github.com/Woafflation"
     }
   },
   {
