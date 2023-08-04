@@ -169,7 +169,7 @@ export const PEOPLE = [
     group: GROUPS.COMMUNICATIONS,
     img: Kelvin,
     description:
-      'Known as “Wilhelm” in the crypto space, he’s your gateway to all things Santiment. He ensures that communication between the team and community is in sync, and info you need is at your fingertips. No stranger to building great communities, he’s also a core member of crypto’s largest slack, Cryptocopia. There have been rumors he might be an AI, have a chat with him to find out more.',
+      'Known as “Wilhelm” in the crypto space, he’s your gateway to all things Santiment. He ensures that communication between the team and community is in sync, and info you need is at your fingertips. There have been rumors he might be an AI, have a chat with him to find out more.',
     links: {
       twitter: 'https://twitter.com/claptrapxl',
       linkedin: 'https://www.linkedin.com/in/whoiskelvinlee/',
