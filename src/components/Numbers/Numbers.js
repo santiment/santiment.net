@@ -6,33 +6,33 @@ const numbers = [
   {
     textTag: 'assets',
     defaultText: 'Available crypto assets',
-    number: '1954+'
+    number: '2000+',
   },
   {
     textTag: 'metrics',
     defaultText: 'Available metrics',
-    number: '731+'
+    number: '850+',
   },
   {
     textTag: 'labels',
     defaultText: 'Available wallet labels',
-    number: '22'
+    number: '22',
   },
   {
     textTag: 'social',
     defaultText: 'Parsed social messages per month',
-    number: '7+ million'
+    number: '7+ million',
   },
   {
     textTag: 'blockchain',
     defaultText: 'Available blockchains',
-    number: '5'
+    number: '12',
   },
   {
     textTag: 'data',
     defaultText: 'Historical data since',
-    number: '2009'
-  }
+    number: '2009',
+  },
 ]
 
 const Numbers = () => (
