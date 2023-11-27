@@ -33,6 +33,8 @@ import Iryna from './images/Iryna.png'
 import Sofia from './images/Sofia.png'
 import Plamena from './images/Plamena.png'
 import AlexanderS from './images/AlexanderS.png'
+import Bulat from './images/Bulat.png'
+import DmitryK from './images/DmitryK.png'
 
 export const GROUPS = {
   CORE: 'Core team',
@@ -86,7 +88,7 @@ export const PEOPLE = [
     position: 'HR Manager',
     img: Petra,
     group: GROUPS.BISUNESS,
-    description: `From Senior Relationship Manager to Santiment's HR Manager, Petra is the ultimate people person. With a keen eye for talent and a passion for blockchain technology, Petra connects visionaries with opportunities to drive the future of decentralized finance. Drawing on a background in international education Petra brings a unique perspective to the world of HR. When not building top-performing teams, you can find her exploring the latest developments and networking with industry leaders`,
+    description: `From Senior Relationship Manager to Santiment's HR Manager, Petra is the ultimate people person. With a keen eye for talent and a passion for blockchain technology, Petra connects visionaries with opportunities to drive the future of decentralized finance. Drawing on a background in international education Petra brings a unique perspective to the world of HR. When not building top-performing teams, you can find her exploring the latest developments and networking with industry leaders.`,
     links: {
       email: 'mailto:petra.u@santiment.net',
       telegram: 'https://t.me/ujvaripe',
@@ -123,7 +125,7 @@ export const PEOPLE = [
     group: GROUPS.DESIGN,
     img: Anastasiya,
     description:
-      'Anastasia is a passionate product-marketing designer who believes in simple and balanced design. She helps Santiment look pretty and structured. She has worked mostly with B2B and e-commerce companies but has always was looked forward to creating something unique and high-valued in a new industry.',
+      "Anastasia is a passionate product-marketing designer who believes in simple and balanced design, enhancing Santiment's aesthetics and structure. She has primarily worked with B2B and e-commerce companies but has always looked forward to creating something unique and high-value in a new industry.",
     links: {
       linkedin: 'https://www.linkedin.com/in/anastasia-gelemeeva-663ab110a',
     },
@@ -158,7 +160,7 @@ export const PEOPLE = [
     group: GROUPS.DESIGN,
     img: Ksenia,
     description:
-      'Ksenia has been illustrating for many years, making comics and books. She has been actively engage in graphic design and has given drawing lessons to adults and children. Likes to watch beautifully animated cartoons and read good literature.',
+      'Ksenia has been illustrating for many years, creating comics and books. She actively engages in graphic design and has provided drawing lessons to both adults and children. She enjoys watching beautifully animated cartoons and reading quality literature.',
     links: {
       instagram: 'https://instagram.com/arget.m',
     },
@@ -442,6 +444,24 @@ export const PEOPLE = [
     group: GROUPS.RESEARCH,
     description:
       'Alexander has 15 years of experience of work in consulting, research, teaching and Academy (h-index = 7). His area of expertise is computational social science with a focus on social network analysis and graph mining. Before joining Santiment he was head of analytics for the largest ISP and head of R&D for the gaming department of largest bank in Russia. In Santiment he supervises product analytics and social data.',
+    links: {},
+  },
+  {
+    name: 'Bulat Lutfullin',
+    position: 'Senior Platform Engineer',
+    img: Bulat,
+    group: GROUPS.RESEARCH,
+    description:
+      "Bulat brings a wealth of experience in developing backend and MLOps products. With his passion for experimentation and a penchant for knowledge sharing, he's not only a seasoned speaker at meetups but also sees opportunities for more engagements. Armed with his BSc in Applied Mathematics, he adeptly navigates code, blending insights from Stack Overflow. His coding proficiency extends to his enjoyment of types of Types and Scala, all savored with a cup of meticulously brewed hot black coffee.",
+    links: {},
+  },
+  {
+    name: 'Dmitry Korzhik',
+    position: 'Business Development',
+    img: DmitryK,
+    group: GROUPS.BISUNESS,
+    description:
+      "Dmitry is a tech industry veteran with 10+ years of experience, specializing in building businesses from inception. An active crypto trader, he holds dual Master's degrees in computer science and e-government. Dmitry's expertise and strategic mindset contribute significantly to our team's success.",
     links: {},
   },
 ]
