@@ -88,7 +88,7 @@ export const PEOPLE = [
     position: 'HR Manager',
     img: Petra,
     group: GROUPS.BISUNESS,
-    description: `From Senior Relationship Manager to Santiment's HR Manager, Petra is the ultimate people person. With a keen eye for talent and a passion for blockchain technology, Petra connects visionaries with opportunities to drive the future of decentralized finance. Drawing on a background in international education Petra brings a unique perspective to the world of HR. When not building top-performing teams, you can find her exploring the latest developments and networking with industry leaders`,
+    description: `From Senior Relationship Manager to Santiment's HR Manager, Petra is the ultimate people person. With a keen eye for talent and a passion for blockchain technology, Petra connects visionaries with opportunities to drive the future of decentralized finance. Drawing on a background in international education Petra brings a unique perspective to the world of HR. When not building top-performing teams, you can find her exploring the latest developments and networking with industry leaders.`,
     links: {
       email: 'mailto:petra.u@santiment.net',
       telegram: 'https://t.me/ujvaripe',
@@ -125,7 +125,7 @@ export const PEOPLE = [
     group: GROUPS.DESIGN,
     img: Anastasiya,
     description:
-      'Anastasia is a passionate product-marketing designer who believes in simple and balanced design. She helps Santiment look pretty and structured. She has worked mostly with B2B and e-commerce companies but has always was looked forward to creating something unique and high-valued in a new industry.',
+      "Anastasia is a passionate product-marketing designer who believes in simple and balanced design, enhancing Santiment's aesthetics and structure. She has primarily worked with B2B and e-commerce companies but has always looked forward to creating something unique and high-value in a new industry.",
     links: {
       linkedin: 'https://www.linkedin.com/in/anastasia-gelemeeva-663ab110a',
     },
@@ -160,7 +160,7 @@ export const PEOPLE = [
     group: GROUPS.DESIGN,
     img: Ksenia,
     description:
-      'Ksenia has been illustrating for many years, making comics and books. She has been actively engage in graphic design and has given drawing lessons to adults and children. Likes to watch beautifully animated cartoons and read good literature.',
+      'Ksenia has been illustrating for many years, creating comics and books. She actively engages in graphic design and has provided drawing lessons to both adults and children. She enjoys watching beautifully animated cartoons and reading quality literature.',
     links: {
       instagram: 'https://instagram.com/arget.m',
     },
