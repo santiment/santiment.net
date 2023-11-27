@@ -33,6 +33,8 @@ import Iryna from './images/Iryna.png'
 import Sofia from './images/Sofia.png'
 import Plamena from './images/Plamena.png'
 import AlexanderS from './images/AlexanderS.png'
+import Bulat from './images/Bulat.png'
+import DmitryK from './images/DmitryK.png'
 
 export const GROUPS = {
   CORE: 'Core team',
@@ -442,6 +444,24 @@ export const PEOPLE = [
     group: GROUPS.RESEARCH,
     description:
       'Alexander has 15 years of experience of work in consulting, research, teaching and Academy (h-index = 7). His area of expertise is computational social science with a focus on social network analysis and graph mining. Before joining Santiment he was head of analytics for the largest ISP and head of R&D for the gaming department of largest bank in Russia. In Santiment he supervises product analytics and social data.',
+    links: {},
+  },
+  {
+    name: 'Bulat Lutfullin',
+    position: 'Senior Platform Engineer',
+    img: Bulat,
+    group: GROUPS.RESEARCH,
+    description:
+      "Bulat brings a wealth of experience in developing backend and MLOps products. With his passion for experimentation and a penchant for knowledge sharing, he's not only a seasoned speaker at meetups but also sees opportunities for more engagements. Armed with his BSc in Applied Mathematics, he adeptly navigates code, blending insights from Stack Overflow. His coding proficiency extends to his enjoyment of types of Types and Scala, all savored with a cup of meticulously brewed hot black coffee.",
+    links: {},
+  },
+  {
+    name: 'Dmitry Korzhik',
+    position: 'Business Development',
+    img: DmitryK,
+    group: GROUPS.BISUNESS,
+    description:
+      "Dmitry is a tech industry veteran with 10+ years of experience, specializing in building businesses from inception. An active crypto trader, he holds dual Master's degrees in computer science and e-government. Dmitry's expertise and strategic mindset contribute significantly to our team's success.",
     links: {},
   },
 ]
