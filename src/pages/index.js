@@ -49,7 +49,10 @@ const Index = ({ location }) => {
         main: styles.main,
       }}
     >
-      <SEO title="Santiment - See what other crypto traders are missing" />
+      <SEO
+        title="Crypto Research, Data, Tools - Explore Behavioral Analytics"
+        description="We provide tools for crypto research to analyze markets and find data-driven opportunities to optimize your investing. Dive in and explore our on-chain, social and development data."
+      />
       <MainBlock />
       <Description />
       <Numbers />
