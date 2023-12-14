@@ -12,15 +12,15 @@ const MainBlock = () => {
     <div className={cx(styles.backgroundContainer, 'relative')}>
       <section className={cx(styles.wrapper, 'column relative')}>
         <div className={cx(styles.leftBlock, 'column')}>
-          <div className={cx(styles.title, 'mrg--b mrg-l')}>
+          <h1 className={cx(styles.title, 'mrg--b mrg-l')}>
             Gain Market Clarity
             <br />
             with Behavioural Analytics
-          </div>
-          <div className={cx(styles.description, 'h4')}>
+          </h1>
+          <h2 className={cx(styles.description, 'h4')}>
             Make data-driven investments powered by community insights, on-chain, social and dev
             data
-          </div>
+          </h2>
           <AccountBtn
             classes={{
               wrapper: styles.btnWrapper,

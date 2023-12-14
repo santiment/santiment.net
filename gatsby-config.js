@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Santiment - See what other crypto traders are missing`,
-    description: `We provide tools to help you analyze crypto markets and find data-driven opportunities to optimize your investing. Santiment is a behavior analytics platform for cryptocurrencies, sourcing on-chain, social and development information on 2000+ coins.`,
+    title: `Crypto Research, Data, Tools - Explore Behavioral Analytics`,
+    description: `We provide tools for crypto research to analyze markets and find data-driven opportunities to optimize your investing. Dive in and explore our on-chain, social and development data.`,
     author: `Santiment`,
     siteUrl: 'https://santiment.net',
-    siteName: 'Santiment'
+    siteName: 'Santiment',
   },
   plugins: [
     {
@@ -15,16 +15,16 @@ module.exports = {
         // supported language
         languages: [`en`, `ja`],
         // language file path
-        defaultLanguage: `en`
+        defaultLanguage: `en`,
         // option to redirect to `/ko` when connecting `/`
         // redirect: true,
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-env-variables`,
       options: {
-        whitelist: ['BACKEND_URL']
-      }
+        whitelist: ['BACKEND_URL'],
+      },
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
@@ -32,8 +32,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
-      }
+        path: `${__dirname}/src/images`,
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -46,12 +46,12 @@ module.exports = {
         background_color: `#14c393`,
         theme_color: `#14c393`,
         display: `minimal-ui`,
-        icon: `src/images/logo-SAN.svg` // This path is relative to the root of the site.
-      }
+        icon: `src/images/logo-SAN.svg`, // This path is relative to the root of the site.
+      },
     },
-    `gatsby-plugin-client-side-redirect`
+    `gatsby-plugin-client-side-redirect`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ]
+  ],
 }
