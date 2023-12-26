@@ -1,7 +1,7 @@
 @import "~@santiment-network/ui/mixins";
 
 .leading {
-  max-width: 490px;
+  max-width: 460px;
   align-items: flex-start;
 
   @include responsive("phone-xs", "phone", "tablet") {
@@ -29,7 +29,10 @@
 .btnWrapper {
   margin: 0;
   display: block !important;
-  align-self: stretch;
+
+  @include responsive("phone-xs", "phone", "tablet") {
+    align-self: stretch;
+  }
 }
 
 .btn {

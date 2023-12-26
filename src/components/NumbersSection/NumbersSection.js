@@ -6,8 +6,8 @@ import MainNumbers from './MainNumbers'
 import Numbers from './Numbers'
 
 const NumbersSection = () => (
-  <section className={cx(styles.wrapper, 'row hv-center c-white')}>
-    <div className={cx(styles.content, 'column')}>
+  <div className={cx(styles.wrapper, 'row hv-center c-white')}>
+    <section className={cx(styles.content, 'column')}>
       <div className={cx(styles.main, 'row')}>
         <Leading />
 
@@ -15,8 +15,8 @@ const NumbersSection = () => (
       </div>
 
       <Numbers />
-    </div>
-  </section>
+    </section>
+  </div>
 )
 
 export default NumbersSection

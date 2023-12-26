@@ -2,24 +2,26 @@
 
 .wrapper {
   max-width: 100%;
-  padding: 160px 24px;
+  padding: 160px 0;
   background-color: var(--black);
 
   @include responsive("phone-xs", "phone", "tablet") {
-    padding: 64px 20px;
+    padding: 64px 0;
   }
 }
 
 .content {
   gap: 120px;
+  padding: 0 24px;
 
   @include responsive("phone-xs", "phone", "tablet") {
     gap: 64px;
+    padding: 0 20px;
   }
 }
 
 .main {
-  gap: 100px;
+  gap: 80px;
 
   @include responsive("phone-xs", "phone", "tablet") {
     flex-direction: column;
