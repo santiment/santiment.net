@@ -8,6 +8,7 @@ import SEO from '../components/seo'
 import Cta from '../components/CTA/CTA'
 import Description from '../components/Description/Description'
 import About from '../components/About/About'
+import Mission from '../components/Mission/Mission'
 import { useIsMobile } from '../hooks/responsive'
 import styles from './index.module.scss'
 
@@ -57,6 +58,7 @@ const Index = ({ location }) => {
       <Description />
       <NumbersSection />
       <About />
+      <Mission />
       <Twitter />
       <Cta />
     </Layout>
