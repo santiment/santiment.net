@@ -1,0 +1,24 @@
+@import "~@santiment-network/ui/mixins";
+
+.wrapper {
+  max-width: 100%;
+  padding: 160px 24px;
+  background-color: var(--black);
+
+  @include responsive("tablet") {
+    padding: 64px 20px;
+
+  }
+
+  @include responsive("phone-xs", "phone") {
+    padding: 64px 5px;
+  }
+}
+
+.content {
+  gap: 100px;
+
+  @include responsive("phone-xs", "phone", "tablet") {
+    flex-direction: column;
+  }
+}

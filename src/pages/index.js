@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Layout from '../components/layout'
 import LPHeader from '../components/LPHeader/LPHeader'
 import MainBlock from '../components/MainBlock/MainBlock'
-import Numbers from '../components/Numbers/Numbers'
+import NumbersSection from '../components/NumbersSection/NumbersSection'
 import Twitter from '../components/Twitter/Twitter'
 import SEO from '../components/seo'
 import Cta from '../components/CTA/CTA'
@@ -55,7 +55,7 @@ const Index = ({ location }) => {
       />
       <MainBlock />
       <Description />
-      <Numbers />
+      <NumbersSection />
       <About />
       <Twitter />
       <Cta />
