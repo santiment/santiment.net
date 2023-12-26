@@ -3,14 +3,19 @@ import cx from 'classnames'
 import styles from './NumbersSection.module.scss'
 import Leading from './Leading'
 import MainNumbers from './MainNumbers'
+import Numbers from './Numbers'
 
 const NumbersSection = () => (
   <section className={cx(styles.wrapper, 'row hv-center c-white')}>
-    <section className={cx(styles.content, 'row')}>
-      <Leading />
+    <div className={cx(styles.content, 'column')}>
+      <div className={cx(styles.main, 'row')}>
+        <Leading />
 
-      <MainNumbers />
-    </section>
+        <MainNumbers />
+      </div>
+
+      <Numbers />
+    </div>
   </section>
 )
 
