@@ -35,6 +35,7 @@ import Plamena from './images/Plamena.png'
 import AlexanderS from './images/AlexanderS.png'
 import Bulat from './images/Bulat.png'
 import DmitryK from './images/DmitryK.png'
+import VladK from './images/VladK.png'
 
 export const GROUPS = {
   CORE: 'Core team',
@@ -463,5 +464,17 @@ export const PEOPLE = [
     description:
       "Dmitry is a tech industry veteran with 10+ years of experience, specializing in building businesses from inception. An active crypto trader, he holds dual Master's degrees in computer science and e-government. Dmitry's expertise and strategic mindset contribute significantly to our team's success.",
     links: {},
+  },
+  {
+    name: 'Vlad Keliy',
+    position: 'Middle Frontend Developer',
+    img: VladK,
+    group: GROUPS.DEVS,
+    description:
+      "Vlad, a versatile team member, holds a Bachelor's in Economics and boasts experience in both startup and large corporate environments. Unfazed by challenging problems, he embraces difficulty with a passion for learning new engineering skills. Vlad is particularly drawn to static typed languages and possesses the unique ability to simplify complex ideas for effective communication. As a person of planning, he brings strategic insights to our team. Outside of work, Vlad enjoys hiking and finds relaxation in the world of anime.",
+    links: {
+      linkedin: 'https://www.linkedin.com/in/vlad-keliy-1b093384',
+      github: 'https://github.com/vekkele',
+    },
   },
 ]
