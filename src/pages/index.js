@@ -2,12 +2,13 @@ import React, { useEffect } from 'react'
 import Layout from '../components/layout'
 import LPHeader from '../components/LPHeader/LPHeader'
 import MainBlock from '../components/MainBlock/MainBlock'
-import Numbers from '../components/Numbers/Numbers'
+import NumbersSection from '../components/NumbersSection/NumbersSection'
 import Twitter from '../components/Twitter/Twitter'
 import SEO from '../components/seo'
 import Cta from '../components/CTA/CTA'
 import Description from '../components/Description/Description'
 import About from '../components/About/About'
+import Mission from '../components/Mission/Mission'
 import { useIsMobile } from '../hooks/responsive'
 import styles from './index.module.scss'
 
@@ -55,8 +56,9 @@ const Index = ({ location }) => {
       />
       <MainBlock />
       <Description />
-      <Numbers />
+      <NumbersSection />
       <About />
+      <Mission />
       <Twitter />
       <Cta />
     </Layout>

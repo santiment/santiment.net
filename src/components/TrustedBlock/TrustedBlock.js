@@ -17,6 +17,7 @@ import cardano from './logos/cardano.svg'
 import kraken from './logos/kraken.svg'
 import kucoin from './logos/kucoin.svg'
 import maker from './logos/maker.svg'
+import coinotag from './logos/coinotag.svg'
 
 const logos = {
   binance,
@@ -32,6 +33,7 @@ const logos = {
   bitfinex,
   cardano,
   kraken,
+  coinotag,
   kucoin,
   maker,
 }
