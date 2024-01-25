@@ -16,6 +16,22 @@ export const PLANS_QUERY = gql`
   }
 `
 
+export const PPP_SETTINGS_QUERY = gql`
+  {
+    pppSettings {
+      isEligibleForPpp
+      country
+      plans {
+        id
+        name
+        interval
+        amount
+        isDeprecated
+      }
+    }
+  }
+`
+
 export const SUBSCRIBE_MUTATION = gql`
   mutation subscribe($cardToken: String!, $planId: Int!, $coupon: String) {
     subscribe(cardToken: $cardToken, planId: $planId, coupon: $coupon) {
