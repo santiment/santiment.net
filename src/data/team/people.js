@@ -36,6 +36,7 @@ import AlexanderS from './images/AlexanderS.png'
 import Bulat from './images/Bulat.png'
 import DmitryK from './images/DmitryK.png'
 import VladK from './images/VladK.png'
+import Evgeni from './images/Evgeni.png'
 
 export const GROUPS = {
   CORE: 'Core team',
@@ -476,5 +477,14 @@ export const PEOPLE = [
       linkedin: 'https://www.linkedin.com/in/vlad-keliy-1b093384',
       github: 'https://github.com/vekkele',
     },
+  },
+  {
+    name: 'Evgeni Enakiev',
+    position: 'Product Owner',
+    img: Evgeni,
+    group: GROUPS.BISUNESS,
+    description:
+      "With experience in both startup and big corporation environments, Evgeni is a firm believer in the potential of Distributed Ledger Technology (DLT) since 2013 when he explored Bitcoin mining. He has spent seven years in big data analytics and people management in the information services industry and was formerly the CEO of an academy for blockchain developers. Evgeni is also a fan of personal development and kaizen. Currently, his mission is to empower people worldwide to effectively manage their own wealth using Santiment's data and tools.",
+    links: {},
   },
 ]
