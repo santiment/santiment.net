@@ -27,7 +27,7 @@
     "lodash": "^4.17.14",
     "lodash.debounce": "^4.0.8",
     "lodash.template": "^4.5.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "phoenix": "^1.6.6",
     "prop-types": "^15.7.2",
     "query-string": "^6.5.0",
