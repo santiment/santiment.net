@@ -8,12 +8,7 @@ import Products from './Products'
 import AccountBtn from '../AccountBtn/AccountBtn'
 import styles from './Header.module.scss'
 
-const Header = ({
-  intl,
-  headerAnimation,
-  logo = mainLogo,
-  className = 'body-3'
-}) => {
+const Header = ({ intl, headerAnimation, logo = mainLogo, className = 'body-3' }) => {
   const toggle = useRef(null)
 
   const closeNav = () => {
@@ -21,55 +16,55 @@ const Header = ({
   }
 
   return (
-    <header
-      className={cx(
-        styles.header,
-        headerAnimation && styles.headerAnimation,
-        className
-      )}
-    >
+    <header className={cx(styles.header, headerAnimation && styles.headerAnimation, className)}>
       <div className={styles.container}>
         <div className={styles.left}>
           <div className={styles.product}>
             <div className={styles.products}>
-              <Link className={styles.logo} to='/'>
-                <img src={logo} alt='logo' width='105px' />
+              <Link className={styles.logo} to="/">
+                <img src={logo} alt="logo" width="105px" />
               </Link>
             </div>
           </div>
         </div>
-        <label htmlFor='hamburger'>
-          <Icon type='hamburger' className={styles.hamburger} />
+        <label htmlFor="hamburger">
+          <Icon type="hamburger" className={styles.hamburger} />
         </label>
-        <input id='hamburger' type='checkbox' ref={toggle} />
+        <input id="hamburger" type="checkbox" ref={toggle} />
         <nav className={styles.nav}>
-          <label htmlFor='hamburger' className={styles.close}>
-            <Icon type='close' />
+          <label htmlFor="hamburger" className={styles.close}>
+            <Icon type="close" />
           </label>
           <div className={styles.link}>
             <Products />
           </div>
-          <Link className={styles.link} to='/about' onClick={closeNav}>
+          <Link className={styles.link} to="/about" onClick={closeNav}>
             {tr('header.about', 'About')}
           </Link>
-          <Link className={styles.link} to='/team' onClick={closeNav}>
+          <Link className={styles.link} to="/team" onClick={closeNav}>
             {tr('header.team', 'Team')}
           </Link>
-          <Link className={styles.link} to='/jobs' onClick={closeNav}>
+          <Link className={styles.link} to="/jobs" onClick={closeNav}>
             {tr('header.jobs', 'Jobs')}
           </Link>
           <a
-            href='https://academy.santiment.net/'
-            target='_blank'
-            rel='noopener noreferrer'
+            href="https://academy.santiment.net/"
+            target="_blank"
+            rel="noopener noreferrer"
             className={cx(styles.link, styles.right)}
           >
             Academy
-            <Icon type='external-link' className={styles.external} />
+            <Icon type="external-link" className={styles.external} />
           </a>
-          <Link className={styles.link} to='/pricing' onClick={closeNav}>
+          <a
+            className={styles.link}
+            href="https://app.santiment.net/pricing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {tr('header.pricing', 'Pricing')}
-          </Link>
+            <Icon type="external-link" className={styles.external} />
+          </a>
         </nav>
         <AccountBtn />
       </div>
