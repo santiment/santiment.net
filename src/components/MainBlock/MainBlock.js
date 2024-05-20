@@ -1,13 +1,12 @@
 import React from 'react'
 import cx from 'classnames'
+import Lottie from 'lottie-react'
 import TrustedBlock from '../TrustedBlock/TrustedBlock'
 import AccountBtn from '../AccountBtn/AccountBtn'
-import spaceMan from './images/space-man.svg'
 import styles from './MainBlock.module.scss'
+import animationData from './data.json'
 
 const MainBlock = () => {
-  const illustration = <img className={styles.img} src={spaceMan} alt="Space Man Illustrastion" />
-
   return (
     <div className={cx(styles.backgroundContainer, 'relative')}>
       <section className={cx(styles.wrapper, 'column relative')}>
@@ -28,12 +27,13 @@ const MainBlock = () => {
             }}
           />
         </div>
-        <div className={cx(styles.illustrationBottom)}>{illustration}</div>
+        <div className={cx(styles.illustration)}>
+          <Lottie animationData={animationData}></Lottie>
+        </div>
         <div className={cx(styles.logosWrapper)}>
           <TrustedBlock />
         </div>
       </section>
-      <div className={cx(styles.illustrationRight)}>{illustration}</div>
     </div>
   )
 }
