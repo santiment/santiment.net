@@ -44,7 +44,7 @@
   :global(.tablet) &,
   :global(.phone-xs) &,
   :global(.phone) & {
-    margin-bottom: 32px;
+    margin-bottom: 700px;
   }
 }
 
@@ -120,46 +120,19 @@
 }
 
 
-.illustrationRight {
-  --section-center: calc((100% - 1440px) / 2);
-
-  height: 100%;
+.illustration {
   position: absolute;
-  top: 0;
-  left: calc(var(--section-center) + 720px);
+  bottom: 0;
+  right: -670px;
   z-index: -1;
-
-  @include responsive('laptop') {
-    left: calc(var(--section-center) + 580px);
-  }
+  width: 2540px;
 
   :global(.tablet) &,
   :global(.phone-xs) &,
   :global(.phone) & {
-    display: none;
-  }
-}
-
-.illustrationBottom {
-  --screen-center: calc(100% / 2);
-
-  display: none;
-
-  :global(.tablet) &,
-  :global(.phone-xs) &,
-  :global(.phone) & {
-    display: block;
-    position: relative;
-  }
-
-  :global(.tablet) & {
-    left: calc(var(--screen-center) - 340px);
-  }
-
-  :global(.phone-xs) &,
-  :global(.phone) & {
-    left: calc(var(--screen-center) - 200px);
-
+    right: unset;
+    left: -1460px;
+    width: 2540px;
   }
 }
 
