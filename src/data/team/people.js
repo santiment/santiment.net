@@ -490,7 +490,7 @@ export const PEOPLE = [
   },
   {
     name: 'Suzanne Pace',
-    position: 'Strategic Partnership Coordinator',
+    position: 'Account Executive',
     img: Suzanne,
     group: GROUPS.BISUNESS,
     description:
