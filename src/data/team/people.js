@@ -23,7 +23,6 @@ import Petra from './images/Petra.png'
 import Tsetso from './images/Tsetso.png'
 import Tzanko from './images/Tzanko.png'
 import Vassil from './images/Vassil.png'
-import Vlad from './images/Vlad.png'
 import VladV from './images/VladV.png'
 import VladimirT from './images/VladimirT.png'
 import Yordan from './images/Yordan.png'
@@ -294,17 +293,6 @@ export const PEOPLE = [
       'He has a Master degree in industrial automation with more than 15 years of IT/infrastructure expertise. Throughout his career, he grew few large scale projects to more than 4000 hosts and devices. He is passionate with cloud technologies, automation, security, Linux, BSD and embedded systems. He is interested about scifi , technology and always enjoy learning new things on his spare time',
     links: {
       linkedin: 'https://www.linkedin.com/in/nkalev',
-    },
-  },
-  {
-    name: 'Vladimir Donskoi',
-    position: 'Managing Director',
-    img: Vlad,
-    group: GROUPS.BISUNESS,
-    description:
-      'Dr. Vladimir Donskoi - expert in the development of new growth models and entrepreneurial ecosystems; studies at Harvard and Oxford universities; experience in founding, managing and strategic consulting for a number of companies.',
-    links: {
-      linkedin: 'https://www.linkedin.com/in/dr-vladimir-donskoi-022257109/',
     },
   },
   {
