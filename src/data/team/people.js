@@ -1,5 +1,4 @@
 import Alex from './images/Alex.png'
-import Alexey from './images/Alexey.png'
 import Anastasiya from './images/Anastasiya.png'
 import Anatoliy from './images/Anatoliy.png'
 import Brian from './images/Brian.png'
@@ -23,7 +22,6 @@ import Petra from './images/Petra.png'
 import Tsetso from './images/Tsetso.png'
 import Tzanko from './images/Tzanko.png'
 import Vassil from './images/Vassil.png'
-import Vlad from './images/Vlad.png'
 import VladV from './images/VladV.png'
 import VladimirT from './images/VladimirT.png'
 import Yordan from './images/Yordan.png'
@@ -88,10 +86,10 @@ export const PEOPLE = [
   },
   {
     name: 'Petra Ujvari',
-    position: 'HR Manager',
+    position: 'HR & Managing Director',
     img: Petra,
     group: GROUPS.BISUNESS,
-    description: `From Senior Relationship Manager to Santiment's HR Manager, Petra is the ultimate people person. With a keen eye for talent and a passion for blockchain technology, Petra connects visionaries with opportunities to drive the future of decentralized finance. Drawing on a background in international education Petra brings a unique perspective to the world of HR. When not building top-performing teams, you can find her exploring the latest developments and networking with industry leaders.`,
+    description: `Petra is the Managing Director of Santiment's German subsidiary and continues to serve as the HR Manager for the entire team. From Senior Relationship Manager to Santiment's HR Manager, Petra is the ultimate people person. With a keen eye for talent and a passion for blockchain technology, Petra connects visionaries with opportunities to drive the future of decentralized finance. Drawing on a background in international education Petra brings a unique perspective to the world of HR. When not building top-performing teams, you can find her exploring the latest developments and networking with industry leaders.`,
     links: {
       email: 'mailto:petra.u@santiment.net',
       telegram: 'https://t.me/ujvaripe',
@@ -109,17 +107,6 @@ export const PEOPLE = [
       linkedin: 'https://www.linkedin.com/in/brian-quinlivan-mba-3a95b18b/',
       medium: 'https://medium.com/@bquinliv3',
       facebook: 'https://www.facebook.com/brian.quinlivan.7',
-    },
-  },
-  {
-    name: 'Alexey Komkov',
-    position: 'Product Marketing Manager',
-    img: Alexey,
-    group: GROUPS.MARKETING,
-    description:
-      'Alexey has an MBA in marketing communications and 7+ years of experience. Throughout his career, he did marketing for: crypto startups, custom software development services, IT equipment, and complex B2B products. He believes in continuous education, that’s why he is always on the lookout for a new book, marketing course, or webinar.',
-    links: {
-      linkedin: 'https://www.linkedin.com/in/alexey-komkov/',
     },
   },
   {
@@ -294,17 +281,6 @@ export const PEOPLE = [
       'He has a Master degree in industrial automation with more than 15 years of IT/infrastructure expertise. Throughout his career, he grew few large scale projects to more than 4000 hosts and devices. He is passionate with cloud technologies, automation, security, Linux, BSD and embedded systems. He is interested about scifi , technology and always enjoy learning new things on his spare time',
     links: {
       linkedin: 'https://www.linkedin.com/in/nkalev',
-    },
-  },
-  {
-    name: 'Vladimir Donskoi',
-    position: 'Managing Director',
-    img: Vlad,
-    group: GROUPS.BISUNESS,
-    description:
-      'Dr. Vladimir Donskoi - expert in the development of new growth models and entrepreneurial ecosystems; studies at Harvard and Oxford universities; experience in founding, managing and strategic consulting for a number of companies.',
-    links: {
-      linkedin: 'https://www.linkedin.com/in/dr-vladimir-donskoi-022257109/',
     },
   },
   {
@@ -490,7 +466,7 @@ export const PEOPLE = [
   },
   {
     name: 'Suzanne Pace',
-    position: 'Strategic Partnership Coordinator',
+    position: 'Account Executive',
     img: Suzanne,
     group: GROUPS.BISUNESS,
     description:
