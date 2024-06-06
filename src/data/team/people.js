@@ -89,7 +89,7 @@ export const PEOPLE = [
     position: 'HR & Managing Director',
     img: Petra,
     group: GROUPS.BISUNESS,
-    description: `Petra is the Managing Director of Santiment's German subsidiary and continues to serve as the HR Manager for the entire team. From Senior Relationship Manager to Santiment's HR Manager, Petra is the ultimate people person. With a keen eye for talent and a passion for blockchain technology, Petra connects visionaries with opportunities to drive the future of decentralized finance. Drawing on a background in international education Petra brings a unique perspective to the world of HR. When not building top-performing teams, you can find her exploring the latest developments and networking with industry leaders.`,
+    description: `Petra is the Managing Director of Santiment's German subsidiary and continues to serve as the HR Manager for the entire team. With a keen eye for talent and a passion for blockchain technology, Petra connects visionaries with opportunities to drive the future of decentralized finance. When not building top-performing teams, you can find her exploring the latest developments and networking with industry leaders.`,
     links: {
       email: 'mailto:petra.u@santiment.net',
       telegram: 'https://t.me/ujvaripe',
@@ -456,21 +456,21 @@ export const PEOPLE = [
     },
   },
   {
-    name: 'Evgeni Enakiev',
-    position: 'Product Owner',
-    img: Evgeni,
-    group: GROUPS.BISUNESS,
-    description:
-      "With experience in both startup and big corporation environments, Evgeni is a firm believer in the potential of Distributed Ledger Technology (DLT) since 2013 when he explored Bitcoin mining. He has spent seven years in big data analytics and people management in the information services industry and was formerly the CEO of an academy for blockchain developers. Evgeni is also a fan of personal development and kaizen. Currently, his mission is to empower people worldwide to effectively manage their own wealth using Santiment's data and tools.",
-    links: {},
-  },
-  {
     name: 'Suzanne Pace',
     position: 'Account Executive',
     img: Suzanne,
     group: GROUPS.BISUNESS,
     description:
       "At the heart of Santiment's B2B sales team, Suzanne leverages her Master's in finance and  background in strategy consulting to deeply understand your business challenges. Her purpose encompasses people enjoying her presence and seeking her competence. She is a people person, actively listens, and excels in setting up bespoke solutions with you. Beyond work, she enjoys sports, yoga, travel, and continuous learning, infusing every experience with the same enthusiasm she brings to her work.",
+    links: {},
+  },
+  {
+    name: 'Evgeni Enakiev',
+    position: 'Product Owner',
+    img: Evgeni,
+    group: GROUPS.BISUNESS,
+    description:
+      "With experience in both startup and big corporation environments, Evgeni is a firm believer in the potential of Distributed Ledger Technology (DLT) since 2013 when he explored Bitcoin mining. He has spent seven years in big data analytics and people management in the information services industry and was formerly the CEO of an academy for blockchain developers. Evgeni is also a fan of personal development and kaizen. Currently, his mission is to empower people worldwide to effectively manage their own wealth using Santiment's data and tools.",
     links: {},
   },
 ]
