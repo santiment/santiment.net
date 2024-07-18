@@ -41,7 +41,7 @@
     "react-slick": "^0.24.0",
     "react-transition-group": "^4.1.1",
     "san-studio": "https://github.com/santiment/san-studio.git#63a95e6",
-    "san-webkit": "https://github.com/santiment/san-webkit.git#a244f3a",
+    "san-webkit": "https://github.com/santiment/san-webkit.git#01c631c",
     "sanbase": "https://github.com/santiment/app.git#d6a4d26",
     "slick-carousel": "^1.8.1",
     "svelte-preprocess-cssmodules": "https://github.com/DmitriVanGuard/svelte-preprocess-cssmodules#3b24f22"
