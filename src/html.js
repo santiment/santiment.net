@@ -33,6 +33,20 @@ const firstPromoterScript = (
   />
 )
 
+const smartlookScript = (
+  <script
+    type="text/javascript"
+    dangerouslySetInnerHTML={{
+      __html: `window.smartlook||(function(d) {
+    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', 'f46f59a16976f2bcae434f21168a5d9920117b96', { region: 'eu' });`,
+    }}
+  ></script>
+)
+
 export default function HTML (props) {
   return (
     <html {...props.htmlAttributes}>
@@ -90,6 +104,7 @@ export default function HTML (props) {
         />
         {props.postBodyComponents}
         {intercomScript}
+        {smartlookScript}
         {gtagScript}
         {firstPromoterScript}
         <script
