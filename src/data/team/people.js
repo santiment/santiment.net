@@ -20,7 +20,6 @@ import Max from './images/Max.png'
 import Nikolay from './images/Nikolay.png'
 import Petra from './images/Petra.png'
 import Tsetso from './images/Tsetso.png'
-import Tzanko from './images/Tzanko.png'
 import Vassil from './images/Vassil.png'
 import VladV from './images/VladV.png'
 import VladimirT from './images/VladimirT.png'
@@ -34,7 +33,6 @@ import AlexanderS from './images/AlexanderS.png'
 import Bulat from './images/Bulat.png'
 import DmitryK from './images/DmitryK.png'
 import VladK from './images/VladK.png'
-import Evgeni from './images/Evgeni.png'
 import Suzanne from './images/Suzanne.png'
 
 export const GROUPS = {
@@ -60,17 +58,6 @@ export const PEOPLE = [
       sanbase: 'https://app.santiment.net/profile/836',
       twitter: 'https://twitter.com/balance_ra',
       linkedin: 'https://www.linkedin.com/in/maksim-balashevich-640a8948/',
-    },
-  },
-  {
-    name: 'Tzanko Matev',
-    position: 'PhD Developer / Mathematician',
-    img: Tzanko,
-    group: GROUPS.CORE,
-    description:
-      'Number theorist, software developer and devops leader keeping Santiment systems in shape. Brings experience with backend logic and data structures as well. Data scientist. New crypto explorer. Meditator.',
-    links: {
-      linkedin: 'https://www.linkedin.com/in/tzanko-matev-2328425/',
     },
   },
   {
@@ -462,15 +449,6 @@ export const PEOPLE = [
     group: GROUPS.BISUNESS,
     description:
       "At the heart of Santiment's B2B sales team, Suzanne leverages her Master's in finance and  background in strategy consulting to deeply understand your business challenges. Her purpose encompasses people enjoying her presence and seeking her competence. She is a people person, actively listens, and excels in setting up bespoke solutions with you. Beyond work, she enjoys sports, yoga, travel, and continuous learning, infusing every experience with the same enthusiasm she brings to her work.",
-    links: {},
-  },
-  {
-    name: 'Evgeni Enakiev',
-    position: 'Product Owner',
-    img: Evgeni,
-    group: GROUPS.BISUNESS,
-    description:
-      "With experience in both startup and big corporation environments, Evgeni is a firm believer in the potential of Distributed Ledger Technology (DLT) since 2013 when he explored Bitcoin mining. He has spent seven years in big data analytics and people management in the information services industry and was formerly the CEO of an academy for blockchain developers. Evgeni is also a fan of personal development and kaizen. Currently, his mission is to empower people worldwide to effectively manage their own wealth using Santiment's data and tools.",
     links: {},
   },
 ]
