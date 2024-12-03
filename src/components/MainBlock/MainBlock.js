@@ -1,10 +1,9 @@
 import React from 'react'
 import cx from 'classnames'
-import Lottie from 'lottie-react'
 import TrustedBlock from '../TrustedBlock/TrustedBlock'
 import AccountBtn from '../AccountBtn/AccountBtn'
 import styles from './MainBlock.module.scss'
-import animationData from './data.json'
+import lp from './images/lp.svg'
 
 const MainBlock = () => {
   return (
@@ -27,9 +26,7 @@ const MainBlock = () => {
             }}
           />
         </div>
-        <div className={cx(styles.illustration)}>
-          <Lottie animationData={animationData}></Lottie>
-        </div>
+        <img src={lp} className={cx(styles.illustration)} alt="" />
         <div className={cx(styles.logosWrapper)}>
           <TrustedBlock />
         </div>

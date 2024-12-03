@@ -18,7 +18,7 @@
 .wrapper {
   max-width: 1140px;
   padding: 0;
-  padding-top: 108px;
+  padding-top: 120px;
   margin: 0 auto;
   width: 100%;
 
@@ -39,7 +39,7 @@
 
 .leftBlock {
   max-width: 568px;
-  margin: 0 0 140px;
+  margin: 0 0 266px;
 
   :global(.tablet) &,
   :global(.phone-xs) &,
@@ -72,7 +72,7 @@
 
 .description {
   color: #a2a7bd;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 
   :global(.phone-xs) &,
   :global(.phone) & {
@@ -122,23 +122,36 @@
 
 .illustration {
   position: absolute;
-  bottom: 0;
-  right: -670px;
+  bottom: -45px;
+  right: -700px;
   z-index: -1;
-  width: 2540px;
+  width: 2106px;
 
-  :global(.tablet) &,
-  :global(.phone-xs) &,
-  :global(.phone) & {
+  :global(.tablet) & {
+    width: 1805px;
     right: unset;
-    left: -1460px;
-    width: 2540px;
+    left: -650px;
+    bottom: 0;
+  }
+
+  :global(.phone) & {
+    width: 1505px;
+    right: unset;
+    left: -550px;
+    bottom: 0;
+  }
+
+  :global(.phone-xs) & {
+    right: unset;
+    left: -402px;
+    bottom: 140px;
+    width: 1100px;
   }
 }
 
 .logosWrapper {
   width: 100%;
-  padding-bottom: 76px;
+  padding-bottom: 88px;
 
   :global(.tablet) &,
   :global(.phone-xs) &,
