@@ -34,6 +34,7 @@ import Bulat from './images/Bulat.png'
 import DmitryK from './images/DmitryK.png'
 import VladK from './images/VladK.png'
 import Suzanne from './images/Suzanne.png'
+import DmitryG from './images/DmitryG.png'
 
 export const GROUPS = {
   CORE: 'Core team',
@@ -449,6 +450,15 @@ export const PEOPLE = [
     group: GROUPS.BISUNESS,
     description:
       "At the heart of Santiment's B2B sales team, Suzanne leverages her Master's in finance and  background in strategy consulting to deeply understand your business challenges. Her purpose encompasses people enjoying her presence and seeking her competence. She is a people person, actively listens, and excels in setting up bespoke solutions with you. Beyond work, she enjoys sports, yoga, travel, and continuous learning, infusing every experience with the same enthusiasm she brings to her work.",
+    links: {},
+  },
+  {
+    name: 'Dmitry Golubev',
+    position: 'CTO',
+    img: DmitryG,
+    group: GROUPS.CORE,
+    description:
+      'With 25+ years in software development, Dmitry combines deep technical expertise with strategic business insight. Holding a Master’s in Cybernetics and an MBA in Finance, he spent 17 years in telecommunications, developing products for global operators. As a founder of tech startups, he created innovative products, including a CRM system and a Low-Code platform with patented technology. A strong advocate for blockchain technology, especially in decentralized finance, Dmitry has extensive blockchain development experience, including cross-chain solutions. He played a key role in developing the leading euro-backed stablecoin platform and has deep expertise in blockchain integration and interoperability. Dmitry is committed to innovation, leadership, and value creation.',
     links: {},
   },
 ]
