@@ -3,21 +3,17 @@ import cx from 'classnames'
 import TrustedBlock from '../TrustedBlock/TrustedBlock'
 import AccountBtn from '../AccountBtn/AccountBtn'
 import styles from './MainBlock.module.scss'
-import lp from './images/lp.svg'
 
 const MainBlock = () => {
   return (
-    <div className={cx(styles.backgroundContainer, 'relative')}>
+    <div className={styles.backgroundContainer}>
       <section className={cx(styles.wrapper, 'column relative')}>
         <div className={cx(styles.leftBlock, 'column')}>
           <h1 className={cx(styles.title, 'mrg--b mrg-l')}>
-            Gain Market Clarity
-            <br />
-            with Behavioural Analytics
+            Gain Actionable Insights with Behavior Analytics in Crypto
           </h1>
           <h2 className={cx(styles.description, 'h4')}>
-            Make data-driven investments powered by community insights, on-chain, social and dev
-            data
+            Make smarter decisions with powerful tools and trusted data sources
           </h2>
           <AccountBtn
             classes={{
@@ -26,9 +22,14 @@ const MainBlock = () => {
             }}
           />
         </div>
-        <img src={lp} className={cx(styles.illustration)} alt="" />
         <div className={cx(styles.logosWrapper)}>
           <TrustedBlock />
+        </div>
+        <div className={cx(styles.rightBlock, 'column')}>
+          <h1 className={styles.title}>Access Comprehensive Set of Data Sources</h1>
+          <h2 className={cx(styles.description, 'h4')}>
+            Use social, blockchain, financial, dev, and community metrics to improve your strategy
+          </h2>
         </div>
       </section>
     </div>

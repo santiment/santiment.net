@@ -1,17 +1,18 @@
 @import "~@santiment-network/ui/mixins.scss";
 
 .backgroundContainer {
-  display: flex;
-  z-index: 0;
-  background-image: url('./images/curved-line.svg');
-  background-position: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url('./images/lp.svg');
+  background-position-x: center;
+  background-position-y: top;
   background-repeat: no-repeat;
   overflow: hidden;
 
-  :global(.tablet) &,
-  :global(.phone-xs) &,
-  :global(.phone) & {
-    background-image: none;
+  @include responsive("laptop", "tablet") {
+    background-image: url('./images/lp2.svg');
+    background-position-x: center;
   }
 }
 
@@ -38,14 +39,19 @@
 }
 
 .leftBlock {
-  max-width: 568px;
-  margin: 0 0 266px;
+  max-width: 644px;
+  margin: 0 0 357px;
 
-  :global(.tablet) &,
-  :global(.phone-xs) &,
-  :global(.phone) & {
-    margin-bottom: 700px;
+  @include responsive('laptop') {
+    margin: 0 0 195px;
   }
+}
+
+.rightBlock {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 478px;
 }
 
 .leftBlock,
@@ -62,11 +68,11 @@
 .title {
   @include text("h1");
   font-weight: 500;
+  margin-bottom: 16px;
 
-  :global(.phone-xs) &,
-  :global(.phone) & {
+  @include responsive('laptop', 'tablet', 'phone', 'phone-xs') {
     --margin: 12px;
-    @include text("h3");
+    @include text('h3')
   }
 }
 
@@ -74,8 +80,7 @@
   color: #a2a7bd;
   margin-bottom: 40px;
 
-  :global(.phone-xs) &,
-  :global(.phone) & {
+  @include responsive('laptop', 'tablet', 'phone', 'phone-xs') {
     @include text("body-2");
     margin-bottom: 24px;
   }
@@ -120,44 +125,11 @@
 }
 
 
-.illustration {
-  position: absolute;
-  bottom: -45px;
-  right: -700px;
-  z-index: -1;
-  width: 2106px;
-
-  :global(.tablet) & {
-    width: 1805px;
-    right: unset;
-    left: -650px;
-    bottom: 0;
-  }
-
-  :global(.phone) & {
-    width: 1505px;
-    right: unset;
-    left: -550px;
-    bottom: 0;
-  }
-
-  :global(.phone-xs) & {
-    right: unset;
-    left: -402px;
-    bottom: 140px;
-    width: 1100px;
-  }
-}
-
 .logosWrapper {
   width: 100%;
-  padding-bottom: 88px;
+  margin-bottom: 229px;
 
-  :global(.tablet) &,
-  :global(.phone-xs) &,
-  :global(.phone) & {
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 40px;
+  @include responsive('laptop') {
+    margin-bottom: 151px;
   }
 }
