@@ -4,17 +4,17 @@
   position: relative;
   height: 100%;
   width: 100%;
-  background-image: url('./images/lp.svg');
+  background-image: url('./images/illus-desktop.svg');
   background-position-x: center;
   background-position-y: top;
   background-repeat: no-repeat;
 
-  @include responsive("laptop", "tablet") {
-    background-image: url('./images/lp2.svg');
+  @include responsive("laptop") {
+    background-image: url('./images/illus-laptop.svg');
   }
 
   @include responsive('phone-xs', 'phone', 'tablet') {
-    background: none !important;
+    background: none;
     padding-bottom: 26px;
   }
 }

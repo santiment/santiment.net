@@ -3,7 +3,7 @@ import cx from 'classnames'
 import TrustedBlock from '../TrustedBlock/TrustedBlock'
 import AccountBtn from '../AccountBtn/AccountBtn'
 import styles from './MainBlock.module.scss'
-import MobileBg from './MobileBg'
+import img from './images/illus-mobile.svg'
 
 const MainBlock = () => {
   return (
@@ -24,7 +24,7 @@ const MainBlock = () => {
           />
         </div>
         <div className="relative">
-          <MobileBg className={styles.mobileBg} />
+          <img src={img} className={styles.mobileBg} alt="" />
           <div className={styles.footerWrapper}>
             <div className={cx(styles.logosWrapper)}>
               <TrustedBlock />
