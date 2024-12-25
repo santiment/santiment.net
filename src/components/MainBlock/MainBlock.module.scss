@@ -8,11 +8,14 @@
   background-position-x: center;
   background-position-y: top;
   background-repeat: no-repeat;
-  overflow: hidden;
 
   @include responsive("laptop", "tablet") {
     background-image: url('./images/lp2.svg');
-    background-position-x: center;
+  }
+
+  @include responsive('phone-xs', 'phone', 'tablet') {
+    background: none !important;
+    padding-bottom: 26px;
   }
 }
 
@@ -45,6 +48,12 @@
   @include responsive('laptop') {
     margin: 0 0 195px;
   }
+
+  @include responsive("phone", "phone-xs", 'tablet') {
+    max-width: 568px;
+    margin: 0 0 80px;
+  }
+
 }
 
 .rightBlock {
@@ -52,6 +61,23 @@
   margin-left: auto;
   margin-right: 0;
   margin-bottom: 478px;
+
+  @include responsive('phone-xs') {
+    max-width: 356px;
+  }
+
+  @include responsive("phone", "phone-xs", 'tablet') {
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+}
+
+.mobileBg {
+  display: none;
+
+  @include responsive("phone", "phone-xs", 'tablet') {
+    display: block;
+  }
 }
 
 .leftBlock,
@@ -124,12 +150,28 @@
   }
 }
 
+.footerWrapper {
+  @include responsive('phone-xs', 'phone', 'tablet') {
+    position: absolute;
+    top: 18%;
+    width: 100%;
+  }
+}
 
 .logosWrapper {
   width: 100%;
   margin-bottom: 229px;
+  overflow: hidden;
 
   @include responsive('laptop') {
     margin-bottom: 151px;
+  }
+
+  @include responsive('phone', 'tablet') {
+    margin-bottom: 50%;
+  }
+
+  @include responsive("phone-xs") {
+    margin-bottom: 70px;
   }
 }

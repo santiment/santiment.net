@@ -3,6 +3,7 @@ import cx from 'classnames'
 import TrustedBlock from '../TrustedBlock/TrustedBlock'
 import AccountBtn from '../AccountBtn/AccountBtn'
 import styles from './MainBlock.module.scss'
+import MobileBg from './MobileBg'
 
 const MainBlock = () => {
   return (
@@ -22,14 +23,20 @@ const MainBlock = () => {
             }}
           />
         </div>
-        <div className={cx(styles.logosWrapper)}>
-          <TrustedBlock />
-        </div>
-        <div className={cx(styles.rightBlock, 'column')}>
-          <h1 className={styles.title}>Access Comprehensive Set of Data Sources</h1>
-          <h2 className={cx(styles.description, 'h4')}>
-            Use social, blockchain, financial, dev, and community metrics to improve your strategy
-          </h2>
+        <div className="relative">
+          <MobileBg className={styles.mobileBg} />
+          <div className={styles.footerWrapper}>
+            <div className={cx(styles.logosWrapper)}>
+              <TrustedBlock />
+            </div>
+            <div className={cx(styles.rightBlock, 'column')}>
+              <h1 className={styles.title}>Access Comprehensive Set of Data Sources</h1>
+              <h2 className={cx(styles.description, 'h4')}>
+                Use social, blockchain, financial, dev, and community metrics to improve your
+                strategy
+              </h2>
+            </div>
+          </div>
         </div>
       </section>
     </div>
