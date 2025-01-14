@@ -1,24 +1,28 @@
 @import "~@santiment-network/ui/mixins.scss";
 
 .backgroundContainer {
-  display: flex;
-  z-index: 0;
-  background-image: url('./images/curved-line.svg');
-  background-position: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url('./images/illus-desktop.svg');
+  background-position-x: center;
+  background-position-y: top;
   background-repeat: no-repeat;
-  overflow: hidden;
 
-  :global(.tablet) &,
-  :global(.phone-xs) &,
-  :global(.phone) & {
-    background-image: none;
+  @include responsive("laptop") {
+    background-image: url('./images/illus-laptop.svg');
+  }
+
+  @include responsive('phone-xs', 'phone', 'tablet') {
+    background: none;
+    padding-bottom: 26px;
   }
 }
 
 .wrapper {
   max-width: 1140px;
   padding: 0;
-  padding-top: 108px;
+  padding-top: 120px;
   margin: 0 auto;
   width: 100%;
 
@@ -38,13 +42,41 @@
 }
 
 .leftBlock {
-  max-width: 568px;
-  margin: 0 0 140px;
+  max-width: 644px;
+  margin: 0 0 357px;
 
-  :global(.tablet) &,
-  :global(.phone-xs) &,
-  :global(.phone) & {
-    margin-bottom: 700px;
+  @include responsive('laptop') {
+    margin: 0 0 195px;
+  }
+
+  @include responsive("phone", "phone-xs", 'tablet') {
+    max-width: 568px;
+    margin: 0 0 80px;
+  }
+
+}
+
+.rightBlock {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 478px;
+
+  @include responsive('phone-xs') {
+    max-width: 356px;
+  }
+
+  @include responsive("phone", "phone-xs", 'tablet') {
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+}
+
+.mobileBg {
+  display: none;
+
+  @include responsive("phone", "phone-xs", 'tablet') {
+    display: block;
   }
 }
 
@@ -62,20 +94,19 @@
 .title {
   @include text("h1");
   font-weight: 500;
+  margin-bottom: 16px;
 
-  :global(.phone-xs) &,
-  :global(.phone) & {
+  @include responsive('laptop', 'tablet', 'phone', 'phone-xs') {
     --margin: 12px;
-    @include text("h3");
+    @include text('h3')
   }
 }
 
 .description {
   color: #a2a7bd;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 
-  :global(.phone-xs) &,
-  :global(.phone) & {
+  @include responsive('laptop', 'tablet', 'phone', 'phone-xs') {
     @include text("body-2");
     margin-bottom: 24px;
   }
@@ -119,32 +150,28 @@
   }
 }
 
-
-.illustration {
-  position: absolute;
-  bottom: 0;
-  right: -670px;
-  z-index: -1;
-  width: 2540px;
-
-  :global(.tablet) &,
-  :global(.phone-xs) &,
-  :global(.phone) & {
-    right: unset;
-    left: -1460px;
-    width: 2540px;
+.footerWrapper {
+  @include responsive('phone-xs', 'phone', 'tablet') {
+    position: absolute;
+    top: 18%;
+    width: 100%;
   }
 }
 
 .logosWrapper {
   width: 100%;
-  padding-bottom: 76px;
+  margin-bottom: 229px;
+  overflow: hidden;
 
-  :global(.tablet) &,
-  :global(.phone-xs) &,
-  :global(.phone) & {
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 40px;
+  @include responsive('laptop') {
+    margin-bottom: 151px;
+  }
+
+  @include responsive('phone', 'tablet') {
+    margin-bottom: 50%;
+  }
+
+  @include responsive("phone-xs") {
+    margin-bottom: 70px;
   }
 }

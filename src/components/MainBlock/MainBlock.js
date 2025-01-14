@@ -1,24 +1,20 @@
 import React from 'react'
 import cx from 'classnames'
-import Lottie from 'lottie-react'
 import TrustedBlock from '../TrustedBlock/TrustedBlock'
 import AccountBtn from '../AccountBtn/AccountBtn'
 import styles from './MainBlock.module.scss'
-import animationData from './data.json'
+import img from './images/illus-mobile.svg'
 
 const MainBlock = () => {
   return (
-    <div className={cx(styles.backgroundContainer, 'relative')}>
+    <div className={styles.backgroundContainer}>
       <section className={cx(styles.wrapper, 'column relative')}>
         <div className={cx(styles.leftBlock, 'column')}>
           <h1 className={cx(styles.title, 'mrg--b mrg-l')}>
-            Gain Market Clarity
-            <br />
-            with Behavioural Analytics
+            Gain Actionable Insights with Behavior Analytics in Crypto
           </h1>
           <h2 className={cx(styles.description, 'h4')}>
-            Make data-driven investments powered by community insights, on-chain, social and dev
-            data
+            Make smarter decisions with powerful tools and trusted data sources
           </h2>
           <AccountBtn
             classes={{
@@ -27,11 +23,20 @@ const MainBlock = () => {
             }}
           />
         </div>
-        <div className={cx(styles.illustration)}>
-          <Lottie animationData={animationData}></Lottie>
-        </div>
-        <div className={cx(styles.logosWrapper)}>
-          <TrustedBlock />
+        <div className="relative">
+          <img src={img} className={styles.mobileBg} alt="" />
+          <div className={styles.footerWrapper}>
+            <div className={cx(styles.logosWrapper)}>
+              <TrustedBlock />
+            </div>
+            <div className={cx(styles.rightBlock, 'column')}>
+              <h1 className={styles.title}>Access Comprehensive Set of Data Sources</h1>
+              <h2 className={cx(styles.description, 'h4')}>
+                Use social, blockchain, financial, dev, and community metrics to improve your
+                strategy
+              </h2>
+            </div>
+          </div>
         </div>
       </section>
     </div>
