@@ -35,6 +35,7 @@ import DmitryK from './images/DmitryK.png'
 import VladK from './images/VladK.png'
 import Suzanne from './images/Suzanne.png'
 import DmitryG from './images/DmitryG.png'
+import Serafim from './images/Serafim.png'
 
 export const GROUPS = {
   CORE: 'Core team',
@@ -433,7 +434,7 @@ export const PEOPLE = [
   },
   {
     name: 'Vlad Keliy',
-    position: 'Middle Frontend Developer',
+    position: 'Frontend Developer',
     img: VladK,
     group: GROUPS.DEVS,
     description:
@@ -459,6 +460,15 @@ export const PEOPLE = [
     group: GROUPS.CORE,
     description:
       'With 25+ years in software development, Dmitry combines deep technical expertise with strategic business insight. Holding a Master’s in Cybernetics and an MBA in Finance, he spent 17 years in telecommunications, developing products for global operators. As a founder of tech startups, he created innovative products, including a CRM system and a Low-Code platform with patented technology. A strong advocate for blockchain technology, especially in decentralized finance, Dmitry has extensive blockchain development experience, including cross-chain solutions. He played a key role in developing the leading euro-backed stablecoin platform and has deep expertise in blockchain integration and interoperability. Dmitry is committed to innovation, leadership, and value creation.',
+    links: {},
+  },
+  {
+    name: 'Serafim Gavrilov',
+    position: 'Frontend Developer',
+    img: Serafim,
+    group: GROUPS.DEVS,
+    description:
+      'Serafim is an experienced software developer with over 4 years of professional experience. He specializes in building reliable web applications and solving complex technical challenges, with a strong focus on quality and optimization. Serafim has a broad interest in various fields of knowledge, which helps him better understand complex systems and find creative approaches to problem-solving. At work, he values clean code, structured planning, and effective teamwork. In his free time, he actively engages in sports, enjoys reading, and exploring new ideas, always striving to broaden his horizons.',
     links: {},
   },
 ]
