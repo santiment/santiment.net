@@ -12,6 +12,7 @@
   margin: 0 auto 60px;
   display: flex;
   justify-content: space-between;
+  text-align: center;
 
   & strong {
     color: var(--jungle-green);
@@ -24,6 +25,7 @@
 
   @include responsive('tablet', 'phone', 'phone-xs') {
     @include text('body-2');
+    text-align: left;
   }
 
   @include responsive('phone', 'phone-xs') {
