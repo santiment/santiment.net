@@ -40,7 +40,7 @@ const AboutPage = ({ intl }) => (
       <div className={styles.team}>
         <img src={team} alt="team" />
       </div>
-      <div className={styles.info}>34 experts | 12 countries | 2016 founded | 57k ETH raised</div>
+      <div className={styles.info}>54 experts | 19 countries | 2016 founded | 57k ETH raised</div>
       <Steps />
       <AboutSAN />
       <Products className={styles.products} />
