@@ -353,10 +353,11 @@ export const PEOPLE = [
   },
   {
     name: 'Iryna Pranovich',
-    position: 'Product Analyst',
+    position: 'Product Owner',
     img: Iryna,
     group: GROUPS.RESEARCH,
-    description: `Meet Iryna, our product analyst with a master's degree in DeepTech entrepreneurship. With a passion for market analysis and a focus on innovation, Iryna uses her expertise to conduct research, analyze data to improve products in close collaboration with product and development teams. Outside of work, Iryna enjoys listening to audiobooks during long runs and playing padel tennis.`,
+    description: `Iryna blends data science expertise with product and business development experience to build powerful, data-driven products. As a Product Owner at Santiment, she works at the intersection of blockchain analytics, AI-driven insights, and product strategy, shaping tools that turn complex crypto data into actionable insights.
+With a passion for data-driven decision-making and user-centric development, Iryna helps bridge the gap between technical innovation and business impact, ensuring Santiment’s products deliver real value to users.`,
     links: {},
   },
   {
@@ -407,9 +408,9 @@ export const PEOPLE = [
   },
   {
     name: 'Alexander Semenov',
-    position: 'Data Research Lead',
+    position: 'Chief Data Monetization Officer',
     img: AlexanderS,
-    group: GROUPS.RESEARCH,
+    group: GROUPS.CORE,
     description:
       'Alexander has 15 years of experience of work in consulting, research, teaching and Academy (h-index = 7). His area of expertise is computational social science with a focus on social network analysis and graph mining. Before joining Santiment he was head of analytics for the largest ISP and head of R&D for the gaming department of largest bank in Russia. In Santiment he supervises product analytics and social data.',
     links: {},
