@@ -1,9 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import Nav from '../components/Nav.svelte'
 import Footer from 'san-webkit-next/ui/app/Footer'
 ---
 
 <Layout>
-  <!-- TODO: check form -->
-  <Footer client:visible />
+  <Nav client:visible />
+  <!-- TODO: check form, recheck max-w for san-webkit -->
+  <Footer class="[&>div]:max-w-[1152px]" client:visible />
 </Layout>

@@ -14,6 +14,9 @@ const viteConfig = mergeConfig(createConfig({ sveltekit: () => {} }), {
       '$app/state': '/src/stubs/app-state.ts',
     },
   },
+  optimizeDeps: {
+    exclude: ['san-webkit-next'],
+  },
 })
 
 export default defineConfig({
