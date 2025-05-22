@@ -9,7 +9,7 @@ const config = {
     preprocess({
       typescript: false,
       scss: {
-        prependData: `@import '~san-webkit/lib/styles/fn.scss';`,
+        //prependData: `@import '~san-webkit/lib/styles/fn.scss';`,
       },
       postcss: false,
     }),
