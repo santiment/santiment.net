@@ -9,6 +9,11 @@ const viteConfig = mergeConfig(createConfig({ sveltekit: () => {} }), {
     'process.env.MEDIA_PATH': JSON.stringify('/webkit'),
     'process.env.ICONS_PATH': JSON.stringify(process.env.MEDIA_PATH + '/icons'),
   },
+  resolve: {
+    alias: {
+      '$app/state': '/src/stubs/app-state.ts',
+    },
+  },
 })
 
 export default defineConfig({
@@ -17,8 +22,5 @@ export default defineConfig({
   publicDir: './static',
   server: {
     port: 3000,
-  },
-  ssr: {
-    noExternal: ['san-webkit-next', 'san-webkit'],
   },
 })
