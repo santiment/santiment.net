@@ -18,8 +18,8 @@ dependencies:
     specifier: ^5.1.10
     version: 5.7.13(@types/node@22.15.21)(typescript@5.8.3)
   san-webkit-next:
-    specifier: github:santiment/san-webkit#lib-57952d72-210525
-    version: github.com/santiment/san-webkit/196d452753672d2fc99525b732bd944d2804dd68(@sveltejs/adapter-auto@3.3.1)(@sveltejs/adapter-node@5.2.12)(@sveltejs/kit@2.21.1)(@sveltejs/vite-plugin-svelte@5.0.3)(@wagmi/connectors@5.8.3)(@wagmi/core@2.17.2)(bits-ui@0.21.16)(estree-walker@3.0.3)(graphql@16.11.0)(react@18.3.1)(rxjs@7.8.2)(svelte@5.32.1)(tailwind-merge@2.6.0)(tailwindcss@3.4.17)(typescript@5.8.3)(viem@2.30.0)(vite@6.3.5)(wagmi@2.15.4)
+    specifier: github:santiment/san-webkit#lib-31eb4ff8-220525
+    version: github.com/santiment/san-webkit/5b49003285c3e4902bdbf18ce9bf21e83d04c760(@sveltejs/adapter-auto@3.3.1)(@sveltejs/adapter-node@5.2.12)(@sveltejs/kit@2.21.1)(@sveltejs/vite-plugin-svelte@5.0.3)(@wagmi/connectors@5.8.3)(@wagmi/core@2.17.2)(bits-ui@0.21.16)(estree-walker@3.0.3)(graphql@16.11.0)(react@18.3.1)(rxjs@7.8.2)(svelte@5.32.1)(tailwind-merge@2.6.0)(tailwindcss@3.4.17)(typescript@5.8.3)(viem@2.30.0)(vite@6.3.5)(wagmi@2.15.4)
   svelte:
     specifier: ^5.19.3
     version: 5.32.1
@@ -5488,8 +5488,8 @@ packages:
         optional: true
     dependencies:
       '@adraffy/ens-normalize': 1.11.0
-      '@noble/curves': 1.8.1
-      '@noble/hashes': 1.7.1
+      '@noble/curves': 1.9.1
+      '@noble/hashes': 1.8.0
       '@scure/bip32': 1.6.2
       '@scure/bip39': 1.5.4
       abitype: 1.0.8(typescript@5.8.3)(zod@3.25.17)
@@ -5508,8 +5508,8 @@ packages:
         optional: true
     dependencies:
       '@adraffy/ens-normalize': 1.11.0
-      '@noble/curves': 1.8.2
-      '@noble/hashes': 1.7.2
+      '@noble/curves': 1.9.1
+      '@noble/hashes': 1.8.0
       '@scure/bip32': 1.6.2
       '@scure/bip39': 1.5.4
       abitype: 1.0.8(typescript@5.8.3)(zod@3.22.4)
@@ -5528,8 +5528,8 @@ packages:
         optional: true
     dependencies:
       '@adraffy/ens-normalize': 1.11.0
-      '@noble/curves': 1.8.2
-      '@noble/hashes': 1.7.2
+      '@noble/curves': 1.9.1
+      '@noble/hashes': 1.8.0
       '@scure/bip32': 1.6.2
       '@scure/bip39': 1.5.4
       abitype: 1.0.8(typescript@5.8.3)(zod@3.25.17)
@@ -7628,9 +7628,9 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: false
 
-  github.com/santiment/san-webkit/196d452753672d2fc99525b732bd944d2804dd68(@sveltejs/adapter-auto@3.3.1)(@sveltejs/adapter-node@5.2.12)(@sveltejs/kit@2.21.1)(@sveltejs/vite-plugin-svelte@5.0.3)(@wagmi/connectors@5.8.3)(@wagmi/core@2.17.2)(bits-ui@0.21.16)(estree-walker@3.0.3)(graphql@16.11.0)(react@18.3.1)(rxjs@7.8.2)(svelte@5.32.1)(tailwind-merge@2.6.0)(tailwindcss@3.4.17)(typescript@5.8.3)(viem@2.30.0)(vite@6.3.5)(wagmi@2.15.4):
-    resolution: {tarball: https://codeload.github.com/santiment/san-webkit/tar.gz/196d452753672d2fc99525b732bd944d2804dd68}
-    id: github.com/santiment/san-webkit/196d452753672d2fc99525b732bd944d2804dd68
+  github.com/santiment/san-webkit/5b49003285c3e4902bdbf18ce9bf21e83d04c760(@sveltejs/adapter-auto@3.3.1)(@sveltejs/adapter-node@5.2.12)(@sveltejs/kit@2.21.1)(@sveltejs/vite-plugin-svelte@5.0.3)(@wagmi/connectors@5.8.3)(@wagmi/core@2.17.2)(bits-ui@0.21.16)(estree-walker@3.0.3)(graphql@16.11.0)(react@18.3.1)(rxjs@7.8.2)(svelte@5.32.1)(tailwind-merge@2.6.0)(tailwindcss@3.4.17)(typescript@5.8.3)(viem@2.30.0)(vite@6.3.5)(wagmi@2.15.4):
+    resolution: {tarball: https://codeload.github.com/santiment/san-webkit/tar.gz/5b49003285c3e4902bdbf18ce9bf21e83d04c760}
+    id: github.com/santiment/san-webkit/5b49003285c3e4902bdbf18ce9bf21e83d04c760
     name: san-webkit-next
     version: 0.0.1
     hasBin: true
