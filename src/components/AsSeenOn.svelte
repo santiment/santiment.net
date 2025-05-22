@@ -26,17 +26,12 @@
 <section class={cn('overflow-hidden py-6', className)}>
   <h2 class="title-with-dots mx-2 mb-6 text-lg text-white-day">As seen on</h2>
 
-  <div class="flex overflow-hidden center">
-    <span class="flex animate-marquee will-change-transform center">
-      {#each logoPaths as path}
-        <img src={path} alt="Media logo" class="ml-8 h-full w-full" />
+  <div class="overflow-hidden">
+    <div class="flex animate-marquee whitespace-nowrap">
+      {#each [...logoPaths, ...logoPaths] as path}
+        <img src={path} alt="logo" class="mx-6" />
       {/each}
-    </span>
-    <span class="flex animate-marquee will-change-transform center">
-      {#each logoPaths as path}
-        <img src={path} alt="Media logo" class="ml-8" />
-      {/each}
-    </span>
+    </div>
   </div>
 </section>
 

@@ -9,9 +9,11 @@
       <h1 class="mb-4 text-5xl font-medium text-white-day md:mb-3 md:text-3xl md:font-normal">
         Gain Actionable Insights with Behavior Analytics in Crypto
       </h1>
+
       <p class="mb-10 text-xl text-fiord md:mb-6 md:text-base">
         Make smarter decisions with powerful tools and trusted data sources
       </p>
+
       <!-- TODO: Add account button wrapper -->
       <Button
         variant="fill"
@@ -21,12 +23,15 @@
     </div>
     <div class="relative">
       <img src="/illus-mobile.svg" class="hidden md:block" alt="" />
+
       <div class="pb-[30rem] md:absolute md:top-[18%] md:w-full">
         <AsSeenOn class="mb-[14.25rem]" />
+
         <div class="ml-auto mr-0 max-w-[31.25rem]">
           <h2 class="mb-4 text-5xl font-medium text-white-day md:mb-3 md:text-3xl">
             Access Comprehensive Set of Data Sources
           </h2>
+
           <p class="mb-10 text-xl text-fiord">
             Use social, blockchain, financial, dev, and community metrics to improve your strategy
           </p>
