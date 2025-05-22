@@ -1,10 +1,19 @@
-FROM node:14
+FROM node:20-alpine AS base
 
-ARG GIT_HEAD
-RUN GIT_HEAD=$GIT_HEAD
+RUN apk add git
+RUN npm install -g pnpm@8
+
+ENV NODE_ENV production
 
 WORKDIR /app
 
-COPY ./ /app
+COPY package.json pnpm-lock.yaml /app
 
-RUN apt update && apt install -y make nasm autoconf automake libtool dpkg libpng-dev g++ && npm install --unsafe-perm && npm run build
+RUN pnpm i --ignore-scripts --frozen-lockfile --prod --force
+
+FROM base AS builder
+ARG BACKEND_URL
+
+COPY . /app
+
+RUN pnpm build
