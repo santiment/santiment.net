@@ -5,7 +5,7 @@
   const items = [...tweets, ...tweets]
 </script>
 
-<section class="m-0 max-w-full overflow-x-hidden bg-white px-0 py-40 lg:py-16">
+<section class="m-0 max-w-full overflow-x-hidden bg-[#f7f8fb] px-0 py-40 lg:py-16">
   <h3
     class="mb-10 flex items-center justify-center text-4xl font-semibold text-mirage md:mb-9 md:px-4 md:py-0 md:text-2xl"
   >

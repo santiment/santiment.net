@@ -12,7 +12,7 @@
 
 <div
   aria-label="Opens Tweet on Twitter in a new tab"
-  class="mr-8 h-[400px] min-h-[400px] w-[360px] min-w-[360px] rounded-[10px] border border-[#e7eaf3] bg-white text-[#1c1e2e] shadow-[0_2px_24px_rgba(24,27,43,0.04),1px_3px_7px_rgba(47,53,77,0.05)] transition-transform duration-100 ease-in-out hover:scale-[1.01] hover:text-[#181b2b]"
+  class="mr-8 h-[400px] min-h-[400px] w-[360px] min-w-[360px] rounded-[10px] border border-porcelain bg-white text-rhino shadow-[0_2px_24px_rgba(24,27,43,0.04),1px_3px_7px_rgba(47,53,77,0.05)] transition-transform duration-100 ease-in-out hover:scale-[1.01] hover:text-mirage"
 >
   <article class="flex h-full w-full flex-col p-8">
     <a
@@ -28,7 +28,7 @@
           <div class="mb-[2px] text-base font-semibold leading-tight text-[#181b2b]">
             {displayName}
           </div>
-          <div class="text-sm leading-snug text-[#7a859e]">@{handle}</div>
+          <div class="text-sm leading-snug text-waterloo">@{handle}</div>
         </div>
 
         <svg viewBox="0 0 24 24" width="24" class="ml-auto">
@@ -40,8 +40,9 @@
       </header>
     </a>
 
+    <!-- TODO: Link color is wrong -->
     <div
-      class="text-base leading-relaxed text-[#171927] [&>*]:text-base [&>*]:leading-relaxed [&>*]:text-[#171927] [&>a+*]:ml-0 [&>a]:mx-1 [&>a]:text-[#4da0eb] [&>img]:mt-3 [&>img]:h-auto [&>img]:w-full [&>img]:rounded-2xl"
+      class="text-base leading-relaxed text-rhino [&>*]:text-base [&>*]:leading-relaxed [&>*]:text-rhino [&>a+*]:ml-0 [&>a]:mx-1 [&>a]:text-[#4da0eb] [&>img]:mt-3 [&>img]:h-auto [&>img]:w-full [&>img]:rounded-2xl"
     >
       {@html content}
     </div>

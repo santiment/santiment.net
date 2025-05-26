@@ -10,9 +10,9 @@ export const tweets = [
           Probed your platform, interesting metrics offering some very nuanced
           insights. Between the on-chain analysis, development activity and
           macro view - on the alt side, bullish on (@bancor)
-          <a href="https://twitter.com/search?q=%24bnt&src=cashtag_click">$bnt</a>
-          <a href="https://twitter.com/hashtag/DeFi?src=hash">#DeFi</a>
-          <a href="https://twitter.com/hashtag/Analytics?src=hash">#Analytics</a>
+          <a class="text-[#4da0eb]" href="https://twitter.com/search?q=%24bnt&src=cashtag_click">$bnt</a>
+          <a class="text-[#4da0eb]" href="https://twitter.com/hashtag/DeFi?src=hash">#DeFi</a>
+          <a class="text-[#4da0eb]" href="https://twitter.com/hashtag/Analytics?src=hash">#Analytics</a>
           Kudus (@santimentfeed) 👍
         </p>
       </blockquote>
@@ -54,18 +54,18 @@ export const tweets = [
     content: `
       <p>
         Signed up to the free trial
-        <a href='https://twitter.com/santimentfeed?ref_src=twsrc%5Etfw'>
+        <a class="text-[#4da0eb]" href='https://twitter.com/santimentfeed?ref_src=twsrc%5Etfw'>
           @santimentfeed
         </a>
         <span>Love the interface so far.</span>
-        <a href='https://twitter.com/search?q=%24ETH&amp;src=ctag&amp;ref_src=twsrc%5Etfw'>
+        <a class="text-[#4da0eb]" href='https://twitter.com/search?q=%24ETH&amp;src=ctag&amp;ref_src=twsrc%5Etfw'>
           $ETH
         </a>
         <span>
           supply on exchanges continues to go down while price is still heading
           to $3,000.
         </span>
-        <a href='https://twitter.com/hashtag/ethererum?src=hash&amp;ref_src=twsrc%5Etfw'>
+        <a class="text-[#4da0eb]" href='https://twitter.com/hashtag/ethererum?src=hash&amp;ref_src=twsrc%5Etfw'>
           #ethererum
         </a>
       </p>
@@ -127,16 +127,16 @@ export const tweets = [
     content: `
       <p>
         I love these charts man!
-        <a href='https://twitter.com/hashtag/btc?src=hash&amp;ref_src=twsrc%5Etfw'>
+        <a class="text-[#4da0eb]" href='https://twitter.com/hashtag/btc?src=hash&amp;ref_src=twsrc%5Etfw'>
           #btc
         </a>
-        <a href='https://twitter.com/hashtag/bitcoin?src=hash&amp;ref_src=twsrc%5Etfw'>
+        <a class="text-[#4da0eb]" href='https://twitter.com/hashtag/bitcoin?src=hash&amp;ref_src=twsrc%5Etfw'>
           #bitcoin
         </a>
-        <a href='https://twitter.com/hashtag/crypto?src=hash&amp;ref_src=twsrc%5Etfw'>
+        <a class="text-[#4da0eb]" href='https://twitter.com/hashtag/crypto?src=hash&amp;ref_src=twsrc%5Etfw'>
           #crypto
         </a>
-        <a href='https://t.co/M31sVoFOMA'>https://t.co/M31sVoFOMA</a>
+        <a class="text-[#4da0eb]" href='https://t.co/M31sVoFOMA'>https://t.co/M31sVoFOMA</a>
       </p>
     `,
   },

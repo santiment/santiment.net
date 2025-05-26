@@ -7,6 +7,7 @@ import Intro from '../components/Intro.svelte'
 import ProvenByNumbers from '../components/ProvenByNumbers.svelte'
 import AnalyticsOverview from '../components/AnalyticsOverview/AnalyticsOverview.svelte'
 import Tweets from '../components/Tweets/Tweets.svelte'
+import FinalCTA from '../components/FinalCTA.svelte'
 ---
 
 <Layout>
@@ -17,5 +18,6 @@ import Tweets from '../components/Tweets/Tweets.svelte'
   <ProvenByNumbers />
   <AnalyticsOverview client:load="svelte" />
   <Tweets />
+  <FinalCTA />
   <Footer class="[&>div]:max-w-[1152px]" client:visible />
 </Layout>
