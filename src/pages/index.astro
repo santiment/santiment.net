@@ -5,6 +5,7 @@ import Hero from '../components/Hero.svelte'
 import Footer from 'san-webkit-next/ui/app/Footer'
 import Intro from '../components/Intro.svelte'
 import ProvenByNumbers from '../components/ProvenByNumbers.svelte'
+import AnalyticsOverview from '../components/AnalyticsOverview.svelte'
 ---
 
 <Layout>
@@ -13,5 +14,6 @@ import ProvenByNumbers from '../components/ProvenByNumbers.svelte'
   <Hero />
   <Intro />
   <ProvenByNumbers />
+  <AnalyticsOverview client:load="svelte" />
   <Footer class="[&>div]:max-w-[1152px]" client:visible />
 </Layout>
