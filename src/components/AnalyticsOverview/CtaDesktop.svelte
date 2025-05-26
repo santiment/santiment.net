@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Button from 'san-webkit-next/ui/core/Button'
   import { onMount } from 'svelte'
+  import Button from 'san-webkit-next/ui/core/Button'
 
   const images = [
     '/data-visuals-1.png',
@@ -8,6 +8,7 @@
     '/data-visuals-3.png',
     '/data-visuals-4.png',
   ]
+
   let visibleImage = $state(0)
 
   function handleScroll() {
@@ -23,10 +24,6 @@
       visibleImage = 3
     }
   }
-
-  $effect(() => {
-    console.log('visibleImage', visibleImage)
-  })
 
   const items = [
     {
@@ -84,7 +81,9 @@
     {/each}
   </div>
 
-  <div class="sticky top-[25vh] flex h-[438px] w-[778px] self-start lg:w-[600px]">
+  <div
+    class="sticky top-[25vh] mb-9 flex h-[438px] w-[778px] self-start px-16 text-4xl lg:w-[600px]"
+  >
     <div
       class="h-full w-full bg-cover transition-all duration-500"
       style={`background-image: url(${images[visibleImage]})`}
