@@ -1,6 +1,8 @@
 <script lang="ts">
   import { cn } from 'san-webkit-next/ui/utils'
 
+  // TODO:Move to astro
+
   const logoPaths = [
     '/as-seen-on-logos/binance.svg',
     '/as-seen-on-logos/bloomberg.svg',

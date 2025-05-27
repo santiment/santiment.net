@@ -3,6 +3,7 @@
   import Button from 'san-webkit-next/ui/core/Button'
   import Svg from 'san-webkit-next/ui/core/Svg'
   import { cn } from 'san-webkit-next/ui/utils'
+  import CtaButton from './CtaButton.svelte'
 
   let navOpen = $state(false)
   // TODO:
@@ -36,11 +37,11 @@
         {/snippet}
       </Products>
 
-      {@render Link('https://santiment.net/about', 'About')}
+      {@render Link('/about', 'About')}
 
-      {@render Link('https://santiment.net/team', 'Team')}
+      {@render Link('/team', 'Team')}
 
-      {@render Link('https://santiment.net/jobs', 'Jobs')}
+      {@render Link('/jobs', 'Jobs')}
 
       {@render Link('https://academy.santiment.net/', 'Academy', 'ml-auto')}
 
@@ -51,16 +52,7 @@
       <Svg id="menu" class="fill-waterloo" />
     </button>
 
-    <Button
-      target="_blank"
-      variant="border"
-      class="flex flex-shrink-0 justify-center border-green bg-mirage-day px-5 text-green hover:border-green-hover hover:bg-green-light-3-night hover:text-green-hover md:hidden"
-      href="https://app.santiment.net/"
-      data-source="research_landing"
-      data-type="go_to_sanbase"
-    >
-      Go to Sanbase
-    </Button>
+    <CtaButton />
   </div>
 
   {#if navOpen}
@@ -92,7 +84,7 @@
     target="_blank"
     rel="noopener noreferrer"
     class={cn('mr-8 flex items-center text-waterloo hover:text-green', className)}
-    data-source="research_landing"
+    data-source="santiment.net"
     data-type={label}
   >
     {label}

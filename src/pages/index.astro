@@ -13,11 +13,11 @@ import FinalCTA from '../components/FinalCTA.svelte'
 <Layout>
   <Nav client:visible />
   <!-- TODO: check form, recheck max-w for san-webkit -->
-  <Hero />
-  <Intro />
-  <ProvenByNumbers />
+  <Hero client:visible />
+  <Intro client:visible />
+  <ProvenByNumbers client:visible />
   <AnalyticsOverview client:load="svelte" />
   <Tweets />
-  <FinalCTA />
-  <Footer class="[&>div]:max-w-[1152px]" client:visible />
+  <FinalCTA client:visible />
+  <Footer class="[&>div]:max-w-[1152px]" client:load="svelte" />
 </Layout>

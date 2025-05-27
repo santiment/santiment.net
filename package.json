@@ -1,5 +1,5 @@
 {
-  "name": "research-landing",
+  "name": "santiment.net",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -14,6 +14,7 @@
     "@astrojs/tailwind": "^5.1.5",
     "@sveltejs/adapter-node": "^5.2.9",
     "astro": "^5.1.10",
+    "rxjs": "^7.8.2",
     "san-webkit-next": "github:santiment/san-webkit#lib-31eb4ff8-220525",
     "svelte": "^5.19.3",
     "svelte-preprocess": "^5.1.4",

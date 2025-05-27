@@ -1,5 +1,7 @@
 <script lang="ts">
-  import Button from 'san-webkit-next/ui/core/Button'
+  import CtaButton from './CtaButton.svelte'
+
+  // TODO: Move to astro
 
   const numbers = [
     {
@@ -64,12 +66,7 @@
           crypto market.
         </p>
 
-        <Button
-          variant="fill"
-          class="h-10 w-full max-w-[196px] justify-center text-center text-base md:max-w-full"
-        >
-          Get Started
-        </Button>
+        <CtaButton class="h-10 w-full max-w-[196px] text-base hover:bg-transparent md:max-w-full" />
       </div>
 
       <div class="flex flex-wrap gap-y-[50px]">

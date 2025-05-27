@@ -1,6 +1,7 @@
 <script lang="ts">
-  import Button from 'san-webkit-next/ui/core/Button'
   import AsSeenOn from './AsSeenOn.svelte'
+  import CtaButton from './CtaButton.svelte'
+  // TODO: Move to astro
 </script>
 
 <section class="backgroundContainer night-mode">
@@ -14,12 +15,7 @@
         Make smarter decisions with powerful tools and trusted data sources
       </p>
 
-      <!-- TODO: Add account button wrapper -->
-      <Button
-        variant="fill"
-        class="h-10 w-full max-w-[196px] justify-center text-center text-base md:max-w-full"
-        >Get Started</Button
-      >
+      <CtaButton class="h-10 w-full max-w-[196px] text-base md:max-w-full" />
     </div>
     <div class="relative">
       <img src="/illus-mobile.svg" class="hidden md:block" alt="" />
