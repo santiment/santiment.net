@@ -1,7 +1,7 @@
 <script lang="ts">
   import Button from 'san-webkit-next/ui/core/Button'
   import CtaButton from './CtaButton.svelte'
-  //
+
   // TODO: Move to astro
 
   const numbers = [
@@ -23,29 +23,41 @@
   ]
 </script>
 
-<section class="py-40">
-  <div class="container flex gap-[230px]">
-    <div class="max-w-[380px]">
-      <h2 class="mb-3 max-w-[25rem] text-4xl font-semibold">Ready to get started?</h2>
+<section class="py-40 md:pb-0 md:pt-16">
+  <div class="container flex justify-between md:flex-col-reverse">
+    <div class="md:-mx-5 md:flex md:items-center md:justify-center md:bg-athens">
+      <div
+        class="max-w-[380px] md:flex md:max-w-[328px] md:flex-col md:items-center md:justify-center md:bg-athens md:px-4 md:py-12 md:text-center"
+      >
+        <h2 class="mb-3 max-w-[25rem] text-4xl font-semibold md:text-xl">Ready to get started?</h2>
 
-      <p class="mb-8 text-lg text-fiord">
-        Start using Santiment for free, and explore all the tools and services you need to make
-        better financial decisions. No credit card needed
-      </p>
+        <p class="mb-8 text-lg text-fiord md:text-base">
+          Start using Santiment for free, and explore all the tools and services you need to make
+          better financial decisions. No credit card needed
+        </p>
 
-      <CtaButton class="h-10 w-full max-w-[196px] text-base md:max-w-full" />
+        <CtaButton class="h-10 w-full max-w-[196px] text-base md:max-w-full" />
+      </div>
     </div>
-    <div class="flex">
-      {#each numbers as { title, img, description, link, label }}
+
+    <div class="flex items-center justify-center md:mb-12 md:flex-col">
+      {#each numbers as { title, img: src, description, link, label }}
         <article
-          class="relative flex flex-col odd:pr-[45px] even:border-l even:border-porcelain even:pl-[45px]"
+          class="relative flex flex-col odd:pr-[45px] even:border-l even:border-porcelain even:pl-[45px] md:items-center md:justify-center md:text-center md:odd:pr-0 md:even:border-t md:even:border-none md:even:border-porcelain md:even:pl-0"
         >
-          <img class="mb-[14px] h-10 w-11" src={img} alt="" />
+          <img {src} class="mb-[14px] h-10 w-11" alt="" />
           <h3 class="text-lg font-medium text-rhino">{title}</h3>
-          <p class="max-w-56 text-sm text-fiord">{description}</p>
-          <Button variant="link" icon="right-arrow" iconSize={10} iconOnRight href={link}
-            >{label}</Button
+          <p class="max-w-56 text-sm text-fiord md:max-w-80">{description}</p>
+          <Button
+            class="md:text-sm"
+            variant="link"
+            icon="right-arrow"
+            iconSize={10}
+            iconOnRight
+            href={link}
           >
+            {label}
+          </Button>
         </article>
       {/each}
     </div>

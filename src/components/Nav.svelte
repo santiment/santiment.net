@@ -5,7 +5,7 @@
   import { cn } from 'san-webkit-next/ui/utils'
   import CtaButton from './CtaButton.svelte'
 
-  let navOpen = $state(true)
+  let navOpen = $state(false)
   // TODO:
   // Move code to san-webkit-next
   // Add check for go to sanbase button
@@ -63,7 +63,7 @@
 
       <div class="mb-4">
         <Products
-          class="w-full flex-col p-0 [&>div>section]:pb-3 first:[&>div>section]:border-b first:[&>div>section]:border-b-porcelain [&>div]:border-b [&>div]:border-b-porcelain [&_p]:hidden"
+          class="w-full flex-col p-0 [&>div>section>a>div:has(svg)]:h-8 [&>div>section>a>div:has(svg)]:w-8 [&>div>section>a>div:has(svg)]:min-w-8 [&>div>section]:pb-3 first:[&>div>section]:border-b first:[&>div>section]:border-b-porcelain [&>div]:border-b [&>div]:border-b-porcelain [&_a]:items-center [&_a]:px-4 [&_a]:py-2 [&_h2]:font-medium [&_h3]:mb-2 [&_p]:hidden"
         />
       </div>
 
@@ -87,7 +87,7 @@
     {href}
     target="_blank"
     rel={isExternal ? 'noopener noreferrer' : null}
-    class={cn('group mr-8 flex items-center text-waterloo hover:text-green', className)}
+    class={cn('group mr-8 flex items-center text-waterloo hover:text-green md:ml-4', className)}
     data-source="santiment.net"
     data-type={label}
   >
@@ -123,15 +123,6 @@
 
       h3 {
         margin-bottom: 8px !important;
-      }
-
-      p {
-        display: none;
-      }
-
-      .icon {
-        width: 32px !important;
-        height: 32px !important;
       }
     }
   }

@@ -6,16 +6,16 @@
 
 <section class="backgroundContainer night-mode">
   <div class="container pt-[7.5rem] md:pt-[2.875rem]">
-    <div class="mb-[22.313rem] max-w-[40.25rem] md:mb-20">
-      <h1 class="mb-4 text-5xl font-medium text-white-day md:mb-3 md:text-3xl md:font-normal">
+    <div class="mb-[22.313rem] max-w-[40.25rem] md:mb-20 md:max-w-[568px]">
+      <h1 class="mb-4 text-5xl font-medium text-white-day lg:mb-3 lg:text-3xl lg:font-normal">
         Gain Actionable Insights with Behavior Analytics in Crypto
       </h1>
 
-      <p class="mb-10 text-xl text-fiord md:mb-6 md:text-base">
+      <p class="mb-10 text-xl text-fiord lg:mb-6 lg:text-base">
         Make smarter decisions with powerful tools and trusted data sources
       </p>
 
-      <CtaButton class="h-10 w-full max-w-[196px] text-base md:max-w-full" />
+      <CtaButton class="h-10 w-full max-w-[196px] text-base sm:max-w-full" />
     </div>
     <div class="relative">
       <img src="/illus-mobile.svg" class="hidden md:block" alt="" />

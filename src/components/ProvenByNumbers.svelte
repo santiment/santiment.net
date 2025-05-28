@@ -69,7 +69,7 @@
         <CtaButton class="h-10 w-full max-w-[196px] text-base hover:bg-transparent md:max-w-full" />
       </div>
 
-      <div class="flex flex-wrap gap-y-[50px] lg:gap-x-[100px]">
+      <div class="flex flex-wrap gap-y-[50px] lg:gap-x-[100px] md:flex-col">
         {#each numbers as { title, img, description }}
           <article
             class="relative flex flex-col odd:pr-[50px] even:border-l even:border-porcelain even:pl-[50px] lg:odd:border-none lg:odd:pr-0 lg:even:border-none lg:even:pl-0"
@@ -79,19 +79,21 @@
               <h3 class="text-3xl font-medium text-green">{title}</h3>
             </header>
 
-            <p class="max-w-56 text-base text-fiord">{description}</p>
+            <p class="max-w-56 text-base text-fiord md:max-w-full">{description}</p>
           </article>
         {/each}
       </div>
     </div>
 
-    <div class="wrap flex flex-wrap">
+    <div class="wrap flex flex-wrap md:justify-center md:gap-8">
       {#each numbers2 as { title, number }}
         <article
-          class="flex flex-1 basis-auto flex-col items-center border-l border-porcelain px-6 first:basis-0 first:border-none first:pl-0 md:border-none"
+          class="md: flex flex-1 basis-auto flex-col items-center border-l border-porcelain px-6 first:basis-0 first:border-none first:pl-0 md:max-w-fit md:border-none md:px-0"
         >
-          <h5 class="mb-1 whitespace-nowrap text-base font-medium text-waterloo">{title}</h5>
-          <p class="whitespace-nowrap text-3xl font-medium">{number}</p>
+          <h5 class="mb-1 whitespace-nowrap text-base font-medium text-waterloo md:text-sm">
+            {title}
+          </h5>
+          <p class="whitespace-nowrap text-3xl font-medium md:text-2xl">{number}</p>
         </article>
       {/each}
     </div>

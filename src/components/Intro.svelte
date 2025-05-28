@@ -1,11 +1,13 @@
 <section class="bg-[#f7f8fb] py-40">
-  <div class="container flex gap-[8.75rem] lg:flex-col-reverse lg:px-6 md:gap-[2.875rem] md:px-4">
+  <div
+    class="container flex gap-[8.75rem] lg:flex-col-reverse lg:items-center lg:px-6 md:gap-[2.875rem] md:px-4"
+  >
     <img
       src="/img.png"
       class="-ml-[5.625rem] -mr-[5.625rem] max-w-[43.75rem] md:m-0 md:max-w-full"
       alt=""
     />
-    <div class="max-w-[30rem]">
+    <div class="max-w-[30rem] lg:max-w-full">
       <p class="mb-1 text-base font-semibold text-fiord">All-in-one platform</p>
 
       <h2 class="mb-6 text-4xl font-semibold text-rhino">Crypto intelligence tools</h2>

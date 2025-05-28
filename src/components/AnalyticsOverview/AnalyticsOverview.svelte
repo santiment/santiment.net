@@ -2,14 +2,14 @@
   import CtaDesktop from './CtaDesktop.svelte'
 </script>
 
-<section class="bg-white-night py-40 text-white-day night-mode">
+<section class="bg-white-night py-40 text-white-day night-mode md:py-16">
   <div class="container">
-    <div class="mb-40 flex items-end gap-12">
+    <div class="mb-40 flex items-end gap-12 md:mb-20 md:flex-col-reverse md:items-center">
       <div class="max-w-[40rem]">
-        <h3 class="mb-6 text-5xl font-bold">
+        <h3 class="mb-6 text-5xl font-bold md:mb-4 md:text-3xl md:font-normal">
           <span class="text-orange">Crypto analytics</span> to make data-driven decisions
         </h3>
-        <p class="text-xl">
+        <p class="text-xl md:text-base">
           Profitable trading decisions are based on metrics and market analysis. Discover new
           investment opportunities by finding answers to all your trading questions.
         </p>
@@ -29,18 +29,18 @@
       </div>
     </div>
     <CtaDesktop />
-    <div class="flex gap-x-[6.25rem]">
-      <img src="/team.png" class="w-1/2 object-contain" alt="" />
+    <div class="flex gap-x-[100px] md:gap-[44px] sm:flex-col">
+      <img src="/team.png" class="w-1/2 object-contain sm:w-full" alt="" />
       <div>
         <p class="mb-1 text-base font-semibold text-orange">Our Mission</p>
-        <h2 class="mb-6 text-4xl font-semibold text-rhino">
+        <h2 class="mb-6 text-4xl font-semibold text-rhino md:text-xl">
           We Simplify the Analysis and Create Alpha Together
         </h2>
-        <p class="text-lg">
+        <p class="text-lg md:text-base">
           Since our founding in 2016, we’ve been on a mission to develop the best market behaviour
           analysis tools available for crypto investors.
         </p>
-        <p class="text-lg">
+        <p class="text-lg md:text-base">
           All market participants and stakeholders must perform complex analysis in order to make
           wise investment decisions. We simplify this process and make analysis more accessible by
           helping people understand the meaning behind the behaviour (i.e. buying, holding and
