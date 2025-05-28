@@ -21,19 +21,41 @@ export default {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
         },
-        'left-moving': {
+        leftMoving: {
           '0%': { transform: 'translate(0, 0)' },
           '100%': { transform: 'translate(-10px, -10px)' },
         },
-        'right-moving': {
+        rightMoving: {
           '0%': { transform: 'translate(0, 0)' },
           '100%': { transform: 'translate(10px, 10px)' },
+        },
+        shiftDown: {
+          '0%': {
+            transform: 'translateY(-40px)',
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translateY(0)',
+            opacity: '1',
+          },
+        },
+        shiftUp: {
+          '0%': {
+            transform: 'translateY(20px)',
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translateY(0)',
+            opacity: '1',
+          },
         },
       },
       animation: {
         marquee: 'marquee 30s linear infinite',
-        'left-puzzle': 'left-moving 1s ease-in-out infinite alternate',
-        'right-puzzle': 'right-moving 1s ease-in-out infinite alternate',
+        leftPuzzle: 'leftMoving 1s ease-in-out infinite alternate',
+        rightPuzzle: 'rightMoving 1s ease-in-out infinite alternate',
+        shiftDown: 'shiftDown 0.8s cubic-bezier(0, 0.96, 1, 1) both',
+        shiftUp: 'shiftUp 0.8s cubic-bezier(0, 0.96, 1, 1) 0.6s both',
       },
     },
   },

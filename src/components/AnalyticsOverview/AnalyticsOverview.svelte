@@ -17,12 +17,12 @@
       <div class="relative">
         <img
           src="/left-puzzle.svg"
-          class="absolute left-2.5 top-[3.125rem] animate-left-puzzle md:left-0 md:top-[1.875rem] md:h-[3.75rem] md:w-[3.75rem]"
+          class="absolute left-2.5 top-[3.125rem] animate-leftPuzzle md:left-0 md:top-[1.875rem] md:h-[3.75rem] md:w-[3.75rem]"
           alt=""
         />
         <img
           src="/right-puzzle.svg"
-          class="absolute bottom-[7.25rem] right-[10.25rem] animate-right-puzzle md:bottom-[4.25rem] md:right-[6.5rem] md:h-[3.75rem] md:w-[3.75rem]"
+          class="absolute bottom-[7.25rem] right-[10.25rem] animate-rightPuzzle md:bottom-[4.25rem] md:right-[6.5rem] md:h-[3.75rem] md:w-[3.75rem]"
           alt=""
         />
         <img src="/alien.svg" class="md:h-[11rem] md:w-[11.5rem]" alt="" />

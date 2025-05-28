@@ -4,9 +4,9 @@
   // TODO: Move to astro
 </script>
 
-<section class="backgroundContainer night-mode">
+<section class="backgroundContainer">
   <div class="container pt-[7.5rem] md:pt-[2.875rem]">
-    <div class="mb-[22.313rem] max-w-[40.25rem] md:mb-20 md:max-w-[568px]">
+    <div class="animate-shiftUp mb-[22.313rem] max-w-[40.25rem] md:mb-20 md:max-w-[568px]">
       <h1 class="mb-4 text-5xl font-medium text-white-day lg:mb-3 lg:text-3xl lg:font-normal">
         Gain Actionable Insights with Behavior Analytics in Crypto
       </h1>
