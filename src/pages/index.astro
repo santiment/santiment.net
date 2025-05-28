@@ -11,7 +11,7 @@ import FinalCTA from '../components/FinalCTA.svelte'
 ---
 
 <Layout>
-  <Nav client:visible />
+  <Nav client:load="svelte" />
   <!-- TODO: check form, recheck max-w for san-webkit -->
   <Hero client:visible />
   <Intro client:visible />

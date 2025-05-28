@@ -52,15 +52,15 @@
   ]
 </script>
 
-<section class="py-40">
+<section class="py-40 md:py-16">
   <div class="container px-6">
-    <div class=" mb-[7.5rem] flex gap-20">
-      <div class="max-w-[28.75rem]">
-        <h2 class="mb-6 max-w-[25rem] text-4xl font-semibold">
+    <div class="mb-[7.5rem] flex gap-20 md:flex-col">
+      <div class="flex max-w-[460px] flex-col items-start md:max-w-none">
+        <h2 class="mb-6 max-w-[400px] text-4xl font-semibold md:max-w-full md:text-xl">
           Leading Analytics Proven by Numbers
         </h2>
 
-        <p class="mb-10 text-lg text-fiord">
+        <p class="mb-10 text-lg text-fiord md:text-base">
           Leverage our years of expertise in behavioural analysis as we continuously turn data
           points into reliable insights, guiding you through the complexities of the ever-evolving
           crypto market.
@@ -69,10 +69,10 @@
         <CtaButton class="h-10 w-full max-w-[196px] text-base hover:bg-transparent md:max-w-full" />
       </div>
 
-      <div class="flex flex-wrap gap-y-[50px]">
+      <div class="flex flex-wrap gap-y-[50px] lg:gap-x-[100px]">
         {#each numbers as { title, img, description }}
           <article
-            class="relative flex flex-col odd:pr-[50px] even:border-l even:border-porcelain even:pl-[50px]"
+            class="relative flex flex-col odd:pr-[50px] even:border-l even:border-porcelain even:pl-[50px] lg:odd:border-none lg:odd:pr-0 lg:even:border-none lg:even:pl-0"
           >
             <header class="mb-3.5 items-center gap-4 row">
               <img src={img} alt="" />
