@@ -4,6 +4,7 @@
   // TODO: Move to astro
 </script>
 
+<div class="h-[70px] w-full bg-white-night"></div>
 <section class="backgroundContainer">
   <div class="container pt-[7.5rem] md:pt-[2.875rem]">
     <div class="animate-shiftUp mb-[22.313rem] max-w-[40.25rem] md:mb-20 md:max-w-[568px]">
@@ -11,7 +12,7 @@
         Gain Actionable Insights with Behavior Analytics in Crypto
       </h1>
 
-      <p class="mb-10 text-xl text-fiord lg:mb-6 lg:text-base">
+      <p class="mb-10 text-xl text-fiord-night lg:mb-6 lg:text-base">
         Make smarter decisions with powerful tools and trusted data sources
       </p>
 

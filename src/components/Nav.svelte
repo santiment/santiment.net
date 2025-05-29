@@ -11,7 +11,6 @@
   // Add check for go to sanbase button
 </script>
 
-<div class="top-0 h-[70px] w-full bg-white-night"></div>
 <nav
   class="fixed left-0 right-0 top-0 z-50 animate-shiftDown border-b border-porcelain bg-white night-mode md:animate-none"
 >
