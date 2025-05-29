@@ -49,6 +49,7 @@ export default {
             opacity: '1',
           },
         },
+        moving: { '100%': { transform: 'translate3d(-50%,0,0)' } },
       },
       animation: {
         marquee: 'marquee 30s linear infinite',
@@ -56,6 +57,7 @@ export default {
         rightPuzzle: 'rightMoving 1s ease-in-out infinite alternate',
         shiftDown: 'shiftDown 0.8s cubic-bezier(0, 0.96, 1, 1) both',
         shiftUp: 'shiftUp 0.8s cubic-bezier(0, 0.96, 1, 1) 0.6s both',
+        movingLinear: 'moving var(--tw-duration,30s) linear infinite',
       },
     },
   },

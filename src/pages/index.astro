@@ -1,22 +1,22 @@
 ---
+import Footer from 'san-webkit-next/ui/app/Footer'
 import Layout from '../layouts/Layout.astro'
 import Nav from '../components/Nav/Nav.svelte'
-import Hero from '../components/Hero.svelte'
-import Footer from 'san-webkit-next/ui/app/Footer'
-import Intro from '../components/Intro.svelte'
-import ProvenByNumbers from '../components/ProvenByNumbers.svelte'
-import AnalyticsOverview from '../components/AnalyticsOverview/AnalyticsOverview.svelte'
-import Tweets from '../components/Tweets/Tweets.svelte'
-import FinalCTA from '../components/FinalCTA.svelte'
+import Hero from '../components/Hero'
+import Intro from '../components/Intro'
+import ProvenByNumbers from '../components/ProvenByNumbers'
+import AnalyticsOverview from '../components/AnalyticsOverview'
+import Tweets from '../components/Tweets'
+import FinalCTA from '../components/FinalCTA'
 ---
 
 <Layout>
   <Nav isAnimated isNightMode client:load="svelte" />
-  <Hero client:visible />
-  <Intro client:visible />
-  <ProvenByNumbers client:visible />
-  <AnalyticsOverview client:load="svelte" />
+  <Hero />
+  <Intro />
+  <ProvenByNumbers />
+  <AnalyticsOverview />
   <Tweets />
-  <FinalCTA client:visible />
-  <Footer class="[&>div]:max-w-[1152px] bg-white" client:load="svelte" />
+  <FinalCTA />
+  <Footer class="[&>div]:max-w-[1152px]" client:load="svelte" />
 </Layout>

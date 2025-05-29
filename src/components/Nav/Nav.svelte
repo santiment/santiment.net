@@ -94,8 +94,6 @@
   {/if}
 </nav>
 
-<!--  -->
-
 {#snippet Link(href: string, label: string, className?: string, isExternal: boolean = false)}
   <a
     {href}

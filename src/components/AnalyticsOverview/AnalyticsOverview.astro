@@ -1,6 +1,10 @@
-<script>
-  import CtaDesktop from './CtaDesktop.svelte'
-</script>
+---
+import OverviewMetricsScroller from './OverviewMetricsScroller.svelte'
+
+import LeftPuzzle from './assets/left-puzzle.svg'
+import RightPuzzle from './assets/right-puzzle.svg'
+import Alien from './assets/alien.svg'
+---
 
 <section class="bg-white-night py-40 text-white-day night-mode md:py-16">
   <div class="container">
@@ -15,21 +19,18 @@
         </p>
       </div>
       <div class="relative">
-        <img
-          src="/left-puzzle.svg"
+        <LeftPuzzle
           class="absolute left-2.5 top-[3.125rem] animate-leftPuzzle md:left-0 md:top-[1.875rem] md:h-[3.75rem] md:w-[3.75rem]"
-          alt=""
         />
-        <img
-          src="/right-puzzle.svg"
+        <RightPuzzle
           class="absolute bottom-[7.25rem] right-[10.25rem] animate-rightPuzzle md:bottom-[4.25rem] md:right-[6.5rem] md:h-[3.75rem] md:w-[3.75rem]"
-          alt=""
         />
-        <img src="/alien.svg" class="md:h-[11rem] md:w-[11.5rem]" alt="" />
+        <Alien class="md:h-[11rem] md:w-[11.5rem]" />
       </div>
     </div>
-    <CtaDesktop />
+    <OverviewMetricsScroller />
     <div class="flex gap-x-[100px] md:gap-[44px] sm:flex-col">
+      <!-- TODO: optimize this image -->
       <img src="/team.png" class="w-1/2 object-contain sm:w-full" alt="" />
       <div>
         <p class="mb-1 text-base font-semibold text-orange">Our Mission</p>

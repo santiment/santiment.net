@@ -1,8 +1,20 @@
+import SheldonStack from './assets/SheldonStack.jpg'
+import MennoPP from './assets/MennoPP.jpg'
+import Coachkcrypto from './assets/Coachkcrypto.jpg'
+import CryptoBirb from './assets/crypto_birb.jpg'
+import Johninvesting from './assets/Johninvesting.jpg'
+import Merp from './assets/0xMerp.jpg'
+import Ortiercapital from './assets/ortiercapital.jpg'
+import Slivinschi from './assets/Slivinschi.jpg'
+import AmeerRosic from './assets/AmeerRosic.jpg'
+import XCryptonacciX from './assets/XCryptonacciX.jpg'
+import Ahab_1337 from './assets/Ahab_1337.jpg'
+
 export const tweets = [
   {
     id: '1334329471491592197',
     handle: 'SheldonStack',
-    avatar: '/avatars/SheldonStack.jpg',
+    avatar: SheldonStack,
     displayName: 'Sheldon “3,3” Stack',
     content: `
       <blockquote>
@@ -21,21 +33,21 @@ export const tweets = [
   {
     id: '1326784275539255298',
     handle: 'MennoPP',
-    avatar: '/avatars/MennoPP.jpg',
+    avatar: MennoPP,
     displayName: 'Menno Pietersen',
     content: `<p>That is some fantastic data.</p>`,
   },
   {
     id: '1325316475117207552',
     handle: 'Coachkcrypto',
-    avatar: '/avatars/Coachkcrypto.jpg',
+    avatar: Coachkcrypto,
     displayName: 'Coach K (BTC Survivor since 2013)',
     content: `<p>Love this kinds data now if you could make an indicator that showed it all aggregated in a simple form that would be super cool</p>`,
   },
   {
     id: '1322545215576690697',
     handle: 'crypto_birb',
-    avatar: '/avatars/crypto_birb.jpg',
+    avatar: CryptoBirb,
     displayName: 'CRYPTO₿IRB',
     content: `
       <p>
@@ -49,7 +61,7 @@ export const tweets = [
   {
     id: '1389019263902445571',
     handle: 'Johninvesting',
-    avatar: '/avatars/Johninvesting.jpg',
+    avatar: Johninvesting,
     displayName: 'John 🇦🇺🐊',
     content: `
       <p>
@@ -74,14 +86,14 @@ export const tweets = [
   {
     id: '1320914030265921536',
     handle: '0xMerp',
-    avatar: '/avatars/0xMerp.jpg',
+    avatar: Merp,
     displayName: 'Merp(9,9)',
     content: `<p>great content as always</p>`,
   },
   {
     id: '1320905514931412998',
     handle: 'ortiercapital',
-    avatar: '/avatars/ortiercapital.jpg',
+    avatar: Ortiercapital,
     displayName: 'Ortier Capital',
     content: `
       <p>
@@ -96,7 +108,7 @@ export const tweets = [
   {
     id: '1329226946656530436',
     handle: 'ASlivinschi',
-    avatar: '/avatars/Slivinschi.jpg',
+    avatar: Slivinschi,
     displayName: 'Alexei Slivinschi',
     content: `
       <p>
@@ -108,7 +120,7 @@ export const tweets = [
   {
     id: '1328852470559338499',
     handle: 'AmeerRosic',
-    avatar: '/avatars/AmeerRosic.jpg',
+    avatar: AmeerRosic,
     displayName: 'Ameer Rosic',
     content: `
       <p>
@@ -122,7 +134,7 @@ export const tweets = [
   {
     id: '1327735651895304192',
     handle: 'XCryptonacciX',
-    avatar: '/avatars/XCryptonacciX.jpg',
+    avatar: XCryptonacciX,
     displayName: 'CryptoNacci',
     content: `
       <p>
@@ -143,7 +155,7 @@ export const tweets = [
   {
     id: '1383428248525103111',
     handle: 'Ahab_1337',
-    avatar: '/avatars/Ahab_1337.jpg',
+    avatar: Ahab_1337,
     displayName: 'Ahab',
     content: `
       <p>

@@ -1,7 +1,13 @@
-<script lang="ts">
-  import AsSeenOn from './AsSeenOn.svelte'
-  import CtaButton from './CtaButton.svelte'
-</script>
+---
+import AsSeenOn from '../AsSeenOn'
+import CtaButton from '../CtaButton.svelte'
+---
+
+<style>
+  .backgroundContainer {
+    @apply relative h-full w-full bg-white-night bg-[url('/illus-desktop.svg')] bg-top bg-no-repeat lg:bg-[url('/illus-laptop.svg')] md:bg-none md:pb-[26px];
+  }
+</style>
 
 <section class="backgroundContainer">
   <div class="container pt-[7.5rem] md:pt-[2.875rem]">
@@ -14,7 +20,7 @@
         Make smarter decisions with powerful tools and trusted data sources
       </p>
 
-      <CtaButton class="h-10 w-full max-w-[196px] text-base sm:max-w-full" />
+      <CtaButton client:load="svelte" class="h-10 w-full max-w-[196px] text-base sm:max-w-full" />
     </div>
     <div class="relative">
       <img src="/illus-mobile.svg" class="hidden md:block" alt="" />
@@ -35,9 +41,3 @@
     </div>
   </div>
 </section>
-
-<style>
-  .backgroundContainer {
-    @apply relative h-full w-full bg-white-night bg-[url('/illus-desktop.svg')] bg-center bg-top bg-no-repeat lg:bg-[url('/illus-laptop.svg')] md:bg-none md:pb-[26px];
-  }
-</style>

@@ -1,0 +1,34 @@
+---
+import Tweet from './Tweet.astro'
+import { tweets } from './data'
+
+const items = [...tweets, ...tweets]
+const duration = tweets.length * 3.5
+---
+
+<section class="m-0 max-w-full overflow-x-hidden bg-athens px-0 py-40 lg:py-16">
+  <h3
+    class="mb-10 flex items-center justify-center text-4xl font-semibold text-mirage md:mb-9 md:px-4 md:py-0 md:text-2xl"
+  >
+    See what our users are saying
+  </h3>
+
+  <div class="relative mx-auto h-[400px] max-w-full pl-8">
+    <div
+      class="absolute left-0 top-0 flex h-full items-center animate-movingLinear will-change-transform [animation-play-state:running] hover:[animation-play-state:paused] md:[--tw-duration:calc(var(--tw-duration)*1.5)] sm:[--tw-duration:calc(var(--tw-duration)*2)]"
+      style={`--tw-duration:${duration}s`}
+    >
+      {
+        items.map(({ displayName, handle, avatar, content, id }) => (
+          <Tweet
+            displayName={displayName}
+            handle={handle}
+            avatar={avatar}
+            content={content}
+            id={id}
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>

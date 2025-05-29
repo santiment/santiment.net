@@ -1,0 +1,99 @@
+---
+import { Image } from 'astro:assets'
+import CtaButton from '../CtaButton.svelte'
+
+import coin from './assets/coin.svg'
+import rocket from './assets/rocket.svg'
+import bulb from './assets/bulb.svg'
+import cube from './assets/cube.svg'
+
+const numbers = [
+  {
+    title: '#1',
+    img: coin,
+    description: 'Since 2017, pioneering analytics of the crypto development data',
+  },
+  {
+    title: '#1',
+    img: rocket,
+    description: 'In sentiment crypto metrics, leading the market since 2014',
+  },
+  {
+    title: '2009',
+    img: bulb,
+    description:
+      "We've been gathering historical data so you can look back and back-test your strategy",
+  },
+  {
+    title: '12',
+    img: cube,
+    description:
+      'Blockchains and 2000+ assets, we offer 1000+ on-chain metrics for comprehensive analysis',
+  },
+]
+
+const numbers2 = [
+  { title: 'Parsed Messages Monthly', number: '3+ Million' },
+  { title: 'Labelled ETH Addresses', number: '75+ Million' },
+  { title: 'Labelled BTC Addresses', number: '65+ Million' },
+  { title: 'Metrics', number: '1100+' },
+  { title: 'Crypto Assets', number: '2500+' },
+]
+---
+
+<section class="py-40 md:py-16">
+  <div class="container px-6">
+    <div class="mb-[7.5rem] flex gap-20 md:flex-col">
+      <div class="flex max-w-[460px] flex-col items-start md:max-w-none">
+        <h2 class="mb-6 max-w-[400px] text-4xl font-semibold md:max-w-full md:text-xl">
+          Leading Analytics Proven by Numbers
+        </h2>
+
+        <p class="mb-10 text-lg text-fiord md:text-base">
+          Leverage our years of expertise in behavioural analysis as we continuously turn data
+          points into reliable insights, guiding you through the complexities of the ever-evolving
+          crypto market.
+        </p>
+
+        <CtaButton
+          client:load="svelte"
+          class="h-10 w-full max-w-[196px] text-base hover:bg-transparent md:max-w-full"
+        />
+      </div>
+
+      <div class="flex flex-wrap gap-y-[50px] lg:gap-x-[100px] md:flex-col">
+        {
+          numbers.map(({ title, img, description }) => (
+            <article
+              class="relative flex flex-col odd:pr-[50px] even:border-l even:border-porcelain even:pl-[50px]
+                   lg:odd:border-none lg:odd:pr-0 lg:even:border-none lg:even:pl-0"
+            >
+              <header class="mb-3.5 row items-center gap-4">
+                <Image src={img} alt="" />
+                <h3 class="text-3xl font-medium text-green">{title}</h3>
+              </header>
+
+              <p class="max-w-56 text-base text-fiord md:max-w-full">{description}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="wrap flex flex-wrap md:justify-center md:gap-8">
+      {
+        numbers2.map(({ title, number }) => (
+          <article
+            class="flex flex-1 basis-auto flex-col items-center border-l border-porcelain px-6
+                 first:basis-0 first:border-none first:pl-0 md:max-w-fit md:border-none md:px-0"
+          >
+            <h5 class="mb-1 whitespace-nowrap text-base font-medium text-waterloo md:text-sm">
+              {title}
+            </h5>
+            <p class="whitespace-nowrap text-3xl font-medium md:text-2xl">{number}</p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
