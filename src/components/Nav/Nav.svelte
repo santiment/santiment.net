@@ -3,25 +3,25 @@
   import Button from 'san-webkit-next/ui/core/Button'
   import Svg from 'san-webkit-next/ui/core/Svg'
   import { cn } from 'san-webkit-next/ui/utils'
-  import CtaButton from './CtaButton.svelte'
+  import CtaButton from '../CtaButton.svelte'
+  import Logo from './Logo.svelte'
 
   type TProps = {
     isAnimated: boolean
+    isNightMode: boolean
     class: string
   }
 
-  const { isAnimated = false, class: className = '' }: TProps = $props()
+  const { isAnimated = false, isNightMode = false, class: className = '' }: TProps = $props()
 
   let navOpen = $state(false)
-
-  // TODO:
-  // Move code to san-webkit-next
-  // Add check for go to sanbase button
 </script>
 
+<div class={cn('h-[70px] w-full bg-white', isNightMode ? 'night-mode' : '')}></div>
 <nav
   class={cn(
-    'fixed left-0 right-0 top-0 z-50 border-b border-porcelain bg-white md:animate-none',
+    'fixed left-0 right-0 top-0 z-[5] border-b border-porcelain bg-white md:animate-none',
+    isNightMode ? 'night-mode' : '',
     isAnimated ? 'animate-shiftDown' : '',
     className,
   )}
@@ -30,13 +30,13 @@
     class="mx-auto flex h-[70px] max-w-[1192px] items-center justify-between px-5 md:h-[56px] md:px-[16px]"
   >
     <div class="flex flex-shrink-0 items-center">
-      <a href="/" class="mr-16">
-        <img src="/logo.svg" class="h-[23px] w-[104px] flex-shrink-0 fill-green" alt="logo" />
+      <a href="/" class="mr-16 h-[23px] w-[104px] flex-shrink-0 [&>svg>path]:fill-black">
+        <Logo />
       </a>
     </div>
 
     <div class="flex w-full items-center md:hidden">
-      <ProductsButton class="night-mode">
+      <ProductsButton class={isNightMode ? 'night-mode' : ''}>
         {#snippet children({ ref })}
           <!-- TODO: animate icon -->
           <!-- TODO: add new icons to webkit -->
@@ -99,7 +99,7 @@
 {#snippet Link(href: string, label: string, className?: string, isExternal: boolean = false)}
   <a
     {href}
-    target="_blank"
+    target={isExternal ? '_blank' : '_self'}
     rel={isExternal ? 'noopener noreferrer' : null}
     class={cn('group mr-8 flex items-center text-waterloo hover:text-green md:ml-4', className)}
     data-source="santiment.net"
@@ -112,32 +112,3 @@
     {/if}
   </a>
 {/snippet}
-
-<style>
-  .products {
-    --product-icon-size: 32px;
-    padding: 0 !important;
-
-    :global {
-      .business {
-        padding: 0 !important;
-        margin: 0 0 16px !important;
-        border: 0 !important;
-      }
-
-      .chain {
-        border-bottom: 1px solid var(--porcelain);
-        padding-bottom: 12px;
-      }
-
-      .product {
-        align-items: center;
-        padding: 8px 16px !important;
-      }
-
-      h3 {
-        margin-bottom: 8px !important;
-      }
-    }
-  }
-</style>

@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Nav from '../components/Nav.svelte'
+import Nav from '../components/Nav/Nav.svelte'
 import Hero from '../components/Hero.svelte'
 import Footer from 'san-webkit-next/ui/app/Footer'
 import Intro from '../components/Intro.svelte'
@@ -11,7 +11,7 @@ import FinalCTA from '../components/FinalCTA.svelte'
 ---
 
 <Layout>
-  <Nav isAnimated class="night-mode" client:load="svelte" />
+  <Nav isAnimated isNightMode client:load="svelte" />
   <Hero client:visible />
   <Intro client:visible />
   <ProvenByNumbers client:visible />

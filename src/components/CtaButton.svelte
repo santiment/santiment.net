@@ -33,10 +33,10 @@
   variant={isLoggedIn ? 'border' : 'fill'}
   href={isLoggedIn ? 'https://app.santiment.net/' : 'https://app.santiment.net/sign-up'}
   class={cn(
-    'flex flex-shrink-0 justify-center border-green px-5 text-green ',
+    'flex flex-shrink-0 justify-center border-green px-5 text-green',
     isLoggedIn
-      ? 'bg-transparent hover:border-green-hover hover:bg-green-light-3-night hover:text-green-hover '
-      : 'bg-green text-white-day',
+      ? 'bg-transparent hover:border-green-hover hover:bg-green-light-3-night hover:text-green-hover'
+      : 'bg-green-day text-white-day',
     className,
   )}
   data-source="santiment.net"

@@ -1,12 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Nav from '../components/Nav/Nav.svelte'
+import Footer from 'san-webkit-next/ui/app/Footer'
 ---
 
-<Layout>
+<Layout class="min-h-screen flex flex-col">
   <Nav client:load="svelte" />
-  <main>
+  <main class="flex-1">
     <h1>Crypto analytics platform for Signals and Context</h1>
   </main>
+  <Footer class="mt-auto [&>div]:max-w-[1152px]" client:load="svelte" />
 </Layout>
-

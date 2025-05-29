@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Nav from '../components/Nav/Nav.svelte'
+import Footer from 'san-webkit-next/ui/app/Footer'
+---
+
+<Layout>
+  <Nav client:load="svelte" />
+  <main>
+    <section class="min-h-screen text-center pt-16">
+      <h1 class="text-3xl text-rhino font-bold mb-4">Not found</h1>
+      <p class="mb-16 text-waterloo text-lg">
+        You just hit a route that doesn't exist... the sadness.
+      </p>
+    </section>
+  </main>
+  <Footer class="[&>div]:max-w-[1152px]" client:load="svelte" />
+</Layout>
