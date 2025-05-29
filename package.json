@@ -10,24 +10,24 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/svelte": "^7.0.4",
+    "@astrojs/svelte": "^7.1.0",
     "@astrojs/tailwind": "^5.1.5",
-    "@sveltejs/adapter-node": "^5.2.9",
-    "astro": "^5.1.10",
+    "@sveltejs/adapter-node": "^5.2.12",
+    "astro": "^5.8.0",
     "rxjs": "^7.8.2",
     "san-webkit-next": "github:santiment/san-webkit#lib-31eb4ff8-220525",
-    "svelte": "^5.19.3",
+    "svelte": "^5.33.7",
     "svelte-preprocess": "^5.1.4",
-    "svelte-preprocess-cssmodules": "^3.0.0",
+    "svelte-preprocess-cssmodules": "^3.0.1",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.3",
-    "vite": "^6.0.11"
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
   },
   "devDependencies": {
-    "@types/node": "^22.12.0",
-    "prettier": "^3.4.2",
+    "@types/node": "^22.15.24",
+    "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-svelte": "^3.3.3",
+    "prettier-plugin-svelte": "^3.4.0",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "vite-plugin-mkcert": "^1.17.8"
   }

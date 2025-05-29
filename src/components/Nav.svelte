@@ -5,21 +5,33 @@
   import { cn } from 'san-webkit-next/ui/utils'
   import CtaButton from './CtaButton.svelte'
 
+  type TProps = {
+    isAnimated: boolean
+    class: string
+  }
+
+  const { isAnimated = false, class: className = '' }: TProps = $props()
+
   let navOpen = $state(false)
+
   // TODO:
   // Move code to san-webkit-next
   // Add check for go to sanbase button
 </script>
 
 <nav
-  class="fixed left-0 right-0 top-0 z-50 animate-shiftDown border-b border-porcelain bg-white night-mode md:animate-none"
+  class={cn(
+    'fixed left-0 right-0 top-0 z-50 border-b border-porcelain bg-white md:animate-none',
+    isAnimated ? 'animate-shiftDown' : '',
+    className,
+  )}
 >
   <div
     class="mx-auto flex h-[70px] max-w-[1192px] items-center justify-between px-5 md:h-[56px] md:px-[16px]"
   >
     <div class="flex flex-shrink-0 items-center">
       <a href="/" class="mr-16">
-        <img src="/logo.svg" class="h-[23px] w-[104px] flex-shrink-0" alt="logo" />
+        <img src="/logo.svg" class="h-[23px] w-[104px] flex-shrink-0 fill-green" alt="logo" />
       </a>
     </div>
 
