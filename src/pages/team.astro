@@ -1,8 +1,74 @@
 ---
+import { Image } from 'astro:assets'
 import Layout from '../layouts/Layout.astro'
 import Nav from '../components/Nav/Nav.svelte'
+import { PEOPLE, GROUPS } from '../data/team/people'
+import SocialIcon from '../data/team/social-icons/Icon.astro'
+import GetStarted from '../components/GetStarted'
+import Footer from 'san-webkit-next/ui/app/Footer'
+
+const normalizesData: any = {}
+
+PEOPLE.forEach((item) => {
+  normalizesData[item.group] = normalizesData[item.group]
+    ? [...normalizesData[item.group], item]
+    : [item]
+})
 ---
 
 <Layout>
   <Nav client:load="svelte" />
+  <main>
+    <div class="max-w-[722px] mx-auto text-center mb-14 mt-20">
+      <h1 class="text-3xl text-rhino font-semibold mb-4">Santiment team</h1>
+      <p class="text-lg text-waterloo">
+        In true crypto fashion, our team is as decentralised as they come - spanning 19 countries
+        and 11 time zones (which makes organizing team calls a blast:)
+      </p>
+      <p class="text-lg text-waterloo">
+        Meet the people dedicated to bringing context to the crypto ecosystem:
+      </p>
+    </div>
+    <div class="container mb-12">
+      {
+        Object.values(GROUPS).map((key) => (
+          <div>
+            <h2 class="text-base pb-2 border-b border-porcelain text-waterloo mt-10 mb-9">{key}</h2>
+            <div class="w-full grid gap-8 grid-cols-3">
+              {normalizesData[key].map(({ name, position, description, img, links }: any) => (
+                <div class="{styles.item}">
+                  {img && (
+                    <div class="bg-rhino object-contain h-32 w-32 rounded-full">
+                      <Image
+                        src={img}
+                        class="h-full w-full"
+                        height={365}
+                        width={365}
+                        quality="max"
+                        alt={name}
+                      />
+                    </div>
+                  )}
+                  <h3 class="text-xl font-medium text-rhino mt-6 mb-1">{name}</h3>
+                  <p class="text-base text-green mb-4">{position}</p>
+                  <div class="flex mb-2">
+                    {Object.entries(links).map(([key, value]) => (
+                      <SocialIcon
+                        class="fill-waterloo mr-3.5 cursor-pointer hover:fill-rhino"
+                        href={value}
+                        type={key}
+                      />
+                    ))}
+                  </div>
+                  <p class="text-waterloo text-sm">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+    <GetStarted />
+  </main>
+  <Footer class="[&>div]:max-w-[1152px]" client:load="svelte" />
 </Layout>

@@ -1,0 +1,24 @@
+---
+import Email from './Email.svg'
+
+import Github from './Github.svg'
+import Twitter from './Twitter.svg'
+import LinkedIn from './LinkedIn.svg'
+import Medium from './Medium.svg'
+import Sanbase from './Sanbase.svg'
+import Facebook from './Facebook.svg'
+import Telegram from './Telegram.svg'
+
+const { type, href, class: className } = Astro.props
+---
+
+<a href={href} target="_blank" rel="noopener noreferrer">
+  {type === 'linkedin' && <LinkedIn class={className} />}
+  {type === 'email' && <Email class={className} />}
+  {type === 'medium' && <Medium class={className} />}
+  {type === 'twitter' && <Twitter class={className} />}
+  {type === 'github' && <Github class={className} />}
+  {type === 'sanbase' && <Sanbase class={className} />}
+  {type === 'facebook' && <Facebook class={className} />}
+  {type === 'telegram' && <Telegram class={className} />}
+</a>
