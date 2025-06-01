@@ -1,0 +1,46 @@
+---
+import { Image } from 'astro:assets'
+import Button from 'san-webkit-next/ui/core/Button'
+import sanIllustration from './san-illustration.png'
+import { data as dimensions } from './data'
+
+type TProps = {
+  class: string
+}
+
+const { class: className = '' } = Astro.props as TProps
+---
+
+<section class={className}>
+  <h3 class="text-3xl font-semibold text-rhino mb-12 text-center">About SAN Tokens</h3>
+  <p class="text-lg text-waterloo max-w-[556px] mx-auto mb-9 text-center">
+    SAN is a utility token that provides access to exclusive parts of Sanbase.
+  </p>
+  <Button
+    variant="border"
+    icon="question-circle"
+    iconSize={12}
+    class="mx-auto mb-9 fill-casper text-sm hover:bg-transparent hover:text-green"
+    >How to buy SAN token?</Button
+  >
+  <p class="text-lg text-waterloo max-w-[361px] mx-auto mb-9 text-center">
+    We expect the token economy will have three main dimensions:
+  </p>
+  <div class="flex justify-between gap-7">
+    <Image src={sanIllustration} class="max-w-[716px]" alt="" />
+    <ul class="flex flex-col">
+      {
+        dimensions.map(({ title, goal, how }) => (
+          <li class="py-6 px-8 max-w-[361px] border border-r-porcelain rounded-lg mb-4">
+            <h4 class="text-lg mb-1">
+              <span>SAN as </span>
+              {title}
+            </h4>
+            <div class="text-sm text-waterloo mb-4">({goal})</div>
+            <div class="text-sm">{how}</div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

@@ -52,9 +52,13 @@ const logoPaths = [
 </section>
 
 <style>
+  .title-with-dots {
+    @apply relative;
+  }
+
   .title-with-dots::before,
   .title-with-dots::after {
     content: '';
-    @apply mx-2 inline-block h-[5px] w-[5px] -translate-y-1/2 rounded-full bg-mystic-day md:h-[3px] md:w-[3px];
+    @apply absolute mx-2 inline-block h-[5px] w-[5px] -translate-y-1/2 rounded-full bg-mystic-day md:h-[3px] md:w-[3px];
   }
 </style>

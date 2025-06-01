@@ -1,0 +1,43 @@
+---
+import Step from './Step.astro'
+
+const steps = [
+  {
+    id: 1,
+    title: 'Machine Effort',
+    className: 'text-green bg-green-light-1',
+    description:
+      'We’re crunching massive amounts of information from a plurality of reliable sources, pulling it all into our growing stream of signals and datafeeds:',
+    points: [
+      'Price and Volume data',
+      'Development (GitHub) Activity data',
+      'On-chain data',
+      'Holder behavior activity',
+      'Social media activity',
+      'Crowd sentiment data',
+    ],
+  },
+  {
+    id: 2,
+    title: 'Human Intuition',
+    className: 'text-orange bg-orange-light-1',
+    description:
+      'Our team and community are constantly testing the data’s integrity and viability, and building simple interfaces to turn this information into digestible, actionable insights:',
+    points: [
+      'Research Reports',
+      'Network Audits',
+      'Price/Trend Analysis',
+      'Trading Strategies / Market Alphas',
+      'Sentiment Analysis',
+    ],
+  },
+]
+---
+
+<ol class="w-full grid gap-[50px] grid-cols-2 max-w-[950px] mx-auto [counter-reset:li]">
+  {
+    steps.map(({ title, className, description, points }) => (
+      <Step title={title} className={className} description={description} points={points} />
+    ))
+  }
+</ol>
