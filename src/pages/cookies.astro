@@ -50,7 +50,7 @@ import Footer from 'san-webkit-next/ui/app/Footer'
           listed below:
         </p>
         <h3 class="text-fiord mt-6 mb-4 font-medium">Own cookies</h3>
-        <table class="dataTable">
+        <table class="table">
           <thead>
             <tr>
               <th>Name of the cookie</th>
@@ -69,7 +69,7 @@ import Footer from 'san-webkit-next/ui/app/Footer'
           </tbody>
         </table>
         <h3 class="text-fiord mt-6 mb-4 font-medium">Third party cookies</h3>
-        <table class="dataTable">
+        <table class="table">
           <thead>
             <tr>
               <th>Name of the cookie</th>
@@ -85,6 +85,7 @@ import Footer from 'san-webkit-next/ui/app/Footer'
                   href="https://www.intercom.com/legal/cookie-policy"
                   target="_blank"
                   rel="noopener noreferrer"
+                  class="text-green hover:text-green-hover"
                 >
                   https://www.intercom.com/legal/cookie-policy
                 </a>
@@ -98,6 +99,7 @@ import Footer from 'san-webkit-next/ui/app/Footer'
                   href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage"
                   target="_blank"
                   rel="noopener noreferrer"
+                  class="text-green hover:text-green-hover"
                 >
                   https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage
                 </a>
@@ -113,48 +115,3 @@ import Footer from 'san-webkit-next/ui/app/Footer'
 </Layout>
 
 <!-- TODO: deal with global styles -->
-
-<style>
-  .dataTable {
-    @apply w-full border-separate border-spacing-0 border-none;
-  }
-
-  .dataTable th {
-    @apply border-b border-t border-none border-porcelain bg-athens px-0 py-[6px] text-left text-sm text-casper;
-  }
-
-  .dataTable td {
-    @apply break-words border-b border-none border-porcelain px-0 py-[10px] text-left text-sm leading-[1.5] text-fiord;
-  }
-
-  .dataTable th:first-child,
-  .dataTable td:first-child {
-    @apply w-[226px] border-l border-porcelain pl-[32px] pr-[56px];
-  }
-
-  .dataTable th:nth-child(2),
-  .dataTable td:nth-child(2) {
-    @apply w-[364px] pr-[56px];
-  }
-
-  .dataTable th:last-child,
-  .dataTable td:last-child {
-    @apply border-r border-porcelain pr-[32px];
-  }
-
-  .dataTable thead tr th:first-child {
-    @apply rounded-tl-[4px];
-  }
-
-  .dataTable thead tr th:last-child {
-    @apply rounded-tr-[4px];
-  }
-
-  .dataTable tbody tr:last-child td:first-child {
-    @apply rounded-bl-[4px];
-  }
-
-  .dataTable tbody tr:last-child td:last-child {
-    @apply rounded-br-[4px];
-  }
-</style>
