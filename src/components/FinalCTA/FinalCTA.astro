@@ -5,6 +5,7 @@ import CtaButton from '../CtaButton.svelte'
 
 import coin from './assets/coin.svg'
 import code from './assets/code.svg'
+import { cn } from 'san-webkit-next/ui/utils'
 
 const numbers = [
   {
@@ -45,33 +46,34 @@ const numbers = [
     <div class="flex items-center justify-center md:mb-12 md:flex-col">
       {
         numbers.map(({ title, img, description, link, label }, i) => (
-          <article
-            class={`
-              relative flex flex-col
-              ${
-                i % 2 === 0 ? 'odd:pr-[45px]' : 'even:border-l even:border-porcelain even:pl-[45px]'
-              }
-              md:items-center md:justify-center md:text-center
-              md:odd:pr-0 md:even:border-t md:even:border-none md:even:pl-0
-            `}
-          >
-            <Image src={img} alt="" class="mb-[14px] h-10 w-11" />
-
-            <h3 class="text-lg font-medium text-rhino">{title}</h3>
-
-            <p class="max-w-56 text-sm text-fiord md:max-w-80">{description}</p>
-
-            <Button
-              class="md:text-sm"
-              variant="link"
-              icon="right-arrow"
-              iconSize={10}
-              iconOnRight
-              href={link}
+          <>
+            <article
+              class={cn(
+                'relative flex flex-col',
+                'odd:pr-[45px] even:border-l even:border-porcelain even:pl-[45px]',
+                'md:items-center md:justify-center md:text-center',
+                'md:odd:pr-0 md:even:border-l-0 md:even:pl-0',
+                'md:odd:pb-9 md:even:pt-9 md:even:border-t md:even:border-porcelain',
+              )}
             >
-              {label}
-            </Button>
-          </article>
+              <Image src={img} alt="" class="mb-[14px] h-10 w-11" />
+
+              <h3 class="text-lg font-medium text-rhino">{title}</h3>
+
+              <p class="max-w-56 text-sm text-fiord md:max-w-80 md:mb-2.5">{description}</p>
+
+              <Button
+                class="md:text-sm"
+                variant="link"
+                icon="right-arrow"
+                iconSize={10}
+                iconOnRight
+                href={link}
+              >
+                {label}
+              </Button>
+            </article>
+          </>
         ))
       }
     </div>
