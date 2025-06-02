@@ -35,7 +35,7 @@
   class={cn(
     'flex flex-shrink-0 justify-center border-green px-5 text-green',
     isLoggedIn
-      ? 'bg-transparent hover:border-green-hover hover:bg-green-light-3-night hover:text-green-hover'
+      ? 'bg-transparent hover:border-green-hover hover:bg-green-light-3 hover:text-green-hover'
       : 'bg-green-day text-white-day',
     className,
   )}

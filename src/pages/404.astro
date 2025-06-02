@@ -4,11 +4,11 @@ import Nav from '../components/Nav/Nav.svelte'
 import Footer from 'san-webkit-next/ui/app/Footer'
 ---
 
-<Layout>
+<Layout class="flex flex-col">
   <Nav client:load="svelte" />
-  <main>
-    <section class="min-h-screen text-center pt-16">
-      <h1 class="text-3xl text-rhino font-bold mb-4">Not found</h1>
+  <main class="container min-h-[calc(100vh-70px-369px)]">
+    <section class="text-center pt-20 md:pt-2.5">
+      <h1 class="text-3xl text-rhino font-bold mb-4 md:text-xl">Not found</h1>
       <p class="mb-16 text-waterloo text-lg">
         You just hit a route that doesn't exist... the sadness.
       </p>

@@ -42,7 +42,11 @@ const logoPaths = [
 ---
 
 <section class={cn('overflow-hidden py-6', className)}>
-  <h2 class="title-with-dots mx-2 mb-6 text-lg text-white-day">As seen on</h2>
+  <h2 class="mx-2 mb-6 text-lg text-black flex items-center gap-2">
+    <div class="h-[5px] w-[5px] inline-block rounded-full bg-black md:h-[3px] md:w-[3px]"></div>
+    As seen on
+    <div class="h-[5px] w-[5px] inline-block rounded-full bg-black md:h-[3px] md:w-[3px]"></div>
+  </h2>
 
   <div class="overflow-hidden">
     <div class="flex animate-marquee whitespace-nowrap">
@@ -50,15 +54,3 @@ const logoPaths = [
     </div>
   </div>
 </section>
-
-<style>
-  .title-with-dots {
-    @apply relative;
-  }
-
-  .title-with-dots::before,
-  .title-with-dots::after {
-    content: '';
-    @apply absolute mx-2 inline-block h-[5px] w-[5px] -translate-y-1/2 rounded-full bg-mystic-day md:h-[3px] md:w-[3px];
-  }
-</style>

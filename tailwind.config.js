@@ -10,10 +10,14 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: '1.25rem',
+      padding: '20px',
       screens: {
-        xl: '74.5rem',
+        xl: '1192px',
       },
+    },
+    screens: {
+      xl: { max: '1199px' },
+      ...tailwindConfig.theme.screens,
     },
     extend: {
       keyframes: {

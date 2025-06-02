@@ -4,6 +4,8 @@ import 'san-webkit-next/app.css'
 import Intercom from '../components/Intercom.svelte'
 import Tracking from '../components/Tracking.svelte'
 import CookiesPopup from 'san-webkit-next/ui/core/CookiesPopup'
+
+const { class: className = '' } = Astro.props
 ---
 
 <!doctype html>
@@ -15,7 +17,7 @@ import CookiesPopup from 'san-webkit-next/ui/core/CookiesPopup'
     <meta name="generator" content={Astro.generator} />
     <title>Crypto Research, Data, Tools - Explore Behavioral Analytics</title>
   </head>
-  <body>
+  <body class={className}>
     <!-- TODO:Doesn't work -->
     <CookiesPopup client:only="svelte" />
     <Intercom client:load>
