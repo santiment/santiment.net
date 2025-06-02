@@ -1,8 +1,9 @@
 ---
-import 'san-webkit-next/app.css'
 import '../app.css'
+import 'san-webkit-next/app.css'
 import Intercom from '../components/Intercom.svelte'
 import Tracking from '../components/Tracking.svelte'
+import CookiesPopup from 'san-webkit-next/ui/core/CookiesPopup'
 ---
 
 <!doctype html>
@@ -15,6 +16,8 @@ import Tracking from '../components/Tracking.svelte'
     <title>Crypto Research, Data, Tools - Explore Behavioral Analytics</title>
   </head>
   <body>
+    <!-- TODO:Doesn't work -->
+    <CookiesPopup client:only="svelte" />
     <Intercom client:load>
       <Tracking client:load>
         <div data-vaul-drawer-wrapper>
