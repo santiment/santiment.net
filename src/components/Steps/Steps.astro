@@ -34,7 +34,9 @@ const steps = [
 ]
 ---
 
-<ol class="w-full grid gap-[50px] grid-cols-2 max-w-[950px] mx-auto [counter-reset:li]">
+<ol
+  class="w-full grid gap-[50px] grid-cols-2 max-w-[950px] md:grid-cols-1 mx-auto [counter-reset:li]"
+>
   {
     steps.map(({ title, className, description, points }) => (
       <Step title={title} className={className} description={description} points={points} />

@@ -12,7 +12,7 @@ const { class: className = '' } = Astro.props as TProps
 ---
 
 <section class={className}>
-  <h3 class="text-3xl font-semibold text-rhino mb-12 text-center">About SAN Tokens</h3>
+  <h3 class="text-3xl font-semibold text-rhino mb-8 text-center md:text-xl">About SAN Tokens</h3>
   <p class="text-lg text-waterloo max-w-[556px] mx-auto mb-9 text-center">
     SAN is a utility token that provides access to exclusive parts of Sanbase.
   </p>
@@ -26,12 +26,12 @@ const { class: className = '' } = Astro.props as TProps
   <p class="text-lg text-waterloo max-w-[361px] mx-auto mb-9 text-center">
     We expect the token economy will have three main dimensions:
   </p>
-  <div class="flex justify-between gap-7">
-    <Image src={sanIllustration} class="max-w-[716px]" alt="" />
-    <ul class="flex flex-col">
+  <div class="flex justify-between gap-7 lg:flex-col">
+    <Image src={sanIllustration} class="max-w-[716px] w-full lg:mx-auto" alt="" />
+    <ul class="flex flex-col gap-4 lg:flex-row md:flex-wrap md:justify-center">
       {
         dimensions.map(({ title, goal, how }) => (
-          <li class="py-6 px-8 max-w-[361px] border border-r-porcelain rounded-lg mb-4">
+          <li class="py-6 px-8 max-w-[361px] border border-r-porcelain rounded-lg">
             <h4 class="text-lg mb-1">
               <span>SAN as </span>
               {title}

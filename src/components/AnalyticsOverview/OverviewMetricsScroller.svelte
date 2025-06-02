@@ -81,13 +81,19 @@
     {#each items as item}
       <div class="flex h-[438px] flex-col items-start justify-center md:h-auto">
         <div class="w-full lg:text-left">
-          <p class="mb-3 text-base font-semibold text-orange">{item.title}</p>
-          <h3 class="mb-6 text-4xl font-semibold text-white-day">{item.heading}</h3>
-          <p class="mb-3 text-base text-rhino">{item.sub}</p>
+          <p class="mb-3 text-base font-semibold text-orange md:mb-1">{item.title}</p>
+          <h3 class="mb-6 text-4xl font-semibold text-white-day md:mb-4 md:text-xl">
+            {item.heading}
+          </h3>
+          <p class="mb-3 text-base text-rhino md:mb-2.5">{item.sub}</p>
           <Button variant="link" icon="right-arrow" iconSize={10} iconOnRight href={item.link}
             >{item.label}</Button
           >
-          <img src={item.image} class="mt-6 hidden md:block md:max-w-[80%] sm:max-w-full" alt="" />
+          <img
+            src={item.image}
+            class="mt-6 hidden md:block md:max-w-[80%] sm:max-w-full"
+            alt="Team"
+          />
         </div>
       </div>
     {/each}
@@ -97,7 +103,7 @@
     class="sticky top-[25vh] mb-9 flex h-[438px] w-[778px] self-start text-4xl lg:w-[600px] md:hidden"
   >
     <div
-      class="h-full w-full bg-cover transition-all duration-500"
+      class="h-full w-full bg-cover transition-all duration-500 lg:h-[310px] lg:w-[548px]"
       style={`background-image: url(${images[visibleImage]})`}
     ></div>
   </div>

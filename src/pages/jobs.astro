@@ -7,9 +7,9 @@ import Footer from 'san-webkit-next/ui/app/Footer'
 
 <Layout>
   <Nav client:load="svelte" />
-  <main>
-    <div class="max-w-[722px] mx-auto text-center mb-14 mt-20">
-      <h1 class="text-3xl text-rhino font-semibold mb-4">Join us at Santiment</h1>
+  <main class="container">
+    <div class="max-w-[722px] mx-auto text-center mb-14 mt-20 sm:mt-2.5">
+      <h1 class="text-3xl text-rhino font-semibold mb-4 sm:text-xl">Join us at Santiment</h1>
       <p class="text-lg text-waterloo">
         We’re a 100% distributed team working together from around the world, and we welcome top
         talent to help us change the future of trading crypto-markets. We’re constantly focused on
@@ -24,7 +24,7 @@ import Footer from 'san-webkit-next/ui/app/Footer'
         >
       </p>
     </div>
-    <GetStarted />
   </main>
+  <GetStarted />
   <Footer class="mt-auto [&>div]:max-w-[1152px]" client:load="svelte" />
 </Layout>

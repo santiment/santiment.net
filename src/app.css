@@ -81,3 +81,21 @@
 .table tbody tr:last-child td:last-child {
   border-radius: 0 0 4px 0;
 }
+
+.title-with-dots {
+  @apply relative mx-auto w-fit;
+}
+
+.title-with-dots::before {
+  left: -12px;
+}
+
+.title-with-dots::after {
+  right: -12px;
+}
+
+.title-with-dots::before,
+.title-with-dots::after {
+  content: '';
+  @apply absolute top-1/2 inline-block h-[5px] w-[5px] -translate-y-1/2 rounded-full bg-mystic;
+}

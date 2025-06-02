@@ -13,8 +13,14 @@ const { title, class: className, description, points } = Astro.props as TProps
 
 <li class={cn('rounded-2xl p-8 border border-porcelain relative [counter-reset:li]', className)}>
   <h4 class="text-xl text-rhino mb-10 ml-[66px]">{title}</h4>
-  <p class="text-lg mb-10 text-waterloo">{description}</p>
-  <ul>{points.map((point) => <li class="text-lg text-rhino pl-11 relative mb-7">{point}</li>)}</ul>
+  <p class="text-lg mb-10 text-waterloo md:text-base">{description}</p>
+  <ul>
+    {
+      points.map((point) => (
+        <li class="text-lg text-rhino pl-11 relative mb-7 md:text-base">{point}</li>
+      ))
+    }
+  </ul>
 </li>
 
 <style>

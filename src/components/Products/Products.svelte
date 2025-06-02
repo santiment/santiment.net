@@ -19,24 +19,26 @@
 </script>
 
 <section>
-  <h3 class="title-with-dots mb-8 text-center text-4xl font-semibold text-mystic">Our products</h3>
+  <h3 class="title-with-dots mb-8 text-center text-4xl font-semibold text-mystic md:text-xl">
+    Our products
+  </h3>
   <Tabs
-    class="mx-auto mb-10 text-xl"
+    class="mx-auto mb-10 text-xl md:text-lg"
     onSelect={(tab) => (selectedTab = tab)}
     options={Object.keys(TABS)}
     defaultSelectedIndex="Sanbase"
   />
-  <p class="mx-auto mb-4 max-w-[556px] text-center text-lg text-waterloo">
+  <p class="mx-auto mb-4 max-w-[556px] text-center text-lg text-waterloo md:text-base">
     Exclusive on-chain, social and development metrics, low-latency market signals, custom
     Spreadsheet templates & daily insights on the cryptocurrency market
   </p>
   <Button
     variant="fill"
-    class="mx-auto h-10 max-w-[153px] text-base"
+    class="mx-auto h-10 max-w-[153px] text-base sm:max-w-full sm:justify-center"
     icon="right-arrow"
     iconOnRight
     iconSize={10}
     href={TABS[selectedTab].link}>Try it yourself</Button
   >
-  <img src={TABS[selectedTab].img} class="mt-10" alt="" />
+  <img src={TABS[selectedTab].img} class="mx-auto mt-10 max-w-[80%]" alt="" />
 </section>
