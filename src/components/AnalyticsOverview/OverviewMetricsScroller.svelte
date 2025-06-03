@@ -18,8 +18,11 @@
 
   const { class: className = '' }: TProps = $props()
 
+  let scroll = $state(0)
+
   function handleScroll() {
     const scrollTop = document.documentElement.scrollTop
+    scroll = scrollTop
 
     if (scrollTop < 2912 && visibleImage !== 0) {
       visibleImage = 0
@@ -106,8 +109,9 @@
       class="h-full w-full bg-cover transition-all duration-500 lg:h-[310px] lg:w-[548px]"
       style={`background-image: url(${images[visibleImage]})`}
     ></div>
-    <p style="position:fixed;top:0;left:0;z-index:9999;color:white">
-      Visible image: {visibleImage}
-    </p>
   </div>
+  <p style="position:fixed;top:0;left:0;z-index:9999;color:white">
+    Visible image: {visibleImage}
+    {scroll}
+  </p>
 </div>

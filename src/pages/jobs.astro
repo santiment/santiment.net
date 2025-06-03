@@ -6,7 +6,7 @@ import Footer from 'san-webkit-next/ui/app/Footer'
 ---
 
 <Layout>
-  <Nav client:load="svelte" />
+  <Nav client:load />
   <main class="container">
     <div class="max-w-[722px] mx-auto text-center mb-14 mt-20 sm:mt-2.5">
       <h1 class="text-3xl text-rhino font-semibold mb-4 sm:text-xl">Join us at Santiment</h1>
@@ -25,6 +25,6 @@ import Footer from 'san-webkit-next/ui/app/Footer'
       </p>
     </div>
   </main>
-  <GetStarted client:load="svelte" />
-  <Footer class="mt-auto [&>div]:max-w-[1140px]" client:load="svelte" />
+  <GetStarted client:visible />
+  <Footer class="mt-auto [&>div]:max-w-[1140px]" client:visible />
 </Layout>

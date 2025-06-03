@@ -11,12 +11,12 @@ import FinalCTA from '../components/FinalCTA'
 ---
 
 <Layout>
-  <Nav isAnimated isNightMode client:load="svelte" />
+  <Nav isAnimated isNightMode client:load />
   <Hero />
   <Intro />
   <ProvenByNumbers />
   <AnalyticsOverview />
   <Tweets />
   <FinalCTA />
-  <Footer class="bg-white [&>div]:max-w-[1140px]" client:load="svelte" />
+  <Footer class="bg-white [&>div]:max-w-[1140px]" client:visible />
 </Layout>

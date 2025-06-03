@@ -20,14 +20,14 @@ const { class: className = '' } = Astro.props
     <title>Crypto Research, Data, Tools - Explore Behavioral Analytics</title>
   </head>
   <body class={className}>
-    <CookiesPopupWrapper client:load="svelte" />
-    <Intercom client:load="svelte">
-      <Tracking client:load="svelte">
+    <CookiesPopupWrapper client:only="svelte" />
+    <Intercom client:only="svelte">
+      <Tracking client:load>
         <div data-vaul-drawer-wrapper>
           <slot />
         </div>
       </Tracking>
     </Intercom>
-    <Notifications client:load="svelte" />
+    <Notifications client:load />
   </body>
 </html>

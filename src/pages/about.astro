@@ -9,7 +9,7 @@ import Footer from 'san-webkit-next/ui/app/Footer'
 ---
 
 <Layout>
-  <Nav client:load="svelte" />
+  <Nav client:load />
   <main class="container pt-20 mb-20 sm:pt-2.5">
     <h1 class="text-3xl font-semibold text-rhino text-center mb-12 sm:mb-7 sm:text-xl">
       Crypto analytics platform for Signals and Context
@@ -52,9 +52,9 @@ import Footer from 'san-webkit-next/ui/app/Footer'
       </h4>
       <Steps />
     </section>
-    <AboutSAN class="mb-14" cleint:load="svelte" />
-    <Products client:load="svelte" />
+    <AboutSAN class="mb-14" cleint:visible />
+    <Products client:visible />
   </main>
-  <GetStarted client:load="svelte" />
-  <Footer class="[&>div]:max-w-[1140px]" client:load="svelte" />
+  <GetStarted client:visible />
+  <Footer class="[&>div]:max-w-[1140px]" client:visible />
 </Layout>
