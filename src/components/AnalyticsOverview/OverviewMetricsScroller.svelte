@@ -110,8 +110,4 @@
       style={`background-image: url(${images[visibleImage]})`}
     ></div>
   </div>
-  <p style="position:fixed;top:0;left:0;z-index:9999;color:white">
-    Visible image: {visibleImage}
-    {scroll}
-  </p>
 </div>
