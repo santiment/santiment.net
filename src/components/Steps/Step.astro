@@ -11,7 +11,12 @@ type TProps = {
 const { title, class: className, description, points } = Astro.props as TProps
 ---
 
-<li class={cn('rounded-2xl p-8 border border-porcelain relative [counter-reset:li]', className)}>
+<li
+  class={cn(
+    'relative rounded-2xl border border-porcelain p-8 before:content-[counter(li)] before:flex before:items-center before:justify-center before:rounded-full before:w-12 before:h-12 before:absolute [counter-increment-li]',
+    className,
+  )}
+>
   <h4 class="text-xl text-rhino mb-10 ml-[66px]">{title}</h4>
   <p class="text-lg mb-10 text-waterloo md:text-base">{description}</p>
   <ul>
@@ -22,18 +27,3 @@ const { title, class: className, description, points } = Astro.props as TProps
     }
   </ul>
 </li>
-
-<style>
-  .item:before {
-    content: counter(li);
-    display: flex;
-    border-radius: 50%;
-    width: 48px;
-    position: absolute;
-    background-color: var(--orange-light-1);
-    color: var(--color);
-    height: 48px;
-    align-items: center;
-    justify-content: center;
-  }
-</style>

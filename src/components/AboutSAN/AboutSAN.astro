@@ -3,6 +3,7 @@ import { Image } from 'astro:assets'
 import Button from 'san-webkit-next/ui/core/Button'
 import sanIllustration from './assets/san-illustration.png'
 import { data as dimensions } from './assets/data'
+import { cn } from 'san-webkit-next/ui/utils'
 
 type TProps = {
   class: string
@@ -30,14 +31,14 @@ const { class: className = '' } = Astro.props as TProps
     <Image src={sanIllustration} class="max-w-[716px] w-full lg:mx-auto" alt="" />
     <ul class="flex flex-col gap-4 lg:flex-row md:flex-wrap md:justify-center">
       {
-        dimensions.map(({ title, goal, how }) => (
+        dimensions.map(({ title, goal, how, className }) => (
           <li class="py-6 px-8 max-w-[361px] border border-r-porcelain rounded-lg">
             <h4 class="text-lg mb-1">
               <span>SAN as </span>
-              {title}
+              <span class={className}>{title}</span>
             </h4>
             <div class="text-sm text-waterloo mb-4">({goal})</div>
-            <div class="text-sm">{how}</div>
+            <div class={cn('text-sm', className)}>{how}</div>
           </li>
         ))
       }

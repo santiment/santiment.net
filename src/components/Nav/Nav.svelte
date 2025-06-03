@@ -38,15 +38,17 @@
     <div class="flex w-full items-center md:hidden">
       <ProductsButton class={isNightMode ? 'night-mode' : ''}>
         {#snippet children({ ref })}
-          <!-- TODO: animate icon -->
-          <!-- TODO: add new icons to webkit -->
           <Button
             icon="arrow-down"
             iconOnRight
             iconSize={9}
             {ref}
-            class="mr-8 pl-0 text-waterloo transition-transform duration-200 hover:bg-transparent hover:fill-green hover:text-green [&[data-state=open]>svg]:rotate-180"
-            >Products</Button
+            class={cn(
+              'duration-250 mr-8 pl-0 text-waterloo transition-transform',
+              'hover:bg-transparent hover:fill-green hover:text-green',
+              '[&>svg]:transition-transform [&>svg]:duration-[250ms]',
+              '[&>svg]:ease-in-out [&[data-state=open]>svg]:rotate-180',
+            )}>Products</Button
           >
         {/snippet}
       </ProductsButton>
