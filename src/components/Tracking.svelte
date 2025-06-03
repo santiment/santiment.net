@@ -1,16 +1,16 @@
 <script lang="ts">
-  import { onMount, type Snippet } from "svelte";
-  // import { startLinksListener } from "san-webkit-next/analytics";
+  import { onMount, type Snippet } from 'svelte'
+  import { startLinksListener } from 'san-webkit-next/analytics'
 
   type TProps = {
-    children: Snippet;
-  };
+    children: Snippet
+  }
 
-  const { children }: TProps = $props();
+  const { children }: TProps = $props()
 
   onMount(() => {
-    // startLinksListener();
-  });
+    startLinksListener()
+  })
 </script>
 
 {@render children()}

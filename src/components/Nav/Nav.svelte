@@ -27,7 +27,7 @@
   )}
 >
   <div
-    class="mx-auto flex h-[70px] max-w-[1192px] items-center justify-between px-5 md:h-[56px] md:px-[16px]"
+    class="mx-auto flex h-[70px] max-w-[1192px] items-center justify-between px-[26px] md:h-[56px] md:px-[16px]"
   >
     <div class="flex flex-shrink-0 items-center">
       <a href="/" class="mr-16 h-[23px] w-[104px] flex-shrink-0 [&>svg>path]:fill-black">
@@ -45,7 +45,7 @@
             iconOnRight
             iconSize={9}
             {ref}
-            class="mr-8 text-waterloo transition-transform duration-200 hover:bg-transparent hover:fill-green hover:text-green [&[data-state=open]>svg]:rotate-180"
+            class="mr-8 pl-0 text-waterloo transition-transform duration-200 hover:bg-transparent hover:fill-green hover:text-green [&[data-state=open]>svg]:rotate-180"
             >Products</Button
           >
         {/snippet}

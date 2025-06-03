@@ -21,8 +21,8 @@ const { class: className = '' } = Astro.props
   <body class={className}>
     <!-- TODO:Doesn't work -->
     <CookiesPopup client:only="svelte" />
-    <Intercom client:load>
-      <Tracking client:load>
+    <Intercom client:load="svelte">
+      <Tracking client:load="svelte">
         <div data-vaul-drawer-wrapper>
           <slot />
         </div>
