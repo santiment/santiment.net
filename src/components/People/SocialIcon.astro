@@ -11,7 +11,12 @@ import Telegram from './assets/social-icons/Telegram.svg'
 const { type, href, class: className } = Astro.props
 ---
 
-<a href={href} target="_blank" rel="noopener noreferrer">
+<a
+  href={href}
+  aria-label={type === 'email' ? 'Open email client' : `Go to ${type} profile`}
+  target="_blank"
+  rel="noopener noreferrer"
+>
   {type === 'linkedin' && <LinkedIn class={className} />}
   {type === 'email' && <Email class={className} />}
   {type === 'medium' && <Medium class={className} />}

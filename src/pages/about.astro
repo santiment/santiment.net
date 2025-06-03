@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets'
+import teamImg from '../assets/team.jpg'
+
 import Layout from '../layouts/Layout.astro'
 import Nav from '../components/Nav/Nav.svelte'
 import Steps from '../components/Steps'
@@ -37,7 +40,7 @@ import Footer from 'san-webkit-next/ui/app/Footer'
     <section class="text-center mb-24">
       <h3 class="text-4xl font-semibold text-mystic title-with-dots mb-6 md:text-xl">Our team</h3>
       <div class="rounded-2xl mx-auto max-w-6xl overflow-hidden relative mb-4">
-        <img src="/team.jpg" alt="Team" />
+        <Image src={teamImg} loading="eager" alt="Team" />
       </div>
       <p class="italic text-casper text-base text-center">
         54 experts | 19 countries | 2016 founded | 57k ETH raised

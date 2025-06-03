@@ -28,6 +28,7 @@ PEOPLE.forEach((item) => {
                     class="h-full w-full"
                     height={365}
                     width={365}
+                    loading={key === GROUPS.CORE ? 'eager' : 'lazy'}
                     quality="max"
                     alt={name}
                   />
