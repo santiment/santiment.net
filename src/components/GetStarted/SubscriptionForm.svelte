@@ -7,6 +7,7 @@
   import { useObserveFnCall } from 'san-webkit-next/utils'
 
   import { mutateEmailLoginNewsletter } from './api.js'
+  import { notification } from 'san-webkit-next/ui/core/Notifications'
 
   type TProps = {
     class?: string
@@ -27,6 +28,11 @@
           return of(null)
         }),
         tap(() => (loading = false)),
+        tap((result) => {
+          if (result) {
+            notification.success('Verification email was sent to the provided email!')
+          }
+        }),
       )
     }),
   )

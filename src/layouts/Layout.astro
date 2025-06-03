@@ -4,6 +4,7 @@ import 'san-webkit-next/app.css'
 import Intercom from '../components/Intercom.svelte'
 import Tracking from '../components/Tracking.svelte'
 import CookiesPopup from 'san-webkit-next/ui/core/CookiesPopup'
+import Notifications from 'san-webkit-next/ui/core/Notifications'
 
 const { class: className = '' } = Astro.props
 ---
@@ -27,5 +28,6 @@ const { class: className = '' } = Astro.props
         </div>
       </Tracking>
     </Intercom>
+    <Notifications client:load="svelte" />
   </body>
 </html>
