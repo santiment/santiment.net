@@ -19,6 +19,10 @@ import coinontag from './assets/coinotag.svg'
 import kucoin from './assets/kucoin.svg'
 import maker from './assets/maker.svg'
 
+type Props = {
+  class?: string
+}
+
 const { class: className = '' } = Astro.props
 
 const logoPaths = [

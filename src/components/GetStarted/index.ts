@@ -1,1 +1,1 @@
-export { default } from './GetStarted.svelte'
+export { default } from './GetStarted.astro'

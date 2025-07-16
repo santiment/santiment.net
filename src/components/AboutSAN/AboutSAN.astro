@@ -5,11 +5,11 @@ import sanIllustration from './assets/san-illustration.png'
 import { data as dimensions } from './assets/data'
 import { cn } from 'san-webkit-next/ui/utils'
 
-type TProps = {
-  class: string
+type Props = {
+  class?: string
 }
 
-const { class: className = '' } = Astro.props as TProps
+const { class: className = '' } = Astro.props
 ---
 
 <section class={className}>

@@ -8,6 +8,12 @@ import Sanbase from './assets/social-icons/Sanbase.svg'
 import Facebook from './assets/social-icons/Facebook.svg'
 import Telegram from './assets/social-icons/Telegram.svg'
 
+type Props = {
+  type: string
+  href: string
+  class: string
+}
+
 const { type, href, class: className } = Astro.props
 ---
 

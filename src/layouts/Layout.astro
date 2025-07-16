@@ -7,6 +7,10 @@ import Intercom from '../components/Intercom.svelte'
 import Tracking from '../components/Tracking.svelte'
 import CookiesPopupWrapper from '../components/CookiesPopupWrapper.svelte'
 
+type Props = {
+  class?: string
+}
+
 const { class: className = '' } = Astro.props
 ---
 

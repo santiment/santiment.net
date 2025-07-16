@@ -1,14 +1,14 @@
 ---
 import { cn } from 'san-webkit-next/ui/utils'
 
-type TProps = {
-  class: string
+type Props = {
+  class?: string
   title: string
   description: string
   points: string[]
 }
 
-const { title, class: className, description, points } = Astro.props as TProps
+const { title, class: className = '', description, points } = Astro.props
 ---
 
 <li
