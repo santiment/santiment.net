@@ -16,6 +16,7 @@ export default defineConfig({
   integrations: [svelte(), tailwind()],
   vite: viteConfig,
   publicDir: './static',
+  outDir: './public',
   server: {
     port: 3000,
   },
