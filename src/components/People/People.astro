@@ -10,8 +10,10 @@ type Person = (typeof PEOPLE)[number]
 
 const { class: className = '' } = Astro.props
 
-const normalizedData = PEOPLE.reduce<Record<string, Person[]>>((acc, p) => {
-  ;(acc[p.group] ??= []).push(p)
+const normalizedData = PEOPLE.reduce<Record<string, Person[]>>((acc, person) => {
+  const group = acc[person.group] ??= []
+  group.push(person)
+
   return acc
 }, {})
 ---
