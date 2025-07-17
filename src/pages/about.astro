@@ -1,0 +1,63 @@
+---
+import { Image } from 'astro:assets'
+import teamImg from '../assets/team.jpg'
+
+import Layout from '../layouts/Layout.astro'
+import Nav from '../components/Nav/Nav.svelte'
+import Steps from '../components/Steps'
+import AboutSAN from '../components/AboutSAN'
+import Products from '../components/Products'
+import GetStarted from '../components/GetStarted'
+import Footer from 'san-webkit-next/ui/app/Footer'
+---
+
+<Layout>
+  <Nav client:load />
+  <main class="container pt-20 mb-20 sm:pt-2.5">
+    <h1 class="text-3xl font-semibold text-rhino text-center mb-12 sm:mb-7 sm:text-xl">
+      Crypto analytics platform for Signals and Context
+    </h1>
+    <section
+      class="flex justify-between text-waterloo text-lg [&>p>strong]:text-green [&>p>strong]:font-normal text-center [&>p]:max-w-[459px] mx-auto max-w-[1000px] mb-[88px] md:text-base md:[&>p]:max-w-[400px] sm:[&>p]:max-w-[459px] sm:flex-col sm:items-center sm:[&>p]:mb-4 sm:text-left"
+    >
+      <p>
+        From the beginning, our team has been guided by a single mission - to eliminate <strong
+          >information asymmetry
+        </strong> in the crypto ecosystem.
+      </p>
+      <p>
+        Blockchain technology is changing the world, but there’s still a concerning lack of
+        credible, actionable information on the crypto industry and its major stakeholders.
+      </p>
+    </section>
+    <section class="max-w-xl text-center mx-auto mb-24 md:max-w-[400px] sm:max-w-[459px]">
+      <h3 class="text-xl font-medium text-rhino mb-6">Everyone is guessing</h3>
+      <p class="text-lg text-waterloo md:text-base sm:text-left">
+        Our mission is to block out the noise and provide data-driven insights on cryptocurrency
+        networks, blockchain-based projects, crowd sentiment and market behavior.
+      </p>
+    </section>
+    <section class="text-center mb-24">
+      <h3 class="text-4xl font-semibold text-mystic title-with-dots mb-6 md:text-xl">Our team</h3>
+      <div class="rounded-2xl mx-auto max-w-6xl overflow-hidden relative mb-4">
+        <Image src={teamImg} loading="eager" alt="Team" />
+      </div>
+      <p class="italic text-casper text-base text-center">
+        54 experts | 19 countries | 2016 founded | 57k ETH raised
+      </p>
+    </section>
+    <section class="mb-24">
+      <h3 class="text-4xl font-semibold text-mystic title-with-dots mb-6 md:text-xl">
+        How do we accomplish our goals?
+      </h3>
+      <h4 class="text-3xl text-rhino font-semibold max-w-xl mx-auto mb-12 text-center md:text-xl">
+        Bringing machine effort and human intuition together
+      </h4>
+      <Steps />
+    </section>
+    <AboutSAN class="mb-14" cleint:visible />
+    <Products client:visible />
+  </main>
+  <GetStarted client:visible />
+  <Footer class="[&>div]:max-w-[1140px]" client:visible />
+</Layout>

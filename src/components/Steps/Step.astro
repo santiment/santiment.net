@@ -1,0 +1,29 @@
+---
+import { cn } from 'san-webkit-next/ui/utils'
+
+type Props = {
+  class?: string
+  title: string
+  description: string
+  points: string[]
+}
+
+const { title, class: className = '', description, points } = Astro.props
+---
+
+<li
+  class={cn(
+    'relative rounded-2xl border border-porcelain p-8 before:content-[counter(li)] before:flex before:items-center before:justify-center before:rounded-full before:w-12 before:h-12 before:absolute [counter-increment-li]',
+    className,
+  )}
+>
+  <h4 class="text-xl text-rhino mb-10 ml-[66px]">{title}</h4>
+  <p class="text-lg mb-10 text-waterloo md:text-base">{description}</p>
+  <ul>
+    {
+      points.map((point) => (
+        <li class="text-lg text-rhino pl-11 relative mb-7 md:text-base">{point}</li>
+      ))
+    }
+  </ul>
+</li>

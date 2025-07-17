@@ -1,0 +1,83 @@
+---
+import { cn } from 'san-webkit-next/ui/utils'
+
+const steps = [
+  {
+    id: 1,
+    title: 'Machine Effort',
+    color: 'green',
+    description:
+      'We’re crunching massive amounts of information from a plurality of reliable sources, pulling it all into our growing stream of signals and datafeeds:',
+    points: [
+      'Price and Volume data',
+      'Development (GitHub) Activity data',
+      'On-chain data',
+      'Holder behavior activity',
+      'Social media activity',
+      'Crowd sentiment data',
+    ],
+  },
+  {
+    id: 2,
+    title: 'Human Intuition',
+    color: 'orange',
+    description:
+      'Our team and community are constantly testing the data’s integrity and viability, and building simple interfaces to turn this information into digestible, actionable insights:',
+    points: [
+      'Research Reports',
+      'Network Audits',
+      'Price/Trend Analysis',
+      'Trading Strategies / Market Alphas',
+      'Sentiment Analysis',
+    ],
+  },
+] as const
+
+const colorClassMap = {
+  green: {
+    text: 'before:text-green',
+    bg: 'before:bg-green-light-1',
+    point: 'before:bg-green',
+  },
+  orange: {
+    text: 'before:text-orange',
+    bg: 'before:bg-orange-light-1',
+    point: 'before:bg-orange',
+  },
+}
+---
+
+<ol
+  class="w-full grid gap-[50px] grid-cols-2 max-w-[950px] md:grid-cols-1 mx-auto [counter-reset:li]"
+>
+  {
+    steps.map(({ title, description, points, color }) => (
+      <li
+        class={cn(
+          'relative rounded-2xl border border-porcelain p-8  [counter-increment:li]',
+          'before:content-[counter(li)] before:flex before:items-center before:justify-center',
+          'before:rounded-full before:w-12 before:h-12 before:absolute before:text-xl before:font-medium',
+          colorClassMap[color].text,
+          colorClassMap[color].bg,
+        )}
+      >
+        <h4 class="text-xl text-rhino mb-10 mt-2.5 ml-[66px]">{title}</h4>
+        <p class="text-lg mb-10 text-waterloo md:text-base">{description}</p>
+        <ul>
+          {points.map((point) => (
+            <li
+              class={cn(
+                'text-lg text-rhino pl-11 relative mb-7 md:text-base',
+                'before:content-[""] before:absolute before:block before:top-[11px]',
+                'before:left-0 before:w-6 before:h-0.5 before:rounded',
+                colorClassMap[color].point,
+              )}
+            >
+              {point}
+            </li>
+          ))}
+        </ul>
+      </li>
+    ))
+  }
+</ol>

@@ -1,0 +1,22 @@
+---
+import Footer from 'san-webkit-next/ui/app/Footer'
+import Layout from '../layouts/Layout.astro'
+import Nav from '../components/Nav/Nav.svelte'
+import Hero from '../components/Hero'
+import Intro from '../components/Intro'
+import ProvenByNumbers from '../components/ProvenByNumbers'
+import AnalyticsOverview from '../components/AnalyticsOverview'
+import Tweets from '../components/Tweets'
+import FinalCTA from '../components/FinalCTA'
+---
+
+<Layout>
+  <Nav isAnimated isNightMode client:load />
+  <Hero />
+  <Intro />
+  <ProvenByNumbers />
+  <AnalyticsOverview />
+  <Tweets />
+  <FinalCTA />
+  <Footer class="bg-athens [&>div]:max-w-[1140px]" client:visible />
+</Layout>

@@ -1,0 +1,60 @@
+---
+import { Image } from 'astro:assets'
+import { PEOPLE, GROUPS } from './assets/people'
+import SocialIcon from './SocialIcon.astro'
+
+type Props = {
+  class: string
+}
+type Person = (typeof PEOPLE)[number]
+
+const { class: className = '' } = Astro.props
+
+const normalizedData = PEOPLE.reduce<Record<string, Person[]>>((acc, person) => {
+  const group = acc[person.group] ??= []
+  group.push(person)
+
+  return acc
+}, {})
+---
+
+<div class={className}>
+  {
+    Object.values(GROUPS).map((key) => (
+      <div>
+        <h2 class="text-base pb-2 border-b border-porcelain text-waterloo mt-10 mb-9">{key}</h2>
+        <div class="w-full grid gap-8 grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+          {normalizedData[key].map(({ name, position, description, img, links }: any) => (
+            <div class="max-w-[358px] mb-2.5">
+              {img && (
+                <div class="bg-rhino object-contain h-32 w-32 rounded-full">
+                  <Image
+                    src={img}
+                    class="h-full w-full"
+                    height={365}
+                    width={365}
+                    loading={key === GROUPS.CORE ? 'eager' : 'lazy'}
+                    quality="max"
+                    alt={name}
+                  />
+                </div>
+              )}
+              <h3 class="text-xl font-medium text-rhino mt-6 mb-1">{name}</h3>
+              <p class="text-base text-green mb-4">{position}</p>
+              <div class="flex mb-2">
+                {Object.entries(links).map(([key, value]) => (
+                  <SocialIcon
+                    class="fill-waterloo mr-3.5 cursor-pointer hover:fill-rhino"
+                    href={value}
+                    type={key}
+                  />
+                ))}
+              </div>
+              <p class="text-waterloo text-sm">{description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    ))
+  }
+</div>

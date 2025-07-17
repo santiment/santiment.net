@@ -1,0 +1,45 @@
+# Santiment 
+
+> Santiment is a crypto analytics platform offering on-chain, social, and development data for thousands of assets. Sanbase is Santiment’s flagship product, empowering users with interactive dashboards, customizable metrics, and real-time market insights.
+
+# Santiment key products
+- [Charts](https://app.santiment.net/charts): Our charts tool enables visualization of data in multiple formats, combining various metrics for deeper insights.
+- [Screener](https://app.santiment.net/screener): A powerful tool for filtering and sorting assets based on desired metrics.
+- [Social trends](https://app.santiment.net/social-trends): This tool identifies trending topics and coins, offering insights into market sentiment.
+- [Alerts](https://app.santiment.net/alerts): This feature delivers real-time notifications for significant metric changes or events.
+- [Developer activity](https://app.santiment.net/dev-activity): Tracks and visualizes public GitHub activity to assess a project's ongoing development and commitment.
+- [Queries](https://queries.santiment.net/): Provides SQL access to a database with comprehensive crypto-related on-chain, financial, social, and development data.
+- [API](https://api.santiment.net/): Santiment API delivers reliable sentiment, development, and on-chain data across 12 blockchains and 2,500+ assets.
+- [Sheets](https://sheets.santiment.net/): Santiment Sheets brings crypto data directly into Google Sheets for seamless analysis.
+
+
+## Docs
+- [Getting started with Santiment](https://academy.santiment.net/santiment-introduction/): Quickstart for exploring Santiment products.
+- [Sanbase overview](https://academy.santiment.net/sanbase/): List of Sanbase features and pages.
+- [Sanbase pricing](https://app.santiment.net/pricing): Current pricing of Sanbase plans.
+- [Metrics list](https://academy.santiment.net/metrics/): Santiment Crypto Metrics Overview.
+
+
+## API
+- [Getting started for Developers](https://academy.santiment.net/for-developers/):  Guidance for developers on how to start using the Santiment API.
+- [How to Access the API](https://academy.santiment.net/sanapi/): Complete documentation for accessing Santiment API data programmatically.
+
+
+## Education and Use Cases
+- [Sanbase Alerts Use Cases - Age Consumed](https://academy.santiment.net/education-and-use-cases/alerts-on-sanbase/): Get timely alerts on unusual wallet activity to improve your crypto trading decisions. 
+- [Sanbase Alerts Use Cases - Social Trends](https://academy.santiment.net/education-and-use-cases/social-trends-alerts/): Get notified about trending crypto topics and social spikes to spot shifts in market sentiment early. 
+- [Sanbase Alerts Use Cases - Whale Alert](https://academy.santiment.net/education-and-use-cases/whale-alert/): Get real-time alerts on large holder transactions to anticipate major crypto market moves. 
+- [Timing market volatility with Token Age Consumed](https://academy.santiment.net/education-and-use-cases/timing-market-volatility-with-token-age-consumed/): Spot upcoming volatility by tracking when long-held tokens start to move on-chain.
+- [Analyzing Speculative Activity with Santiment’s Exchange Metrics](https://academy.santiment.net/education-and-use-cases/investigate-speculative-activity-with-santiment%E2%80%99s-exchange-metrics/): Identify speculative trading and potential reversals by monitoring exchange flows and deposit activity.
+- [Spot tops with Price - Network Activity divergences](https://academy.santiment.net/education-and-use-cases/how-to-spot-tops-with-price---network-activity-divergences/): Use price and network activity divergences to anticipate market tops and assess long-term asset health. 
+- [Price - Daily Addresses Divergence, A Primer on On-chain Trading Strategies](https://academy.santiment.net/education-and-use-cases/price-to-daily-addresses-divergence---primer-on-on-chain-trading-strategies/): Combine price and user activity trends to spot opportunities and improve crypto trading strategies. 
+- [Understanding Long-Term Market Trends and Cycles](https://academy.santiment.net/education-and-use-cases/understanding-long-term-market-trends-and-cycles/): Track cycle stages and spot key turning points using long-term on-chain and sentiment metrics. 
+- [Understanding Short-Term Market Trends](https://academy.santiment.net/education-and-use-cases/understanding-short-term-market-trends/): Spot short-term crypto tops and reversals using network, social, valuation, and derivatives metrics. 
+- [Understanding Crypto Market Cycles Through Lending Metrics](https://academy.santiment.net/education-and-use-cases/understanding-crypto-market-cycles-through-lending-metrics/): Use DeFi lending and liquidation metrics to spot overheated markets, identify bottoms, and better time crypto trades.
+
+
+## Learning and Support
+
+- [Insights(https://insights.santiment.net/): Market analysis articles from the San team and community members.
+- [Live streams](https://www.youtube.com/@Santimentfeed): Weekly sessions discussing market trends and answering community questions.
+- [Discord community](https://santiment.net/discord): Vibrant community of Sanbase users, crypto investors, and market analysts.

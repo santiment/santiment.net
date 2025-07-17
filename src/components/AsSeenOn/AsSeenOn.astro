@@ -1,0 +1,60 @@
+---
+import { Image } from 'astro:assets'
+import { cn } from 'san-webkit-next/ui/utils'
+
+import binance from './assets/binance.svg'
+import bloomberg from './assets/bloomberg.svg'
+import ethereum from './assets/ethereum.svg'
+import cnn from './assets/cnn.svg'
+import coindesk from './assets/coindesk.svg'
+import cointelegraph from './assets/cointelegraph.svg'
+import nasdaq from './assets/nasdaq.svg'
+import ripple from './assets/ripple.svg'
+import bitcoinMagazine from './assets/bitcoin-magazine.svg'
+import wired from './assets/wired.svg'
+import bitfinex from './assets/bitfinex.svg'
+import cardano from './assets/cardano.svg'
+import kraken from './assets/kraken.svg'
+import coinontag from './assets/coinotag.svg'
+import kucoin from './assets/kucoin.svg'
+import maker from './assets/maker.svg'
+
+type Props = {
+  class?: string
+}
+
+const { class: className = '' } = Astro.props
+
+const logoPaths = [
+  binance,
+  ethereum,
+  bloomberg,
+  cnn,
+  coindesk,
+  cointelegraph,
+  nasdaq,
+  ripple,
+  bitcoinMagazine,
+  wired,
+  bitfinex,
+  cardano,
+  kraken,
+  coinontag,
+  kucoin,
+  maker,
+]
+---
+
+<section class={cn('overflow-hidden py-6', className)}>
+  <h2 class="mx-2 mb-6 text-lg text-black flex items-center gap-2">
+    <div class="h-[5px] w-[5px] inline-block rounded-full bg-black md:h-[3px] md:w-[3px]"></div>
+    As seen on
+    <div class="h-[5px] w-[5px] inline-block rounded-full bg-black md:h-[3px] md:w-[3px]"></div>
+  </h2>
+
+  <div class="overflow-hidden">
+    <div class="flex animate-marquee whitespace-nowrap">
+      {logoPaths.concat(logoPaths).map((path) => <Image src={path} alt="" class="mx-6" />)}
+    </div>
+  </div>
+</section>

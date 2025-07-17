@@ -1,0 +1,34 @@
+---
+import Email from './assets/social-icons/Email.svg'
+import Github from './assets/social-icons/Github.svg'
+import Twitter from './assets/social-icons/Twitter.svg'
+import LinkedIn from './assets/social-icons/LinkedIn.svg'
+import Medium from './assets/social-icons/Medium.svg'
+import Sanbase from './assets/social-icons/Sanbase.svg'
+import Facebook from './assets/social-icons/Facebook.svg'
+import Telegram from './assets/social-icons/Telegram.svg'
+
+type Props = {
+  type: string
+  href: string
+  class: string
+}
+
+const { type, href, class: className } = Astro.props
+---
+
+<a
+  href={href}
+  aria-label={type === 'email' ? 'Open email client' : `Go to ${type} profile`}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  {type === 'linkedin' && <LinkedIn class={className} />}
+  {type === 'email' && <Email class={className} />}
+  {type === 'medium' && <Medium class={className} />}
+  {type === 'twitter' && <Twitter class={className} />}
+  {type === 'github' && <Github class={className} />}
+  {type === 'sanbase' && <Sanbase class={className} />}
+  {type === 'facebook' && <Facebook class={className} />}
+  {type === 'telegram' && <Telegram class={className} />}
+</a>
