@@ -31,7 +31,20 @@ const steps = [
       'Sentiment Analysis',
     ],
   },
-]
+] as const
+
+const colorClassMap = {
+  green: {
+    text: 'before:text-green',
+    bg: 'before:bg-green-light-1',
+    point: 'before:bg-green',
+  },
+  orange: {
+    text: 'before:text-orange',
+    bg: 'before:bg-orange-light-1',
+    point: 'before:bg-orange',
+  },
+}
 ---
 
 <ol
@@ -44,7 +57,8 @@ const steps = [
           'relative rounded-2xl border border-porcelain p-8  [counter-increment:li]',
           'before:content-[counter(li)] before:flex before:items-center before:justify-center',
           'before:rounded-full before:w-12 before:h-12 before:absolute before:text-xl before:font-medium',
-          `before:text-${color} before:bg-${color}-light-1`,
+          colorClassMap[color].text,
+          colorClassMap[color].bg,
         )}
       >
         <h4 class="text-xl text-rhino mb-10 mt-2.5 ml-[66px]">{title}</h4>
@@ -56,7 +70,7 @@ const steps = [
                 'text-lg text-rhino pl-11 relative mb-7 md:text-base',
                 'before:content-[""] before:absolute before:block before:top-[11px]',
                 'before:left-0 before:w-6 before:h-0.5 before:rounded',
-                `before:bg-${color}`,
+                colorClassMap[color].point,
               )}
             >
               {point}
