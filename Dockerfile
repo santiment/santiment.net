@@ -4,6 +4,7 @@ RUN apk add git
 RUN npm install -g pnpm@8
 
 ENV NODE_ENV production
+ENV ASTRO_TELEMETRY_DISABLED=1
 
 WORKDIR /app
 
