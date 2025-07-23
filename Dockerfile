@@ -10,7 +10,7 @@ WORKDIR /app
 
 COPY package.json pnpm-lock.yaml /app
 
-RUN pnpm i --ignore-scripts --frozen-lockfile --prod --force
+RUN pnpm i --frozen-lockfile --prod --force
 
 FROM base AS builder
 ARG BACKEND_URL
