@@ -52,9 +52,14 @@ const logoPaths = [
     <div class="h-[5px] w-[5px] inline-block rounded-full bg-black md:h-[3px] md:w-[3px]"></div>
   </h2>
 
-  <div class="overflow-hidden">
-    <div class="flex animate-marquee whitespace-nowrap">
-      {logoPaths.concat(logoPaths).map((path) => <Image src={path} alt="" class="mx-6" />)}
+  <div class="relative w-full overflow-hidden">
+    <div class="flex animate-marquee whitespace-nowrap will-change-transform">
+      <div class="flex shrink-0">
+        {logoPaths.map((path) => <Image src={path} alt="" class="mx-6" />)}
+      </div>
+      <div class="flex shrink-0" aria-hidden="true">
+        {logoPaths.map((path) => <Image src={path} alt="" class="mx-6" />)}
+      </div>
     </div>
   </div>
 </section>

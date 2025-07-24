@@ -1,6 +1,7 @@
 <script>
   import Button from 'san-webkit-next/ui/core/Button'
   import Tabs from './Tabs.svelte'
+  import { onMount } from 'svelte'
 
   let selectedTab = $state('Sanbase')
 
@@ -16,6 +17,13 @@
       img: '/sanapi.png',
     },
   }
+
+  onMount(() => {
+    Object.values(TABS).forEach(({ img }) => {
+      const preloadImg = new Image()
+      preloadImg.src = img
+    })
+  })
 </script>
 
 <section>
