@@ -9,9 +9,15 @@ import CookiesPopupWrapper from '../components/CookiesPopupWrapper.svelte'
 
 type Props = {
   class?: string
+  title?: string
+  description?: string
 }
 
-const { class: className = '' } = Astro.props
+const {
+  class: className = '',
+  title = 'Crypto Research, Data, Tools - Explore Behavioral Analytics',
+  description = 'We provide tools for crypto research to analyze markets and find data-driven opportunities to optimize your investing. Dive in and explore our on-chain, social and development data.',
+} = Astro.props
 ---
 
 <!doctype html>
@@ -21,7 +27,8 @@ const { class: className = '' } = Astro.props
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href="/icon-144x144.png" />
     <meta name="generator" content={Astro.generator} />
-    <title>Crypto Research, Data, Tools - Explore Behavioral Analytics</title>
+    <title>{title}</title>
+    <meta name="description" content={description} />
   </head>
   <body class={className}>
     <CookiesPopupWrapper client:only="svelte" />

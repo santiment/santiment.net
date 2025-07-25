@@ -17,6 +17,8 @@ ARG BACKEND_URL
 
 COPY . /app
 
+RUN rm -rf public/webkit
+
 RUN pnpm build
 
 RUN rm -rf public/webkit/illus

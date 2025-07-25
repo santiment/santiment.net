@@ -17,9 +17,6 @@ export default defineConfig({
   vite: viteConfig,
   publicDir: './static',
   outDir: './public',
-  ssr: {
-    noExternal: ['san-webkit-next'],
-  },
   server: {
     port: 3000,
   },
