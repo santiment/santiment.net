@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "dev:https": "astro dev --host -- --https",
-    "build": "node ./scripts/copy-webkit-assets.mjs && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },

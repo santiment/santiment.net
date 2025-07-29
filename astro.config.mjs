@@ -9,8 +9,6 @@ export default (async () => {
   const viteConfig = mergeConfig(viteBase, {
     define: {
       __SVELTEKIT_APP_VERSION_POLL_INTERVAL__: '0',
-      'process.env.MEDIA_PATH': JSON.stringify('/webkit'),
-      'process.env.ICONS_PATH': JSON.stringify(process.env.MEDIA_PATH + '/icons'),
     },
   })
 
