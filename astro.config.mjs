@@ -1,6 +1,7 @@
 import svelte from '@astrojs/svelte'
 import tailwind from '@astrojs/tailwind'
 import { defineConfig, mergeConfig } from 'astro/config'
+
 import { createAstroConfig } from 'san-webkit-next/vite.config.js'
 
 export default (async () => {
@@ -12,9 +13,27 @@ export default (async () => {
     },
   })
 
+  const viteAssetProtectionPatch = {
+    build: {
+      rollupOptions: {
+        output: {
+          assetFileNames: (assetInfo) => {
+            if (assetInfo.name && assetInfo.name.includes('webkit/')) {
+              const path = assetInfo.name.split('webkit/').pop()
+              return `webkit/${path}`
+            }
+            return 'assets/[name].[hash][extname]'
+          },
+        },
+      },
+    },
+  }
+
+  const finalViteConfig = mergeConfig(viteConfig, viteAssetProtectionPatch)
+
   return defineConfig({
     integrations: [svelte(), tailwind()],
-    vite: viteConfig,
+    vite: finalViteConfig,
     ssr: {
       noExternal: ['san-webkit-next'],
     },
