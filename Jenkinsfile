@@ -26,7 +26,7 @@ slaveTemplates.dockerTemplate { label ->
           ]) {
             def awsRegistry = "${env.aws_account_id}.dkr.ecr.eu-central-1.amazonaws.com"
             docker.withRegistry("https://${awsRegistry}", "ecr:eu-central-1:ecr-credentials") {
-              sh "docker build -t --no-cache ${awsRegistry}/santimentnet:${env.BRANCH_NAME} -t ${awsRegistry}/santimentnet:${scmVars.GIT_COMMIT} ."
+              sh "docker build -t ${awsRegistry}/santimentnet:${env.BRANCH_NAME} -t ${awsRegistry}/santimentnet:${scmVars.GIT_COMMIT} ."
               sh "docker push ${awsRegistry}/santimentnet:${env.BRANCH_NAME}"
               sh "docker push ${awsRegistry}/santimentnet:${scmVars.GIT_COMMIT}"
             }
