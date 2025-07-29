@@ -13,27 +13,9 @@ export default (async () => {
     },
   })
 
-  const viteAssetProtectionPatch = {
-    build: {
-      rollupOptions: {
-        output: {
-          assetFileNames: (assetInfo) => {
-            if (assetInfo.name && assetInfo.name.includes('webkit/')) {
-              const path = assetInfo.name.split('webkit/').pop()
-              return `webkit/${path}`
-            }
-            return 'assets/[name].[hash][extname]'
-          },
-        },
-      },
-    },
-  }
-
-  const finalViteConfig = mergeConfig(viteConfig, viteAssetProtectionPatch)
-
   return defineConfig({
     integrations: [svelte(), tailwind()],
-    vite: finalViteConfig,
+    vite: viteConfig,
     ssr: {
       noExternal: ['san-webkit-next'],
     },
