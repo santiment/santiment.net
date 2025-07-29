@@ -18,6 +18,3 @@ ARG BACKEND_URL
 COPY . /app
 
 RUN pnpm build
-
-RUN rm -rf public/webkit/illus
-RUN rm -rf public/webkit/icons
