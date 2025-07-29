@@ -18,7 +18,7 @@ export default (async () => {
     integrations: [svelte(), tailwind()],
     vite: viteConfig,
     ssr: {
-      noExternal: ['san-webkit-next', 'san-webkit'],
+      noExternal: ['san-webkit-next'],
     },
     publicDir: './static',
     outDir: './public',
