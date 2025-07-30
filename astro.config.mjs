@@ -19,6 +19,7 @@ export default (async () => {
     ssr: {
       noExternal: ['san-webkit-next'],
     },
+    site: 'https://santimentnet-stage.santiment.net',
     publicDir: './static',
     outDir: './public',
     server: {
