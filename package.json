@@ -15,6 +15,7 @@
     "astro": "^5.8.0",
     "rxjs": "^7.8.2",
     "san-webkit-next": "github:santiment/san-webkit#lib-7a5ad741-300725",
+    "sharp": "^0.34.2",
     "svelte": "^5.33.7",
     "svelte-preprocess": "^5.1.4",
     "svelte-preprocess-cssmodules": "^3.0.1",
