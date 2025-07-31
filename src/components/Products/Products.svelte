@@ -37,8 +37,7 @@
     defaultSelectedIndex="Sanbase"
   />
   <p class="mx-auto mb-4 max-w-[556px] text-center text-lg text-waterloo md:text-base">
-    Exclusive on-chain, social and development metrics, low-latency market signals, custom
-    Spreadsheet templates & daily insights on the cryptocurrency market
+    {TABS[selectedTab].desc}
   </p>
   <Button
     variant="fill"

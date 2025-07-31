@@ -46,20 +46,16 @@ const logoPaths = [
 ---
 
 <section class={cn('overflow-hidden py-6', className)}>
-  <h2 class="mx-2 mb-6 text-lg text-black flex items-center gap-2">
-    <div class="h-[5px] w-[5px] inline-block rounded-full bg-black md:h-[3px] md:w-[3px]"></div>
+  <h2 class="mx-auto mb-6 flex items-center gap-2 text-lg text-black">
+    <div class="h-[5px] w-[5px] rounded-full bg-black md:h-[3px] md:w-[3px]"></div>
     As seen on
-    <div class="h-[5px] w-[5px] inline-block rounded-full bg-black md:h-[3px] md:w-[3px]"></div>
+    <div class="h-[5px] w-[5px] rounded-full bg-black md:h-[3px] md:w-[3px]"></div>
   </h2>
 
-  <div class="relative w-full overflow-hidden">
-    <div class="flex animate-marquee whitespace-nowrap will-change-transform">
-      <div class="flex shrink-0">
-        {logoPaths.map((path) => <Image src={path} alt="" class="mx-6" />)}
-      </div>
-      <div class="flex shrink-0" aria-hidden="true">
-        {logoPaths.map((path) => <Image src={path} alt="" class="mx-6" />)}
-      </div>
+  <div class="relative flex w-full overflow-hidden">
+    <div class="animate-marquee flex flex-shrink-0 whitespace-nowrap will-change-transform">
+      {logoPaths.map((path) => <Image src={path} alt="" class="mr-8 h-6 sm:h-4 w-auto" />)}
+      {logoPaths.map((path) => <Image src={path} alt="" class="mr-8 h-6 sm:h-4 w-auto" />)}
     </div>
   </div>
 </section>

@@ -22,8 +22,8 @@ export default {
     extend: {
       keyframes: {
         marquee: {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-50%)' },
+          from: { transform: 'translateX(0%)' },
+          to: { transform: 'translateX(-50%)' },
         },
         leftMoving: {
           '0%': { transform: 'translate(0, 0)' },
@@ -56,7 +56,7 @@ export default {
         moving: { '100%': { transform: 'translate3d(-50%,0,0)' } },
       },
       animation: {
-        marquee: 'marquee 10s linear infinite',
+        marquee: 'marquee 30s linear infinite',
         leftPuzzle: 'leftMoving 1s ease-in-out infinite alternate',
         rightPuzzle: 'rightMoving 1s ease-in-out infinite alternate',
         shiftDown: 'shiftDown 0.8s cubic-bezier(0, 0.96, 1, 1) both',
