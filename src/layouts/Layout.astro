@@ -5,18 +5,24 @@ import Notifications from 'san-webkit-next/ui/core/Notifications'
 
 import Intercom from '../components/Intercom.svelte'
 import Tracking from '../components/Tracking.svelte'
+import Nav from '../components/Nav/Nav.svelte'
 import CookiesPopupWrapper from '../components/CookiesPopupWrapper.svelte'
+import { ClientRouter } from 'astro:transitions'
 
 type Props = {
   class?: string
   title?: string
   description?: string
+  isNavAnimated?: boolean
+  isNavNightMode?: boolean
 }
 
 const {
   class: className = '',
   title = 'Crypto Research, Data, Tools - Explore Behavioral Analytics',
   description = 'We provide tools for crypto research to analyze markets and find data-driven opportunities to optimize your investing. Dive in and explore our on-chain, social and development data.',
+  isNavAnimated,
+  isNavNightMode,
 } = Astro.props
 ---
 
@@ -29,12 +35,17 @@ const {
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <ClientRouter />
   </head>
+
   <body class={className}>
     <CookiesPopupWrapper client:only="svelte" />
     <Intercom client:only="svelte">
       <Tracking client:load>
         <div data-vaul-drawer-wrapper>
+          <div transition:persist>
+            <Nav isAnimated={isNavAnimated} isNightMode={isNavNightMode} client:load />
+          </div>
           <slot />
         </div>
       </Tracking>

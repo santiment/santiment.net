@@ -1,7 +1,6 @@
 ---
 import Footer from 'san-webkit-next/ui/app/Footer'
 import Layout from '../layouts/Layout.astro'
-import Nav from '../components/Nav/Nav.svelte'
 import Hero from '../components/Hero'
 import Intro from '../components/Intro'
 import ProvenByNumbers from '../components/ProvenByNumbers'
@@ -10,8 +9,7 @@ import Tweets from '../components/Tweets'
 import FinalCTA from '../components/FinalCTA'
 ---
 
-<Layout>
-  <Nav isAnimated isNightMode client:load />
+<Layout isNavAnimated isNavNightMode>
   <Hero />
   <Intro />
   <ProvenByNumbers />
