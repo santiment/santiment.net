@@ -43,9 +43,13 @@ const {
     <Intercom client:only="svelte">
       <Tracking client:load>
         <div data-vaul-drawer-wrapper>
-          <div transition:persist>
-            <Nav isAnimated={isNavAnimated} isNightMode={isNavNightMode} client:load />
-          </div>
+          <Nav
+            transition:persist
+            transition:persist-props
+            isAnimated={isNavAnimated}
+            isNightMode={isNavNightMode}
+            client:load
+          />
           <slot />
         </div>
       </Tracking>
