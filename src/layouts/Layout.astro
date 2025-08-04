@@ -5,7 +5,7 @@ import Notifications from 'san-webkit-next/ui/core/Notifications'
 
 import Intercom from '../components/Intercom.svelte'
 import Tracking from '../components/Tracking.svelte'
-import Nav from '../components/Nav/Nav.svelte'
+import Nav from '../components/Nav'
 import CookiesPopupWrapper from '../components/CookiesPopupWrapper.svelte'
 import { ClientRouter } from 'astro:transitions'
 
@@ -43,13 +43,7 @@ const {
     <Intercom client:only="svelte">
       <Tracking client:load>
         <div data-vaul-drawer-wrapper>
-          <Nav
-            transition:persist
-            transition:persist-props
-            isAnimated={isNavAnimated}
-            isNightMode={isNavNightMode}
-            client:load
-          />
+          <Nav isAnimated={isNavAnimated} isNightMode={isNavNightMode} />
           <slot />
         </div>
       </Tracking>

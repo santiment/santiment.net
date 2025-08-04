@@ -1,0 +1,63 @@
+---
+import { cn } from 'san-webkit-next/ui/utils'
+import Logo from './Logo.svelte'
+import Link from './Link.svelte'
+import CtaButton from '../CtaButton.svelte'
+import ProductsButton from './ProductsButton.svelte'
+import MobileNav from './MobileNav.svelte'
+
+interface Props {
+  isAnimated?: boolean
+  isNightMode?: boolean
+  class?: string
+}
+
+const { isAnimated = false, isNightMode = false, class: className } = Astro.props
+
+const links = [
+  { href: '/about', label: 'About' },
+  { href: '/team', label: 'Team' },
+  { href: '/jobs', label: 'Jobs' },
+  { href: 'https://academy.santiment.net/', label: 'Academy', isExternal: true, class: 'ml-auto' },
+  { href: 'https://app.santiment.net/pricing', label: 'Pricing', isExternal: true },
+]
+---
+
+<div class={cn('h-[70px] w-full bg-white', isNightMode && 'night-mode')}></div>
+
+<nav
+  class={cn(
+    'fixed left-0 right-0 top-0 z-[5] border-b border-porcelain bg-white md:animate-none',
+    isNightMode && 'night-mode',
+    isAnimated && 'animate-shiftDown',
+    className,
+  )}
+>
+  <div
+    class="mx-auto flex h-[70px] max-w-[1192px] items-center justify-between px-[26px] md:h-[56px] md:px-[16px]"
+  >
+    <div class="flex flex-shrink-0 items-center">
+      <a
+        href="/"
+        class="mr-16 h-[23px] w-[104px] flex-shrink-0 [&>svg>path]:fill-black"
+        aria-label="Go to homepage"
+      >
+        <Logo />
+      </a>
+    </div>
+
+    <div class="flex w-full items-center md:hidden">
+      <ProductsButton class={isNightMode ? 'night-mode' : ''} client:load />
+
+      {
+        links.map(({ href, label, isExternal = false, class: linkClass }) => (
+          <Link href={href} label={label} isExternal={isExternal} class={cn('mr-8', linkClass)} />
+        ))
+      }
+    </div>
+
+    <CtaButton transition:persist class="md:hidden" client:load />
+
+    <MobileNav client:idle />
+  </div>
+</nav>
