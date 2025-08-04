@@ -87,11 +87,11 @@
 }
 
 .title-with-dots::before {
-  left: -12px;
+  @apply -left-3 xs:-left-2;
 }
 
 .title-with-dots::after {
-  right: -12px;
+  @apply -right-3 xs:-right-2;
 }
 
 .title-with-dots::before,
