@@ -5,7 +5,7 @@ RUN GIT_HEAD=$GIT_HEAD
 
 WORKDIR /app
 
-COPY package.json package-lock.json /app/
+COPY package.json package-lock.json scripts/ /app/
 RUN npm install --unsafe-perm
 
 COPY ./ /app
