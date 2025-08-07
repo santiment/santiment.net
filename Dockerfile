@@ -5,6 +5,9 @@ RUN GIT_HEAD=$GIT_HEAD
 
 WORKDIR /app
 
+COPY package.json package-lock.json /app/
+RUN npm install --unsafe-perm
+
 COPY ./ /app
 
-RUN apt update && apt install -y make nasm autoconf automake libtool dpkg libpng-dev g++ && npm install --unsafe-perm && npm run build
+RUN npm run build
