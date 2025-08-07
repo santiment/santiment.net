@@ -30,7 +30,7 @@ const MainBlock = () => {
               <TrustedBlock />
             </div>
             <div className={cx(styles.rightBlock, 'column')}>
-              <h1 className={styles.title}>Access Comprehensive Set of Data Sources</h1>
+              <h1 className={styles.title}>Access a Comprehensive Set of Data Sources</h1>
               <h2 className={cx(styles.description, 'h4')}>
                 Use social, blockchain, financial, dev, and community metrics to improve your
                 strategy
