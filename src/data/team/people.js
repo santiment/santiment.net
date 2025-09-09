@@ -36,6 +36,7 @@ import VladK from './images/VladK.png'
 import Suzanne from './images/Suzanne.png'
 import DmitryG from './images/DmitryG.png'
 import Serafim from './images/Serafim.png'
+import Mikhail from './images/Mikhail.png'
 
 export const GROUPS = {
   CORE: 'Core team',
@@ -470,6 +471,15 @@ With a passion for data-driven decision-making and user-centric development, Iry
     group: GROUPS.DEVS,
     description:
       'Serafim is an experienced software developer with over 4 years of professional experience. He specializes in building reliable web applications and solving complex technical challenges, with a strong focus on quality and optimization. Serafim has a broad interest in various fields of knowledge, which helps him better understand complex systems and find creative approaches to problem-solving. At work, he values clean code, structured planning, and effective teamwork. In his free time, he actively engages in sports, enjoys reading, and exploring new ideas, always striving to broaden his horizons.',
+    links: {},
+  },
+  {
+    name: 'Mikhail Shurov',
+    position: 'Python Developer',
+    img: Mikhail,
+    group: GROUPS.RESEARCH,
+    description:
+      'Mikhail is a Python developer with a strong interest in data extraction and web scraping. Currently studying at Belarusian State University, he combines academic focus with hands-on technical skills. Outside of work, he enjoys fishing, hiking, playing the guitar, and riding his motorcycle.',
     links: {},
   },
 ]
