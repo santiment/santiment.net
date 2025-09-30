@@ -29,7 +29,6 @@ import MaksimT from './images/MaksimT.png'
 import Iryna from './images/Iryna.png'
 import Sofia from './images/Sofia.png'
 import Plamena from './images/Plamena.png'
-import AlexanderS from './images/AlexanderS.png'
 import Bulat from './images/Bulat.png'
 import DmitryK from './images/DmitryK.png'
 import VladK from './images/VladK.png'
@@ -405,15 +404,6 @@ With a passion for data-driven decision-making and user-centric development, Iry
     group: GROUPS.BISUNESS,
     description:
       "I am a fond lover of law, an admirer of analytical thinking and a passionate keeper of order. I have 14 + years of experience helping companies with their corporate governance, compliance, contract relations, establishment of investments and financing, structuring the intergroup relations, including establishment of foreign subsidiaries, etc. Recently, I added focus on the technology and crypto markets for their legal and compliance challenges. In my free time, I enjoy exploring new destinations, savoring culinary delights, and immersing myself in nature. I live dynamically, but I love balance, that's how I feel the moment and the present, which are the only ones that belong to us.",
-    links: {},
-  },
-  {
-    name: 'Alexander Semenov',
-    position: 'Chief Data Monetization Officer',
-    img: AlexanderS,
-    group: GROUPS.CORE,
-    description:
-      'Alexander has 15 years of experience of work in consulting, research, teaching and Academy (h-index = 7). His area of expertise is computational social science with a focus on social network analysis and graph mining. Before joining Santiment he was head of analytics for the largest ISP and head of R&D for the gaming department of largest bank in Russia. In Santiment he supervises product analytics and social data.',
     links: {},
   },
   {
