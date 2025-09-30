@@ -8,6 +8,7 @@ import Tracking from '../components/Tracking.svelte'
 import Nav from '../components/Nav'
 import CookiesPopupWrapper from '../components/CookiesPopupWrapper.svelte'
 import { ClientRouter } from 'astro:transitions'
+import SEO from '../components/SEO.astro'
 
 type Props = {
   class?: string
@@ -19,7 +20,7 @@ type Props = {
 
 const {
   class: className = '',
-  title = 'Crypto Research, Data, Tools - Explore Behavioral Analytics',
+  title = 'Crypto Behavior Analytics Platform',
   description = 'We provide tools for crypto research to analyze markets and find data-driven opportunities to optimize your investing. Dive in and explore our on-chain, social and development data.',
   isNavAnimated,
   isNavNightMode,
@@ -29,13 +30,11 @@ const {
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href="/icon-144x144.png" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-    <meta name="description" content={description} />
     <ClientRouter />
+
+    <SEO title={title} description={description} />
   </head>
 
   <body class={className}>
