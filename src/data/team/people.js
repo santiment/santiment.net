@@ -1,4 +1,3 @@
-import Alex from './images/Alex.png'
 import Anastasiya from './images/Anastasiya.png'
 import Anatoliy from './images/Anatoliy.png'
 import Brian from './images/Brian.png'
@@ -33,7 +32,6 @@ import Bulat from './images/Bulat.png'
 import DmitryK from './images/DmitryK.png'
 import VladK from './images/VladK.png'
 import Suzanne from './images/Suzanne.png'
-import DmitryG from './images/DmitryG.png'
 import Serafim from './images/Serafim.png'
 import Mikhail from './images/Mikhail.png'
 
@@ -60,17 +58,6 @@ export const PEOPLE = [
       sanbase: 'https://app.santiment.net/profile/836',
       twitter: 'https://twitter.com/balance_ra',
       linkedin: 'https://www.linkedin.com/in/maksim-balashevich-640a8948/',
-    },
-  },
-  {
-    name: 'Alexander Grablevski',
-    position: 'Data Scientist',
-    group: GROUPS.RESEARCH,
-    img: Alex,
-    description:
-      'He has a Major in Economics, enjoys DS and ML, and has deep experience in econometrics, including awards in several Econometric competitions. He also has a passion for discovering crypto space and used to work as analyst of crypto projects. He currently is a teacher for Cryptocurrencies and Derivatives course in Belarusian National Technical University. Likes learning and discovering new things.',
-    links: {
-      linkedin: 'https://www.linkedin.com/in/alexander-grablevski-4544a7149/',
     },
   },
   {
@@ -443,15 +430,6 @@ With a passion for data-driven decision-making and user-centric development, Iry
     group: GROUPS.BISUNESS,
     description:
       "At the heart of Santiment's B2B sales team, Suzanne leverages her Master's in finance and  background in strategy consulting to deeply understand your business challenges. Her purpose encompasses people enjoying her presence and seeking her competence. She is a people person, actively listens, and excels in setting up bespoke solutions with you. Beyond work, she enjoys sports, yoga, travel, and continuous learning, infusing every experience with the same enthusiasm she brings to her work.",
-    links: {},
-  },
-  {
-    name: 'Dmitry Golubev',
-    position: 'CTO',
-    img: DmitryG,
-    group: GROUPS.CORE,
-    description:
-      'With 25+ years in software development, Dmitry combines deep technical expertise with strategic business insight. Holding a Master’s in Cybernetics and an MBA in Finance, he spent 17 years in telecommunications, developing products for global operators. As a founder of tech startups, he created innovative products, including a CRM system and a Low-Code platform with patented technology. A strong advocate for blockchain technology, especially in decentralized finance, Dmitry has extensive blockchain development experience, including cross-chain solutions. He played a key role in developing the leading euro-backed stablecoin platform and has deep expertise in blockchain integration and interoperability. Dmitry is committed to innovation, leadership, and value creation.',
     links: {},
   },
   {
