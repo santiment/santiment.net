@@ -4,12 +4,22 @@ import TrustedBlock from '../TrustedBlock/TrustedBlock'
 import AccountBtn from '../AccountBtn/AccountBtn'
 import styles from './MainBlock.module.scss'
 import img from './images/illus-mobile.svg'
+import Icon from '@santiment-network/ui/Icon'
 
 const MainBlock = () => {
   return (
     <div className={styles.backgroundContainer}>
       <section className={cx(styles.wrapper, 'column relative')}>
         <div className={cx(styles.leftBlock, 'column')}>
+          <a
+            href="https://api.santiment.net/"
+            target="_blank"
+            className={styles.link}
+          >
+            Start using the Santiment API
+
+            <Icon type='pointer-right' />
+          </a>
           <h1 className={cx(styles.title, 'mrg--b mrg-l')}>
             Gain Actionable Insights with Behavior Analytics in Crypto
           </h1>
