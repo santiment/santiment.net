@@ -226,18 +226,6 @@ export const PEOPLE = [
     },
   },
   {
-    name: 'Vassil Kalkov',
-    position: 'Big Data Engineer',
-    img: Vassil,
-    group: GROUPS.RESEARCH,
-    description:
-      'Vassil brings a pragmatic approach plus experience in startups and mid-size companies, using a diverse set of technologies. He’s a long-time crypto believer and is committed to building applications that foster its adoption. He’s also passionate about hardware, mining, connected devices, and shooting pictures with old analog cameras.',
-    links: {
-      linkedin: 'https://www.linkedin.com/in/vassilkalkov/',
-      github: 'https://github.com/kalkov',
-    },
-  },
-  {
     name: 'Lyudmil Danailov',
     position: 'Developer',
     group: GROUPS.RESEARCH,
@@ -364,6 +352,18 @@ With a passion for data-driven decision-making and user-centric development, Iry
       'Ivan has more than 15 years of IT/infrastructure expertise. Throughout his career, he was working in large telecoms, on-line gaming companies and e-commerce platforms. Enjoys to learn new things and play with linux, networks and automation.',
     links: {
       linkedin: 'https://www.linkedin.com/in/couting/',
+    },
+  },
+  {
+    name: 'Vassil Kalkov',
+    position: 'DevOps',
+    img: Vassil,
+    group: GROUPS.DEVS,
+    description:
+      'Vassil brings a pragmatic approach plus experience in startups and mid-size companies, using a diverse set of technologies. He’s a long-time crypto believer and is committed to building applications that foster its adoption. He’s also passionate about hardware, mining, connected devices, and shooting pictures with old analog cameras.',
+    links: {
+      linkedin: 'https://www.linkedin.com/in/vassilkalkov/',
+      github: 'https://github.com/kalkov',
     },
   },
   {
