@@ -28,7 +28,6 @@ import MaksimT from './images/MaksimT.png'
 import Iryna from './images/Iryna.png'
 import Sofia from './images/Sofia.png'
 import Plamena from './images/Plamena.png'
-import Bulat from './images/Bulat.png'
 import DmitryK from './images/DmitryK.png'
 import VladK from './images/VladK.png'
 import Suzanne from './images/Suzanne.png'
@@ -391,15 +390,6 @@ With a passion for data-driven decision-making and user-centric development, Iry
     group: GROUPS.BISUNESS,
     description:
       "I am a fond lover of law, an admirer of analytical thinking and a passionate keeper of order. I have 14 + years of experience helping companies with their corporate governance, compliance, contract relations, establishment of investments and financing, structuring the intergroup relations, including establishment of foreign subsidiaries, etc. Recently, I added focus on the technology and crypto markets for their legal and compliance challenges. In my free time, I enjoy exploring new destinations, savoring culinary delights, and immersing myself in nature. I live dynamically, but I love balance, that's how I feel the moment and the present, which are the only ones that belong to us.",
-    links: {},
-  },
-  {
-    name: 'Bulat Lutfullin',
-    position: 'Senior Platform Engineer',
-    img: Bulat,
-    group: GROUPS.RESEARCH,
-    description:
-      "Bulat brings a wealth of experience in developing backend and MLOps products. With his passion for experimentation and a penchant for knowledge sharing, he's not only a seasoned speaker at meetups but also sees opportunities for more engagements. Armed with his BSc in Applied Mathematics, he adeptly navigates code, blending insights from Stack Overflow. His coding proficiency extends to his enjoyment of types of Types and Scala, all savored with a cup of meticulously brewed hot black coffee.",
     links: {},
   },
   {
