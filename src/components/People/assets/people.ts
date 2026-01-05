@@ -30,7 +30,6 @@ import Iryna from './images/Iryna.png'
 import Sofia from './images/Sofia.png'
 import Plamena from './images/Plamena.png'
 import AlexanderS from './images/AlexanderS.png'
-import Bulat from './images/Bulat.png'
 import DmitryK from './images/DmitryK.png'
 import VladK from './images/VladK.png'
 import Suzanne from './images/Suzanne.png'
@@ -413,15 +412,6 @@ With a passion for data-driven decision-making and user-centric development, Iry
     group: GROUPS.CORE,
     description:
       'Alexander has 15 years of experience of work in consulting, research, teaching and Academy (h-index = 7). His area of expertise is computational social science with a focus on social network analysis and graph mining. Before joining Santiment he was head of analytics for the largest ISP and head of R&D for the gaming department of largest bank in Russia. In Santiment he supervises product analytics and social data.',
-    links: {},
-  },
-  {
-    name: 'Bulat Lutfullin',
-    position: 'Senior Platform Engineer',
-    img: Bulat,
-    group: GROUPS.RESEARCH,
-    description:
-      "Bulat brings a wealth of experience in developing backend and MLOps products. With his passion for experimentation and a penchant for knowledge sharing, he's not only a seasoned speaker at meetups but also sees opportunities for more engagements. Armed with his BSc in Applied Mathematics, he adeptly navigates code, blending insights from Stack Overflow. His coding proficiency extends to his enjoyment of types of Types and Scala, all savored with a cup of meticulously brewed hot black coffee.",
     links: {},
   },
   {
