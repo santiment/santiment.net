@@ -1,15 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Nav from '../components/Nav/Nav.svelte'
+import Nav from '../components/Nav'
 import GetStarted from '../components/GetStarted'
 import People from '../components/People'
 import Footer from 'san-webkit-next/ui/app/Footer'
+import SEO from '../components/SEO.astro'
 ---
 
-<Layout
-  title="Santiment Team"
-  description="In true crypto fashion, our team is as decentralised as they come - spanning 19 countries and 11 time zones (which makes organizing team calls a blast:)"
->
+<Layout>
+  <Nav slot="navigation" />
+  <SEO
+    slot="seo"
+    title="Santiment Team"
+    description="In true crypto fashion, our team is as decentralised as they come - spanning 19 countries and 11 time zones (which makes organizing team calls a blast:)"
+  />
+
   <main class="container">
     <div class="max-w-[722px] mx-auto text-center mb-14 mt-20 md:mt-2.5">
       <h1 class="text-3xl text-rhino font-semibold mb-4 md:text-xl">Santiment team</h1>

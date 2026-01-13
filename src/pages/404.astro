@@ -1,10 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Nav from '../components/Nav/Nav.svelte'
+import Nav from '../components/Nav'
 import Footer from 'san-webkit-next/ui/app/Footer'
+import SEO from '../components/SEO.astro'
 ---
 
-<Layout title="404: Not found" class="flex flex-col">
+<Layout class="flex flex-col">
+  <SEO slot="seo" title="404: Not found" />
+  <Nav slot="navigation" />
+
   <main class="container min-h-[calc(100vh-70px-369px)]">
     <section class="text-center pt-20 md:pt-2.5">
       <h1 class="text-3xl text-rhino font-bold mb-4 md:text-xl">Not found</h1>

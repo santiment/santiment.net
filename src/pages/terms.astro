@@ -3,13 +3,18 @@ import Footer from 'san-webkit-next/ui/app/Footer'
 
 import GetStarted from '../components/GetStarted'
 import Layout from '../layouts/Layout.astro'
-import Nav from '../components/Nav/Nav.svelte'
+import Nav from '../components/Nav'
+import SEO from '../components/SEO.astro'
 ---
 
-<Layout
-  title="Santiment Terms & Conditions"
-  description="Please review the T&C contained herein carefully. By clicking \“I agree\” or by using the Services, You acknowledge and agree that You have read, understood, and accepted all of the following T&C, as well as all of the terms and conditions which are incorporated herein by reference."
->
+<Layout>
+  <Nav slot="navigation" />
+  <SEO
+    slot="seo"
+    title="Santiment Terms & Conditions"
+    description="Please review the T&C contained herein carefully. By clicking \“I agree\” or by using the Services, You acknowledge and agree that You have read, understood, and accepted all of the following T&C, as well as all of the terms and conditions which are incorporated herein by reference."
+  />
+
   <main class="container">
     <div class="px-6">
       <h4 class="mb-4 text-3xl font-semibold text-rhino text-center md:sm:text-xl mt-20 sm:mt-2.5">

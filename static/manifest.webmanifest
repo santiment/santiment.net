@@ -1,0 +1,20 @@
+{
+  "name": "Santiment",
+  "short_name": "Santiment",
+  "start_url": "/",
+  "background_color": "#14c393",
+  "theme_color": "#14c393",
+  "display": "minimal-ui",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}

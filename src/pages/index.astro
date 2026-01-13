@@ -7,9 +7,18 @@ import ProvenByNumbers from '../components/ProvenByNumbers'
 import AnalyticsOverview from '../components/AnalyticsOverview'
 import Tweets from '../components/Tweets'
 import FinalCTA from '../components/FinalCTA'
+import Nav from '../components/Nav'
+import SEO from '../components/SEO.astro'
 ---
 
-<Layout isNavAnimated isNavNightMode>
+<Layout>
+  <SEO
+    slot="seo"
+    title="Crypto Research, Data, Tools - Explore Behavioral Analytics"
+    description="We provide tools for crypto research to analyze markets and find data-driven opportunities to optimize your investing. Dive in and explore our on-chain, social and development data."
+  />
+  <Nav slot="navigation" isAnimated isNightMode />
+
   <Hero />
   <Intro />
   <ProvenByNumbers />

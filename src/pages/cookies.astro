@@ -1,13 +1,18 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import Nav from '../components/Nav/Nav.svelte'
 import Footer from 'san-webkit-next/ui/app/Footer'
+import Layout from '../layouts/Layout.astro'
+import SEO from '../components/SEO.astro'
+import Nav from '../components/Nav'
 ---
 
-<Layout
-  title="Santiment Cookies Policy"
-  description='Santiment GmbH, ("Company") collects anonymous data from cookies in accordance with applicable laws and regulations, in particular the Swiss Federal Act on Data Protection ("FADP") and the General Data Protection Regulation (EU/2016/679) (General Data Protection Regulation, "GDPR"), both defined as "privacy regulations".'
->
+<Layout>
+  <Nav slot="navigation" />
+  <SEO
+    slot="seo"
+    title="Santiment Cookies Policy"
+    description='Santiment GmbH, ("Company") collects anonymous data from cookies in accordance with applicable laws and regulations, in particular the Swiss Federal Act on Data Protection ("FADP") and the General Data Protection Regulation (EU/2016/679) (General Data Protection Regulation, "GDPR"), both defined as "privacy regulations".'
+  />
+
   <main class="container">
     <div class="max-w-[750px] mx-auto mb-[120px] mt-20">
       <h1 class="text-3xl text-rhino font-semibold mb-12 text-center md:mb-8 md:text-xl">

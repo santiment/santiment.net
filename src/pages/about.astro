@@ -3,18 +3,23 @@ import { Image } from 'astro:assets'
 import teamImg from '../assets/team.jpg'
 
 import Layout from '../layouts/Layout.astro'
-import Nav from '../components/Nav/Nav.svelte'
+import Nav from '../components/Nav'
 import Steps from '../components/Steps'
 import AboutSAN from '../components/AboutSAN'
 import Products from '../components/Products'
 import GetStarted from '../components/GetStarted'
 import Footer from 'san-webkit-next/ui/app/Footer'
+import SEO from '../components/SEO.astro'
 ---
 
-<Layout
-  title="Crypto Analytics Platform: Blockchain Data to Guide Investments"
-  description="As a crypto analytics platform, our team has been guided by a single mission - to eliminate information asymmetry in the crypto ecosystem by using blockchain data."
->
+<Layout>
+  <SEO
+    slot="seo"
+    title="Crypto Analytics Platform: Blockchain Data to Guide Investments"
+    description="As a crypto analytics platform, our team has been guided by a single mission - to eliminate information asymmetry in the crypto ecosystem by using blockchain data."
+  />
+  <Nav slot="navigation" />
+
   <main class="container pt-20 mb-20 sm:pt-2.5">
     <h1 class="text-3xl font-semibold text-rhino text-center mb-12 sm:mb-7 sm:text-xl">
       Crypto analytics platform for Signals and Context

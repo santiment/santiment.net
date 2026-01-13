@@ -5,25 +5,14 @@ import Notifications from 'san-webkit-next/ui/core/Notifications'
 
 import Intercom from '../components/Intercom.svelte'
 import Tracking from '../components/Tracking.svelte'
-import Nav from '../components/Nav'
 import CookiesPopupWrapper from '../components/CookiesPopupWrapper.svelte'
 import { ClientRouter } from 'astro:transitions'
 
 type Props = {
   class?: string
-  title?: string
-  description?: string
-  isNavAnimated?: boolean
-  isNavNightMode?: boolean
 }
 
-const {
-  class: className = '',
-  title = 'Crypto Research, Data, Tools - Explore Behavioral Analytics',
-  description = 'We provide tools for crypto research to analyze markets and find data-driven opportunities to optimize your investing. Dive in and explore our on-chain, social and development data.',
-  isNavAnimated,
-  isNavNightMode,
-} = Astro.props
+const { class: className = '' } = Astro.props
 ---
 
 <!doctype html>
@@ -31,10 +20,13 @@ const {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#14c393" />
     <link rel="icon" type="image/png" href="/icon-144x144.png" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-    <meta name="description" content={description} />
+    <link rel="apple-touch-icon" href="/icon-144x144.png" />
+    <link rel="preconnect" href="https://api.santiment.net" />
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous" />
+    <slot name="seo" />
+
     <ClientRouter />
   </head>
 
@@ -43,7 +35,7 @@ const {
     <Intercom client:only="svelte">
       <Tracking client:load>
         <div data-vaul-drawer-wrapper>
-          <Nav isAnimated={isNavAnimated} isNightMode={isNavNightMode} />
+          <slot name="navigation" />
           <slot />
         </div>
       </Tracking>

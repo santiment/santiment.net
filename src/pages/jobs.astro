@@ -1,14 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Nav from '../components/Nav/Nav.svelte'
+import Nav from '../components/Nav'
 import GetStarted from '../components/GetStarted'
 import Footer from 'san-webkit-next/ui/app/Footer'
+import SEO from '../components/SEO.astro'
 ---
 
-<Layout
-  title="Santiment Jobs"
-  description="We’re a 100% distributed team working together from around the world, and we welcome top talent to help us change the future of trading crypto-markets. We’re constantly focused on keeping our work in a collaborative, creative and open environment. If these are your values too, come join us!"
->
+<Layout>
+  <Nav slot="navigation" />
+  <SEO
+    slot="seo"
+    title="Santiment Jobs"
+    description="We’re a 100% distributed team working together from around the world, and we welcome top talent to help us change the future of trading crypto-markets. We’re constantly focused on keeping our work in a collaborative, creative and open environment. If these are your values too, come join us!"
+  />
+
   <main class="container">
     <div class="max-w-[722px] mx-auto text-center mb-14 mt-20 sm:mt-2.5">
       <h1 class="text-3xl text-rhino font-semibold mb-4 sm:text-xl">Join us at Santiment</h1>
