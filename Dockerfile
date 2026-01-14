@@ -13,6 +13,9 @@ COPY package.json pnpm-lock.yaml /app
 RUN pnpm i --ignore-scripts --frozen-lockfile --prod --force
 
 FROM base AS builder
+
+ENV TURNSTILE_SITEKEY="0x4AAAAAAB-r1GJrqSkCdzVi"
+
 ARG BACKEND_URL
 
 COPY . /app
