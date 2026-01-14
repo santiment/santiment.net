@@ -15,13 +15,13 @@
   ]
 </script>
 
-<button class="hidden md:block" onclick={() => (navOpen = true)}>
+<button class="hidden md:block" aria-label="Open menu" onclick={() => (navOpen = true)}>
   <Svg id="menu" class="fill-waterloo" />
 </button>
 
 {#if navOpen}
   <div class="fixed inset-0 z-50 hidden flex-col overflow-auto bg-white p-8 md:flex">
-    <button class="absolute right-8 top-8 mb-4 self-end" onclick={() => (navOpen = false)}>
+    <button class="absolute right-8 top-8 mb-4 self-end" aria-label="Close menu" onclick={() => (navOpen = false)}>
       <Svg id="close" class="fill-waterloo" />
     </button>
 
