@@ -43,7 +43,7 @@ export const GROUPS = {
   DEVS: 'Development team',
   COMMUNICATIONS: 'Communications',
   MARKETING: 'Marketing',
-  BISUNESS: 'Business Development',
+  BUSINESS: 'Business Development',
   DESIGN: 'Design',
   ADVISORS: 'Advisors',
 }
@@ -77,7 +77,7 @@ export const PEOPLE = [
     name: 'Petra Ujvari',
     position: 'HR & Managing Director',
     img: Petra,
-    group: GROUPS.BISUNESS,
+    group: GROUPS.BUSINESS,
     description: `Petra is the Managing Director of Santiment's German subsidiary and continues to serve as the HR Manager for the entire team. With a keen eye for talent and a passion for blockchain technology, Petra connects visionaries with opportunities to drive the future of decentralized finance. When not building top-performing teams, you can find her exploring the latest developments and networking with industry leaders.`,
     links: {
       email: 'mailto:petra.u@santiment.net',
@@ -160,7 +160,7 @@ export const PEOPLE = [
     name: 'Garry Kabankin',
     position: 'Project Coordinator',
     img: Garry,
-    group: GROUPS.BISUNESS,
+    group: GROUPS.BUSINESS,
     description:
       'Organizer, structurizer, and master in wrangling complex data into manageable forms. Keeps Santiment projects running smoothly and never stops learning. Aviator.',
     links: {
@@ -401,7 +401,7 @@ With a passion for data-driven decision-making and user-centric development, Iry
     name: 'Plamena Deliyska',
     position: 'Lawyer and Administration',
     img: Plamena,
-    group: GROUPS.BISUNESS,
+    group: GROUPS.BUSINESS,
     description:
       "I am a fond lover of law, an admirer of analytical thinking and a passionate keeper of order. I have 14 + years of experience helping companies with their corporate governance, compliance, contract relations, establishment of investments and financing, structuring the intergroup relations, including establishment of foreign subsidiaries, etc. Recently, I added focus on the technology and crypto markets for their legal and compliance challenges. In my free time, I enjoy exploring new destinations, savoring culinary delights, and immersing myself in nature. I live dynamically, but I love balance, that's how I feel the moment and the present, which are the only ones that belong to us.",
     links: {},
@@ -419,7 +419,7 @@ With a passion for data-driven decision-making and user-centric development, Iry
     name: 'Dmitry Korzhik',
     position: 'Business Development',
     img: DmitryK,
-    group: GROUPS.BISUNESS,
+    group: GROUPS.BUSINESS,
     description:
       "Dmitry is a tech industry veteran with 10+ years of experience, specializing in building businesses from inception. An active crypto trader, he holds dual Master's degrees in computer science and e-government. Dmitry's expertise and strategic mindset contribute significantly to our team's success.",
     links: {},
@@ -440,7 +440,7 @@ With a passion for data-driven decision-making and user-centric development, Iry
     name: 'Suzanne Pace',
     position: 'Account Executive',
     img: Suzanne,
-    group: GROUPS.BISUNESS,
+    group: GROUPS.BUSINESS,
     description:
       "At the heart of Santiment's B2B sales team, Suzanne leverages her Master's in finance and  background in strategy consulting to deeply understand your business challenges. Her purpose encompasses people enjoying her presence and seeking her competence. She is a people person, actively listens, and excels in setting up bespoke solutions with you. Beyond work, she enjoys sports, yoga, travel, and continuous learning, infusing every experience with the same enthusiasm she brings to her work.",
     links: {},

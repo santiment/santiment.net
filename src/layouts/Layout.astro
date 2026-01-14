@@ -1,12 +1,12 @@
 ---
+import { ClientRouter } from 'astro:transitions'
+
 import '../app.css'
 import 'san-webkit-next/app.css'
 import Notifications from 'san-webkit-next/ui/core/Notifications'
 
-import Intercom from '../components/Intercom.svelte'
-import Tracking from '../components/Tracking.svelte'
-import CookiesPopupWrapper from '../components/CookiesPopupWrapper.svelte'
-import { ClientRouter } from 'astro:transitions'
+import Intercom from '../components/Intercom.astro'
+import GoogleAnalytics from '../components/GoogleAnalytics.astro'
 
 type Props = {
   class?: string
@@ -25,21 +25,36 @@ const { class: className = '' } = Astro.props
     <link rel="apple-touch-icon" href="/icon-144x144.png" />
     <link rel="preconnect" href="https://api.santiment.net" />
     <link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous" />
+
     <slot name="seo" />
+
+    {
+      import.meta.env.PROD && (
+        <Intercom appId="cyjjko9u" />
+        <GoogleAnalytics id="G-H53MB0V33X" />
+      )
+    }
 
     <ClientRouter />
   </head>
 
   <body class={className}>
-    <CookiesPopupWrapper client:only="svelte" />
-    <Intercom client:only="svelte">
-      <Tracking client:load>
-        <div data-vaul-drawer-wrapper>
-          <slot name="navigation" />
-          <slot />
-        </div>
-      </Tracking>
-    </Intercom>
+
+    <div data-vaul-drawer-wrapper>
+      <slot name="navigation" />
+      <slot />
+    </div>
+
     <Notifications client:load />
   </body>
 </html>
+
+<script>
+  import { startLinksListener } from 'san-webkit-next/analytics'
+  import { initCookiesPopup } from '../utils/cookies'
+
+  if (import.meta.env.PROD) {
+    startLinksListener()
+    initCookiesPopup()
+  }
+</script>
