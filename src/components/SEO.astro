@@ -4,18 +4,9 @@ interface Props {
   description?: string
   image?: string
   ogType?: string
-  noindex?: boolean
 }
 
-const isProductionDomain = import.meta.env.PROD && Astro.site?.host === 'santiment.net'
-
-const {
-  title,
-  description,
-  image = '/santiment.png',
-  ogType = 'website',
-  noindex = !isProductionDomain,
-} = Astro.props
+const { title, description, image = '/santiment.png', ogType = 'website' } = Astro.props
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 const imageUrl = new URL(image, Astro.site)
@@ -25,14 +16,6 @@ const imageUrl = new URL(image, Astro.site)
 
 <meta name="description" content={description} />
 <link rel="canonical" href={canonicalURL} />
-
-{
-  noindex ? (
-    <meta name="robots" content="noindex, nofollow" />
-  ) : (
-    <meta name="robots" content="index, follow" />
-  )
-}
 
 <meta property="og:type" content={ogType} />
 <meta property="og:url" content={canonicalURL} />
