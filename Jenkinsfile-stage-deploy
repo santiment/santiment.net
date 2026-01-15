@@ -1,0 +1,62 @@
+podTemplate(label: 'santimentnet-staging-deploy', nodeSelector: 'cpu.credits=no', containers: [
+    containerTemplate(name: 'kubectl', image: 'lachlanevenson/k8s-kubectl:v1.13.10', command: 'cat', ttyEnabled: true),
+    containerTemplate(name: 'docker', image: 'docker', ttyEnabled: true, command: 'cat', envVars: [
+      envVar(key: 'DOCKER_BUILDKIT', value: '1'),
+      envVar(key: 'DOCKER_HOST', value: 'tcp://docker-host-docker-host:2375')]),
+    containerTemplate(name: 'awscli', image: 'mikesir87/aws-cli', ttyEnabled: true, command: 'cat', envVars: [
+      envVar(key: 'AWS_DEFAULT_REGION', value: 'eu-central-1'),
+      secretEnvVar(key: 'AWS_ACCESS_KEY_ID', secretName: 'santimentnet-uploader-env', secretKey: 'awsAccessKeyId'),
+      secretEnvVar(key: 'AWS_SECRET_ACCESS_KEY', secretName: 'santimentnet-uploader-env', secretKey: 'awsSecretAccessKey'),
+    ])
+]) {
+  node('santimentnet-staging-deploy') {
+    stage('Update deployment') {
+      git url: 'https://github.com/santiment/santiment.net/', credentialsId:'GitHubCheckoutCreds'
+      sh(returnStdout: false, script: "git checkout main")
+      def gitCommit = sh(returnStdout: true, script: "git rev-parse HEAD").trim()
+
+      withCredentials([
+          string(credentialsId: 'aws_account_id', variable: 'aws_account_id')
+        ]){
+
+        def awsRegistry = "${env.aws_account_id}.dkr.ecr.eu-central-1.amazonaws.com"
+        def sourceImage = "${awsRegistry}/santimentnet"
+        def taggedSource = "${sourceImage}:${gitCommit}"
+
+        container('docker') {
+          def timestampTag = "stage-${env.TIMESTAMP_IMAGE_TAG}"
+          def taggedStage = "${sourceImage}:stage"
+          def timestamped = "${sourceImage}:${timestampTag}"
+
+          docker.withRegistry("https://${awsRegistry}", "ecr:eu-central-1:ecr-credentials") {
+            sh "docker pull ${taggedSource}"
+            sh "docker tag ${taggedSource} ${taggedStage}"
+            sh "docker tag ${taggedSource} ${timestamped}"
+            sh "docker push ${taggedStage}"
+            sh "docker push ${timestamped}"
+
+            sh "mkdir -p artifacts"
+            sh "docker create --name santimentnet-temp ${taggedSource}"
+            sh "docker cp santimentnet-temp:/app/public ./artifacts/"
+            sh "docker rm santimentnet-temp"
+          }
+        }
+      }
+    }
+    
+    stage('Copy assets to S3') {
+      container('awscli') {
+        def bucket = 's3://santimentnet-stage.santiment.net'
+        def sourceDir = './artifacts/public/'
+
+        sh "cd ${sourceDir} && aws s3 sync . ${bucket}/ --delete --exclude index.html"
+        sh """
+            aws s3 cp ${sourceDir}index.html ${bucket}/index.html \
+            --metadata-directive REPLACE \
+            --cache-control max-age=0,no-cache,no-store,must-revalidate \
+            --content-type 'text/html; charset=utf-8'
+        """
+      }
+    }
+  }
+}
