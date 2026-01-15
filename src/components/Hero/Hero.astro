@@ -1,4 +1,6 @@
 ---
+import Button from 'san-webkit-next/ui/core/Button'
+
 import AsSeenOn from '../AsSeenOn'
 import CtaButton from '../CtaButton.svelte'
 ---
@@ -9,6 +11,17 @@ import CtaButton from '../CtaButton.svelte'
   <div class="pt-[120px] md:pt-[46px]">
     <div class="container">
       <div class="mb-[338px] xl:mb-[195px] max-w-[644px] animate-shiftUp md:mb-20 md:max-w-[568px]">
+        <Button
+          class="text-lg mb-4 sm:text-base sm:mb-3"
+          variant="link"
+          icon="right-arrow"
+          iconSize={10}
+          iconOnRight
+          href="https://api.santiment.net/"
+        >
+          Start using the Santiment API
+        </Button>
+
         <h1 class="mb-4 text-5xl font-medium text-black xl:mb-3 xl:text-3xl xl:font-normal">
           Gain Actionable Insights with Behavior Analytics in Crypto
         </h1>
