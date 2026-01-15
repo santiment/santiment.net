@@ -14,6 +14,9 @@ slaveTemplates.dockerTemplate { label ->
         def gitHead = scmVars.GIT_COMMIT.substring(0,7)
 
         if (env.BRANCH_NAME == "main") {
+          def backendUrl = "https://api-stage.santiment.net" 
+          def siteUrl = "https://santimentnet-stage.santiment.net"
+
           withCredentials([
             string(
               credentialsId: 'SECRET_KEY_BASE',
@@ -26,7 +29,7 @@ slaveTemplates.dockerTemplate { label ->
           ]) {
             def awsRegistry = "${env.aws_account_id}.dkr.ecr.eu-central-1.amazonaws.com"
             docker.withRegistry("https://${awsRegistry}", "ecr:eu-central-1:ecr-credentials") {
-              sh "docker build -t ${awsRegistry}/santimentnet:${env.BRANCH_NAME} -t ${awsRegistry}/santimentnet:${scmVars.GIT_COMMIT} ."
+              sh "docker build --build-arg BACKEND_URL=${backendUrl} --build-arg SITE_URL=${siteUrl} -t ${awsRegistry}/santimentnet:${env.BRANCH_NAME} -t ${awsRegistry}/santimentnet:${scmVars.GIT_COMMIT} ."
               sh "docker push ${awsRegistry}/santimentnet:${env.BRANCH_NAME}"
               sh "docker push ${awsRegistry}/santimentnet:${scmVars.GIT_COMMIT}"
             }

@@ -5,8 +5,11 @@ import '../app.css'
 import 'san-webkit-next/app.css'
 import Notifications from 'san-webkit-next/ui/core/Notifications'
 
-import Intercom from '../components/Intercom.astro'
-import GoogleAnalytics from '../components/GoogleAnalytics.astro'
+import Intercom from '../components/scripts/Intercom.astro'
+import GoogleAnalytics from '../components/scripts/GoogleAnalytics.astro'
+import FirstPromoter from '../components/scripts/FirstPromoter.astro'
+import Smartlook from '../components/scripts/Smartlook.astro'
+import TwitterPixel from '../components/scripts/TwitterPixel.astro'
 
 type Props = {
   class?: string
@@ -23,15 +26,18 @@ const { class: className = '' } = Astro.props
     <meta name="theme-color" content="#14c393" />
     <link rel="icon" type="image/png" href="/icon-144x144.png" />
     <link rel="apple-touch-icon" href="/icon-144x144.png" />
-    <link rel="preconnect" href="https://api.santiment.net" />
     <link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous" />
 
     <slot name="seo" />
+    <slot name="head" />
 
     {
       import.meta.env.PROD && (
         <Intercom appId="cyjjko9u" />
         <GoogleAnalytics id="G-H53MB0V33X" />
+        <FirstPromoter id="ks4svmdl" />
+        <Smartlook id="f46f59a16976f2bcae434f21168a5d9920117b96" />
+        <TwitterPixel id="o0e0e" />
       )
     }
 

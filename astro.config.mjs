@@ -13,6 +13,8 @@ export default (async () => {
     },
   })
 
+  const siteUrl = process.env.SITE_URL || 'https://santiment.net'
+
   return defineConfig({
     integrations: [svelte(), tailwind()],
     vite: viteConfig,
@@ -20,10 +22,11 @@ export default (async () => {
       noExternal: ['san-webkit-next'],
     },
     prefetch: {
-      prefetchAll: true,
+      prefetchAll: false,
+      defaultStrategy: 'hover',
     },
     base: '/',
-    site: 'https://santimentnet-stage.santiment.net',
+    site: siteUrl,
     publicDir: './static',
     outDir: './public',
     server: {

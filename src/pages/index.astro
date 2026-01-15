@@ -17,6 +17,25 @@ import SEO from '../components/SEO.astro'
     title="Crypto Research, Data, Tools - Explore Behavioral Analytics"
     description="We provide tools for crypto research to analyze markets and find data-driven opportunities to optimize your investing. Dive in and explore our on-chain, social and development data."
   />
+
+  <Fragment slot="head">
+    <link
+      rel="preload"
+      href="/illus-laptop.svg"
+      as="image"
+      type="image/svg+xml"
+      media="(min-width: 1280px)"
+    />
+
+    <link
+      rel="preload"
+      href="/illus-desktop.svg"
+      as="image"
+      type="image/svg+xml"
+      media="(min-width: 993px) and (max-width: 1279px)"
+    />
+  </Fragment>
+
   <Nav slot="navigation" isAnimated isNightMode />
 
   <Hero />
