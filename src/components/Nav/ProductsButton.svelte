@@ -18,7 +18,7 @@
       iconSize={9}
       {ref}
       class={cn(
-        'duration-250 mr-8 pl-0 text-waterloo transition-transform',
+        'duration-250 mr-8 fill-fiord pl-0 text-fiord transition-transform',
         'hover:bg-transparent hover:fill-green hover:text-green',
         '[&>svg]:transition-transform [&>svg]:duration-[250ms]',
         '[&>svg]:ease-in-out [&[data-state=open]>svg]:rotate-180',

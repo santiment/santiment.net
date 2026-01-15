@@ -46,10 +46,11 @@ const { class: className = '' } = Astro.props
 
   <body class={className}>
 
-    <div data-vaul-drawer-wrapper>
-      <slot name="navigation" />
+    <slot name="navigation" />
+
+    <main data-vaul-drawer-wrapper>
       <slot />
-    </div>
+    </main>
 
     <Notifications client:load />
   </body>

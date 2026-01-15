@@ -16,13 +16,13 @@
   {href}
   target={isExternal ? '_blank' : '_self'}
   rel={isExternal ? 'noopener noreferrer' : undefined}
-  class={cn('group flex items-center text-waterloo hover:text-green-hover', className)}
+  class={cn('group flex items-center text-fiord hover:text-green-hover', className)}
   data-source="santiment.net"
   data-type={label}
 >
   {label}
 
   {#if isExternal}
-    <Svg id="external-link" w={12} class="ml-[5px] fill-waterloo group-hover:fill-green" />
+    <Svg id="external-link" w={12} class="ml-[5px] fill-fiord group-hover:fill-green" />
   {/if}
 </a>
