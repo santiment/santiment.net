@@ -22,7 +22,8 @@ export default (async () => {
       noExternal: ['san-webkit-next'],
     },
     prefetch: {
-      prefetchAll: true,
+      prefetchAll: false,
+      defaultStrategy: 'hover',
     },
     base: '/',
     site: siteUrl,

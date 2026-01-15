@@ -17,7 +17,7 @@ const { id, domain = '.santiment.net' } = Astro.props
       var t = this.readyState
       if (!t || 'complete' == t || 'loaded' == t)
         try {
-          $FPROM.init('ks4svmdl', domain)
+          $FPROM.init(id, domain)
         } catch (t) {}
     }
     var e = document.getElementsByTagName('script')[0]
