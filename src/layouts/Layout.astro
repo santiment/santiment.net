@@ -33,11 +33,13 @@ const { class: className = '' } = Astro.props
 
     {
       import.meta.env.PROD && (
-        <Intercom appId="cyjjko9u" />
-        <GoogleAnalytics id="G-H53MB0V33X" />
-        <FirstPromoter id="ks4svmdl" />
-        <Smartlook id="f46f59a16976f2bcae434f21168a5d9920117b96" />
-        <TwitterPixel id="o0e0e" />
+        <>
+          <Intercom appId="cyjjko9u" />
+          <GoogleAnalytics id="G-H53MB0V33X" />
+          <FirstPromoter id="ks4svmdl" />
+          <Smartlook id="f46f59a16976f2bcae434f21168a5d9920117b96" />
+          <TwitterPixel id="o0e0e" />
+        </>
       )
     }
 
@@ -45,7 +47,6 @@ const { class: className = '' } = Astro.props
   </head>
 
   <body class={className}>
-
     <slot name="navigation" />
 
     <main data-vaul-drawer-wrapper>
