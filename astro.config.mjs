@@ -8,14 +8,15 @@ export default (async () => {
   const viteBase = await createAstroConfig()
 
   const viteConfig = mergeConfig(viteBase, {
-    define: {
-      __SVELTEKIT_APP_VERSION_POLL_INTERVAL__: '0',
+    resolve: {
+      alias: [{ find: '@sentry/sveltekit', replacement: '@sentry/astro' }],
     },
   })
 
   const siteUrl = process.env.SITE_URL || 'https://santiment.net'
 
   return defineConfig({
+    output: 'static',
     integrations: [svelte(), tailwind()],
     vite: viteConfig,
     ssr: {
