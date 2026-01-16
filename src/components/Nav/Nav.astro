@@ -47,7 +47,7 @@ const links = [
     </div>
 
     <div class="flex w-full items-center md:hidden">
-      <ProductsButton class={isNightMode ? 'night-mode' : ''} client:load />
+      <ProductsButton class={isNightMode ? '!night-mode' : ''} client:load />
 
       {
         links.map(({ href, label, isExternal = false, class: linkClass }) => (
