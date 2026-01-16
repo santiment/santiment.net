@@ -12,23 +12,23 @@
   "dependencies": {
     "@astrojs/svelte": "^7.1.0",
     "@astrojs/tailwind": "^5.1.5",
+    "@sentry/astro": "^10.34.0",
     "astro": "^5.8.0",
     "rxjs": "^7.8.2",
-    "san-webkit-next": "github:santiment/san-webkit#lib-7a5ad741-300725",
+    "san-webkit-next": "github:santiment/san-webkit#lib-230db5e7-160126",
     "sharp": "^0.34.2",
-    "svelte": "^5.33.7",
-    "svelte-preprocess": "^5.1.4",
-    "svelte-preprocess-cssmodules": "^3.0.1",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5.8.3",
-    "vite": "^6.3.5"
+    "svelte": "^5.33.7"
   },
   "devDependencies": {
-    "@types/node": "^22.15.24",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-svelte": "^3.4.0",
     "prettier-plugin-tailwindcss": "^0.6.11",
+    "svelte-preprocess": "^5.1.4",
+    "svelte-preprocess-cssmodules": "^3.0.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
     "vite-plugin-mkcert": "^1.17.8"
   }
 }
