@@ -1,8 +1,12 @@
 ---
 import SubscriptionForm from './SubscriptionForm.svelte'
+import bgImage from './assets/get-started-bg.svg'
 ---
 
-<section class="bg-green bg-[url('/get-started-bg.svg')] bg-[90%_50%] bg-no-repeat py-16 sm:py-10">
+<section
+  style={`background-image: url(${bgImage.src})`}
+  class="bg-green bg-[90%_50%] bg-no-repeat py-16 sm:py-10"
+>
   <div class="container">
     <h4 class="mb-8 text-3xl text-white sm:text-lg">Ready to get started? Sign up now!</h4>
     <SubscriptionForm class="max-w-[432px]" label="Get started" client:visible />

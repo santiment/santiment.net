@@ -3,11 +3,16 @@ import Button from 'san-webkit-next/ui/core/Button'
 
 import AsSeenOn from '../AsSeenOn'
 import CtaButton from '../CtaButton.svelte'
+
+import desktopIllus from './assets/illus-desktop.svg'
+import laptopIllus from './assets/illus-laptop.svg'
+import mobileIllus from './assets/illus-mobile.svg'
+
+const desktopBg = `url(${desktopIllus.src})`
+const laptopBg = `url(${laptopIllus.src})`
 ---
 
-<section
-  class="relative h-full w-full bg-white-night bg-[url('/illus-desktop.svg')] xl:bg-[url('/illus-laptop.svg')] bg-top bg-no-repeat md:bg-none md:pb-[26px] night-mode"
->
+<section class="hero-bg relative h-full w-full bg-white-night md:pb-[26px] night-mode">
   <div class="pt-[120px] md:pt-[46px]">
     <div class="container">
       <div class="mb-[338px] xl:mb-[195px] max-w-[644px] animate-shiftUp md:mb-20 md:max-w-[568px]">
@@ -34,7 +39,7 @@ import CtaButton from '../CtaButton.svelte'
       </div>
     </div>
     <div class="relative">
-      <img src="/illus-mobile.svg" class="hidden md:block" alt="" />
+      <img src={mobileIllus.src} class="hidden md:block" alt="" />
 
       <div class="container pb-[480px] md:absolute md:top-[18%] md:w-full">
         <AsSeenOn class="mb-[228px] xl:mb-[151px] md:mb-[50%]" />
@@ -52,3 +57,22 @@ import CtaButton from '../CtaButton.svelte'
     </div>
   </div>
 </section>
+
+<style define:vars={{ desktopBg, laptopBg }}>
+  .hero-bg {
+    background-image: var(--desktopBg);
+    @apply bg-top bg-no-repeat;
+  }
+
+  @screen lg {
+    .hero-bg {
+      background-image: var(--laptopBg);
+    }
+  }
+
+  @screen md {
+    .hero-bg {
+      @apply bg-none;
+    }
+  }
+</style>

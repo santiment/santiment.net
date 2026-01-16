@@ -3,37 +3,18 @@
   import Button from 'san-webkit-next/ui/core/Button'
   import { cn } from 'san-webkit-next/ui/utils'
 
-  const images = [
-    '/data-visuals-1.png',
-    '/data-visuals-2.png',
-    '/data-visuals-3.png',
-    '/data-visuals-4.png',
-  ]
+  import img1 from './assets/data-visuals-1.png'
+  import img2 from './assets/data-visuals-2.png'
+  import img3 from './assets/data-visuals-3.png'
+  import img4 from './assets/data-visuals-4.png'
 
-  let visibleImage = $state(0)
+  const images = [img1.src, img2.src, img3.src, img4.src]
 
-  type TProps = {
-    class: string
-  }
-
+  type TProps = { class?: string }
   const { class: className = '' }: TProps = $props()
 
-  let scroll = $state(0)
-
-  function handleScroll() {
-    const scrollTop = document.documentElement.scrollTop
-    scroll = scrollTop
-
-    if (scrollTop < 2912 && visibleImage !== 0) {
-      visibleImage = 0
-    } else if (scrollTop >= 2912 && scrollTop < 3506 && visibleImage !== 1) {
-      visibleImage = 1
-    } else if (scrollTop >= 3506 && scrollTop < 4128 && visibleImage !== 2) {
-      visibleImage = 2
-    } else if (scrollTop >= 4128 && visibleImage !== 3) {
-      visibleImage = 3
-    }
-  }
+  let visibleImage = $state(0)
+  let container: HTMLElement
 
   const items = [
     {
@@ -42,7 +23,6 @@
       sub: 'Take a look at crypto market social trends and sentiment charts',
       link: 'https://app.santiment.net/s/1PcSbMgY',
       label: 'Get to know social trends',
-      image: images[0],
     },
     {
       title: 'On-chain metrics',
@@ -50,7 +30,6 @@
       sub: 'Study aggregate investor behaviors as price moves to/from their cost basis',
       link: 'https://app.santiment.net/s/ybwyoqGG',
       label: 'Track market movements',
-      image: images[1],
     },
     {
       title: 'Stakeholders metrics',
@@ -58,7 +37,6 @@
       sub: 'See asset holder distribution, top holders, and whales transaction tracking tools',
       link: 'https://app.santiment.net/s/czuEB2R6',
       label: 'Investigate whales activities',
-      image: images[2],
     },
     {
       title: 'NFT metrics',
@@ -66,7 +44,6 @@
       sub: 'Get to know how often people are mentioning your NFT Collection',
       link: 'https://app.santiment.net/s/QGPJ95dm',
       label: 'Check NFT collections',
-      image: images[3],
     },
   ]
 
@@ -76,31 +53,49 @@
       img.src = src
     })
 
-    window.addEventListener('scroll', handleScroll)
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            visibleImage = Number(entry.target.getAttribute('data-index'))
+          }
+        })
+      },
+      {
+        rootMargin: '-30% 0px -50% 0px',
+        threshold: 0,
+      },
+    )
 
-    handleScroll()
+    container.querySelectorAll('.text-block').forEach((el) => observer.observe(el))
 
-    return () => window.removeEventListener('scroll', handleScroll)
+    return () => observer.disconnect()
   })
 </script>
 
-<div class={cn('relative flex justify-between pb-40 night-mode md:pb-16', className)}>
+<div
+  bind:this={container}
+  class={cn('relative flex justify-between pb-40 night-mode md:pb-16', className)}
+>
   <div class="flex w-full max-w-[306px] flex-col md:max-w-full md:gap-y-20">
-    {#each items as item}
-      <div class="flex h-[438px] flex-col items-start justify-center md:h-auto">
+    {#each items as item, i}
+      <div
+        class="text-block flex h-[500px] flex-col items-start justify-center md:h-auto"
+        data-index={i}
+      >
         <div class="w-full lg:text-left">
           <p class="mb-3 text-base font-semibold text-orange md:mb-1">{item.title}</p>
           <h3 class="mb-6 text-4xl font-semibold text-white-day md:mb-4 md:text-xl">
             {item.heading}
           </h3>
           <p class="mb-3 text-base text-rhino md:mb-2.5">{item.sub}</p>
-          <Button variant="link" icon="right-arrow" iconSize={10} iconOnRight href={item.link}
-            >{item.label}</Button
-          >
+          <Button variant="link" icon="right-arrow" iconSize={10} iconOnRight href={item.link}>
+            {item.label}
+          </Button>
           <img
-            src={item.image}
+            src={images[i]}
             class="mt-6 hidden md:block md:max-w-[80%] sm:max-w-full"
-            alt="Team"
+            alt={item.title}
           />
         </div>
       </div>
@@ -108,11 +103,18 @@
   </div>
 
   <div
-    class="sticky top-[25vh] mb-9 flex h-[438px] w-[778px] self-start text-4xl lg:w-[600px] md:hidden"
+    class="sticky top-[25vh] mb-9 flex h-[438px] w-[778px] self-start overflow-hidden lg:w-[600px] md:hidden"
   >
-    <div
-      class="h-full w-full bg-cover transition-all duration-500 lg:h-[310px] lg:w-[548px]"
-      style={`background-image: url(${images[visibleImage]})`}
-    ></div>
+    <div class="relative h-full w-full lg:h-[310px] lg:w-[548px]">
+      {#each images as img, i}
+        <div
+          class={cn(
+            'absolute inset-0 bg-contain bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out',
+            visibleImage === i ? 'z-1 opacity-100' : 'z-0 opacity-0',
+          )}
+          style="background-image: url({img}); will-change: opacity;"
+        ></div>
+      {/each}
+    </div>
   </div>
 </div>

@@ -9,6 +9,9 @@ import Tweets from '../components/Tweets'
 import FinalCTA from '../components/FinalCTA'
 import Nav from '../components/Nav'
 import SEO from '../components/SEO.astro'
+
+import desktopIllus from '../components/Hero/assets/illus-desktop.svg'
+import laptopIllus from '../components/Hero/assets/illus-laptop.svg'
 ---
 
 <Layout>
@@ -21,7 +24,7 @@ import SEO from '../components/SEO.astro'
   <Fragment slot="head">
     <link
       rel="preload"
-      href="/illus-laptop.svg"
+      href={desktopIllus.src}
       as="image"
       type="image/svg+xml"
       media="(min-width: 1280px)"
@@ -29,7 +32,7 @@ import SEO from '../components/SEO.astro'
 
     <link
       rel="preload"
-      href="/illus-desktop.svg"
+      href={laptopIllus.src}
       as="image"
       type="image/svg+xml"
       media="(min-width: 993px) and (max-width: 1279px)"
