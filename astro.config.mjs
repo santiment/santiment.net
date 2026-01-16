@@ -11,10 +11,12 @@ export default (async () => {
     define: {
       __SVELTEKIT_APP_VERSION_POLL_INTERVAL__: '0',
       __SVELTEKIT_PATHS_BASE__: '""',
+      __SVELTEKIT_ASSETS__: '""',
+      __SVELTEKIT_APP_VERSION__: '""',
       __SVELTEKIT_PATHS_ASSETS__: '""',
+      __SVELTEKIT_PAYLOAD__: '""',
       __SVELTEKIT_APP_DIR__: '""',
       __SVELTEKIT_PATHS_RELATIVE__: '""',
-      __SVELTEKIT_PAYLOAD__: '""',
     },
     resolve: {
       alias: [{ find: '@sentry/sveltekit', replacement: '@sentry/astro' }],

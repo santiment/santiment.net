@@ -12,12 +12,12 @@
     Sanbase: {
       desc: 'Exclusive on-chain, social and development metrics, low-latency market signals, custom Spreadsheet templates & daily insights on the cryptocurrency market',
       link: 'https://app.santiment.net/',
-      img: sanbaseImg,
+      img: sanbaseImg.src,
     },
     SanAPI: {
       desc: 'One of the most comprehensive crypto APIs on the market. Single endpoint access for on-chain, social, pricing and development information on 2000+ coins',
       link: 'https://api.santiment.net/',
-      img: sanapiImg,
+      img: sanapiImg.src,
     },
   }
 
