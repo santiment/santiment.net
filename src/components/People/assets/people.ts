@@ -5,6 +5,7 @@ import Brian from './images/Brian.png'
 import DenisG from './images/DenisG.png'
 import Dima from './images/Dima.png'
 import Garry from './images/Garry.png'
+import Dino from './images/Dino.png'
 import GabbyN from './images/GabbyN.png'
 import IlyaL from './images/IlyaL.png'
 import Ivan from './images/Ivan.png'
@@ -171,6 +172,7 @@ export const PEOPLE = [
   {
     name: 'Dino Ibisbegovic',
     position: 'Advisor',
+    img: Dino,
     group: GROUPS.ADVISORS,
     description:
       'Resident wordsmith and SEO nerd, Dino oversees all things content. He’s worked in a medley of startups big and small before joining Santiment, specializing in content creation, search engine optimization and many other -ations. He has since caught the crypto bug and is currently a refreshingly average swing trader. Get in touch with him to talk content collabs and/or favorite html tags.',

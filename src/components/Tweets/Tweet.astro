@@ -14,7 +14,6 @@ const { displayName, content, handle, id, avatar } = Astro.props
 ---
 
 <div
-  aria-label="Opens Tweet on Twitter in a new tab"
   class="mr-8 h-[400px] min-h-[400px] w-[360px] min-w-[360px] rounded-[10px] border border-porcelain bg-white text-rhino shadow-[0_2px_24px_rgba(24,27,43,0.04),1px_3px_7px_rgba(47,53,77,0.05)] transition-transform duration-100 ease-in-out hover:scale-[1.01] hover:text-mirage"
 >
   <article class="flex h-full w-full flex-col p-8">
@@ -22,6 +21,7 @@ const { displayName, content, handle, id, avatar } = Astro.props
       target="_blank"
       rel="noopener noreferrer"
       href={`https://twitter.com/${handle}/status/${id}`}
+      aria-label="Opens Tweet on Twitter in a new tab"
       class="cursor-pointer"
     >
       <header class="mb-6 flex items-start">

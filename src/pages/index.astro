@@ -15,11 +15,7 @@ import laptopIllus from '../components/Hero/assets/illus-laptop.svg'
 ---
 
 <Layout>
-  <SEO
-    slot="seo"
-    title="Crypto Research, Data, Tools - Explore Behavioral Analytics"
-    description="We provide tools for crypto research to analyze markets and find data-driven opportunities to optimize your investing. Dive in and explore our on-chain, social and development data."
-  />
+  <SEO slot="seo" />
 
   <Fragment slot="head">
     <link
@@ -43,12 +39,14 @@ import laptopIllus from '../components/Hero/assets/illus-laptop.svg'
 
   <Nav slot="navigation" isAnimated isNightMode />
 
-  <Hero />
-  <Intro />
-  <ProvenByNumbers />
-  <AnalyticsOverview />
-  <Tweets />
-  <FinalCTA />
+  <main>
+    <Hero />
+    <Intro />
+    <ProvenByNumbers />
+    <AnalyticsOverview />
+    <Tweets />
+    <FinalCTA />
+  </main>
 
   <Footer class="bg-athens [&>div]:max-w-[1140px]" client:visible />
 </Layout>

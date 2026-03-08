@@ -6,6 +6,8 @@ import CtaButton from '../CtaButton.svelte'
 import ProductsButton from './ProductsButton.svelte'
 import MobileNav from './MobileNav.svelte'
 
+import { links } from './utils'
+
 interface Props {
   isAnimated?: boolean
   isNightMode?: boolean
@@ -13,14 +15,6 @@ interface Props {
 }
 
 const { isAnimated = false, isNightMode = false, class: className } = Astro.props
-
-const links = [
-  { href: '/about', label: 'About' },
-  { href: '/team', label: 'Team' },
-  { href: '/jobs', label: 'Jobs' },
-  { href: 'https://academy.santiment.net/', label: 'Academy', isExternal: true, class: 'ml-auto' },
-  { href: 'https://app.santiment.net/pricing', label: 'Pricing', isExternal: true },
-]
 ---
 
 <div class={cn('h-[70px] w-full bg-white', isNightMode && 'night-mode')}></div>

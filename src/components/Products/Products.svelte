@@ -38,7 +38,7 @@
     class="mx-auto mb-10 text-xl md:text-lg"
     onSelect={(tab) => (selectedTab = tab)}
     options={Object.keys(TABS)}
-    defaultSelectedIndex="Sanbase"
+    defaultSelected="Sanbase"
   />
 
   <p class="mx-auto mb-4 max-w-[556px] text-center text-lg text-waterloo md:text-base">

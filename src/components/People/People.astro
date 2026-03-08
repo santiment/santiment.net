@@ -11,7 +11,7 @@ type Person = (typeof PEOPLE)[number]
 const { class: className = '' } = Astro.props
 
 const normalizedData = PEOPLE.reduce<Record<string, Person[]>>((acc, person) => {
-  const group = acc[person.group] ??= []
+  const group = (acc[person.group] ??= [])
   group.push(person)
 
   return acc
@@ -24,7 +24,7 @@ const normalizedData = PEOPLE.reduce<Record<string, Person[]>>((acc, person) => 
       <div>
         <h2 class="text-base pb-2 border-b border-porcelain text-waterloo mt-10 mb-9">{key}</h2>
         <div class="w-full grid gap-8 grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
-          {normalizedData[key].map(({ name, position, description, img, links }: any) => (
+          {normalizedData[key].map(({ name, position, description, img, links }) => (
             <div class="max-w-[358px] mb-2.5">
               {img && (
                 <div class="bg-rhino object-contain h-32 w-32 rounded-full">

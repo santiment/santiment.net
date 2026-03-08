@@ -10,25 +10,31 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/svelte": "^7.1.0",
-    "@astrojs/tailwind": "^5.1.5",
-    "@sentry/astro": "^10.34.0",
-    "astro": "^5.8.0",
+    "@astrojs/svelte": "^7.2.5",
+    "@astrojs/tailwind": "^6.0.2",
+    "astro": "^5.18.0",
     "rxjs": "^7.8.2",
-    "san-webkit-next": "github:santiment/san-webkit#lib-230db5e7-160126",
-    "sharp": "^0.34.2",
-    "svelte": "^5.33.7",
-    "svelte-preprocess": "^5.1.4",
-    "svelte-preprocess-cssmodules": "^3.0.1",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5.8.3",
-    "vite": "^6.3.5"
+    "san-webkit-next": "github:santiment/san-webkit#lib-d2a185e1-060326",
+    "svelte": "^5.53.7"
   },
   "devDependencies": {
+    "@astrojs/ts-plugin": "^1.10.6",
+    "@sentry/astro": "^10.40.0",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-svelte": "^3.4.0",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "vite-plugin-mkcert": "^1.17.8"
+    "sharp": "^0.34.5",
+    "svelte-preprocess": "^5.1.4",
+    "svelte-preprocess-cssmodules": "^3.0.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.12",
+    "vite-plugin-mkcert": "^1.17.9"
+  },
+  "pnpm": {
+    "overrides": {
+      "@sveltejs/kit": "2.48.2"
+    }
   }
 }

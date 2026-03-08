@@ -7,19 +7,29 @@ const { id } = Astro.props
 ---
 
 <script is:inline define:vars={{ id }}>
-  !(function (e, t, n, s, u, a) {
-    e.twq ||
-      ((s = e.twq =
-        function () {
-          s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments)
-        }),
-      (s.version = '1.1'),
-      (s.queue = []),
-      (u = t.createElement(n)),
-      (u.async = !0),
-      (u.src = '//static.ads-twitter.com/uwt.js'),
-      (a = t.getElementsByTagName(n)[0]),
-      a.parentNode.insertBefore(u, a))
-  })(window, document, 'script')
-  twq('init', id)
+  window.addEventListener('load', () => {
+    if (!window.twq) {
+      window.twq = function () {
+        window.twq.exe
+          ? window.twq.exe.apply(window.twq, arguments)
+          : window.twq.queue.push(arguments)
+      }
+      window.twq.version = '1.1'
+      window.twq.queue = []
+    }
+
+    var t = document.createElement('script')
+    t.type = 'text/javascript'
+    t.async = !0
+    t.src = 'https://static.ads-twitter.com/uwt.js'
+    t.onload = t.onreadystatechange = function () {
+      var t = this.readyState
+      if (!t || 'complete' == t || 'loaded' == t)
+        try {
+          twq('init', id)
+        } catch (t) {}
+    }
+    var e = document.getElementsByTagName('script')[0]
+    e.parentNode.insertBefore(t, e)
+  })
 </script>

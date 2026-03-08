@@ -30,28 +30,28 @@ const { class: className = '' } = Astro.props
     <slot name="seo" />
     <slot name="head" />
 
-    {
-      import.meta.env.PROD && (
-        <>
-          <Intercom appId="cyjjko9u" />
-          <GoogleAnalytics id="G-H53MB0V33X" />
-          <FirstPromoter id="ks4svmdl" />
-          <TwitterPixel id="o0e0e" />
-        </>
-      )
-    }
-
     <ClientRouter />
   </head>
 
   <body class={className}>
     <slot name="navigation" />
 
-    <main data-vaul-drawer-wrapper>
+    <div data-vaul-drawer-wrapper>
       <slot />
-    </main>
+    </div>
 
-    <Notifications client:load />
+    <Notifications client:idle />
+
+    {
+      import.meta.env.PROD && (
+        <>
+          <Intercom />
+          <GoogleAnalytics id="G-H53MB0V33X" />
+          <FirstPromoter id="ks4svmdl" />
+          <TwitterPixel id="o0e0e" />
+        </>
+      )
+    }
   </body>
 </html>
 

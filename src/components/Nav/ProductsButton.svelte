@@ -1,10 +1,7 @@
 <script lang="ts">
   import ProductsButton from 'san-webkit-next/ui/app/Products'
   import Button from 'san-webkit-next/ui/core/Button'
-  import { useCustomerCtx } from 'san-webkit-next/ctx/customer'
   import { cn } from 'san-webkit-next/ui/utils'
-
-  useCustomerCtx()
 
   type TProps = {
     class: string

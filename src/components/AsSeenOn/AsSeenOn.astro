@@ -25,23 +25,23 @@ type Props = {
 
 const { class: className = '' } = Astro.props
 
-const logoPaths = [
-  binance,
-  ethereum,
-  bloomberg,
-  cnn,
-  coindesk,
-  cointelegraph,
-  nasdaq,
-  ripple,
-  bitcoinMagazine,
-  wired,
-  bitfinex,
-  cardano,
-  kraken,
-  coinontag,
-  kucoin,
-  maker,
+const logos = [
+  { src: binance, alt: 'Binance' },
+  { src: ethereum, alt: 'Ethereum' },
+  { src: bloomberg, alt: 'Bloomberg' },
+  { src: cnn, alt: 'CNN' },
+  { src: coindesk, alt: 'CoinDesk' },
+  { src: cointelegraph, alt: 'CoinTelegraph' },
+  { src: nasdaq, alt: 'Nasdaq' },
+  { src: ripple, alt: 'Ripple' },
+  { src: bitcoinMagazine, alt: 'Bitcoin Magazine' },
+  { src: wired, alt: 'Wired' },
+  { src: bitfinex, alt: 'Bitfinex' },
+  { src: cardano, alt: 'Cardano' },
+  { src: kraken, alt: 'Kraken' },
+  { src: coinontag, alt: 'Coinotag' },
+  { src: kucoin, alt: 'KuCoin' },
+  { src: maker, alt: 'Maker' },
 ]
 ---
 
@@ -54,8 +54,8 @@ const logoPaths = [
 
   <div class="relative flex w-full overflow-hidden">
     <div class="animate-marquee flex flex-shrink-0 whitespace-nowrap will-change-transform">
-      {logoPaths.map((path) => <Image src={path} alt="" class="mr-8 h-6 sm:h-4 w-auto" />)}
-      {logoPaths.map((path) => <Image src={path} alt="" class="mr-8 h-6 sm:h-4 w-auto" />)}
+      {logos.map(({ src, alt }) => <Image src={src} alt={alt} class="mr-8 h-6 sm:h-4 w-auto" />)}
+      {logos.map(({ src, alt }) => <Image src={src} alt="" class="mr-8 h-6 sm:h-4 w-auto" aria-hidden="true" />)}
     </div>
   </div>
 </section>

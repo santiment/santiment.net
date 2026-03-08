@@ -3,8 +3,10 @@
   scrollbar-color: var(--casper) var(--porcelain);
 }
 
-html {
-  scroll-behavior: smooth;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 .table {
@@ -39,6 +41,19 @@ html {
 
 .table thead th:nth-child(3) {
   padding-right: 32px;
+}
+
+@media (max-width: 768px) {
+  .table thead th:nth-child(1),
+  .table thead th:nth-child(2) {
+    width: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .table thead th:nth-child(3) {
+    padding-right: 12px;
+  }
 }
 
 .table thead tr th:first-child,
@@ -80,6 +95,19 @@ html {
 
   &:nth-child(3) {
     padding-right: 32px;
+  }
+
+  @media (max-width: 768px) {
+    &:nth-child(1),
+    &:nth-child(2) {
+      width: auto;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    &:nth-child(3) {
+      padding-right: 12px;
+    }
   }
 }
 

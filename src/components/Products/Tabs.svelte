@@ -3,19 +3,19 @@
 
   type TProps = {
     options: string[]
-    defaultSelectedIndex: string
+    defaultSelected: string
     onSelect: (tab: string) => void
     class: string
   }
 
   const {
     options = [],
-    defaultSelectedIndex = '',
+    defaultSelected = '',
     onSelect = () => {},
     class: className = '',
   }: TProps = $props()
 
-  let selected = $state(defaultSelectedIndex)
+  let selected = $state(defaultSelected)
 
   function selectTab(tab: string) {
     selected = tab

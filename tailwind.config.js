@@ -16,8 +16,8 @@ export default {
       },
     },
     screens: {
-      xl: { max: '1199px' },
       ...tailwindConfig.theme.screens,
+      xl: { max: '1199px' },
     },
     extend: {
       keyframes: {

@@ -22,9 +22,10 @@
     exhaustMap((email) => {
       loading = true
 
-      return mutateEmailLoginNewsletter()(email).pipe(
+      return mutateEmailLoginNewsletter()({ email }).pipe(
         catchError((error) => {
           console.error(error)
+          notification.error('Something went wrong. Please try again later')
           return of(null)
         }),
         tap(() => (loading = false)),
