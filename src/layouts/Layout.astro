@@ -9,6 +9,7 @@ import Intercom from '../components/scripts/Intercom.astro'
 import GoogleAnalytics from '../components/scripts/GoogleAnalytics.astro'
 import FirstPromoter from '../components/scripts/FirstPromoter.astro'
 import TwitterPixel from '../components/scripts/TwitterPixel.astro'
+import Posthog from '../components/scripts/Posthog.astro'
 
 type Props = {
   class?: string
@@ -49,6 +50,7 @@ const { class: className = '' } = Astro.props
           <GoogleAnalytics id="G-H53MB0V33X" />
           <FirstPromoter id="ks4svmdl" />
           <TwitterPixel id="o0e0e" />
+          <Posthog />
         </>
       )
     }
