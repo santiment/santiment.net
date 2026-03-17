@@ -54,6 +54,7 @@ export default defineConfig({
     '/about-santiment/transparency': '/',
     '/about-santiment/jobs': '/jobs',
     '/about-santiment': '/about',
+    '/email_login': 'https://app.santiment.net/login',
     '/about-santiment/contact': '/about',
     '/discord': 'https://discord.gg/xyJzfkyYbr',
     '/terms-conditions': '/terms',
