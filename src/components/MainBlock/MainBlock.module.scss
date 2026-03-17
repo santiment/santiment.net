@@ -1,4 +1,4 @@
-@import "~@santiment-network/ui/mixins.scss";
+@import '~@santiment-network/ui/mixins.scss';
 
 .backgroundContainer {
   position: relative;
@@ -9,7 +9,7 @@
   background-position-y: top;
   background-repeat: no-repeat;
 
-  @include responsive("laptop") {
+  @include responsive('laptop') {
     background-image: url('./images/illus-laptop.svg');
   }
 
@@ -32,7 +32,7 @@
     padding-top: 46px;
   }
 
-  @include responsive("desktop", "laptop", "tablet") {
+  @include responsive('desktop', 'laptop', 'tablet') {
     animation-name: shiftUp;
     animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
     animation-duration: 0.8s;
@@ -49,11 +49,10 @@
     margin: 0 0 195px;
   }
 
-  @include responsive("phone", "phone-xs", 'tablet') {
+  @include responsive('phone', 'phone-xs', 'tablet') {
     max-width: 568px;
     margin: 0 0 80px;
   }
-
 }
 
 .rightBlock {
@@ -66,7 +65,7 @@
     max-width: 356px;
   }
 
-  @include responsive("phone", "phone-xs", 'tablet') {
+  @include responsive('phone', 'phone-xs', 'tablet') {
     margin: 0 auto;
     padding: 0 16px;
   }
@@ -75,30 +74,30 @@
 .mobileBg {
   display: none;
 
-  @include responsive("phone", "phone-xs", 'tablet') {
+  @include responsive('phone', 'phone-xs', 'tablet') {
     display: block;
   }
 }
 
 .leftBlock,
 .logosWrapper {
-  @include responsive("laptop") {
+  @include responsive('laptop') {
     padding: 0 24px;
   }
 
-  @include responsive("phone", "phone-xs", "tablet") {
+  @include responsive('phone', 'phone-xs', 'tablet') {
     padding: 0 16px;
   }
 }
 
 .title {
-  @include text("h1");
+  @include text('h1');
   font-weight: 500;
   margin-bottom: 16px;
 
   @include responsive('laptop', 'tablet', 'phone', 'phone-xs') {
     --margin: 12px;
-    @include text('h3')
+    @include text('h3');
   }
 }
 
@@ -107,7 +106,7 @@
   margin-bottom: 40px;
 
   @include responsive('laptop', 'tablet', 'phone', 'phone-xs') {
-    @include text("body-2");
+    @include text('body-2');
     margin-bottom: 24px;
   }
 }
@@ -171,27 +170,7 @@
     margin-bottom: 50%;
   }
 
-  @include responsive("phone-xs") {
+  @include responsive('phone-xs') {
     margin-bottom: 70px;
-  }
-}
-
-.link {
-  @include text('body-1');
-  display: flex;
-  gap: 8px;
-  margin-bottom: 16px;
-  align-items: center;
-  color: var(--jungle-green);
-  fill: var(--jungle-green);
-
-  @include responsive('phone', 'phone-xs') {
-    @include text("body-2");
-    margin-bottom: 12px;
-  }
-
-  &:hover {
-    color: var(--jungle-green-hover);
-    fill: var(--jungle-green-hover);
   }
 }
