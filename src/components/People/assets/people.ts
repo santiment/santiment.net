@@ -86,18 +86,13 @@ export const PEOPLE = [
     },
   },
   {
-    name: 'Brian Quinlivan',
+    name: 'Brian at Santiment',
     position: 'Director of Marketing',
     img: Brian,
     group: GROUPS.MARKETING,
     description:
       'With a freshly-minted MBA in finance from Chapman University, Brian has 10+ years of marketing, financial, and data analytics experience. He enjoys creating financial models to improve modern-day investing strategies and to study the intricacies of market variations. He’s also fascinated by cryptocurrency and loves being part of a growing community that represents a change from the status quo of traditional banking and transactions. When away from work, he’s an avid music producer and writer, and enjoys playing tennis, basketball, and cards.',
-    links: {
-      twitter: 'https://twitter.com/brianquinlivan',
-      linkedin: 'https://www.linkedin.com/in/brian-quinlivan-mba-3a95b18b/',
-      medium: 'https://medium.com/@bquinliv3',
-      facebook: 'https://www.facebook.com/brian.quinlivan.7',
-    },
+    links: {},
   },
   {
     name: 'Anastasia Gelemeeva',
