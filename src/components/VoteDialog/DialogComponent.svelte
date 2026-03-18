@@ -8,7 +8,7 @@
   import { useDeviceCtx } from 'san-webkit-next/ctx/device'
   import { onMount } from 'svelte'
 
-  const SOURCE = 'marketing_vote_dialog'
+  const SOURCE = 'hwawards_vote_dialog'
 
   const { Controller, onClose }: TDialogProps & { onClose: () => void } = $props()
 
