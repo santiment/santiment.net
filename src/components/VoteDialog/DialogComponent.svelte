@@ -6,7 +6,7 @@
   import trophy from './assets/trophy.svg'
   import { cn } from 'san-webkit-next/ui/utils'
   import { useDeviceCtx } from 'san-webkit-next/ctx/device'
-  import { onDestroy } from 'svelte'
+  import { onMount } from 'svelte'
 
   const SOURCE = 'marketing_vote_dialog'
 
@@ -14,7 +14,11 @@
 
   const { device } = useDeviceCtx()
 
-  onDestroy(() => onClose())
+  onMount(() => {
+    Controller.lock()
+
+    return () => onClose()
+  })
 </script>
 
 <Dialog
@@ -85,6 +89,6 @@
     icon="close"
     class="absolute right-8 top-8 fill-mystic sm:right-1 sm:top-1 sm:fill-waterloo"
     iconSize={device.$.isDesktop ? 16 : 12}
-    onclick={() => Controller.close()}
+    onclick={() => Controller.close(true)}
   />
 </Dialog>
