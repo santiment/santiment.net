@@ -61,8 +61,6 @@ const { class: className = '' } = Astro.props
   import { startLinksListener } from 'san-webkit-next/analytics'
   import { initCookiesPopup } from '../utils/cookies'
 
-  if (import.meta.env.PROD) {
-    startLinksListener()
-    initCookiesPopup()
-  }
+  startLinksListener()
+  initCookiesPopup()
 </script>
