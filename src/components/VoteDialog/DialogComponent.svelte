@@ -22,6 +22,7 @@
 </script>
 
 <Dialog
+  forceDesktop
   class={cn(
     'bg-[linear-gradient(112deg,#666B84_-16.09%,#3F4357_12.67%,#181B2B_55.99%)] sm:bg-[linear-gradient(141deg,#666B84_2.57%,#3F4357_23.84%,#181B2B_55.88%)]',
     'w-full max-w-5xl rounded-[34px] bg-mirage text-white md:max-w-[calc(100%-32px)] md:rounded-[10px] md:border md:border-fiord',
