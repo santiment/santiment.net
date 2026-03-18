@@ -13,8 +13,9 @@
     "@astrojs/svelte": "^7.2.5",
     "@astrojs/tailwind": "^6.0.2",
     "astro": "^5.18.0",
+    "esm-env": "^1.2.2",
     "rxjs": "^7.8.2",
-    "san-webkit-next": "github:santiment/san-webkit#lib-d2a185e1-060326",
+    "san-webkit-next": "github:santiment/san-webkit#lib-217d09b1-180326",
     "svelte": "^5.53.7"
   },
   "devDependencies": {
