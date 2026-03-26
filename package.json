@@ -12,7 +12,7 @@
   "dependencies": {
     "@astrojs/svelte": "^7.2.5",
     "@astrojs/tailwind": "^6.0.2",
-    "astro": "^5.18.0",
+    "astro": "^5.18.1",
     "esm-env": "^1.2.2",
     "rxjs": "^7.8.2",
     "san-webkit-next": "github:santiment/san-webkit#lib-29e5c2d26-190326",
