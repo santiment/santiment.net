@@ -4,14 +4,24 @@
 
 @config '#tailwind.config.js';
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--casper) var(--porcelain);
-}
+@layer base {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--casper) var(--porcelain);
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--porcelain);
   }
 }
 
