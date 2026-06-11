@@ -5,13 +5,17 @@
   "scripts": {
     "dev": "astro dev",
     "dev:https": "astro dev --host -- --https",
+    "dev:https:force": "astro dev --host --force -- --https",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
+  "imports": {
+    "#app.css": "./src/app.css",
+    "#tailwind.config.js": "./tailwind.config.js"
+  },
   "dependencies": {
     "@astrojs/svelte": "^7.2.5",
-    "@astrojs/tailwind": "^6.0.2",
     "astro": "^5.18.0",
     "esm-env": "^1.2.2",
     "rxjs": "^7.8.2",
@@ -21,14 +25,15 @@
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.10.6",
     "@sentry/astro": "^10.40.0",
+    "@tailwindcss/vite": "^4.3.0",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-svelte": "^3.4.0",
-    "prettier-plugin-tailwindcss": "^0.6.11",
+    "prettier-plugin-tailwindcss": "^0.8.0",
     "sharp": "^0.34.5",
     "svelte-preprocess": "^5.1.4",
     "svelte-preprocess-cssmodules": "^3.0.1",
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "4.3.0",
     "typescript": "^5.9.3",
     "vite": "^7.1.12",
     "vite-plugin-mkcert": "^1.17.9"
