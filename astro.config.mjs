@@ -1,5 +1,5 @@
 import svelte from '@astrojs/svelte'
-import tailwind from '@astrojs/tailwind'
+import tailwind from '@tailwindcss/vite'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import { defineConfig, mergeConfig } from 'astro/config'
@@ -44,7 +44,6 @@ export default defineConfig({
     svelte({
       extensions: ['.svelte'],
     }),
-    tailwind(),
   ],
   redirects: {
     '/sansheets': 'https://sheets.santiment.net/',
@@ -59,7 +58,7 @@ export default defineConfig({
     '/discord': 'https://discord.gg/xyJzfkyYbr',
     '/terms-conditions': '/terms',
   },
-  vite: viteConfig,
+  vite: { ...viteConfig, plugins: [...viteConfig.plugins, tailwind()] },
   base: '/',
   publicDir: './static',
   outDir: './public',
