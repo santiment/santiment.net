@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "imports": {
+    "#app.css": "./src/app.css",
     "#tailwind.config.js": "./tailwind.config.js"
   },
   "dependencies": {
