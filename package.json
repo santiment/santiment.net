@@ -12,10 +12,12 @@
   "dependencies": {
     "@astrojs/svelte": "^7.2.5",
     "@astrojs/tailwind": "^6.0.2",
+    "@melt-ui/svelte": "^0.86.6",
     "astro": "^5.18.0",
+    "bits-ui": "^2.18.1",
     "esm-env": "^1.2.2",
     "rxjs": "^7.8.2",
-    "san-webkit-next": "github:santiment/san-webkit#lib-cd09b000b-050526",
+    "san-webkit-next": "github:santiment/san-webkit#lib-4979a14e-300726",
     "svelte": "^5.53.7"
   },
   "devDependencies": {
