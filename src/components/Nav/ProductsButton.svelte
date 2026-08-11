@@ -10,13 +10,13 @@
   const { class: className = '' }: TProps = $props()
 </script>
 
-<ProductsButton class={className}>
+<ProductsButton class={className} align="start" isCompact>
   {#snippet children({ props })}
     <Button
+      {...props}
       icon="arrow-down"
       iconOnRight
       iconSize={9}
-      {...props}
       class={cn(
         'duration-250 mr-8 fill-fiord pl-0 text-fiord transition-transform',
         'hover:bg-transparent hover:fill-green hover:text-green',

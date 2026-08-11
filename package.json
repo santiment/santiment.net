@@ -17,7 +17,7 @@
     "bits-ui": "^2.18.1",
     "esm-env": "^1.2.2",
     "rxjs": "^7.8.2",
-    "san-webkit-next": "github:santiment/san-webkit#lib-4979a14e-300726",
+    "san-webkit-next": "github:santiment/san-webkit#lib-d4613f0a-110826",
     "svelte": "^5.53.7"
   },
   "devDependencies": {

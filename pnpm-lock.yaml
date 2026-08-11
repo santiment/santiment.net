@@ -30,8 +30,8 @@ dependencies:
     specifier: ^7.8.2
     version: 7.8.2
   san-webkit-next:
-    specifier: github:santiment/san-webkit#lib-4979a14e-300726
-    version: github.com/santiment/san-webkit/061f0ef8b7ca7d122227544ef077834e47d77346(@floating-ui/dom@1.7.6)(@melt-ui/svelte@0.86.6)(@sveltejs/adapter-auto@3.3.1)(@sveltejs/adapter-node@5.5.4)(@sveltejs/kit@2.48.2)(@sveltejs/vite-plugin-svelte@5.1.1)(@wagmi/connectors@5.11.2)(@wagmi/core@2.21.2)(bits-ui@2.18.1)(driver.js@1.8.0)(estree-walker@3.0.3)(graphql@16.13.1)(highlight.js@11.11.1)(indicatorts@2.2.2)(lottie-web@5.13.0)(marked-highlight@2.2.3)(marked@15.0.12)(mathjs@14.9.1)(monaco-editor@0.52.2)(phoenix@1.8.6)(photoswipe@5.4.4)(react@18.3.1)(rollup@4.59.0)(rxjs@7.8.2)(svelte@5.53.7)(tailwind-merge@2.6.1)(tailwindcss@3.4.19)(typescript@5.9.3)(uuid@11.1.0)(viem@2.47.0)(vite@7.3.1)(wagmi@2.19.5)
+    specifier: github:santiment/san-webkit#lib-d4613f0a-110826
+    version: github.com/santiment/san-webkit/0cb6f8c486654447124084a655cbc68a246e686e(@floating-ui/dom@1.7.6)(@melt-ui/svelte@0.86.6)(@sveltejs/adapter-auto@3.3.1)(@sveltejs/adapter-node@5.5.4)(@sveltejs/kit@2.48.2)(@sveltejs/vite-plugin-svelte@5.1.1)(@wagmi/connectors@5.11.2)(@wagmi/core@2.21.2)(bits-ui@2.18.1)(driver.js@1.8.0)(estree-walker@3.0.3)(graphql@16.13.1)(highlight.js@11.11.1)(indicatorts@2.2.2)(lottie-web@5.13.0)(marked-highlight@2.2.3)(marked@15.0.12)(mathjs@14.9.1)(monaco-editor@0.52.2)(phoenix@1.8.6)(photoswipe@5.4.4)(react@18.3.1)(rollup@4.59.0)(rxjs@7.8.2)(svelte@5.53.7)(tailwind-merge@2.6.1)(tailwindcss@3.4.19)(typescript@5.9.3)(uuid@11.1.0)(viem@2.47.0)(vite@7.3.1)(wagmi@2.19.5)
   svelte:
     specifier: ^5.53.7
     version: 5.53.7
@@ -11251,9 +11251,9 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
-  github.com/santiment/san-webkit/061f0ef8b7ca7d122227544ef077834e47d77346(@floating-ui/dom@1.7.6)(@melt-ui/svelte@0.86.6)(@sveltejs/adapter-auto@3.3.1)(@sveltejs/adapter-node@5.5.4)(@sveltejs/kit@2.48.2)(@sveltejs/vite-plugin-svelte@5.1.1)(@wagmi/connectors@5.11.2)(@wagmi/core@2.21.2)(bits-ui@2.18.1)(driver.js@1.8.0)(estree-walker@3.0.3)(graphql@16.13.1)(highlight.js@11.11.1)(indicatorts@2.2.2)(lottie-web@5.13.0)(marked-highlight@2.2.3)(marked@15.0.12)(mathjs@14.9.1)(monaco-editor@0.52.2)(phoenix@1.8.6)(photoswipe@5.4.4)(react@18.3.1)(rollup@4.59.0)(rxjs@7.8.2)(svelte@5.53.7)(tailwind-merge@2.6.1)(tailwindcss@3.4.19)(typescript@5.9.3)(uuid@11.1.0)(viem@2.47.0)(vite@7.3.1)(wagmi@2.19.5):
-    resolution: {tarball: https://codeload.github.com/santiment/san-webkit/tar.gz/061f0ef8b7ca7d122227544ef077834e47d77346}
-    id: github.com/santiment/san-webkit/061f0ef8b7ca7d122227544ef077834e47d77346
+  github.com/santiment/san-webkit/0cb6f8c486654447124084a655cbc68a246e686e(@floating-ui/dom@1.7.6)(@melt-ui/svelte@0.86.6)(@sveltejs/adapter-auto@3.3.1)(@sveltejs/adapter-node@5.5.4)(@sveltejs/kit@2.48.2)(@sveltejs/vite-plugin-svelte@5.1.1)(@wagmi/connectors@5.11.2)(@wagmi/core@2.21.2)(bits-ui@2.18.1)(driver.js@1.8.0)(estree-walker@3.0.3)(graphql@16.13.1)(highlight.js@11.11.1)(indicatorts@2.2.2)(lottie-web@5.13.0)(marked-highlight@2.2.3)(marked@15.0.12)(mathjs@14.9.1)(monaco-editor@0.52.2)(phoenix@1.8.6)(photoswipe@5.4.4)(react@18.3.1)(rollup@4.59.0)(rxjs@7.8.2)(svelte@5.53.7)(tailwind-merge@2.6.1)(tailwindcss@3.4.19)(typescript@5.9.3)(uuid@11.1.0)(viem@2.47.0)(vite@7.3.1)(wagmi@2.19.5):
+    resolution: {tarball: https://codeload.github.com/santiment/san-webkit/tar.gz/0cb6f8c486654447124084a655cbc68a246e686e}
+    id: github.com/santiment/san-webkit/0cb6f8c486654447124084a655cbc68a246e686e
     name: san-webkit-next
     version: 0.0.1
     hasBin: true
