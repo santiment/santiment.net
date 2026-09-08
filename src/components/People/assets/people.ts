@@ -34,6 +34,7 @@ import VladK from './images/VladK.png'
 import Suzanne from './images/Suzanne.png'
 import Serafim from './images/Serafim.png'
 import Mikhail from './images/Mikhail.png'
+import David from './images/David.png'
 
 export const GROUPS = {
   CORE: 'Core team',
@@ -435,6 +436,15 @@ With a passion for data-driven decision-making and user-centric development, Iry
     group: GROUPS.RESEARCH,
     description:
       'Mikhail is a Python developer with a strong interest in data extraction and web scraping. Currently studying at Belarusian State University, he combines academic focus with hands-on technical skills. Outside of work, he enjoys fishing, hiking, playing the guitar, and riding his motorcycle.',
+    links: {},
+  },
+  {
+    name: 'David Utrobin',
+    position: 'BD & Ops Specialist',
+    img: David,
+    group: GROUPS.COMMUNICATIONS,
+    description:
+      "David is a communications veteran who's been building in crypto since the early MakerDAO days, where he founded its Governance Communications team before a stint as VP of Community and Grants at Ajna. Armed with a BA in English, he works across Santiment's marketing and business development teams, leading educational and media partnerships while creating content readers rely on. Outside of work, David enjoys snowboarding, poker, reading, and spending time with friends.",
     links: {},
   },
 ]
