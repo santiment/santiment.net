@@ -21,7 +21,6 @@ import Nikolay from './images/Nikolay.png'
 import Petra from './images/Petra.png'
 import Tsetso from './images/Tsetso.png'
 import Vassil from './images/Vassil.png'
-import VladV from './images/VladV.png'
 import VladimirT from './images/VladimirT.png'
 import Yordan from './images/Yordan.png'
 import Alena from './images/Alena.png'
@@ -33,7 +32,7 @@ import DmitryK from './images/DmitryK.png'
 import VladK from './images/VladK.png'
 import Suzanne from './images/Suzanne.png'
 import Serafim from './images/Serafim.png'
-import Mikhail from './images/Mikhail.png'
+// import Mikhail from './images/Mikhail.png'
 import David from './images/David.png'
 
 export const GROUPS = {
@@ -268,18 +267,6 @@ export const PEOPLE = [
     },
   },
   {
-    name: 'Vladislav Volynets',
-    position: 'Data Scientist',
-    img: VladV,
-    group: GROUPS.RESEARCH,
-    description:
-      'Vlad joined our team while studying at the Belarusian State University. Enjoys learning math, implementing various kinds of classical algorithms, and understanding ml algorithms under the hood. Likes to play basketball, table tennis and spend time with his friends.',
-    links: {
-      linkedin: 'https://www.linkedin.com/in/vladislav-volynets-131b0b194',
-      github: 'https://github.com/volynvlad',
-    },
-  },
-  {
     name: 'Ilya Lysko',
     position: 'Data Scientist',
     img: IlyaL,
@@ -429,15 +416,15 @@ With a passion for data-driven decision-making and user-centric development, Iry
       'Serafim is an experienced software developer with over 4 years of professional experience. He specializes in building reliable web applications and solving complex technical challenges, with a strong focus on quality and optimization. Serafim has a broad interest in various fields of knowledge, which helps him better understand complex systems and find creative approaches to problem-solving. At work, he values clean code, structured planning, and effective teamwork. In his free time, he actively engages in sports, enjoys reading, and exploring new ideas, always striving to broaden his horizons.',
     links: {},
   },
-  {
-    name: 'Mikhail Shurov',
-    position: 'Python Developer',
-    img: Mikhail,
-    group: GROUPS.RESEARCH,
-    description:
-      'Mikhail is a Python developer with a strong interest in data extraction and web scraping. Currently studying at Belarusian State University, he combines academic focus with hands-on technical skills. Outside of work, he enjoys fishing, hiking, playing the guitar, and riding his motorcycle.',
-    links: {},
-  },
+  // {
+  //   name: 'Mikhail Shurov',
+  //   position: 'Python Developer',
+  //   img: Mikhail,
+  //   group: GROUPS.RESEARCH,
+  //   description:
+  //     'Mikhail is a Python developer with a strong interest in data extraction and web scraping. Currently studying at Belarusian State University, he combines academic focus with hands-on technical skills. Outside of work, he enjoys fishing, hiking, playing the guitar, and riding his motorcycle.',
+  //   links: {},
+  // },
   {
     name: 'David Utrobin',
     position: 'BD & Ops Specialist',
