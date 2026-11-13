@@ -3,7 +3,7 @@ import tailwind from '@astrojs/tailwind'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import { defineConfig, mergeConfig } from 'astro/config'
-import { AstroSvelteCtxPlugin } from 'san-webkit-next/plugins/vite.js'
+import { AstroSvelteCtx } from 'san-webkit-next/plugins/astro.js'
 
 import { createAstroConfig } from 'san-webkit-next/vite.config.js'
 
@@ -33,7 +33,7 @@ const viteConfig = mergeConfig(viteBase, {
     exclude: ['svelte', '@astrojs/svelte'],
   },
 
-  plugins: [AstroSvelteCtxPlugin(path.resolve(__dirname, './src/svelte-root.js'))],
+  plugins: [AstroSvelteCtx(path.resolve(__dirname, './src/svelte-root.js'))],
 })
 
 const siteUrl = process.env.SITE_URL || 'https://santiment.net'
