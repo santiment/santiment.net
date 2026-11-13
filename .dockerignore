@@ -1,0 +1,27 @@
+# .git is NOT excluded: the san-webkit vite config runs `git rev-parse HEAD`
+# and `git rev-list --count HEAD` during `pnpm build`.
+
+# dependencies and build output (rebuilt inside the image)
+node_modules
+public
+dist
+.astro
+.svelte-kit
+
+# generated into static/ by the build
+static/webkit
+static/vendors
+static/~partytown
+
+# local / editor files
+.DS_Store
+.idea
+.vscode
+*.log
+mkcert
+
+# secrets
+.env
+.env.*
+*.pem
+*.key
