@@ -16,7 +16,11 @@ export default {
       },
     },
     screens: {
-      ...tailwindConfig.theme.screens,
+      // NOTE: keeping the old webkit grid
+      lg: { max: '1279px' },
+      md: { max: '992px' },
+      sm: { max: '768px' },
+      xs: { max: '480px' },
       xl: { max: '1199px' },
     },
     extend: {
