@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "@astrojs/svelte": "^7.2.5",
-    "@astrojs/tailwind": "^6.0.2",
     "@melt-ui/svelte": "^0.86.6",
     "astro": "^5.18.0",
     "bits-ui": "^2.18.1",
@@ -29,7 +28,7 @@
     "@astrojs/ts-plugin": "^1.10.6",
     "@sentry/astro": "^10.40.0",
     "@tailwindcss/vite": "^4.3.0",
-    "prettier": "^3.5.3",
+    "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-svelte": "^3.4.0",
     "prettier-plugin-tailwindcss": "^0.8.0",
