@@ -5,32 +5,37 @@
   "scripts": {
     "dev": "astro dev",
     "dev:https": "astro dev --host -- --https",
+    "dev:https:force": "astro dev --host --force -- --https",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
+  "imports": {
+    "#app.css": "./src/app.css",
+    "#tailwind.config.js": "./tailwind.config.js"
+  },
   "dependencies": {
     "@astrojs/svelte": "^9.1.5",
-    "@astrojs/tailwind": "^6.0.2",
     "@melt-ui/svelte": "^0.86.6",
     "astro": "^7.4.11",
     "bits-ui": "^2.21.0",
     "esm-env": "^1.2.2",
     "rxjs": "^7.8.2",
-    "san-webkit-next": "github:santiment/san-webkit#lib-d3e99a072-131126",
+    "san-webkit-next": "github:santiment/san-webkit#lib-6e9d2e0df-171126",
     "svelte": "^5.57.3"
   },
   "devDependencies": {
-    "@astrojs/ts-plugin": "^1.11.0",
+    "@astrojs/ts-plugin": "^1.10.6",
     "@sentry/astro": "^10.78.0",
+    "@tailwindcss/vite": "^4.3.0",
     "prettier": "^3.10.0",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-svelte": "^3.5.2",
-    "prettier-plugin-tailwindcss": "^0.6.14",
+    "prettier-plugin-tailwindcss": "^0.8.0",
     "sharp": "^0.35.5",
     "svelte-preprocess": "^5.1.4",
     "svelte-preprocess-cssmodules": "^3.0.1",
-    "tailwindcss": "^3.4.19",
+    "tailwindcss": "4.3.0",
     "typescript": "^5.9.3",
     "vite": "^8.3.8",
     "vite-plugin-mkcert": "^1.17.12"

@@ -46,18 +46,20 @@ const laptopBg = `url(${laptopIllus.src})`
 </section>
 
 <style define:vars={{ desktopBg, laptopBg }}>
+  @reference '#app.css';
+
   .hero-bg {
     background-image: var(--desktopBg);
     @apply bg-top bg-no-repeat;
   }
 
-  @screen lg {
+  @media (max-width: theme(--breakpoint-lg-max)) {
     .hero-bg {
       background-image: var(--laptopBg);
     }
   }
 
-  @screen md {
+  @media (max-width: theme(--breakpoint-md-max)) {
     .hero-bg {
       @apply bg-none;
     }

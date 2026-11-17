@@ -20,7 +20,7 @@
       class={cn(
         'duration-250 mr-8 fill-fiord pl-0 text-fiord transition-transform',
         'hover:bg-transparent hover:fill-green hover:text-green',
-        '[&>svg]:duration-[250ms] [&>svg]:transition-transform',
+        '[&>svg]:duration-250 [&>svg]:transition-transform',
         '[&>svg]:ease-in-out [&[data-state=open]>svg]:rotate-180',
       )}>Products</Button
     >
