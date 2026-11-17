@@ -27,7 +27,7 @@
   {#each options as tab}
     <button
       class={cn(
-        'relative px-6 pb-[14px] font-semibold transition-colors duration-200',
+        'relative cursor-pointer px-6 pb-[14px] font-semibold transition-colors duration-200',
         selected === tab ? 'text-green' : 'text-casper',
       )}
       onclick={() => selectTab(tab)}
@@ -35,7 +35,7 @@
       {tab}
 
       {#if tab === selected}
-        <div class="absolute bottom-0 left-0 h-[2px] w-full rounded-sm bg-green"></div>
+        <div class="absolute bottom-0 left-0 h-[2px] w-full rounded-xs bg-green"></div>
       {/if}
     </button>
   {/each}
