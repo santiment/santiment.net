@@ -60,6 +60,9 @@ export default defineConfig({
   },
   vite: { ...viteConfig, plugins: [...viteConfig.plugins, tailwind()] },
   base: '/',
+  // Astro 7 defaults to 'jsx' whitespace handling, which strips whitespace
+  // between inline elements. Keep the Astro 5/6 behaviour.
+  compressHTML: true,
   publicDir: './static',
   outDir: './public',
   server: {
