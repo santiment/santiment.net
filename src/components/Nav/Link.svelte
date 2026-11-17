@@ -1,15 +1,17 @@
 <script lang="ts">
+  import type { HTMLAnchorAttributes } from 'svelte/elements'
+
   import { cn } from 'san-webkit-next/ui/utils'
   import Svg from 'san-webkit-next/ui/core/Svg'
 
-  type TProps = {
+  type TProps = HTMLAnchorAttributes & {
     href: string
     label: string
     class?: string
     isExternal?: boolean
   }
 
-  const { href, label, class: className = '', isExternal = false }: TProps = $props()
+  const { href, label, class: className = '', isExternal = false, ...props }: TProps = $props()
 </script>
 
 <a
@@ -19,6 +21,7 @@
   class={cn('group flex items-center text-fiord hover:text-green-hover', className)}
   data-source="santiment.net"
   data-type={label}
+  {...props}
 >
   {label}
 
