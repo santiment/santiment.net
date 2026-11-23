@@ -8,7 +8,6 @@ import Notifications from 'san-webkit-next/ui/core/Notifications'
 import Intercom from '../components/scripts/Intercom.astro'
 import GoogleAnalytics from '../components/scripts/GoogleAnalytics.astro'
 import FirstPromoter from '../components/scripts/FirstPromoter.astro'
-import TwitterPixel from '../components/scripts/TwitterPixel.astro'
 import Posthog from '../components/scripts/Posthog.astro'
 
 type Props = {
@@ -49,7 +48,6 @@ const { class: className = '' } = Astro.props
           <Intercom />
           <GoogleAnalytics id="G-H53MB0V33X" />
           <FirstPromoter id="ks4svmdl" />
-          <TwitterPixel id="o0e0e" />
           <Posthog />
         </>
       )
