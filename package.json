@@ -25,9 +25,9 @@
     "svelte": "^5.57.3"
   },
   "devDependencies": {
-    "@astrojs/ts-plugin": "^1.10.6",
+    "@astrojs/ts-plugin": "^1.11.0",
     "@sentry/astro": "^10.78.0",
-    "@tailwindcss/vite": "^4.3.0",
+    "@tailwindcss/vite": "4.3.0",
     "prettier": "^3.10.0",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-svelte": "^3.5.2",
