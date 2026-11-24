@@ -21,7 +21,7 @@ const { isAnimated = false, isNightMode = false, class: className } = Astro.prop
 
 <nav
   class={cn(
-    'fixed left-0 right-0 top-0 z-[5] border-b border-porcelain bg-white md:animate-none',
+    'fixed left-0 right-0 top-0 z-5 border-b border-porcelain bg-white md:animate-none',
     isNightMode && 'night-mode',
     isAnimated && 'animate-shiftDown',
     className,
@@ -30,10 +30,10 @@ const { isAnimated = false, isNightMode = false, class: className } = Astro.prop
   <div
     class="mx-auto flex h-[70px] max-w-[1192px] items-center justify-between px-[26px] md:h-[56px] md:px-[16px]"
   >
-    <div class="flex flex-shrink-0 items-center">
+    <div class="flex shrink-0 items-center">
       <a
         href="/"
-        class="mr-16 h-[23px] w-[104px] flex-shrink-0 [&>svg>path]:fill-black"
+        class="mr-16 h-[23px] w-[104px] shrink-0 [&>svg>path]:fill-black"
         aria-label="Go to homepage"
       >
         <Logo />
@@ -41,7 +41,7 @@ const { isAnimated = false, isNightMode = false, class: className } = Astro.prop
     </div>
 
     <div class="flex w-full items-center md:hidden">
-      <ProductsButton class={isNightMode ? '!night-mode' : ''} client:load />
+      <ProductsButton class={isNightMode ? 'night-mode!' : ''} client:load />
 
       {
         links.map(({ href, label, isExternal = false, class: linkClass }) => (

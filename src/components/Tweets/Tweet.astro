@@ -36,7 +36,7 @@ const { displayName, content, handle, id, avatar } = Astro.props
       </header>
     </a>
     <div
-      class="text-base leading-relaxed text-rhino [&>*]:text-base [&>*]:leading-relaxed [&>*]:text-rhino [&>a+*]:ml-0 [&>a]:mx-1 [&>a]:text-[#4da0eb] [&>img]:mt-3 [&>img]:h-auto [&>img]:w-full [&>img]:rounded-2xl"
+      class="text-base leading-relaxed text-rhino *:text-base *:leading-relaxed *:text-rhino [&>a+*]:ml-0 [&>a]:mx-1 [&>a]:text-[#4da0eb] [&>img]:mt-3 [&>img]:h-auto [&>img]:w-full [&>img]:rounded-2xl"
       set:html={content}
     />
   </article>

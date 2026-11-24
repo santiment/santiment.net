@@ -1,11 +1,17 @@
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--casper) var(--porcelain);
-}
+@import 'san-webkit-next/app.css';
 
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
+@config '#tailwind.config.js';
+
+@layer base {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--casper) var(--porcelain);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
   }
 }
 

@@ -53,7 +53,7 @@ const logos = [
   </h2>
 
   <div class="relative flex w-full overflow-hidden">
-    <div class="animate-marquee flex flex-shrink-0 whitespace-nowrap will-change-transform">
+    <div class="animate-marquee flex shrink-0 whitespace-nowrap will-change-transform">
       {logos.map(({ src, alt }) => <Image src={src} alt={alt} class="mr-8 h-6 sm:h-4 w-auto" />)}
       {logos.map(({ src, alt }) => <Image src={src} alt="" class="mr-8 h-6 sm:h-4 w-auto" aria-hidden="true" />)}
     </div>
